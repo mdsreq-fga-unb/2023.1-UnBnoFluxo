@@ -1,4 +1,4 @@
-#	Declaração de Posição do Produto
+##	Declaração de Posição do Produto
 [Forneça uma declaração geral resumindo, no nível mais alto, a posição exclusiva que o produto pretende preencher no mercado. Uma declaração de posição do produto comunica a intenção da aplicação e a importância do projeto para todo o pessoal envolvido. O seguinte formato pode ser usado:]
 Qual é o produto que você se propõe a desenvolver?
 O que torna este produto diferente dos seus concorrentes?1
@@ -14,8 +14,8 @@ Por que os clientes deveriam utilizar / comprar este produto?
 | Nosso produto       | [declaração de diferenciação primária]                                                         |
 
 
-# Objetivos do Produto
+## Objetivos do Produto
 [Forneça o objetivo principal do projeto, e objetivos secundários (caso haja)]
 
-# Tecnologias a Serem Utilizadas
+## Tecnologias a Serem Utilizadas
 [Forneça o objetivo principal do projeto, e objetivos secundários (caso haja)]

@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+  - toc
+---
 
 ![1](https://user-images.githubusercontent.com/56891617/232635876-ebb28403-f4d7-4cd3-a8dc-83781e86c808.png)
 ![2](https://user-images.githubusercontent.com/56891617/232635893-90958939-c1dd-49f5-98b9-7ee6e2c7eb20.png)
