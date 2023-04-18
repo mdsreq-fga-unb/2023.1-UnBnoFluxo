@@ -1,0 +1,68 @@
+# Project information
+site_name: UnBnoFluxo
+site_author: FluxoSquad
+site_description: >-
+  Documentação para do projeto UnBnoFluxo realizado na disciplina de
+  Metodos de Desenvolvimento de Software na Universidade de Brasília
+
+
+# Repository
+repo_url: https://github.com/mdsreq-fga-unb/2023.1-UnBnoFluxo
+repo_name: UnBnoFluxo
+
+
+# Configuration
+docs_dir: docs
+theme: 
+  name: material
+  language: pt-BR
+  font: 
+    text: Roboto
+  features:
+    # - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    # - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    # - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    # - search.share
+    - search.suggest
+    # - toc.follow
+    - toc.integrate
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para o modo escuro
+      primary: deep purple
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para o modo claro
+      primary: deep purple
+      accent: purple
+
+
+# Page tree
+nav: 
+  - Página inicial: index.md
+  - Visão do produto e projeto:
+    - Visão geral do produto: VisaoProdutoEProjeto/VisaoGeralDoProduto.md
+    - Visão geral do projeto: VisaoProdutoEProjeto/VisaoGeralDoProjeto.md
+    - Processo de desenvolvimento de software: VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware.md
+    - Lições aprendidas: VisaoProdutoEProjeto/LicoesAprendidas.md
+    - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
