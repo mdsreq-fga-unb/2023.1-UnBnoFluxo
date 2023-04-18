@@ -12,3 +12,10 @@ Por que os clientes deveriam utilizar / comprar este produto?
 | Que                 | [declaração do principal benefício; ou seja, a razão convincente para comprar, utilizar, etc.] |
 | Ao contrário        | [alternativa competitiva primária]                                                             |
 | Nosso produto       | [declaração de diferenciação primária]                                                         |
+
+
+# Objetivos do Produto
+[Forneça o objetivo principal do projeto, e objetivos secundários (caso haja)]
+
+# Tecnologias a Serem Utilizadas
+[Forneça o objetivo principal do projeto, e objetivos secundários (caso haja)]

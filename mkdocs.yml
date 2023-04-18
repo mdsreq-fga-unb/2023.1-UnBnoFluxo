@@ -1,0 +1,19 @@
+site_name: UnBnoFluxo
+docs_dir: docs
+
+theme: 
+  name: material
+  language: pt-BR
+  palette: 
+    primary: dark green
+  font: 
+    text: Roboto
+
+nav: 
+  - Página inicial: index.md
+  - Visão do produto e projeto:
+    - Visão geral do produto: VisaoProdutoEProjeto/VisaoGeralDoProduto.md
+    - Visão geral do projeto: VisaoProdutoEProjeto/VisaoGeralDoProjeto.md
+    - Processo de desenvolvimento de software: VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware.md
+    - Lições aprendidas: VisaoProdutoEProjeto/LicoesAprendidas.md
+    - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
