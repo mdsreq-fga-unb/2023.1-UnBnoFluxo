@@ -1,9 +1,7 @@
 # LIÇÕES APRENDIDAS
 ## Unidade 1
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-## Unidade 2
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-## Unidade 3
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-## Unidade 4
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+Em primeira análise, foi passado a todos os alunos da disciplina orientações sobre organização e trabalho em equipe. Após a formação dos grupos, nós aprendemos sobre um Framework de gerenciamento de projetos, chamado “Scrum”. Técnica na qual usa a transparência, inspeção e adaptação como pilares, dividido em papeis para cada integrante, nos quais geram artefatos como o ProductBacklog, que consiste nos Requisitos necessários para alcançar o produto desejado. Por outro lado, também vimos sobre o método de desenvolvimento de software XP (extreme programming), no qual leva ao extremo o conjunto de práticas que são ditadas como boas na engenharia de software: testes, revisão, projeção, testes de integração, simplicidade e integrações curtas. Por fim, nos foi apresentada a possibilidade de trabalhar com uma junção das duas técnicas afim de um melhor resultado. 
+
+Em segunda análise, é viável mencionar o fato de o grupo ser bem diversificado, cada integrante possui facilidade em diferentes tecnologias, fator que nos dificultou definir a sprint backlog. Porém, por meio da sprint reviw, em votações, conseguimos nos organizar e ter uma excelente retrospectiva. 
+
+Por fim, pode-se mencionar uma possível melhoria individual: Mais estudo sobre o assunto abordado nas unidades é imprescindível. Um detalhe que nos custou uma apresentação sem 100% de aproveitamento em uma das entregas das sprints. Entretanto, nos serviu de lição e esperamos que não aconteça novamente. 
