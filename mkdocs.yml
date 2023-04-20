@@ -60,7 +60,6 @@ theme:
 # Page tree
 nav: 
   - Página inicial: index.md
-  - Historico de revisão: HistoricoDeRevisao.md
   - Visão do produto e projeto:
     - Visão geral do produto: VisaoProdutoEProjeto/VisaoGeralDoProduto.md
     - Visão geral do projeto: VisaoProdutoEProjeto/VisaoGeralDoProjeto.md
@@ -69,3 +68,4 @@ nav:
     - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
   - Seminários:
     - Unidade 01: Seminarios/Unidade01.md
+  - Historico de revisão: HistoricoDeRevisao.md
