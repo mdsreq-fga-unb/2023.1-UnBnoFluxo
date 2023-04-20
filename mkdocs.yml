@@ -60,10 +60,12 @@ theme:
 # Page tree
 nav: 
   - Página inicial: index.md
+  - Historico de revisão: HistoricoDeRevisao.md
   - Visão do produto e projeto:
     - Visão geral do produto: VisaoProdutoEProjeto/VisaoGeralDoProduto.md
     - Visão geral do projeto: VisaoProdutoEProjeto/VisaoGeralDoProjeto.md
     - Processo de desenvolvimento de software: VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware.md
     - Lições aprendidas: VisaoProdutoEProjeto/LicoesAprendidas.md
     - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
-  - Seminarios: Seminarios.md
+  - Seminários:
+    - Unidade 01: Seminarios/Unidade01.md
