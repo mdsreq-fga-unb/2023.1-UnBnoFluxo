@@ -1,8 +1,5 @@
 # PROCESSO DE DESENVOLVIMENTO DE SOFTWARE
-[Nesta seção devem estar registradas as decisões da equipe quanto à metodologia de desenvolvimento de software a ser utilizada. Por exemplo: Abordagem Dirigida a Plano, Abordagem Ágil, etc.
-Cabe destacar aqui que, não é intenção desta seção ser definitiva ou prescritiva, mas, sim, orientadora. 
-Também, não é objetivo desta seção ser detalhista e, sim, objetiva e resumida, de forma que a equipe possa utilizá-la como um guia.
-Deve-se também, apresentado um diagrama ilustrando o fluxo de trabalho a ser realizado.]
+Nossa metodologia de desenvolvimento é simples, vai ser utilizado tecnicas como Integração Contínua, refatoração, pequenos releases, ritmo sustentável, e outras técnicas no diagrama. Desenvolvendo a RestAPI, precisamos de um endpoint para acessar os cursos do usuário(ex: api.unbfluxo.com/userdata) assim é realizado o teste para ver se a api está funcionando da maneira correta, com testes unitários etc. Durante o desenvolvimento dessa RestAPI é feito a integração junto aos membros responsáveis pelo desenvolvimento front-end no momento, e é feito a integração completa da aplicação junto de testes, e uma pequena liberação.
 
 ## Praticas do XP que serão aplicadas
 
@@ -29,24 +26,4 @@ Deve-se também, apresentado um diagrama ilustrando o fluxo de trabalho a ser re
 - **Metáfora:** Acreditamos que a criação de uma metáfora pode ser difícil, especialmente considerando que a aplicação não se encaixa bem em uma metáfora. Também consideramos que o cliente escolhido também é um dev, logo a metafora deixa de ser tão necessária na relação Equipe Scrum e PO.
 - **Toda a Equipe:** Devido a dificuldades de horários, não será possível implementar a prática de toda a equipe. No entanto, vamos buscar formas de colaboração e integração em níveis menores, garantindo que todos possam contribuir para o sucesso do projeto.
 
-
-## Atividade 1
-[Diante da abordagem estabelecida, deve-se definir como cada uma das atividades será realizada, por meio de métodos e ferramentas. Pode-se, por exemplo, utilizar um quadro para expressar essas informações:]
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-##	Atividade 2
-[Diante da abordagem estabelecida, deve-se definir como cada uma das atividades será realizada, por meio de métodos e ferramentas. Pode-se, por exemplo, utilizar um quadro para expressar essas informações:]
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-##	Atividade 3
-[Diante da abordagem estabelecida, deve-se definir como cada uma das atividades será realizada, por meio de métodos e ferramentas. Pode-se, por exemplo, utilizar um quadro para expressar essas informações:]
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-##	Atividade ‘N’
-[Diante da abordagem estabelecida, deve-se definir como cada uma das atividades será realizada, por meio de métodos e ferramentas. Pode-se, por exemplo, utilizar um quadro para expressar essas informações:]
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
+![image](https://user-images.githubusercontent.com/56891617/233232143-f597a631-20d6-426b-8188-6f34de400b8e.png)
