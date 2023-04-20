@@ -3,8 +3,17 @@ hide:
   - navigation
   - toc
 ---
+# 2023.1-UnBnoFluxo
+Projeto criado por estudantes da disciplina Métodos de Desenvolvimento de Software, Engenharia de Software, UnB.
 
-![1](https://user-images.githubusercontent.com/56891617/232635876-ebb28403-f4d7-4cd3-a8dc-83781e86c808.png)
-![2](https://user-images.githubusercontent.com/56891617/232635893-90958939-c1dd-49f5-98b9-7ee6e2c7eb20.png)
-![3](https://user-images.githubusercontent.com/56891617/232635911-3221447b-292c-4fed-bd8e-203d0dced31e.png)
-![4](https://user-images.githubusercontent.com/56891617/232635923-a27f9973-6175-4f2f-9b03-cae3531045b0.png)
+## Sobre
+Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estudantes para seguir o fluxo do curso". Para isso foi proposto uma aplicação web que irá disponibilizar um fluxograma interativo, intuitivo, personalizável e moderno para os estudantes da Universidade de Brasília.
+
+## Colaboradores
+| Matrícula | Nome                                      | Nick no GitHub |
+| :-------: | ----------------------------------------- | -------------- |
+| 170121267 | Israel Silva Nunes                        | IsraelNunes    |
+| 211061977 | João Victor Costa Andrade                 | jvcostta       |
+| 221007653 | Luciano Ricardo Da Silva Junior           | l-ricardo      |
+| 211043736 | Pedro Paulo Monte Pagani                  | PedroMPagani   |
+| 180028847 | Vinicius Gabriel Rodrigues da Silva Brito | vini051        |
