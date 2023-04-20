@@ -1,15 +1,16 @@
 ## Gerenciamento de Riscos
-[Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
--	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto; 
--	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
--	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
--	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
--	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);]
-Os riscos do projeto devem ser acompanhados e atualizados a cada ciclo.
+### Possiveis ricos
+-   Problemas pessoais de membros da equipe ou adoecimento
+-   Desencontro com o cliente
+-   Desistencia do cliente
+-   Trancamento da disciplina por algum dos membros da equipe
+### Ações de contenção 
+-   Buscar um novo cliente em caso de desistencia, visto que o problema afeta varios alunos
+-   Redistritribuir as tarefas durante uma ausência temporaria
+-   Reduzir o escopo em caso desistencia permanente de um ou mais dos membros da equipe
 
 ## Critérios de Replanejamento
-[Descrever os critérios de replanejamento que serão utilizados, caso seja necessário realizá-lo no projeto.]
-Os critérios de replanejamento do projeto devem ser acompanhados e atualizados a cada ciclo. E, aplicados, conforme necessidade.
+-   Dificuldades em encontrar fonte
 
 
 ## Matriz de Comunicação
@@ -17,9 +18,10 @@ Os critérios de replanejamento do projeto devem ser acompanhados e atualizados 
 
 | Descrição                                                                                                               | Área/ Envolvidos    | Periodicidade | Produtos Gerados                                       |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------- | ------------------------------------------------------ |
-| - Acompanhamento das Atividades em Andamento    - Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores | - Equipe do Projeto | - Semanal     | - Ata de reunião - Relatório de situação do projeto    |
-| - Acompanhamento das Atividades em Andamento    - Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores |                     | - Quinzenal   | - Ata de reunião - Relatório de situação do projeto    |
-| - Comunicar situação do projeto                                                                                         | - Equipe - Prof     | - Semanal     | - Ata de reunião e  - Relatório de Situação do Projeto |
+| - Definição de Sprint e próximos objetivos - Acompanhar o andamento geral do projeto  | - Equipe do Projeto | - Quinzenal     | - Ata de reunião - Relatório de situação do projeto    |
+| - Verificar a progressão da sprint |                     | - Diario   | - Daily    |
+| - Reunião com o cliente e entrega parcial | - Equipe - Cliente     | - Quinzenal     | - Ata de reunião  - Relatório de Situação do Projeto - Validação da entrega com o cliente|
+- Alem dos meios citados acima havera comunicação assincrona entre os membros da equipe é o cliente via Whatsapp e Discord. As reunioes sincronas serão feitas feitas via discord, tanto com o cliente quanto as de equipe.
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 [Registrar o projeto, as fases de seu ciclo de vida e suas iterações, especificando suas datas de início e de fim, bem como os produtos a serem gerados.
@@ -34,11 +36,10 @@ O planejamento do projeto deve ser atualizado de maneira sucessiva, a partir da 
 | ....     | .....                         |     ...     |   ....   |
 
 ## Organização do Projeto
-[apresentada a divisão de atribuições e responsabilidades entre os membros do projeto, sem qualquer relação de hierarquia ou grau de importância. Todos os integrantes são igualmente importantes e responsáveis pelo sucesso do projeto.]
 
 | Papel                 | Atribuições                                                                                                 | Responsável | Participantes              |
 | --------------------- | ----------------------------------------------------------------------------------------------------------- | :---------: | -------------------------- |
-| Desenvolvedor         | Codificar o produto, codificar testes unitários, realizar refatoração                                       |    Maria    | José, João, Laura, Sandra  |
-| Dono do Produto       | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas                          |   Sandra    | Maria, José, João, Laura   |
-| Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código |    José     | Maria, Sandra, Laura, João |
-| ....                  | .....                                                                                                       |     ...     | ....                       |
+| Dev Scrum master         | Zelar pelo funcionamento e valores do scrum dentro da equipe                                        |    João Vitor    | Todos  |
+| Dev CI-Test       | Buscar soluções de testes e integração continua                         |   Vinicius    | Todos   |
+| Dev Front-end |Auxiliar e liderar a equipe na implementação e soluçoes do front  |    Ricardo     | Todos |
+| Cliente                   | Auxuliar e orientar a equipe sobre suas necessidades e validar as entregas parciais ao final de cada sprint                                                                                                       |     ...     | Pedro Victor                        |
