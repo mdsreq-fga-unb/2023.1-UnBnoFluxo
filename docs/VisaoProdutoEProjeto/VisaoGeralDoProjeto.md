@@ -1,8 +1,8 @@
 ## Gerenciamento de Riscos
-### Possiveis ricos
+### Possiveis riscos
 -   Problemas pessoais de membros da equipe ou adoecimento
 -   Desencontro com o cliente
--   Desistencia do cliente
+-   Desistência do cliente
 -   Trancamento da disciplina por algum dos membros da equipe
 ### Ações de contenção 
 -   Buscar um novo cliente em caso de desistencia, visto que o problema afeta varios alunos
