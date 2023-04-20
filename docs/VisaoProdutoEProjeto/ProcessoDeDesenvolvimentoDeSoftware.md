@@ -1,4 +1,4 @@
-# PROCESSO DE DESENVOLVIMENTO DE SOFTWARE
+# Processo de Desenvolvimento de Software
 Nossa metodologia de desenvolvimento é simples, vai ser utilizado tecnicas como Integração Contínua, refatoração, pequenos releases, ritmo sustentável, e outras técnicas no diagrama. Desenvolvendo a RestAPI, precisamos de um endpoint para acessar os cursos do usuário(ex: api.unbfluxo.com/userdata) assim é realizado o teste para ver se a api está funcionando da maneira correta, com testes unitários etc. Durante o desenvolvimento dessa RestAPI é feito a integração junto aos membros responsáveis pelo desenvolvimento front-end no momento, e é feito a integração completa da aplicação junto de testes, e uma pequena liberação.
 
 ## Práticas do XP que serão aplicadas
