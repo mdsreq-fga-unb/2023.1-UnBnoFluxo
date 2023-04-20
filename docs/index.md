@@ -3,7 +3,7 @@ hide:
   - navigation
   - toc
 ---
-# 2023.1-UnBnoFluxo
+# UnBnoFluxo
 Projeto criado por estudantes da disciplina Métodos de Desenvolvimento de Software, Engenharia de Software, UnB.
 
 ## Sobre
