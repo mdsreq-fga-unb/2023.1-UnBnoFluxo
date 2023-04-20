@@ -1,21 +1,18 @@
 ##	Declaração de Posição do Produto
-[Forneça uma declaração geral resumindo, no nível mais alto, a posição exclusiva que o produto pretende preencher no mercado. Uma declaração de posição do produto comunica a intenção da aplicação e a importância do projeto para todo o pessoal envolvido. O seguinte formato pode ser usado:]
-Qual é o produto que você se propõe a desenvolver?
-O que torna este produto diferente dos seus concorrentes?1
-Quem são os usuários-alvo e clientes do produto?
-Por que os clientes deveriam utilizar / comprar este produto? 
-|                     |                                                                                                |
-| ------------------- | ---------------------------------------------------------------------------------------------- |
-| Para                | [cliente alvo]                                                                                 |
-| Quem                | [declaração da necessidade ou oportunidade]                                                    |
-| O (nome do produto) | é uma [categoria de produto]                                                                   |
-| Que                 | [declaração do principal benefício; ou seja, a razão convincente para comprar, utilizar, etc.] |
-| Ao contrário        | [alternativa competitiva primária]                                                             |
-| Nosso produto       | [declaração de diferenciação primária]                                                         |
-
+Nossa proposta é desenvolver uma aplicação Web para organização, planejamento, consulta e entendimento do fluxo de disciplinas particular de cada usuário, pois entendemos que cada aluno se encontra em um momento diferente do curso, com suas próprias particularidades. O público alvo será, inicialmente, os alunos do curso de Engenharia de Software da Universidade de Brasília que se encontram "fora do fluxo" (termo utilizado para descrever o aluno que se desviou do fluxo padrão de disciplinas sugerido pela universidade).
+Nosso produto visa fornecer a possibilidade de personalização do fluxo para cada usuário, de forma que o usuário possa ter um planejamento eficaz, o que não é possível atualmente com o fluxograma disponibilizado pela instituição.
 
 ## Objetivos do Produto
-[Forneça o objetivo principal do projeto, e objetivos secundários (caso haja)]
+Fornecer possibilidade de personalização, entregar uma interface interativa, intuitiva, organizada.
 
 ## Tecnologias a Serem Utilizadas
-[Forneça o objetivo principal do projeto, e objetivos secundários (caso haja)]
+
+Para o backend: Java, Rest API;
+
+Para o frontend: React;
+
+Para o banco de dados: MongoDB, Redis;
+
+Para testes e CI: Github Actions; e
+
+Para comunicação: Discord e WhatsApp.
