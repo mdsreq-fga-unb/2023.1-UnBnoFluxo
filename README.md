@@ -11,6 +11,5 @@ Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estuda
 | 170121267 | Israel Silva Nunes                        | IsraelNunes    |
 | 211061977 | JOAO VICTOR COSTA ANDRADE                 | jvcostta       |
 | 221007653 | LUCIANO RICARDO DA SILVA JUNIOR           | l-ricardo      |
-
 | 211043736 | PEDRO PAULO MONTE PAGANI                  | PedroMPagani   |
 | 180028847 | Vinicius Gabriel Rodrigues da Silva Brito | vini051        |
