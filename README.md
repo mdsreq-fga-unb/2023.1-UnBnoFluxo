@@ -4,12 +4,14 @@ Projeto criado por estudantes da disciplina Métodos de Desenvolvimento de Softw
 ## Sobre
 Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estudantes para seguir o fluxo do curso". Para isso foi proposto uma aplicação web que irá disponibilizar um fluxograma interativo, intuitivo, personalizável e moderno para os estudantes da Universidade de Brasília.
 
+## Documentação
+A documentação esta disponivel nesse [link](https://mdsreq-fga-unb.github.io/2023.1-UnBnoFluxo/)
 
 ## Colaboradores
 | Matrícula | Nome                                      | Nick no GitHub |
 | :-------: | ----------------------------------------- | -------------- |
 | 170121267 | Israel Silva Nunes                        | IsraelNunes    |
-| 211061977 | JOAO VICTOR COSTA ANDRADE                 | jvcostta       |
-| 221007653 | LUCIANO RICARDO DA SILVA JUNIOR           | l-ricardo      |
-| 211043736 | PEDRO PAULO MONTE PAGANI                  | PedroMPagani   |
+| 211061977 | João Victor Costa Andrade                 | jvcostta       |
+| 221007653 | Luciano Ricardo Da Silva Junior           | l-ricardo      |
+| 211043736 | Pedro Paulo Monte Pagani                  | PedroMPagani   |
 | 180028847 | Vinicius Gabriel Rodrigues da Silva Brito | vini051        |

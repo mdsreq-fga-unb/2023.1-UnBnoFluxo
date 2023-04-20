@@ -1,9 +1,5 @@
-# LIÇÕES APRENDIDAS
-## Unidade 1
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-## Unidade 2
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-## Unidade 3
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-## Unidade 4
-[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+# Lições aprendidas
+
+## Unidade 01
+Em primeira análise, é viável mencionar o fato de o grupo ser bem diversificado, cada integrante possui facilidade em diferentes tecnologias, fator que nos dificultou definir a sprint backlog. Porém, através da sprint review, por meio de votações, conseguimos nos organizar e ter uma excelente retrospectiva.
+Por fim, pode-se mencionar uma possível melhoria individual: Mais estudo sobre o assunto abordado nas unidades é algo imprescindível. Um detalhe que nos custou uma apresentação sem 100% de aproveitamento em uma das entregas das sprints. Entretanto, nos serviu de lição e esperamos que não aconteça novamente.
