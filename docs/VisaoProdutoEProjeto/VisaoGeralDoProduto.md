@@ -5,14 +5,14 @@ Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 
 ##	Declaração de Posição do Produto
 
-|                             |                                |
-| --------------------------- | ------------------------------ |
-| Para                        | os alunos do curso de Engenharia de Software da Universidade de Brasília                               |
-| Quem                        | sofrem com a dificuldade no planejamento, organização, compreensão e leitura do fluxograma disponibilizado pela universidade                               |
-| O UnBnoFluxo                | é uma aplicação Web                               |
-| Que                         | permite que cada aluno tenha um plano adaptado às suas necessidades específicas                               |
-| Ao contrário                | do fluxograma padrão                               |
-| Nosso produto               | oferece personalização e interatividade de forma organizada e intuitiva                               |
+|               |                                                                                                                              |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Para          | os alunos do curso de Engenharia de Software da Universidade de Brasília                                                     |
+| Quem          | sofrem com a dificuldade no planejamento, organização, compreensão e leitura do fluxograma disponibilizado pela universidade |
+| O UnBnoFluxo  | é uma aplicação Web                                                                                                          |
+| Que           | permite que cada aluno tenha um plano adaptado às suas necessidades específicas                                              |
+| Ao contrário  | do fluxograma padrão                                                                                                         |
+| Nosso produto | oferece personalização e interatividade de forma organizada e intuitiva                                                      |
 
 ## Objetivos do Produto
 Facilitar o planejamento e a organização do fluxo de disciplinas do usuário (aluno)
