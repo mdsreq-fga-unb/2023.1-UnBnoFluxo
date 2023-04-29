@@ -64,8 +64,11 @@ nav:
     - Visão geral do produto: VisaoProdutoEProjeto/VisaoGeralDoProduto.md
     - Visão geral do projeto: VisaoProdutoEProjeto/VisaoGeralDoProjeto.md
     - Processo de desenvolvimento de software: VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware.md
+    - Backlog do produto: VisaoProdutoEProjeto/LicoesAprendidas.md
     - Lições aprendidas: VisaoProdutoEProjeto/LicoesAprendidas.md
     - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
+  - Sprints:
+    - Sprint 1: Sprints/Sprint01.md
   - Seminários:
     - Unidade 01: Seminarios/Unidade01.md
   - Historico de revisão: HistoricoDeRevisao.md
