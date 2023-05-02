@@ -14,29 +14,29 @@
 |  US11  | Como usuário, quero poder fazer download do fluxograma que montei para não perder meu progresso                                                                                            |
 
 ## Requisitos não-funcionais
-| Número | Categoria       | Descrição                                                     |
-| :----: | --------------- | ------------------------------------------------------------- |
-|  RNF1  | Implementação   | O produto deve ser uma aplicação web                          |
-|  RNF2  | Usabilidade     | O produto deve ser responsivo a diferentes tamanhos de tela e dispositivos  |
-|  RNF3  | Implemetação    | O front-end do produto deve ser desenvolvido utilizando react |
-|  RNF4  | Implementação   | O back-end do produto deve ser desenvolvido utilizando java   |
-|  RNF5  | Usabilidade     | A interface deve ser organizada de forma clara (Clara é: título do menu/seção indicar exatamente o que há em seu conteúdo, por exemplo: uma seção com nome "Montar minha grade" indica uma página onde o usuário poderá organizar disciplinas em uma grade-horária) |
-|  RNF6  | Suportabilidade | A aplicação deverá rodar nos browsers mais comumente utilizados (Chrome, Safari, Edge, Opera) em suas versões recentes |
-|  RNF7  | Confiabilidade  | O sistema deve apresentar uma taxa de erro de no máximo 10% durante a execução de ações |
-|  RNF8  | Desempenho      | O sistema deve apresentar um tempo médio de resposta de no máximo 4 segundos |
+| Número | Categoria       | Descrição                                                                                                                                                                                                                                                    |
+| :----: | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  RNF1  | Implementação   | O produto deve ser uma aplicação web                                                                                                                                                                                                                         |
+|  RNF2  | Usabilidade     | O produto deve ser responsivo a diferentes tamanhos de tela e dispositivos                                                                                                                                                                                   |
+|  RNF3  | Implemetação    | O front-end do produto deve ser desenvolvido utilizando react                                                                                                                                                                                                |
+|  RNF4  | Implementação   | O back-end do produto deve ser desenvolvido utilizando java                                                                                                                                                                                                  |
+|  RNF5  | Usabilidade     | A interface deve ser organizada de forma clara (Clara é: título do menu/seção indicar exatamente o que há em seu conteúdo, por exemplo: uma seção com nome "Montar meu fluxo" indica uma página onde o usuário poderá organizar as disciplinas do seu fluxo) |
+|  RNF6  | Suportabilidade | A aplicação deverá rodar nos browsers mais comumente utilizados (Chrome, Safari, Edge, Opera) em suas versões recentes                                                                                                                                       |
+|  RNF7  | Confiabilidade  | O sistema deve apresentar uma taxa de erro de no máximo 10% durante a execução de ações                                                                                                                                                                      |
+|  RNF8  | Desempenho      | O sistema deve apresentar um tempo médio de resposta de no máximo 4 segundos                                                                                                                                                                                 |
 
 
-## Definition of Ready
+## Definição de Preparado (DOR)
 - [ ] Requisito está representado por uma User Story
 - [ ] Possui critério de aceitação
-- [ ] US é INVEST
+- [ ] US é INVEST (Independent, Negotiable, Valuable, Estimable, Small and Testable)
 - [ ] US de interface gráfica tem wireframe desenhado
 - [ ] Item do backlog foi avaliado (porque é necessário? como beneficia o cliente?)
 - [ ] USs estão ordenadas por valor de negócio
 - [ ] Cabe na sprint
 
 
-## Definition of Done
+## Definição de Pronto (DOD)
 - [ ] Passa nos critérios de aceitação?
 - [ ] Atende aos Requisitos Não Funcionais?
 - [ ] Entrega um incremento do produto?
