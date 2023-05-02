@@ -1,5 +1,6 @@
 # Processo de Desenvolvimento de Software
 Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas do XP e Scrum.
+![1](docs/../../img/ScrumXP.png)
 
 ## Práticas do Scrum que serão aplicadas
 - **Daily Scrum**: Reuniões diárias para discussão de possíveis desafios e soluções apresentados pelos membros.
@@ -7,7 +8,7 @@ Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas d
 - **Sprint Restrospective**: Reunião realizada com objetivo de refletir sobre o que foi feito na sprint passada e então  identificar maneira de melhorar sprints futuras.
 - **Sprint Review**: Reunião para revisar todos os itens do backlog que foram concluídos de acordo com as definitions of ready and done, com participação de clientes.
 - **Product Backlog**:  Lista de histórias priorizadas que precisam ser desenvolvidos para atender aos objetivos do projeto.
-- 
+
 ## Práticas do XP que serão aplicadas
 
 ### No nível de programação

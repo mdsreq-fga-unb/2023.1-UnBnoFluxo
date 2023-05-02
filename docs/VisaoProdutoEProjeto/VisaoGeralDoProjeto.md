@@ -1,15 +1,15 @@
 ## Organização do Projeto
-| Papel       | Atribuições                                                                                                 | Responsável          | Participantes |
-| ----------- | ----------------------------------------------------------------------------------------------------------- | -------------------- |-------------|
-| Dev Master  | Zelar pelo funcionamento e valores do scrum dentro da equipe                                                | João Vitor           | Todos       |
-| Dev CI-Test | Buscar soluções de testes e integração continua                                                             | Vinicius             | Todos       |
-| Dev Back    | Auxiliar e liderar a equipe na implementação e soluçoes do back                                             | Israel e Pedro Paulo | Todos       |
-| Dev Front   | Auxiliar e liderar a equipe na implementação e soluçoes do front                                            | Ricardo              | Todos       |
-| Cliente     | Auxuliar e orientar a equipe sobre suas necessidades e validar as entregas parciais ao final de cada sprint | Pedro Victor, Outro, Geogrge Marsicano | Todos |
+| Papel       | Atribuições                                                                                                 | Responsável                                 | Participantes |
+| ----------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------- |
+| Dev Master  | Zelar pelo funcionamento e valores do scrum dentro da equipe                                                | João Vitor                                  | Todos         |
+| Dev CI-Test | Buscar soluções de testes e integração continua                                                             | Vinicius                                    | Todos         |
+| Dev Back    | Auxiliar e liderar a equipe na implementação e soluçoes do back                                             | Israel e Pedro Paulo                        | Todos         |
+| Dev Front   | Auxiliar e liderar a equipe na implementação e soluçoes do front                                            | Ricardo                                     | Todos         |
+| Cliente     | Auxuliar e orientar a equipe sobre suas necessidades e validar as entregas parciais ao final de cada sprint | Pedro Victor, Luis Felipe, George Marsicano | Todos         |
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 | Sprint   | Produto (Entrega)                                         | Data Início | Data Fim |
-|----------|-----------------------------------------------------------|:-----------:|:--------:|
+| -------- | --------------------------------------------------------- | :---------: | :------: |
 | Sprint 0 | Definição do Problema e solução                           |  28/03/23   | 10/04/23 |
 | Sprint 1 | Definição do Produto, projeto, técnologias e metodologia  |  10/04/23   | 20/04/23 |
 | Sprint 2 | Visão do Produto e Projeto, requisitos e Backlog          |  23/04/23   | 06/05/23 |
@@ -21,7 +21,7 @@
 
 ## Matriz de Comunicação
 | Descrição                                                                            | Área/ Envolvidos    | Periodicidade | Produtos Gerados                                                                          |
-|--------------------------------------------------------------------------------------| ------------------- | ------------- | ----------------------------------------------------------------------------------------- |
+| ------------------------------------------------------------------------------------ | ------------------- | ------------- | ----------------------------------------------------------------------------------------- |
 | - Definição de Sprint e próximos objetivos - Acompanhar o andamento geral do projeto | - Equipe do Projeto | - Quinzenal   | - Ata de reunião - Relatório de situação do projeto                                       |
 | - Discussão sobre possíveis desafios e soluções apresentados pelos membros.          |                     | - Diario      | - Daily                                                                                   |
 | - Reunião com o cliente e entrega parcial                                            | - Equipe - Cliente  | - Quinzenal   | - Ata de reunião  - Relatório de Situação do Projeto - Validação da entrega com o cliente |
