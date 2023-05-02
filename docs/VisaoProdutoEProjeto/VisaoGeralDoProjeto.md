@@ -42,3 +42,9 @@
 - Abandono de membros da equipe
 - Constante ausência de determinados membros da equipe
 - Dificuldade de uso das ferrametas de desenvolvimento predefinidas
+
+## Histórico de revisão
+|   Data   | Versão | Descrição                                                             | Autor           |
+| :------: | :----: | --------------------------------------------------------------------- | --------------- |
+| 19/04/23 |  1.0   | Criação do documento                                                  | Todos           |
+| 01/05/23 |  1.1   | Reformulando Critérios de Replanejamento e adicionando novos clientes | Ricardo e Pedro |

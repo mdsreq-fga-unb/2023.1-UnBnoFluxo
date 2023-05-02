@@ -22,21 +22,27 @@
 |  RNF4  | Implementação   | O back-end do produto deve ser desenvolvido utilizando java                                                                                                                                                                                                  |
 |  RNF5  | Usabilidade     | A interface deve ser organizada de forma clara (Clara é: título do menu/seção indicar exatamente o que há em seu conteúdo, por exemplo: uma seção com nome "Montar meu fluxo" indica uma página onde o usuário poderá organizar as disciplinas do seu fluxo) |
 |  RNF6  | Suportabilidade | A aplicação deverá rodar nos browsers mais comumente utilizados (Chrome, Safari, Edge, Opera) em suas versões recentes                                                                                                                                       |
-|  RNF7  | Confiabilidade  | O sistema deve apresentar uma taxa de erro de no máximo 10% durante a execução de ações                                                                                                                                                                      |
-|  RNF8  | Desempenho      | O sistema deve apresentar um tempo médio de resposta de no máximo 4 segundos                                                                                                                                                                                 |
+|  RNF7  | Confiabilidade  | O sistema deve apresentar uma taxa de erro de no máximo 5% durante a execução de ações                                                                                                                                                                       |
+|  RNF8  | Desempenho      | O sistema deve apresentar um tempo médio de resposta de no máximo 1000ms                                                                                                                                                                                     |
 
 
 ## Definição de Preparado (DOR)
-- [ ] Requisito está representado por uma User Story
-- [ ] Possui critério de aceitação
-- [ ] US é INVEST (Independent, Negotiable, Valuable, Estimable, Small and Testable)
-- [ ] US de interface gráfica tem wireframe desenhado
-- [ ] Item do backlog foi avaliado (porque é necessário? como beneficia o cliente?)
-- [ ] USs estão ordenadas por valor de negócio
-- [ ] Cabe na sprint
+- Requisito está representado por uma User Story
+- Possui critério de aceitação
+- US é INVEST (Independent, Negotiable, Valuable, Estimable, Small and Testable)
+- US de interface gráfica tem wireframe desenhado
+- Item do backlog foi avaliado (porque é necessário? como beneficia o cliente?)
+- USs estão ordenadas por valor de negócio
+- Cabe na sprint
 
 
 ## Definição de Pronto (DOD)
-- [ ] Passa nos critérios de aceitação?
-- [ ] Atende aos Requisitos Não Funcionais?
-- [ ] Entrega um incremento do produto?
+- Passa nos critérios de aceitação?
+- Atende aos Requisitos Não Funcionais?
+- Entrega um incremento do produto?
+
+
+## Histórico de revisão
+|   Data   | Versão | Descrição            | Autor              |
+| :------: | :----: | -------------------- | ------------------ |
+| 01/05/23 |  1.0   | Criação do documento | Ricardo e Vinicius |

@@ -33,3 +33,10 @@ Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas d
 - **Testes de Cliente:** Devido à falta de tempo e recursos do cliente para escrever testes para cada história, não será possível aplicar essa prática no projeto.
 - **Metáfora:** Acreditamos que a criação de uma metáfora pode ser difícil, especialmente considerando que a aplicação não se encaixa bem em uma metáfora. Também consideramos que o cliente escolhido também é um dev, logo a metáfora deixa de ser tão necessária na relação Equipe Scrum e PO.
 - **Toda a Equipe:** Devido a dificuldades de horários, não será possível implementar a prática de toda a equipe. No entanto, vamos buscar formas de colaboração e integração em níveis menores, garantindo que todos possam contribuir para o sucesso do projeto.
+
+
+## Histórico de revisão
+|   Data   | Versão | Descrição                                        | Autor           |
+| :------: | :----: | ------------------------------------------------ | --------------- |
+| 19/04/23 |  1.0   | Criação da documentação                          | Todos           |
+| 01/05/23 |  1.1   | Adicionando práticas do Scrum e Diagrama ScrumXP | Ricardo e Pedro |
