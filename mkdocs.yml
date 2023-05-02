@@ -59,13 +59,15 @@ theme:
 
 # Page tree
 nav: 
-  - Página inicial: index.md
+  - Início: index.md
   - Visão do produto e projeto:
     - Visão geral do produto: VisaoProdutoEProjeto/VisaoGeralDoProduto.md
     - Visão geral do projeto: VisaoProdutoEProjeto/VisaoGeralDoProjeto.md
     - Processo de desenvolvimento de software: VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware.md
     - Lições aprendidas: VisaoProdutoEProjeto/LicoesAprendidas.md
     - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
-  - Seminários:
+  - Backlog do produto: Backlog.md
+  - Registro de sprints:
+    - Sprint 1: Sprints/Sprint01.md
+  - Entregas das unidades:
     - Unidade 01: Seminarios/Unidade01.md
-  - Historico de revisão: HistoricoDeRevisao.md
