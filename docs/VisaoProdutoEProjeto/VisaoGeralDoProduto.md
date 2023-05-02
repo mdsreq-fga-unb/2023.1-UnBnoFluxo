@@ -1,7 +1,7 @@
 ## O Problema
 Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 
-![UnBNoFluxo - Apresentação de projeto](https://user-images.githubusercontent.com/60819460/233812150-fa14250d-1239-42b7-9578-2322e9882108.png)
+![UnBNoFluxo - Apresentação de projeto](docs/../../img/Ishikawa.png)
 
 ##	Declaração de Posição do Produto
 

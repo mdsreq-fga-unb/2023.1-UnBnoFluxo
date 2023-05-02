@@ -1,9 +1,18 @@
 # Processo de Desenvolvimento de Software
-Nossa metodologia de desenvolvimento é simples, vai ser utilizado tecnicas como Integração Contínua, refatoração, pequenos releases, ritmo sustentável, e outras técnicas no diagrama. Desenvolvendo a RestAPI, precisamos de um endpoint para acessar os cursos do usuário(ex: api.unbfluxo.com/userdata) assim é realizado o teste para ver se a api está funcionando da maneira correta, com testes unitários etc. Durante o desenvolvimento dessa RestAPI é feito a integração junto aos membros responsáveis pelo desenvolvimento front-end no momento, e é feito a integração completa da aplicação junto de testes, e uma pequena liberação.
+Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas do XP e Scrum.
+![1](docs/../../img/ScrumXP.png)
+
+## Práticas do Scrum que serão aplicadas
+- **Daily Scrum**: Reuniões diárias para discussão de possíveis desafios e soluções apresentados pelos membros.
+- **Sprint Planning**: Reunião realizada no inicio de cada sprint, para definir os itens do backlog que serão desenvolvidos na sprint.
+- **Sprint Restrospective**: Reunião realizada com objetivo de refletir sobre o que foi feito na sprint passada e então  identificar maneira de melhorar sprints futuras.
+- **Sprint Review**: Reunião para revisar todos os itens do backlog que foram concluídos de acordo com as definitions of ready and done, com participação de clientes.
+- **Product Backlog**:  Lista de histórias priorizadas que precisam ser desenvolvidos para atender aos objetivos do projeto.
 
 ## Práticas do XP que serão aplicadas
 
 ### No nível de programação
+- **Programação em Pares:** Toda produção de código é feita por dois programadores, lado a lado. Essa prática garante que o código de produção seja revisado por pelo menos um outro programador e acaba resultando com melhor qualidade.
 - **Refatoração:** A refatoração será importante para ajudar a manter o código limpo e de fácil manutenção. Para isso, estaremos sempre que possível fazendo pequenas melhorias técnicas no código, diminuindo o número de "gambiarras" e soluções provisórias pelo código, assim seremos capazes de reduzir o tempo necessário para corrigir problemas.
 - **Design Simples:** Com o design simples queremos garantir que o código seja fácil de entender e manter. Ao evitar a criação de soluções mais complicadas que o necessário, esperamos reduzir o tempo de correção de problemas e agregar valor à aplicação.
 - **Padrão de Codificação:** Ao definir um padrão de codificação queremos garantir que o código seja legível, consistente e compreensível por toda a equipe. Assim, ao saber dos padrões do projeto também conseguiremos facilitar algumas práticas do nível de equipe.
@@ -20,10 +29,7 @@ Nossa metodologia de desenvolvimento é simples, vai ser utilizado tecnicas como
 
 ## Práticas do XP que não serão aplicadas
 
-- **Programação em Pares:** Não será utilizada primariamente devido a dificuldade de conseguir horários comuns. E também devido à termos um nível de habilidade entre os membros desigual, logo o trabalho em par não seria tão vantajoso.
 - **Desenvolvimento Dirigido por Testes:** Consideramos essa prática complexa demais se comparado aos seus benefícios, também levamos em conta que ninguém tem uma experiência prévia com TDD, muito provável que passaríamos mais tempo criando testes do que desenvolvendo do próprio código.
 - **Testes de Cliente:** Devido à falta de tempo e recursos do cliente para escrever testes para cada história, não será possível aplicar essa prática no projeto.
 - **Metáfora:** Acreditamos que a criação de uma metáfora pode ser difícil, especialmente considerando que a aplicação não se encaixa bem em uma metáfora. Também consideramos que o cliente escolhido também é um dev, logo a metáfora deixa de ser tão necessária na relação Equipe Scrum e PO.
 - **Toda a Equipe:** Devido a dificuldades de horários, não será possível implementar a prática de toda a equipe. No entanto, vamos buscar formas de colaboração e integração em níveis menores, garantindo que todos possam contribuir para o sucesso do projeto.
-
-![image](https://user-images.githubusercontent.com/56891617/233232143-f597a631-20d6-426b-8188-6f34de400b8e.png)
