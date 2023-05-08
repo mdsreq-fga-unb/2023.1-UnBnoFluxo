@@ -1,8 +1,11 @@
+## Personas
+- **Estudante:** é o usuário principal da aplicação, refere-se ao estudante da Universidade de Brasilia que deseja fazer o seu planejamento de fluxo.
+
 ## Requisitos funcionais
-| Número | Descrição                                                                                                                                                                                  |
-| :----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Número | Descrição                                                                                                                                                                                    |
+| :----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |  US01  | Como estudante, quero ter a minha disposição o fluxograma padrão da universidade já montado, para não precisar fazer esse trabalho manualmente                                               |
-|  US02  | Como estudante, quero poder fazer upload de um fluxograma que já montei ou editei anteriormente para que eu não perca meu progresso anterior                                                 |
+|  US02  | Como estudante, quero poder fazer upload de um fluxograma que já modifiquei anteriormente para que eu não perca meu progresso anterior                                                       |
 |  US03  | Como estudante, gostaria de poder iniciar um fluxograma em branco para o caso do meu fluxograma não estar disponível                                                                         |
 |  US04  | Como estudante, quero poder mesclar o fluxograma de diferentes cursos para o caso de eu estiver fazendo mudança de curso ou dupla graduação                                                  |
 |  US05  | Como estudante, quero poder reorganizar as disciplinas movendo-as de um período para outro para ajudar meu planejamento futuro                                                               |
