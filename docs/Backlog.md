@@ -47,6 +47,26 @@ Uma persona é o personagem fictício da user story que representa o usuário id
 - Atende aos Requisitos Não Funcionais?
 - Entrega um incremento do produto?
 
+## MVP1
+| Prioridade | User Story                                       |
+| ---------- | ------------------------------------------------ |
+|            | [US01] Disponibilizar fluxograma padrão          |
+|            | [US03] Iniciar fluxograma em branco              |
+|            | [US04] Mesclar fluxograma                        |
+|            | [US02] Upload de fluxograma                      |
+|            | [US11] Download de fluxograma                    |
+|            | [US07] Visualizar obrigatoriedade de componentes |
+
+## MVP2
+| Prioridade | User Story                                 |
+| ---------- | ------------------------------------------ |
+|            | [US10] Editar componente curricular        |
+|            | [US09] Criar componente curricular         |
+|            | [US05] Reordernar componentes curriculares |
+|            | [US06] Visualizar requisitos               |
+|            | [US08] Visualizar carga horária            |
+|            | [US12] Pesquisar componente curricular     |
+
 
 ## Histórico de revisão
 |   Data   | Versão | Descrição            | Autor              |
