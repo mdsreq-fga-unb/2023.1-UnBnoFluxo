@@ -1,20 +1,22 @@
 ## Personas
+Uma persona é o personagem fictício da user story que representa o usuário ideal do produto. Todas as histórias são escritas a partir da perspectiva de um tipo de usuário.
+
 - **Estudante:** é o usuário principal da aplicação, refere-se ao estudante da Universidade de Brasilia que deseja fazer o seu planejamento de fluxo.
 
 ## Requisitos funcionais
-| Número | Descrição                                                                                                                                                                                    |
-| :----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  US01  | Como estudante, quero ter a minha disposição o fluxograma padrão da universidade já montado, para não precisar fazer esse trabalho manualmente                                               |
-|  US02  | Como estudante, quero poder fazer upload de um fluxograma que já modifiquei anteriormente para que eu não perca meu progresso anterior                                                       |
-|  US03  | Como estudante, gostaria de poder iniciar um fluxograma em branco para o caso do meu fluxograma não estar disponível                                                                         |
-|  US04  | Como estudante, quero poder mesclar o fluxograma de diferentes cursos para o caso de eu estiver fazendo mudança de curso ou dupla graduação                                                  |
-|  US05  | Como estudante, quero poder reorganizar as disciplinas movendo-as de um período para outro para ajudar meu planejamento futuro                                                               |
-|  US06  | Como estudante, quero poder visualizar o fluxo de um determinado componente curricular, isto é, seus pré-requisitos e co-requisitos, para poder entender melhor qual preciso cursar primeiro |
-|  US07  | Como estudante, quero poder visualizar o que é um componente curricular optativo ou obrigatório para me ajudar na priorização dos mesmos                                                     |
-|  US08  | Como estudante, quero poder visualizar a soma da carga horária de determinado período para não ser necessário fazer essa soma manualmente                                                    |
-|  US09  | Como estudante, quero poder criar um componente curricular para o caso de componentes como de módulo livre, monitorias e EJs, que não aparecem no fluxograma padrão da universidade.         |
-|  US10  | Como estudante, quero poder editar os dados de um componente curricular para o caso do fluxograma não estar atualizado ou mudar                                                              |
-|  US11  | Como estudante, quero poder fazer download do fluxograma que montei para não perder meu progresso                                                                                            |
+| Número | Nome                                      | Descrição                                                                                                                                                                            |
+| :----: | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  US01  | Disponibilizar fluxograma padrão          | Como estudante, quero ter a minha disposição o fluxograma padrão da universidade já montado, para não precisar fazer esse trabalho manualmente                                       |
+|  US02  | Upload de fluxograma                      | Como estudante, quero poder fazer upload de um fluxograma que já modifiquei para não perder meu progresso anterior.                                                                  |
+|  US03  | Iniciar fluxograma em branco              | Como estudante, quero poder iniciar um fluxograma em branco para o caso do meu fluxograma não estar disponível                                                                       |
+|  US04  | Mesclar fluxograma                        | Como estudante, quero poder mesclar o fluxograma de diferentes cursos para o caso de eu estiver fazendo mudança de curso ou dupla graduação                                          |
+|  US05  | Reordernar componentes curriculares       | Como estudante, quero poder reorganizar os componentes curriculares movendo-os de um período para outro para ajudar meu planejamento futuro                                          |
+|  US06  | Visualizar requisitos                     | Como estudante, quero poder visualizar a cadeia de requisitos de um determinado componente curricular para poder entender melhor qual preciso cursar primeiro                        |
+|  US07  | Visualizar obrigatoriedade de componentes | Como estudante, quero poder visualizar o que é um componente curricular optativo ou obrigatório para me ajudar na priorização dos mesmos                                             |
+|  US08  | Visualizar carga horária                  | Como estudante, quero poder visualizar a soma da carga horária de determinado período para não ser necessário fazer essa soma manualmente                                            |
+|  US09  | Criar componente curricular               | Como estudante, quero poder criar um componente curricular para o caso de componentes como de módulo livre, monitorias e EJs, que não aparecem no fluxograma padrão da universidade. |
+|  US10  | Editar componente curricular              | Como estudante, quero poder editar os dados de um componente curricular para o caso do fluxograma não estar atualizado ou mudar                                                      |
+|  US11  | Download de fluxograma                    | Como estudante, quero poder fazer download do fluxograma que montei para não perder meu progresso                                                                                    |
 
 ## Requisitos não-funcionais
 | Número | Categoria       | Descrição                                                                                                                                                                                                                                                    |
