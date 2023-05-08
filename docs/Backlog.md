@@ -69,6 +69,7 @@ Uma persona é o personagem fictício da user story que representa o usuário id
 
 
 ## Histórico de revisão
-|   Data   | Versão | Descrição            | Autor              |
-| :------: | :----: | -------------------- | ------------------ |
-| 01/05/23 |  1.0   | Criação do documento | Ricardo e Vinicius |
+|   Data   | Versão | Descrição               | Autor              |
+| :------: | :----: | ----------------------- | ------------------ |
+| 01/05/23 |  1.0   | Criação do documento    | Ricardo e Vinicius |
+| 08/05/23 |  1.1   | Proposta de MVP1 e MVP2 | Todos              |
