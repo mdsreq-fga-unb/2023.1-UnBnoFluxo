@@ -1,11 +1,12 @@
-## Arquitetura do Projeto
+# Arquitetura e Interface
+
+## Arquitetura do projeto
 - Para o **frontend**: Será utilizada uma arquitetura do tipo *Single Page Application (SPA)* com estilo *Component-Based Architecture* seguindo o padrão da estrutura de desenvolvimento web baseada em React, Next.js. Além de ser uma aquitetura amplamente utilizada no mercado quando se diz respeito à React, essa escolha foi feita por proporcionar uma experiência de usuário aprimorada pela sua fluidez e responsividade, facilitades em reutilização de código, modularidade e manutenção.
 
 - Para o **backend**:
 
 
-## Interface
-
+## Interface do projeto
 ### Público alvo
 O UnBnoFluxo é voltado para os estudantes de Graduação da Universidade de Brasília que, segundo o Censo da Educação Superior de 2018, se refere à 83,9% de pessoas com menos de 24 anos.
 

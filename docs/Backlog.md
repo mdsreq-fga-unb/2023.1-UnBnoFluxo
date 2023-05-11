@@ -1,11 +1,11 @@
+# Backlog
+
 ## Personas
 Uma persona é o personagem fictício da user story que representa o usuário ideal do produto. Todas as histórias são escritas a partir da perspectiva de um tipo de usuário.
-
 - **Estudante:** é o usuário principal da aplicação, refere-se ao estudante da Universidade de Brasilia que deseja fazer o seu planejamento de fluxo.
 
 ## Requisitos funcionais
 Um requisito funcional é uma especificação de uma funcionalidade ou comportamento que um sistema ou software deve ser capaz de realizar. No caso do UnBnoFluxo esses requisitos serão modelados usando o modelo de Histórias de Usuário (US).
-
 **Obs:** A *Pontuação*(pts) é calculada com base nos critérios de viabilidade (v), complexidade (c) e valor de negócio (vn) da US referida. É atribuido para cada critério valores de 1 a 3 e realizada a equação:
 $$pts =  \frac{v \cdot vn}{c}$$
 
@@ -57,24 +57,24 @@ Um requisito não funcional é uma especificação de uma característica ou pro
 - Entrega um incremento do produto?
 
 ## MVP1
-| User Story                                       |
-| ------------------------------------------------ |
-| [US01] Disponibilizar fluxograma padrão          |
-| [US03] Iniciar fluxograma em branco              |
-| [US04] Mesclar fluxograma                        |
-| [US02] Upload de fluxograma                      |
-| [US11] Download de fluxograma                    |
-| [US07] Visualizar obrigatoriedade de componentes |
+| User Story                                       | Sprint |
+| ------------------------------------------------ | :----: |
+| [US01] Disponibilizar fluxograma padrão          |   5    |
+| [US03] Iniciar fluxograma em branco              |   5    |
+| [US04] Mesclar fluxograma                        |   6    |
+| [US02] Upload de fluxograma                      |   6    |
+| [US11] Download de fluxograma                    |   6    |
+| [US07] Visualizar obrigatoriedade de componentes |   6    |
 
 ## MVP2
-| User Story                                 |
-| ------------------------------------------ |
-| [US10] Editar componente curricular        |
-| [US09] Criar componente curricular         |
-| [US05] Reordernar componentes curriculares |
-| [US06] Visualizar requisitos               |
-| [US08] Visualizar carga horária            |
-| [US12] Pesquisar componente curricular     |
+| User Story                                 | Sprint |
+| ------------------------------------------ | :----: |
+| [US10] Editar componente curricular        |   7    |
+| [US09] Criar componente curricular         |   7    |
+| [US05] Reordernar componentes curriculares |   7    |
+| [US06] Visualizar requisitos               |   8    |
+| [US08] Visualizar carga horária            |   8    |
+| [US12] Pesquisar componente curricular     |   8    |
 
 
 ## Histórico de revisão
