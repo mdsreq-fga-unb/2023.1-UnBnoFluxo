@@ -1,4 +1,4 @@
-# Lições aprendidas
+# Lições Aprendidas
 
 ## Unidade 01
 Em primeira análise, é viável mencionar o fato de o grupo ser bem diversificado, cada integrante possui facilidade em diferentes tecnologias, fator que nos dificultou definir a sprint backlog. Porém, através da sprint review, por meio de votações, conseguimos nos organizar e ter uma excelente retrospectiva.

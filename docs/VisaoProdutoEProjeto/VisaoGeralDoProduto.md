@@ -1,9 +1,11 @@
-## O Problema
+# Visão Geral do Produto
+
+## O problema
 Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 
 ![UnBNoFluxo - Apresentação de projeto](docs/../../img/Ishikawa.png)
 
-##	Declaração de Posição do Produto
+##	Declaração de posição do produto
 |               |                                                                                                                              |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Para          | os alunos do curso de Engenharia de Software da Universidade de Brasília                                                     |
@@ -13,10 +15,10 @@ Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 | Ao contrário  | do fluxograma padrão                                                                                                         |
 | Nosso produto | oferece personalização e interatividade de forma organizada e intuitiva                                                      |
 
-## Objetivos do Produto
+## Objetivos do produto
 Facilitar o planejamento e a organização do fluxo de disciplinas do usuário (aluno)
 
-## Tecnologias a Serem Utilizadas
+## Tecnologias a serem utilizadas
 **Para o frontend:** React; ![logo-react-256](https://user-images.githubusercontent.com/60819460/233812583-5abd8a5d-aba5-4718-9465-e1a35474e258.png) 
 
 **Para o backend:** Java, Rest API; ![Java_logo (4)](https://user-images.githubusercontent.com/60819460/233813519-623d1fbf-b804-4699-a2ad-bc752b5a4369.png)
