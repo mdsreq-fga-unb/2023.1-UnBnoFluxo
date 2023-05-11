@@ -3,7 +3,7 @@
 ## Arquitetura do projeto
 - Para o **frontend**: Será utilizada uma arquitetura do tipo *Single Page Application (SPA)* com estilo *Component-Based Architecture* seguindo o padrão da estrutura de desenvolvimento web baseada em React, Next.js. Além de ser uma aquitetura amplamente utilizada no mercado quando se diz respeito à React, essa escolha foi feita por proporcionar uma experiência de usuário aprimorada pela sua fluidez e responsividade, facilitades em reutilização de código, modularidade e manutenção.
 
-- Para o **backend**:
+- Para o **backend**: Será utilizada a arquitetura monolítica (Aplicação singular), e padrão MVC (Model-View-Controller) no projeto.
 
 
 ## Interface do projeto
