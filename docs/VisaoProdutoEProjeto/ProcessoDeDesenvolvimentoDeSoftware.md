@@ -1,4 +1,4 @@
-# Processo de Desenvolvimento de Software
+# Processo de desenvolvimento de software
 Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas do XP e Scrum.
 ![1](docs/../../img/ScrumXP.png)
 
