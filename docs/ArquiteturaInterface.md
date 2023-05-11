@@ -12,9 +12,13 @@ O UnBnoFluxo é voltado para os estudantes de Graduação da Universidade de Bra
 
 ### Estrutura da interface e navegabilidade
 A interface será organizada majoritariamente em uma aplicação de página única dividida em 3 partes:
+
 - **Barra de navegação:** Fixada no topo da página, para ajudar a navegabilidade, além de servir de recipiente para botões de para funcionalidades úteis na respectiva "altura" da página. 
+  
 - **Conteúdo:** Localizada ao centro da página onde será exibido o fluxograma.
+  
 - **Rodapé:** Localizado na parte inferior da página, conterá informações úteis como direitos autorais, informações de contato, entre outros.
+
 Além disso a aplicação também contará com uma **Caixa de dialogo** que exibirá informações detalhadas sobre o componente curricular referente ao qual ela foi gerada.
 
 ### Paleta de cores
