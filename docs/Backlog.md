@@ -24,7 +24,7 @@ pts =  v + c + vn
 |  US05  | Reordernar componentes curriculares       | Como estudante quero poder reorganizar os componentes curriculares movendo-os de um período para outro para ajudar meu planejamento futuro                                                                      |        3         |      2      |      3       |     8     |
 |  US08  | Visualizar carga horária                  | Como estudante quero poder visualizar a soma da carga horária de determinado período para saber se estou dentro dos limites de carga horária por período da faculdade                                           |        3         |      3      |      2       |     8     |
 |  US07  | Visualizar obrigatoriedade de componentes | Como estudante quero poder visualizar o que é um componente curricular optativo ou obrigatório para me ajudar na priorização dos mesmos                                                                         |        3         |      3      |      2       |     8     |
-|  US12  | Pesquisar componente curricular           | Como estudante quero poder pesquisar por um componente curricular em específico para adicioná-lo facilmente em meu fluxograma                                                                                   |        3         |      3      |      2       |     8     |
+|  US12  | Pesquisar componente curricular           | Como estudante quero poder pesquisar por um componente curricular em específico para adicioná-lo em meu fluxograma                                                                                   |        3         |      3      |      2       |     8     |
 |  US13  | Marcar materia como reprovada             | Como estudante quero poder marcar uma componente curricular como "reprovado" para que saber quais componentes curriculares ainda preciso cursar                                                                 |        3         |      3      |      2       |     8     |
 |  US13  | Marcar materia como concluida             | Como estudante quero poder marcar uma componente curricular como "concluído" para que ele seja contabilizado na carga horária dos componentes curriculares que ja cursei                                        |        3         |      3      |      2       |     8     |
 |  US09  | Criar componente curricular               | Como estudante quero poder criar um componente curricular para poder contabilizar a carga horária de componentes como de módulo livre, monitorias e EJs, que não aparecem no fluxograma padrão da universidade. |        3         |      3      |      1       |     7     |
@@ -51,19 +51,44 @@ Um requisito não funcional é uma especificação de uma característica ou pro
 
 
 ## Definição de Preparado (DOR)
-- Requisito está representado por uma User Story
-- Possui critério de aceitação
-- US é INVEST (Independent, Negotiable, Valuable, Estimable, Small and Testable)
-- US de interface gráfica tem wireframe desenhado
-- Item do backlog foi avaliado (porque é necessário? como beneficia o cliente?)
-- USs estão ordenadas por valor de negócio
-- Cabe na sprint
+Acordo entre o time e o PO indicando quando um requisito estará preparado para ser puxado para uma Sprint.
+Para saber se o requisito esta pronto, faz-se as perguntas a seguir:
+- O Requisito está representado por uma história de usuário?
+- O Requisito está coberto por critérios de aceite & BDD?
+- O Requisito está mapeado para uma interface (quando necessário)?
+- As dependências do Requisito estão identificadas (se houver)?
+
 
 
 ## Definição de Pronto (DOD)
-- Passa nos critérios de aceitação?
-- Atende aos Requisitos Não Funcionais?
+Acordo que demonstra a qualidade do Requisito produzido, na qual “Done” comprova a satisfação de todos com 
+o trabalho realizado.
+- Se um Requisito não atende ao “Done”, ele não deve ser liberado ou mesmo apresentado na Sprint Review.
 - Entrega um incremento do produto?
+- Contempla os critérios de aceite estabelecidos?
+- Está documentado para uso?
+- Está aderente aos padrões de codificação?
+- Mantém os índices de performance do produto?
+
+## Critérios de aceitação
+
+| Número | Nome                                      | Critério de aceitação                                                                                                                                                               | total |
+| :----: | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------|
+|  US04  | Mesclar fluxograma                        | Como estudante quero poder      ...                                                                                                                                                    | 9     |
+|  US11  | Download de fluxograma                    | Como estudante quero poder      ...                                                                                                                                                  | 9     |
+|  US02  | Upload de fluxograma                      | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US06  | Visualizar requisitos                     | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US07  | Visualizar obrigatoriedade de componentes | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US09  | Criar componente curricular               | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US10  | Editar componente curricular              | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US12  | Pesquisar componente curricular           | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US13  | Marcar materia como reprovada             | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US13  | Marcar materia como concluida             | Como estudante quero poder      ...                                                                                                                                                   | 8     |
+|  US15  | Adicionar apelido para materia            | Como estudante quero poder      ...                                                                                                                                                    | 8     |
+|  US05  | Reordernar componentes curriculares       | Como estudante quero poder      ...                                                                                                                                                    | 7     |
+|  US08  | Visualizar carga horária                  | Como estudante quero poder      ...                                                                                                                                                    | 7     |
+|  US01  | Disponibilizar fluxograma padrão          | Como estudante quero poder      ...                                                                                                                                                    | 4     |
+
 
 ## MVP1
 | User Story                                       | Sprint |
