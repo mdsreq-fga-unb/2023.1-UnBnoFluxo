@@ -9,6 +9,7 @@ Uma persona é o personagem fictício da user story que representa o usuário id
 ## Requisitos funcionais
 Um requisito funcional é uma especificação de uma funcionalidade ou comportamento que um sistema ou software deve ser capaz de realizar. No caso do UnBnoFluxo esses requisitos serão modelados usando o modelo de Histórias de Usuário (US).
 
+
 **Obs:** A *Pontuação* (pts) é calculado com base nos critérios de viabilidade (v), complexidade (c) e valor de negócio (vn) da US referida. É atribuido para cada critério valores de 1 a 3 e realizada a equação:
 
 ```
