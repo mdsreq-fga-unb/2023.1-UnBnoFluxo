@@ -7,8 +7,77 @@ Uma persona é o personagem fictício da user story que representa o usuário id
 
 
 ## Requisitos funcionais
-Um requisito funcional é uma especificação de uma funcionalidade ou comportamento que um sistema ou software deve ser capaz de realizar. No caso do UnBnoFluxo esses requisitos serão modelados usando o modelo de Histórias de Usuário (US).
+Um requisito funcional é uma especificação de uma funcionalidade ou comportamento que um sistema ou software deve ser capaz de realizar. No caso do UnBnoFluxo esses requisitos serão modelados usando o modelo de Histórias de Usuário (US), Épicos (EP) e Temas (TM).
 
+
+<table>
+    <thead>
+        <tr>
+            <th>Tema</th>
+            <th>Épico</th>
+            <th>User Story</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6">TM01 - Gerenciamento de Fluxogramas</td>
+            <td rowspan="3">EP01 - Criação e Edição de Fluxogramas</td>
+            <td>US02 - Upload de fluxograma</td>
+        </tr>
+        <tr>
+            <td>US03 - Iniciar fluxograma em branco</td>
+        </tr>
+        <tr>
+            <td>US04 - Mesclar fluxograma</td>
+        </tr>
+        <tr>
+            <td rowspan="3">EP02 - Visualização e Organização de Fluxogramas</td>
+            <td>US01 - Disponibilizar fluxograma padrão</td>
+        </tr>
+        <tr>
+            <td>US05 - Reordenar componentes curriculares</td>
+        </tr>
+        <tr>
+            <td>US11 - Download de fluxograma</td>
+        </tr>
+        <tr>
+            <td rowspan="4">TM02 - Informações e Acompanhamento</td>
+            <td rowspan="2">EP03 - Visualização e Acompanhamento de Disciplinas</td>
+            <td>US06 - Visualizar requisitos</td>
+        </tr>
+        <tr>
+            <td>US07 - Visualizar obrigatoriedade de componentes</td>
+        </tr>
+        <tr>
+            <td rowspan="2">EP04 - Acompanhamento e Progresso do Curso</td>
+            <td>US08 - Visualizar carga horária</td>
+        </tr>
+        <tr>
+            <td>US15 - Exibir percentual do curso</td>
+        </tr>
+        <tr>
+            <td rowspan="5">TM03 - Gestão de Componentes Curriculares</td>
+            <td rowspan="2">EP05 - Criação e Edição de Componentes Curriculares</td>
+            <td>US09 - Criar componente curricular</td>
+        </tr>
+        <tr>
+            <td>US10 - Editar componente curricular</td>
+        </tr>
+        <tr>
+            <td rowspan="3">EP06 - Organização e Classificação de Componentes Curriculares</td>
+            <td>US12 - Pesquisar componente curricular</td>
+        </tr>
+        <tr>
+            <td>US13 - Marcar matéria como concluída</td>
+        </tr>
+        <tr>
+            <td>US14 - Apelidar componente curricular</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## Priorização de Histórias de Usuário
 
 **Obs:** A *Pontuação* (pts) é calculado com base nos critérios de viabilidade (v), complexidade (c) e valor de negócio (vn) da US referida. É atribuido para cada critério valores de 1 a 3 e realizada a equação:
 
@@ -123,3 +192,4 @@ Para saber se o requisito está pronto, faz-se as perguntas a seguir:
 | 01/05/23 |  1.0   | Criação do documento    | Ricardo e Vinicius |
 | 08/05/23 |  1.1   | Proposta de MVP1 e MVP2 | Todos              |
 | 10/05/23 |  1.2   | Priorização no backlog  | Ricardo e João     |
+| 15/05/23 |  1.3   | Critérios de aceite e divisão de Temas, Épicos e USs  | Ricardo e Vinícius     |
