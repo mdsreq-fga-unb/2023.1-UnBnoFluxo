@@ -53,6 +53,7 @@ Um requisito não funcional é uma especificação de uma característica ou pro
 ## Definição de Preparado (DOR)
 Acordo entre o time e o PO indicando quando um requisito estará preparado para ser puxado para uma Sprint.
 Para saber se o requisito está preparado, faz-se as perguntas a seguir:
+
 - O Requisito está representado por uma história de usuário?
 - O Requisito está coberto por critérios de aceite & BDD?
 - O Requisito está mapeado para uma interface (quando necessário)?
@@ -64,6 +65,7 @@ Para saber se o requisito está preparado, faz-se as perguntas a seguir:
 Acordo que demonstra a qualidade do Requisito produzido, na qual “Done” comprova a satisfação de todos com 
 o trabalho realizado. Se um Requisito não atende ao “Done”, ele não deve ser liberado ou mesmo apresentado na Sprint Review.
 Para saber se o requisito está pronto, faz-se as perguntas a seguir:
+
 - Entrega um incremento do produto?
 - Contempla os critérios de aceite estabelecidos?
 - Está documentado para uso?
