@@ -1,0 +1,3 @@
+## Workflow
+  Um workflow é uma rotina de testes (jobs) que é ativada a partir de alguma ação (por exemplo: um commit) e executa um passo-a-passo (steps) que validará o funcionamento de uma determinada funcionalidade.
+  Para este projeto, a equipe FluxoSquad irá utilizar ....
