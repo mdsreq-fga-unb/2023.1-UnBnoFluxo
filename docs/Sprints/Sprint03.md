@@ -1,38 +1,58 @@
 # Sprint 3
 
+## Visão Geral
+
+| Início |  Fim   | Duração |
+| :----: | :----: | :----:  |
+|23/04/23|06/05/23|2 semanas|
+
 ## Sprint Planning
-**QUEM É O SCRUM MASTER DA SPRINT?**
-- João Víctor Costa Andrade
+**PAPEIS**
+| Papel       | Responsável                                 |
+| ----------- | ------------------------------------------- |
+| Dev Master  | João Victor                                 |
+| Dev CI-Test | Vinicius                                    |
+| Dev Back    | Israel e Pedro Paulo                        |
+| Dev Front   | Ricardo                                     |
+| Cliente     | Pedro Victor, Luis Felipe, George Marsicano |
 
 
-**QUAIS DESEJAMOS QUE SEJAM OS RESULTADOS DESSA SPRINT E QUAIS SÃO AS IMPORTÂNCIAS DELES?**
-- Desejamos obter uma visão ampla do produto e do projeto definindo e dividindo bem os requisitos e não-funcionais. Construindo 
-assim um Backlog bem estruturado e priorizado
+**OBJETIVOS DA SPRINT**
+- Definir projeto
+- Dividir e definir os requisitos funcionais e não-funcionais
+- Construir um Backlog priorizado
 
-**COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
-- Estudando o conteudo disponibilizado pelo professor, fazendo suposições por meio do que pretendemos entregar e absorvendo sugestões
-também entregues pelo professor.
-
+| Atividade                                                             | Quem                 |
+| --------------------------------------------------------------------- | -------------------- |
+| Construção de tabelas, estruturas para preenchimento                  | Ricardo              |
+| Sugerir, Definir e ajustar Backlog e requisitos                       | Todos                |
 
 ## Sprint Review
-**O CLIENTE FICOU SATISFEITO COM OS RESULTADOS?**
-- Sim
+**ENTREGAS**
+- Proposta de Backlog
+- Proposta de requisitos
 
-**O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ ALGUM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
+**NÃO FOI ENTREGUE**
+- Visao do produto atualizado
+
+**O cliente deu alguma sugestão ou fez um novo pedido que possa melhorar o projeto?**
 - Sim, ele nos sugeriu a possibilidade de apelidar uma matéria do fluxo com um nome que ele quisesse, afim de por nomes comuns usados por
 alunos. ex: uma matéria que se chama "Calculo 1" o usuário poder chama-la de "C1".
 
 ## Sprint Retrospective
-**O QUE FUNCIONOU DURANTE ESSA SPRINT E O QUE DEVEMOS CONTINUAR FAZENDO?**
-- As reuniões definindo os requisitos e a priorização do backlog funcionou bem, todos contribuiram. Devemos continuar tendo compromisso com o
-projeto, contribuindo com sugestões de melhoria.
+**Oque usamos nessa sprint que devemos continuar praticando?**
+- Ritmo sustentável (nao deixar pra ultima hora)
+- Integração contínua (sempre estar revisando e ajustando)
+- Pequenas liberações (demonstrações ao cliente)
+- Planejamento do jogo (priorização do backlog)
+- Propriedade coletiva (todos se ajudam)
 
-**O QUE NÃO FUNCIONOU E O QUE DEVEMOS MUDAR?**
-- Não conseguimos reuniões com todos presentes.
-
-**O QUE PODEMOS FAZER DE DIFERENTE NA PRÓXIMA SPRINT PARA MELHORAR NOSSOS RESULTADOS?**
-- Dedicar mais tempo no detalhes em definições que precisam de explicação. Como a definiçao de um requisito, fazendo uma explicação bem detalhada de forma
-que a maioria entenda ao ler.
+**O que não praticamos que devemos mudar?**
+- Nao foram usados devido o fato de nao estarmos na unidade de desenvolvimento e implementação:
+    - Programação em Pares
+    - Refatoração
+    - Design Simples
+    - Padrão de Codificação
 
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
-- como definir um requisito e como coloca-lo no backlog. Dividindo em tema, epico e historia.
+- como definir um requisito e coloca-lo no backlog. Dividindo-os em temas, epicos e historias.

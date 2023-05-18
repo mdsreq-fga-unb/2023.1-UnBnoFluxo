@@ -5,7 +5,7 @@ Em primeira análise, é viável mencionar o fato de o grupo ser bem diversifica
 Por fim, pode-se mencionar uma possível melhoria individual: Mais estudo sobre o assunto abordado nas unidades é algo imprescindível. Um detalhe que nos custou uma apresentação sem 100% de aproveitamento em uma das entregas das sprints. Entretanto, nos serviu de lição e esperamos que não aconteça novamente.
 
 ## Unidade 02
-Foi notável a melhoria no desenvolvimento da equipe, houveram alguns problemas em relação a conciliação de horarios de todos para que pudessimos realizar as sprints 3 e 4. Porém, as entregas foram efetuadas com sucesso. Não houve problemas em na área da falta de contribuição de algum integrante, todos foram essenciais na construção do backlog, mvps, interface e definição de arquitetura.
+Foi notável a melhoria no desenvolvimento da equipe, houveram alguns problemas em relação a conciliação de horarios de todos para que pudessimos realizar as sprints 3 e 4. Porém, as entregas foram efetuadas com sucesso. Não houve problemas na área da falta de contribuição de algum integrante, todos foram essenciais na construção do backlog, mvps, interface e definição de arquitetura.
 
 ## Histórico de revisão
 |   Data   | Versão | Descrição            | Autor |

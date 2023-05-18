@@ -1,33 +1,68 @@
-# Sprint 3
+# Sprint 4
+
+## Visão Geral
+
+| Início |  Fim   | Duração |
+| :----: | :----: | :----:  |
+|06/05/23|18/05/23|2 semanas|
+
 
 ## Sprint Planning
-**QUEM É O SCRUM MASTER DA SPRINT?**
-- João Víctor Costa Andrade
+**PAPEIS**
+| Papel       | Responsável                                 |
+| ----------- | ------------------------------------------- |
+| Dev Master  | João Victor                                 |
+| Dev CI-Test | Vinicius                                    |
+| Dev Back    | Israel e Pedro Paulo                        |
+| Dev Front   | Ricardo                                     |
+| Cliente     | Pedro Victor, Luis Felipe, George Marsicano |
 
 
-**QUAIS DESEJAMOS QUE SEJAM OS RESULTADOS DESSA SPRINT E QUAIS SÃO AS IMPORTÂNCIAS DELES?**
-- Desejamos definir bem os MVPs, concluindo assim um ótimo protótipo. Consequentemente com satisfação e validação do cliente
+**OBJETIVOS DA SPRINT**
+- Definir os MVPs
+- Definir arquitetura
+- Proposta de interface
+- Pontuação e priorização do Backlog
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
-- Sendo criteriosos nas escolhas de quais histórias vao para os MVPs para apresentar ao cliente um produto de valor.
+
+| Atividade                                                             | Quem                 |
+| --------------------------------------------------------------------- | -------------------- |
+| Definir os MVPs                                                       | Todos                |
+| Concluir protótipo, com interface e auxilio na arquitetura            | Ricardo              |
+| Definiram as arquiteturas que melhores se encaixam no projeto         | Israel e Pedro Paulo |
+| Construção da tabela de criterios de aceitação e pontuação do Backlog | João                 |
+| Definir criterios de aceitação                                        | Todos                |
+| Ajustes nos criterios de aceitação                                    | Vinicius             |
 
 ## Sprint Review
-**O CLIENTE FICOU SATISFEITO COM OS RESULTADOS?**
-- Sim
+**ENTREGAS**
+- Backlog atualizado
+- Proposta de MVPs
+- Proposta de interface
+- Escolha da arquitetura
+- Visao do produto atualizado
 
-**O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ ALGUM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
-- Sim, pediu que houvesse a possibilidade de ter um contador de carga horaria. Consequentemente adicionamos ma historia para isso.
+**NÃO FOI ENTREGUE**
+- Tudo foi entregue
+
+**O cliente deu alguma sugestão ou fez um novo pedido que possa melhorar o projeto?**
+- Sim, pediu que houvesse a possibilidade de ter um contador de carga horaria. Consequentemente adicionamos uma historia para isso.
 
 ## Sprint Retrospective
-**O QUE FUNCIONOU DURANTE ESSA SPRINT E O QUE DEVEMOS CONTINUAR FAZENDO?**
-- A comunicação entre cliente e equipe funcionou bem. Devemos continuar aceitando e ouvindo sugestões do cliente
+**Oque usamos nessa sprint que devemos continuar praticando?**
+- Ritmo sustentável (nao deixar pra ultima hora)
+- Integração contínua (sempre estar revisando e ajustando)
+- Pequenas liberações (demonstrações ao cliente)
+- Planejamento do jogo (priorização do backlog)
+- Propriedade coletiva (todos se ajudam)
 
-**O QUE NÃO FUNCIONOU E O QUE DEVEMOS MUDAR?**
-- Houve falha em algumas dailys, esquecemos de faze-las. Seria bom mudar isso adicionando um alarme ou algo to tipo
-
-**O QUE PODEMOS FAZER DE DIFERENTE NA PRÓXIMA SPRINT PARA MELHORAR NOSSOS RESULTADOS?**
-- Considerando a configuração de ambiente, o desenvolvimento e a Implementação seria interessante ser rigorosos na configuração, fazer pair programming no 
-desenvolvimento e fazer uma boa implementação em grupo, sendo levando em consideração as sugestões do cliente
-
+**O que não praticamos que devemos mudar?**
+- Nao foram usados devido o fato de nao estarmos na unidade de desenvolvimento e implementação:
+    - Programação em Pares
+    - Refatoração
+    - Design Simples
+    - Padrão de Codificação
+    
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
 - Como definir um MVP por meio de priorização e valor de entrega.
