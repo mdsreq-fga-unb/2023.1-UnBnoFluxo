@@ -3,7 +3,7 @@
 ## Organização do projeto
 | Papel       | Atribuições                                                                                                 | Responsável                                 | Participantes                               |
 | ----------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| Dev Master  | Zelar pelo funcionamento e valores do scrum dentro da equipe                                                | João Victor                                  | Todos                                       |
+| Dev Master  | Zelar pelo funcionamento e valores do scrum dentro da equipe                                                | João Victor                                 | Todos                                       |
 | Dev CI-Test | Buscar soluções de testes e integração continua                                                             | Vinicius                                    | Todos                                       |
 | Dev Back    | Auxiliar e liderar a equipe na implementação e soluçoes do back                                             | Israel e Pedro Paulo                        | Todos                                       |
 | Dev Front   | Auxiliar e liderar a equipe na implementação e soluçoes do front                                            | Ricardo                                     | Todos                                       |

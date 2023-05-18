@@ -2,9 +2,9 @@
 
 ## Visão Geral
 
-| Início |  Fim   | Duração |
-| :----: | :----: | :----:  |
-|06/05/23|18/05/23|2 semanas|
+|  Início  |   Fim    |  Duração  |
+| :------: | :------: | :-------: |
+| 06/05/23 | 18/05/23 | 2 semanas |
 
 
 ## Sprint Planning
@@ -37,6 +37,7 @@
 
 ## Sprint Review
 **ENTREGAS**
+
 - Backlog atualizado
 - Proposta de MVPs
 - Proposta de interface
@@ -44,6 +45,7 @@
 - Visao do produto atualizado
 
 **NÃO FOI ENTREGUE**
+
 - Tudo foi entregue
 
 **O cliente deu alguma sugestão ou fez um novo pedido que possa melhorar o projeto?**
@@ -51,6 +53,7 @@
 
 ## Sprint Retrospective
 **Oque usamos nessa sprint que devemos continuar praticando?**
+
 - Ritmo sustentável (nao deixar pra ultima hora)
 - Integração contínua (sempre estar revisando e ajustando)
 - Pequenas liberações (demonstrações ao cliente)
@@ -58,6 +61,7 @@
 - Propriedade coletiva (todos se ajudam)
 
 **O que não praticamos que devemos mudar?**
+
 - Nao foram usados devido o fato de nao estarmos na unidade de desenvolvimento e implementação:
     - Programação em Pares
     - Refatoração
@@ -65,4 +69,5 @@
     - Padrão de Codificação
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
+
 - Como definir um MVP por meio de priorização e valor de entrega.
