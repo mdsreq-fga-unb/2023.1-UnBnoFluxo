@@ -34,11 +34,13 @@
 
 ## Gerenciamento de riscos
 Os riscos identificados são:
+
 - Desencontro ou desistência do cliente
 - Dificuldade de gerenciamento de tempo de um ou mais membros da equipe
 - Trancamento da disciplina por algum dos membros da equipe
 
 As ações a serem tomadas para a mitigação dos mesmos são:
+
 - Ter mais de um cliente, visto que o problema afeta vários alunos
 - Redistritribuir as tarefas durante uma ausência temporária
 - Reduzir o escopo em caso desistência permanente de um ou mais dos membros da equipe
@@ -46,6 +48,7 @@ As ações a serem tomadas para a mitigação dos mesmos são:
 
 ## Critérios de replanejamento
 O projeto poderá ser replanejado caso haja:
+
 - Desistência de cliente
 - Abandono de membros da equipe
 - Constante ausência de determinados membros da equipe
