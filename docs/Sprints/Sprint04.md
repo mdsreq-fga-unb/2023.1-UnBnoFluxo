@@ -6,9 +6,9 @@
 | :------: | :------: | :-------: |
 | 06/05/23 | 18/05/23 | 2 semanas |
 
-
 ## Sprint Planning
 **PAPEIS**
+
 | Papel       | Responsável                                 |
 | ----------- | ------------------------------------------- |
 | Dev Master  | João Victor                                 |
@@ -19,6 +19,7 @@
 
 
 **OBJETIVOS DA SPRINT**
+
 - Definir os MVPs
 - Definir arquitetura
 - Proposta de interface
@@ -48,11 +49,12 @@
 
 - Tudo foi entregue
 
-**O cliente deu alguma sugestão ou fez um novo pedido que possa melhorar o projeto?**
+**O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
+
 - Sim, pediu que houvesse a possibilidade de ter um contador de carga horaria. Consequentemente adicionamos uma historia para isso.
 
 ## Sprint Retrospective
-**Oque usamos nessa sprint que devemos continuar praticando?**
+**OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
 
 - Ritmo sustentável (nao deixar pra ultima hora)
 - Integração contínua (sempre estar revisando e ajustando)
@@ -60,7 +62,7 @@
 - Planejamento do jogo (priorização do backlog)
 - Propriedade coletiva (todos se ajudam)
 
-**O que não praticamos que devemos mudar?**
+**O QUE NÃO PRATICAMOS QUE DEVEMOS MUDAR?**
 
 - Nao foram usados devido o fato de nao estarmos na unidade de desenvolvimento e implementação:
     - Programação em Pares

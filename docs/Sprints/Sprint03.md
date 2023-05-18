@@ -6,8 +6,10 @@
 | :------: | :------: | :-------: |
 | 23/04/23 | 06/05/23 | 2 semanas |
 
+
 ## Sprint Planning
 **PAPEIS**
+
 | Papel       | Responsável                                 |
 | ----------- | ------------------------------------------- |
 | Dev Master  | João Victor                                 |
@@ -22,6 +24,8 @@
 - Definir projeto
 - Dividir e definir os requisitos funcionais e não-funcionais
 - Construir um Backlog priorizado
+
+**COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
 
 | Atividade                                            | Quem    |
 | ---------------------------------------------------- | ------- |
@@ -38,13 +42,13 @@
 
 - Visao do produto atualizado
 
-**O cliente deu alguma sugestão ou fez um novo pedido que possa melhorar o projeto?**
+**O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
 
 - Sim, ele nos sugeriu a possibilidade de apelidar uma matéria do fluxo com um nome que ele quisesse, afim de por nomes comuns usados por
 alunos. ex: uma matéria que se chama "Calculo 1" o usuário poder chama-la de "C1".
 
 ## Sprint Retrospective
-**Oque usamos nessa sprint que devemos continuar praticando?**
+**OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
 
 - Ritmo sustentável (não deixar pra ultima hora)
 - Integração contínua (sempre estar revisando e ajustando)
@@ -52,7 +56,7 @@ alunos. ex: uma matéria que se chama "Calculo 1" o usuário poder chama-la de "
 - Planejamento do jogo (priorização do backlog)
 - Propriedade coletiva (todos se ajudam)
 
-**O que não praticamos que devemos mudar?**
+**O QUE NÃO PRATICAMOS QUE DEVEMOS MUDAR?**
 
 - Não foram usados devido o fato de nao estarmos na unidade de desenvolvimento e implementação:
     - Programação em Pares
