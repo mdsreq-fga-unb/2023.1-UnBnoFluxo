@@ -66,9 +66,12 @@ nav:
     - Processo de desenvolvimento de software: VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware.md
     - Lições aprendidas: VisaoProdutoEProjeto/LicoesAprendidas.md
     - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
-  - Backlog do produto: Backlog.md
-  - Arquitetura e Interface do Projeto: ArquiteturaInterface.md
+  - Backlog: Backlog.md
+  - Arquitetura e Interface: ArquiteturaInterface.md
+  - Workflow: Workflow.md
   - Registro de sprints:
-    - Sprint 1: Sprints/Sprint01.md
-  - Entregas das unidades:
+    - Sprint 3: Sprints/Sprint03.md
+    - Sprint 4: Sprints/Sprint04.md
+  - Entregas:
     - Unidade 01: Seminarios/Unidade01.md
+    - Unidade 02: Seminarios/Unidade02.md
