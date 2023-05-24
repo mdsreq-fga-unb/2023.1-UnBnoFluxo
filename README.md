@@ -8,9 +8,13 @@ Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estuda
 ## 📒 Documentação
 A documentação do projeto está disponivel nesse [link](https://mdsreq-fga-unb.github.io/2023.1-UnBnoFluxo/).
 
-## 📒 Backlog mais acessível:
-https://docs.google.com/document/d/1yLeN1Lz4SikCFIlMwRnj-NHabqfXzD9Igfq0DXZx_ZA/edit?usp=sharing
+## 📃 Backlog:
 
+- [Backlog no kanban](https://github.com/orgs/mdsreq-fga-unb/projects/10)
+
+- [Backlog na documentação](https://mdsreq-fga-unb.github.io/2023.1-UnBnoFluxo/Backlog/)
+
+- [Backlog no google docs](https://docs.google.com/document/d/1yLeN1Lz4SikCFIlMwRnj-NHabqfXzD9Igfq0DXZx_ZA/edit?usp=sharing)
 
 ## 👥 Colaboradores
 | Matrícula | Nome                                      | Nick no GitHub |                                                      📸                                                       |

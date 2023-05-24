@@ -18,6 +18,8 @@ theme:
   language: pt-BR
   font: 
     text: Roboto
+  favicon: img/Icon.svg
+  logo: img/Logo.svg
   features:
     # - announce.dismiss
     # - content.action.edit
