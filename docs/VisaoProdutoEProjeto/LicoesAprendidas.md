@@ -8,8 +8,7 @@ Por fim, pode-se mencionar uma possível melhoria individual: Mais estudo sobre 
 Foi notável a melhoria no desenvolvimento da equipe, houveram alguns problemas em relação a conciliação de horarios de todos para que pudessimos realizar as sprints 3 e 4. Porém, as entregas foram efetuadas com sucesso. Não houve problemas na área da falta de contribuição de algum integrante, todos foram essenciais na construção do backlog, mvps, interface e definição de arquitetura.
 
 ## Histórico de revisão
-|   Data   | Versão | Descrição            | Autor |
-| :------: | :----: | -------------------- | ----- |
-| 19/04/23 |  1.0   | Criação do documento | Todos |
-| 19/04/23 |  1.0   | unidade 1            | joão  |
-| 16/05/23 |  2.0   | unidade 2            | joão  |
+|   Data   | Versão | Descrição                                  | Autor |
+| :------: | :----: | ------------------------------------------ | ----- |
+| 19/04/23 |  1.0   | Criação do documento e relato da Unidade 1 | João  |
+| 16/05/23 |  1.1   | Relato da Unidade 2                        | João  |

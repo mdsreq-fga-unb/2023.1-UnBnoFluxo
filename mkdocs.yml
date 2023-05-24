@@ -73,5 +73,22 @@ nav:
     - Sprint 3: Sprints/Sprint03.md
     - Sprint 4: Sprints/Sprint04.md
   - Entregas:
-    - Unidade 01: Seminarios/Unidade01.md
-    - Unidade 02: Seminarios/Unidade02.md
+    - Unidade 01: Entregas/Unidade01.md
+    - Unidade 02: Entregas/Unidade02.md
+
+# Extensions
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
