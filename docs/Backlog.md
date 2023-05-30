@@ -178,7 +178,7 @@ Para saber se o requisito está pronto, faz-se as perguntas a seguir:
 | ------------------------------------------ | :----: | :-------: |
 | US05 - Reordernar componentes curriculares |   7    |     8     |
 | US09 - Criar componente curricular         |   7    |     8     |
-| US14   Apelidar componente curricular      |   7    |     7     |
+| US14 - Apelidar componente curricular      |   7    |     7     |
 | US10 - Editar componente curricular        |   7    |     6     |
 | US06 - Visualizar requisitos               |   8    |     8     |
 | US08 - Visualizar carga horária            |   8    |     6     |
