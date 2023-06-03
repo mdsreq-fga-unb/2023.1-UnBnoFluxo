@@ -19,6 +19,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background: #232323;
 }
 
 .footer a {
@@ -28,10 +29,6 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
 
 .title a:hover,
 .title a:focus,
@@ -41,6 +38,7 @@
 
 .title {
   margin: 0;
+  margin-top: 8vh;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -70,11 +68,11 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .footer {
     border-color: #222;
   }
   .logo img {
     filter: invert(1);
   }
-}
+} */

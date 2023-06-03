@@ -3,24 +3,32 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react';
 import Period from '../components/Period';
+import NavBar from '../components/NavBar';
+
 
 export default function Home() {
     // Estados
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
 
-    // Fazendo request na api e salvando dados no estado "data"
+    // Fazendo request na api e salvando dados no estado "data" e no local storage
     useEffect(() => {
-
-        // Criando funcao assincrona que vai fazer o fetch na api
+        const storageData = localStorage.getItem("data");
+        // Criando funcao assincrona que vai fazer o fetch na api // Todo: revover essa funcao depois quando o app suportar ser carregado em branco
         const fetchData = async () => {
-            const response = await fetch('/api/teste');
+            const response = await fetch('/api/soft');
             const data = await response.json();
             setData(data);
-            console.log(data);
-        };
 
-        fetchData(); // Chamando funcao assincrona
+            localStorage.setItem('data', JSON.stringify(data));
+        }
+
+        if (storageData) {
+            setData(JSON.parse(storageData));
+        } else {
+            fetchData(); // Chamando funcao assincrona
+        }
     }, []); // Ao deixar o segundo paramentro vazio, o fetch na api so acontece quando Home carrega
+
 
 
     return (
@@ -33,7 +41,8 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>UnB no Fluxo</h1>
+                <NavBar setData={setData} />
+                {/* <h1 className={styles.title}>UnB no Fluxo</h1> */}
                 <div className={styles.grid}>
                     <Period data={data} periodNumber={1} />
                     <Period data={data} periodNumber={2} />
@@ -50,14 +59,10 @@ export default function Home() {
 
             <footer className={styles.footer}>
                 <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    href="https://github.com/mdsreq-fga-unb/2023.1-UnBnoFluxo"
                     target="_blank"
-                    rel="noopener noreferrer"
                 >
-                    Powered by{' '}
-                    <span className={styles.logo}>
-                        <Image src="public/favicon.svg" alt="UnB no Fluxo Icone" width={72} height={16} />
-                    </span>
+                    Equipe • Documentação • Direitos
                 </a>
             </footer>
         </div>
