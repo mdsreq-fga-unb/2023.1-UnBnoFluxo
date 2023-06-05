@@ -33,3 +33,8 @@ A documentação do projeto está disponivel nesse [link](https://mdsreq-fga-unb
 4. **Obs:** As suas alterações só ficaram disponíveis na versão online após o PR para o branch *main* ser aceito
 5. **Importante:** Nunca mexa no branch *gh-pages*
 
+**Para desenvolver no frontend:**
+1. Instale o node (Versão 18)
+2. Navegue ate a pasta do frontend ```cd .\frontend\```
+3. Execute a aplicação localmente com ```npm run dev```
+4. Pronto! A aplicação já deve estar rodando localmente em http://localhost:3000
