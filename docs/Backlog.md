@@ -167,10 +167,10 @@ Para saber se o requisito está pronto, faz-se as perguntas a seguir:
 | User Story                                       | Sprint | Pontuação |
 | ------------------------------------------------ | :----: | :-------: |
 | US01 - Disponibilizar fluxograma padrão          |   5    |     8     |
-| US03 - Iniciar fluxograma em branco              |   6    |     6     |
-| US04 - Mesclar fluxograma                        |   6    |     7     |
 | US02 - Upload de fluxograma                      |   5    |     6     |
 | US11 - Download de fluxograma                    |   5    |     6     |
+| US04 - Mesclar fluxograma                        |   6    |     7     |
+| US03 - Iniciar fluxograma em branco              |   6    |     6     |
 | US07 - Visualizar obrigatoriedade de componentes |   6    |     5     |
 
 ## MVP2

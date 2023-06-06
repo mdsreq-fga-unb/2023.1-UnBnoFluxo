@@ -20,56 +20,42 @@
 
 **OBJETIVOS DA SPRINT**
 
-- Definir os MVPs
-- Definir arquitetura
-- Proposta de interface
-- Pontuação e priorização do Backlog
+- Desenvolvimento e Implementação das US:
+- US04 Mesclar fluxograma                        
+- US03 Iniciar fluxograma em branco              
+- US07 Visualizar obrigatoriedade de componentes  
+
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
 
 | Atividade                                                             | Quem                 |
 | --------------------------------------------------------------------- | -------------------- |
-| Definir os MVPs                                                       | Todos                |
-| Concluir protótipo, com interface e auxilio na arquitetura            | Ricardo              |
-| Definiram as arquiteturas que melhores se encaixam no projeto         | Israel e Pedro Paulo |
-| Construção da tabela de criterios de aceitação e pontuação do Backlog | João                 |
-| Definir criterios de aceitação                                        | Todos                |
-| Ajustes nos criterios de aceitação                                    | Vinicius             |
+| Mesclar fluxograma                                                    | Ricardo              |
+| Iniciar fluxograma em branco                                          | João                 |
+| Visualizar obrigatoriedade de componentes                             | Vinicius             |
+| Disponibilizar fluxograma padrão (debito tecnico)                     | Pedro e Israel       |
+
 
 ## Sprint Review
 **ENTREGAS**
 
-- Backlog atualizado
-- Proposta de MVPs
-- Proposta de interface
-- Escolha da arquitetura
-- Visao do produto atualizado
+
 
 **NÃO FOI ENTREGUE**
 
-- Tudo foi entregue
+
 
 **O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
 
-- Sim, pediu que houvesse a possibilidade de ter um contador de carga horaria. Consequentemente adicionamos uma historia para isso.
+
 
 ## Sprint Retrospective
 **OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
 
-- Ritmo sustentável (nao deixar pra ultima hora)
-- Integração contínua (sempre estar revisando e ajustando)
-- Pequenas liberações (demonstrações ao cliente)
-- Planejamento do jogo (priorização do backlog)
-- Propriedade coletiva (todos se ajudam)
+
 
 **O QUE NÃO PRATICAMOS QUE DEVEMOS MUDAR?**
 
-- Nao foram usados devido o fato de nao estarmos na unidade de desenvolvimento e implementação:
-    - Programação em Pares
-    - Refatoração
-    - Design Simples
-    - Padrão de Codificação
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
 
-- Como definir um MVP por meio de priorização e valor de entrega.
