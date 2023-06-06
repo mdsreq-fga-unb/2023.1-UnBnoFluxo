@@ -167,10 +167,10 @@ Para saber se o requisito está pronto, faz-se as perguntas a seguir:
 | User Story                                       | Sprint | Pontuação |
 | ------------------------------------------------ | :----: | :-------: |
 | US01 - Disponibilizar fluxograma padrão          |   5    |     8     |
-| US03 - Iniciar fluxograma em branco              |   5    |     6     |
+| US02 - Upload de fluxograma                      |   5    |     6     |
+| US11 - Download de fluxograma                    |   5    |     6     |
 | US04 - Mesclar fluxograma                        |   6    |     7     |
-| US02 - Upload de fluxograma                      |   6    |     6     |
-| US11 - Download de fluxograma                    |   6    |     6     |
+| US03 - Iniciar fluxograma em branco              |   6    |     6     |
 | US07 - Visualizar obrigatoriedade de componentes |   6    |     5     |
 
 ## MVP2
@@ -178,7 +178,7 @@ Para saber se o requisito está pronto, faz-se as perguntas a seguir:
 | ------------------------------------------ | :----: | :-------: |
 | US05 - Reordernar componentes curriculares |   7    |     8     |
 | US09 - Criar componente curricular         |   7    |     8     |
-| US14   Apelidar componente curricular      |   7    |     7     |
+| US14 - Apelidar componente curricular      |   7    |     7     |
 | US10 - Editar componente curricular        |   7    |     6     |
 | US06 - Visualizar requisitos               |   8    |     8     |
 | US08 - Visualizar carga horária            |   8    |     6     |
@@ -193,3 +193,4 @@ Para saber se o requisito está pronto, faz-se as perguntas a seguir:
 | 10/05/23 |  1.2   | Priorização no backlog                               | Ricardo e João     |
 | 15/05/23 |  1.3   | Critérios de aceite e divisão de Temas, Épicos e USs | Ricardo e Vinícius |
 | 17/05/23 |  1.4   | Atualização MVPs e CAs                               | Ricardo            |
+| 23/05/23 |  1.5   | Atualização MVPs                                     | João               |
