@@ -70,10 +70,13 @@ nav:
     - Bibliografia: VisaoProdutoEProjeto/ReferenciasBibliograficas.md
   - Backlog: Backlog.md
   - Arquitetura e Interface: ArquiteturaInterface.md
+  - Padrões: Padroes.md
   - Workflow: Workflow.md
   - Registro de sprints:
     - Sprint 3: Sprints/Sprint03.md
-    - Sprint 4: Sprints/Sprint04.md
+    - Sprint 4: Sprints/Sprint04.md    
+    - Sprint 5: Sprints/Sprint05.md    
+    - Sprint 6: Sprints/Sprint06.md
   - Entregas:
     - Unidade 01: Entregas/Unidade01.md
     - Unidade 02: Entregas/Unidade02.md
