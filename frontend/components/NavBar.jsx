@@ -4,9 +4,11 @@ import { saveAs } from "file-saver"
 import React, { useState } from "react"
 import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
+import DetailFormDialog from "./DetailFormDialog"
 
 export default function NavBar({ setData }) {
     const [openDialog, setOpenDialog] = useState(false)
+    const [open, setOpen] = useState(false);
 
     const handleOpenDialog = () => setOpenDialog(true)
     const handleCloseDialog = () => setOpenDialog(false)
@@ -18,6 +20,9 @@ export default function NavBar({ setData }) {
             saveAs(blob, "MeuFluxograma.json")
         }
     }
+
+    const handleOpenDetail = () => setOpen(true)
+    const handleCloseDetail = () => setOpen(false)
 
     return (
         <AppBar position="fixed" className={styles.navBar}>
@@ -32,10 +37,13 @@ export default function NavBar({ setData }) {
                     <Button color="inherit" onClick={handleOpenDialog}>
                         Novo
                     </Button>
+                    <Button color="inherit" onClick={handleOpenDetail}>
+                        Em branco
+                    </Button>
                 </div>
             </Toolbar>
-
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} setData={setData} />
+            <DetailFormDialog open={open} onClose={handleCloseDetail}/>
         </AppBar>
-    )
+    );
 }
