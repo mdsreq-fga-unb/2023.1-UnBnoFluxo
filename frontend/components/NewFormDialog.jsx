@@ -10,24 +10,22 @@ import {
 } from "@mui/material"
 import React, { useEffect, useState } from "react"
 
-export default function NewFormDialog({ open, onClose, setData }) {
+export default function NewFormDialog({ open, onClose, addData }) {
     const [coursesList, setCoursesList] = useState(null) // Estado para armazenar as opcoes de fluxograma existentes na api
-    const [selectedCourses, setSelectedCourses] = useState([]) // Estado para armazenar os cursos selecionados
+    const [selectedCourses, setSelectedCourses] = useState(null) // Estado para armazenar os cursos selecionados
     const [selectedFile, setSelectedFile] = useState(null) // Estado para armazenar arquivo selecionado
 
     const handleAssemble = () => {
         // Criando funcao assincrona que vai fazer o fetch na api // TODO: colocar isso em um try catch
         const fetchData = async () => {
             // const response = await fetch("135.148.35.38:25532/get") // TODO: fazer o uso da api
-            const response = await fetch(`/api/${selectedCourses.endpoint}`) // TODO: depois sera necessario transformar isso em um POST mas como é so um curso o ainda nao é necessario a mescla ainda
+            const response = await fetch(`/api/${selectedCourses.endpoint}`)
             const data = await response.json()
-            setData(data)
-            localStorage.setItem("data", JSON.stringify(data))
+            addData(data)
         }
 
         if (selectedFile) {
-            setData(selectedFile)
-            localStorage.setItem("data", JSON.stringify(selectedFile))
+            addData(selectedFile)
         } else if (selectedCourses) {
             fetchData() // Chamando funcao assincrona
         } else {
@@ -67,6 +65,7 @@ export default function NewFormDialog({ open, onClose, setData }) {
     }
 
     useEffect(() => {
+        // TODO: Usar axios pra fazer o fetch
         const fetchData = async () => {
             const response = await fetch("/api/courses")
             const data = await response.json()

@@ -1,32 +1,29 @@
 import Head from "next/head"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
-import { useState, useEffect } from "react"
-import Period from "../components/Period"
 import NavBar from "../components/NavBar"
+import Period from "../components/Period"
+import useLocalStorageState from "use-local-storage-state"
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
     // Estados
-    const [data, setData] = useState([])
+    const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
 
-    // Fazendo request na api e salvando dados no estado "data" e no local storage
-    useEffect(() => {
-        const storageData = localStorage.getItem("data")
-        // Criando funcao assincrona que vai fazer o fetch na api // Todo: revover essa funcao depois quando o app suportar ser carregado em branco
-        const fetchData = async () => {
-            const response = await fetch("/api/soft")
-            const data = await response.json()
-            setData(data)
+    // Callback que adiciona os elementos de "newData" ao estado "data"
+    const addData = (newData) => {
+        setData((prevData) => {
+            // "nextData" recebe tudo que ainda nao existe em "data"
+            const nextData = newData.filter((course) => {
+                return !prevData.some((storedCourse) => {
+                    return JSON.stringify(storedCourse) === JSON.stringify(course)
+                })
+            })
+            return [...prevData, ...nextData]
+        })
+    }
 
-            localStorage.setItem("data", JSON.stringify(data))
-        }
-
-        if (storageData) {
-            setData(JSON.parse(storageData))
-        } else {
-            fetchData() // Chamando funcao assincrona
-        }
-    }, []) // Ao deixar o segundo paramentro vazio, o fetch na api so acontece quando Home carrega
+    const clearData = () => {
+        setData([])
+    }
 
     return (
         <div className={styles.container}>
@@ -38,7 +35,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <NavBar setData={setData} />
+                <NavBar data={data} addData={addData} clearData={clearData} />
                 {/* <h1 className={styles.title}>UnB no Fluxo</h1> */}
                 <div className={styles.grid}>
                     <Period data={data} periodNumber={1} />

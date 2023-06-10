@@ -5,18 +5,15 @@ import React, { useState } from "react"
 import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
 
-export default function NavBar({ setData }) {
+export default function NavBar({ data, addData, clearData }) {
     const [openDialog, setOpenDialog] = useState(false)
 
     const handleOpenDialog = () => setOpenDialog(true)
     const handleCloseDialog = () => setOpenDialog(false)
 
     const handleDownload = () => {
-        const data = localStorage.getItem("data")
-        if (data) {
-            const blob = new Blob([data], { type: "application/json" })
-            saveAs(blob, "MeuFluxograma.json")
-        }
+        const blob = new Blob([JSON.stringify(data)], { type: "application/json" })
+        saveAs(blob, "MeuFluxograma.json")
     }
 
     return (
@@ -26,6 +23,9 @@ export default function NavBar({ setData }) {
                     <MenuIcon />
                 </IconButton>
                 <div className={styles.rightButtons}>
+                    <Button color="inherit" onClick={clearData}>
+                        Limpar
+                    </Button>
                     <Button color="inherit" onClick={handleDownload}>
                         Download
                     </Button>
@@ -35,7 +35,7 @@ export default function NavBar({ setData }) {
                 </div>
             </Toolbar>
 
-            <NewFormDialog open={openDialog} onClose={handleCloseDialog} setData={setData} />
+            <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
         </AppBar>
     )
 }
