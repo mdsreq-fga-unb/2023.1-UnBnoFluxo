@@ -5,6 +5,7 @@ import useLocalStorageState from "use-local-storage-state"
 import styles from "../styles/Home.module.css"
 
 export default function Home() {
+    const maxPeriodNumber = 10 // Todo: Ajustar pra ser responsivo à fetchs e editavel pelo ususario
     // Estados
     const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
 
@@ -31,23 +32,16 @@ export default function Home() {
                 <title>UnB no Fluxo</title>
                 <meta name="author" content="FluxoSquad" />
                 <meta name="description" content="Fluxograma interativo dos cursos da UnB" />
-                <link rel="icon" href="public/favicon.svg" />
+                <link rel="icon" href="/favicon.svg" />
             </Head>
 
             <main className={styles.main}>
                 <NavBar data={data} addData={addData} clearData={clearData} />
                 {/* <h1 className={styles.title}>UnB no Fluxo</h1> */}
                 <div className={styles.grid}>
-                    <Period data={data} periodNumber={1} />
-                    <Period data={data} periodNumber={2} />
-                    <Period data={data} periodNumber={3} />
-                    <Period data={data} periodNumber={4} />
-                    <Period data={data} periodNumber={5} />
-                    <Period data={data} periodNumber={6} />
-                    <Period data={data} periodNumber={7} />
-                    <Period data={data} periodNumber={8} />
-                    <Period data={data} periodNumber={9} />
-                    <Period data={data} periodNumber={10} />
+                    {Array.from({ length: maxPeriodNumber }, (_, index) => (
+                        <Period key={index + 1} data={data} periodNumber={index + 1} />
+                    ))}
                 </div>
             </main>
 
