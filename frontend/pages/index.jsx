@@ -6,10 +6,11 @@ import styles from "../styles/Home.module.css"
 
 export default function Home() {
     const maxPeriodNumber = 10 // Todo: Ajustar pra ser responsivo à fetchs e editavel pelo ususario
+
     // Estados
     const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
 
-    // Callback que adiciona os elementos de "newData" ao estado "data"
+    // Funcao callback que adiciona os elementos de "newData" ao estado "data"
     const addData = (newData) => {
         setData((prevData) => {
             // "nextData" recebe tudo que ainda nao existe em "data"
@@ -22,9 +23,8 @@ export default function Home() {
         })
     }
 
-    const clearData = () => {
-        setData([])
-    }
+    // Funcao que limpa os dados do app
+    const clearData = () => setData([])
 
     return (
         <div className={styles.container}>
