@@ -16,8 +16,9 @@ export default function NewFormDialog({ open, onClose, setData }) {
     const [selectedFile, setSelectedFile] = useState(null) // Estado para armazenar arquivo selecionado
 
     const handleAssemble = () => {
-        // Criando funcao assincrona que vai fazer o fetch na api
+        // Criando funcao assincrona que vai fazer o fetch na api // TODO: colocar isso em um try catch
         const fetchData = async () => {
+            // const response = await fetch("135.148.35.38:25532/get") // TODO: fazer o uso da api
             const response = await fetch(`/api/${selectedCourses.endpoint}`) // TODO: depois sera necessario transformar isso em um POST mas como é so um curso o ainda nao é necessario a mescla ainda
             const data = await response.json()
             setData(data)
