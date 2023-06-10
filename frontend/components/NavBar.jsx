@@ -5,11 +5,10 @@ import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
 import DetailFormDialog from "./DetailFormDialog"
 
-
 export default function NavBar({ data, addData, clearData }) {
+    // Estados
     const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
     const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado
-
 
     // Funcao que abre o NewFormDialog
     const handleOpenDialog = () => setOpenDialog(true)
@@ -54,10 +53,8 @@ export default function NavBar({ data, addData, clearData }) {
                 </div>
             </Toolbar>
 
-
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
-            <DetailFormDialog open={open} onClose={handleCloseDetail}/>
-              
+            <DetailFormDialog open={open} onClose={handleCloseDetail} />
         </AppBar>
-    );
+    )
 }
