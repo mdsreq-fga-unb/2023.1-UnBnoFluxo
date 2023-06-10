@@ -1,5 +1,4 @@
-import MenuIcon from "@mui/icons-material/Menu"
-import { AppBar, Button, IconButton, Toolbar } from "@mui/material"
+import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React, { useState } from "react"
 import styles from "../styles/NavBar.module.css"
@@ -19,17 +18,23 @@ export default function NavBar({ data, addData, clearData }) {
     return (
         <AppBar position="fixed" className={styles.navBar}>
             <Toolbar>
-                <IconButton edge="start" color="inherit" aria-label="menu">
-                    <MenuIcon />
-                </IconButton>
+                <Box
+                    component="img"
+                    sx={{
+                        height: 64,
+                    }}
+                    alt="Unb no Fluxo logo."
+                    src="/logo.svg"
+                />
+
                 <div className={styles.rightButtons}>
-                    <Button color="inherit" onClick={clearData}>
+                    <Button color="inherit" variant="elevated" onClick={clearData}>
                         Limpar
                     </Button>
-                    <Button color="inherit" onClick={handleDownload}>
+                    <Button color="inherit" variant="elevated" onClick={handleDownload}>
                         Download
                     </Button>
-                    <Button color="inherit" onClick={handleOpenDialog}>
+                    <Button color="inherit" variant="elevated" onClick={handleOpenDialog}>
                         Novo
                     </Button>
                 </div>
