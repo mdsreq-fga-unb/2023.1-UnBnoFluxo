@@ -20,7 +20,7 @@ export default function NavBar({ data, addData, clearData }) {
     }
 
     return (
-        <AppBar position="fixed" className={styles.navBar}>
+        <AppBar style={{ color: "232323" }} position="fixed" className={styles.navBar}>
             <Toolbar>
                 <Box
                     component="img"
