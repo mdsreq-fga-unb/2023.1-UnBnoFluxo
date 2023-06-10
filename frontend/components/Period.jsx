@@ -1,6 +1,7 @@
 import Card from "./Card"
 
 import styles from "../styles/Period.module.css"
+import { CircularProgress } from "@mui/material"
 
 export default function Period({ data, periodNumber }) {
     return (
@@ -13,7 +14,7 @@ export default function Period({ data, periodNumber }) {
                     .filter((course) => course.period == periodNumber)
                     .map((course) => <Card key={course.code} course={course} />)
             ) : (
-                <div>Carregando...</div>
+                <CircularProgress color="inherit" />
             )}
         </div>
     )

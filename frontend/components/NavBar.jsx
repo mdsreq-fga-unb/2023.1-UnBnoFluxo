@@ -1,40 +1,51 @@
-import MenuIcon from "@mui/icons-material/Menu"
-import { AppBar, Button, IconButton, Toolbar } from "@mui/material"
+import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React, { useState } from "react"
 import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function NavBar({ setData }) {
-    const [openDialog, setOpenDialog] = useState(false)
-    const [open, setOpen] = useState(false);
 
+export default function NavBar({ data, addData, clearData }) {
+    const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
+    const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado
+
+
+    // Funcao que abre o NewFormDialog
     const handleOpenDialog = () => setOpenDialog(true)
+
+    // Funcao que fecha o NewFormDialog
     const handleCloseDialog = () => setOpenDialog(false)
 
+    // Funcao responsavel por fazer o download dos dados carregados atualmente no app
     const handleDownload = () => {
-        const data = localStorage.getItem("data")
-        if (data) {
-            const blob = new Blob([data], { type: "application/json" })
-            saveAs(blob, "MeuFluxograma.json")
-        }
+        const blob = new Blob([JSON.stringify(data)], { type: "application/json" })
+        saveAs(blob, "MeuFluxograma.json")
     }
 
     const handleOpenDetail = () => setOpen(true)
     const handleCloseDetail = () => setOpen(false)
 
     return (
-        <AppBar position="fixed" className={styles.navBar}>
+        <AppBar style={{ color: "232323" }} position="fixed" className={styles.navBar}>
             <Toolbar>
-                <IconButton edge="start" color="inherit" aria-label="menu">
-                    <MenuIcon />
-                </IconButton>
+                <Box
+                    component="img"
+                    sx={{
+                        height: 64,
+                    }}
+                    alt="Unb no Fluxo logo."
+                    src="/logo.svg"
+                />
+
                 <div className={styles.rightButtons}>
-                    <Button color="inherit" onClick={handleDownload}>
+                    <Button color="inherit" variant="elevated" onClick={clearData}>
+                        Limpar
+                    </Button>
+                    <Button color="inherit" variant="elevated" onClick={handleDownload}>
                         Download
                     </Button>
-                    <Button color="inherit" onClick={handleOpenDialog}>
+                    <Button color="inherit" variant="elevated" onClick={handleOpenDialog}>
                         Novo
                     </Button>
                     <Button color="inherit" onClick={handleOpenDetail}>
@@ -42,8 +53,11 @@ export default function NavBar({ setData }) {
                     </Button>
                 </div>
             </Toolbar>
-            <NewFormDialog open={openDialog} onClose={handleCloseDialog} setData={setData} />
+
+
+            <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
             <DetailFormDialog open={open} onClose={handleCloseDetail}/>
+              
         </AppBar>
     );
 }
