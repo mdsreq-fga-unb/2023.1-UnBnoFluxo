@@ -84,7 +84,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
             <DialogTitle>Montando Fluxograma...</DialogTitle>
 
             <DialogContent>
-                <p>Para montar seu fluxograma você escolha uma das opções abaixo:</p>
+                <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
                 {coursesList && (
                     <Autocomplete
                         multiple

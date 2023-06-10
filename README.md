@@ -36,5 +36,6 @@ A documentação do projeto está disponivel nesse [link](https://mdsreq-fga-unb
 **Para desenvolver no frontend:**
 1. Instale o node (Versão 18)
 2. Navegue ate a pasta do frontend ```cd .\frontend\```
-3. Execute a aplicação localmente com ```npm run dev```
-4. Pronto! A aplicação já deve estar rodando localmente em http://localhost:3000
+3. Execute ```npm install```
+4. Execute a aplicação localmente com ```npm run dev```
+5. Pronto! A aplicação já deve estar rodando localmente em http://localhost:3000
