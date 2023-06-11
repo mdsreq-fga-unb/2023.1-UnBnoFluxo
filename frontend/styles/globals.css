@@ -30,3 +30,22 @@ footer a {
   align-items: center;
   flex-grow: 1;
 }
+
+body {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f1f1f1;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 4px;
+}

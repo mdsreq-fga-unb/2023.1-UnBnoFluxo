@@ -3,6 +3,7 @@ import { saveAs } from "file-saver"
 import React, { useState } from "react"
 import NewFormDialog from "./NewFormDialog"
 import DetailFormDialog from "./DetailFormDialog"
+import { ClassNames } from "@emotion/react"
 
 export default function NavBar({ data, addData, clearData }) {
     // Estados
