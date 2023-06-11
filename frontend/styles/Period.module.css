@@ -1,13 +1,13 @@
 .period {
-  width: 144px;
-  min-height: 648px;
+  width: 9rem;
+  min-height: 40.5rem;
 
   background: #DFE1E5;
 
-  border-width: 0px 2px;
+  border-width: 0 0.125rem;
   border-style: solid;
   border-color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   align-items: center;
 }
@@ -15,22 +15,22 @@
 .tilte_box h2 {
   background: #232323;
 
-  border: 1px solid #FFFFFF;
-  border-width: 0px 2px;
+  border: 0.0625rem solid #FFFFFF;
+  border-width: 0 0.125rem;
   border-style: solid;
   border-color: #FFFFFF;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 0.5rem 0.5rem 0 0;
 
   margin: 0;
 
-  width: 144px;
-  height: 32px;
+  width: 9rem;
+  height: 2rem;
 
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5rem;
 
   color: #FFFFFF;
 

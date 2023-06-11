@@ -1,30 +1,27 @@
 .card {
   transition: color 0.15s ease, border-color 0.15s ease;
-  border-radius: 8px;
-  width: 112px;
-  height: 66px;
+  border-radius: 0.5rem;
+  width: 7rem;
+  height: 4.125rem;
   background: #FFFFFF;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.125rem 0 rgba(0, 0, 0, 0.25);
 
   align-items: center;
   text-align: center;
 }
 
 .card strong {
-  /* ABCDEFGH */
   position: relative;
   left: 0%;
   right: 0%;
   top: 36.36%;
   bottom: 15.15%;
 
-  /* texto padrao */
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 
-  /* MC - Preto */
   color: #232323;
 }
