@@ -11,29 +11,3 @@
   align-items: center;
 
 }
-
-.grid {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  margin: 1rem;
-  overflow-x: scroll;
-}
-
-
-.footer {
-  /* display: flex; */
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-  background: #232323;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}

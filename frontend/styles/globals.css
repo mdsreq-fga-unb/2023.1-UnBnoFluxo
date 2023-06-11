@@ -13,3 +13,20 @@ a {
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
+
+footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  background: #232323;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

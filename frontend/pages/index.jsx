@@ -1,4 +1,3 @@
-import Head from "next/head"
 import useLocalStorageState from "use-local-storage-state"
 import styles from "../styles/Home.module.css"
 
@@ -30,24 +29,11 @@ export default function Home() {
 
     return (
         <>
-            <Head>
-                <title>UnB no Fluxo</title>
-                <meta name="author" content="FluxoSquad" />
-                <meta name="description" content="Fluxograma interativo dos cursos da UnB" />
-                <link rel="icon" href="/favicon.svg" />
-            </Head>
-
             <main className={styles.main}>
                 <NavBar data={data} addData={addData} clearData={clearData} />
                 <MandatoryCoursesBox data={data} maxPeriodNumber={maxPeriodNumber} />
                 <ElectiveCoursesBox data={data} />
             </main>
-
-            <footer className={styles.footer}>
-                <a href="https://github.com/mdsreq-fga-unb/2023.1-UnBnoFluxo" target="_blank">
-                    Equipe • Documentação • Direitos
-                </a>
-            </footer>
         </>
     )
 }
