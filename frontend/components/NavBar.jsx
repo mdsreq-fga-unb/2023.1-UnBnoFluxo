@@ -25,7 +25,7 @@ export default function NavBar({ data, addData, clearData }) {
     const handleCloseDetail = () => setOpen(false)
 
     return (
-        <AppBar position="fixed" sx={{ color: "#232323", marginBottom: "16px" }}>
+        <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
             <Toolbar>
                 <Box component="img" sx={{ height: 64 }} alt="Unb no Fluxo logo." src="/logo.svg" />
 
