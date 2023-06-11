@@ -1,15 +1,20 @@
 import {
     Autocomplete,
+    Box,
     Button,
     Dialog,
     DialogActions,
     DialogContent,
     DialogTitle,
     Input,
+    Stack,
     TextField,
+    Typography,
 } from "@mui/material"
 import axios from "axios"
 import React, { useEffect, useState } from "react"
+import Tip from "./Tip"
+import GavelRoundedIcon from "@mui/icons-material/GavelRounded"
 
 export default function NewFormDialog({ open, onClose, addData }) {
     // Estados
@@ -81,42 +86,76 @@ export default function NewFormDialog({ open, onClose, addData }) {
 
     return (
         <Dialog open={open} onClose={onClose}>
-            <DialogTitle>Montando Fluxograma...</DialogTitle>
+            <DialogTitle>
+                <Typography
+                    sx={{
+                        height: "64px",
+                        fontFamily: "Source Sans Pro",
+                        fontStyle: "normal",
+                        fontWeight: 600,
+                        fontSize: "48px",
+                        lineHeight: "64px",
+                        display: "flex",
+                        alignItems: "center",
+                        color: "#232323",
+                        opacity: 0.8,
+                    }}
+                >
+                    Montando Fluxograma...
+                </Typography>
+            </DialogTitle>
 
             <DialogContent>
-                <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
-                {coursesList && (
-                    <Autocomplete
-                        multiple
-                        id="tags-outlined"
-                        options={coursesList}
-                        getOptionLabel={(course) => course.name}
-                        filterSelectedOptions
-                        onChange={(event, newValue) => {
-                            setSelectedCourses(newValue)
-                        }} // Atualiza o estado dos cursos selecionados
-                        renderInput={(params) => (
-                            <TextField {...params} label="Curso" placeholder="Selecione um curso" />
+                <Stack spacing={4}>
+                    <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
+                    <Box>
+                        {coursesList && (
+                            <Autocomplete
+                                multiple
+                                id="tags-outlined"
+                                options={coursesList}
+                                getOptionLabel={(course) => course.name}
+                                filterSelectedOptions
+                                onChange={(event, newValue) => {
+                                    setSelectedCourses(newValue)
+                                }} // Atualiza o estado dos cursos selecionados
+                                renderInput={(params) => (
+                                    <TextField
+                                        {...params}
+                                        label="Curso"
+                                        placeholder="Selecione um curso"
+                                    />
+                                )}
+                            />
                         )}
-                    />
-                )}
-                <p>
-                    <strong>Pesquise um fluxograma diretamente da nossa base de dados.</strong>
-                </p>
-                <p>
-                    <strong>
-                        ---------------------------------- ou ----------------------------------
-                    </strong>
-                </p>
-                <Input type="file" onChange={handleFileChange} />
-                <p>
-                    <strong>Faça upload de um fluxograma diretamente do seu computador.</strong>
-                </p>
+                        <Tip text=" Pesquise um fluxograma diretamente da nossa base de dados." />
+                    </Box>
+                    <Box>
+                        <Box display="flex" alignItems="center" justifyContent="center">
+                            <hr style={{ flex: "1", borderColor: "#232323" }} />
+                            <Typography variant="body1" sx={{ mx: 1, color: "#232323" }}>
+                                ou
+                            </Typography>
+                            <hr style={{ flex: "1", borderColor: "#232323" }} />
+                        </Box>
+                    </Box>
+                    <Box>
+                        <Input type="file" onChange={handleFileChange} />
+                        <Tip text="Faça upload de um fluxograma diretamente do seu computador." />
+                    </Box>
+                </Stack>
             </DialogContent>
 
             <DialogActions>
-                <Button onClick={onClose}>Cancelar</Button>
-                <Button onClick={handleAssemble} variant="contained" color="primary">
+                <Button onClick={onClose} sx={{ color: "#232323" }}>
+                    Cancelar
+                </Button>
+                <Button
+                    onClick={handleAssemble}
+                    variant="contained"
+                    sx={{ mx: 1, background: "#232323" }}
+                >
+                    <GavelRoundedIcon />
                     Montar fluxograma
                 </Button>
             </DialogActions>
