@@ -1,10 +1,10 @@
 import Head from "next/head"
-import NavBar from "../components/NavBar"
-import Period from "../components/Period"
 import useLocalStorageState from "use-local-storage-state"
 import styles from "../styles/Home.module.css"
-import OptativesBox from "../components/OptativesBox"
-import { Box, Stack } from "@mui/material"
+
+import NavBar from "../components/NavBar"
+import ElectiveCoursesBox from "../components/ElectiveCoursesBox"
+import MandatoryCoursesBox from "../components/MandatoryCoursesBox"
 
 export default function Home() {
     const maxPeriodNumber = 10 // Todo: Ajustar pra ser responsivo à fetchs e editavel pelo ususario
@@ -39,12 +39,8 @@ export default function Home() {
 
             <main className={styles.main}>
                 <NavBar data={data} addData={addData} clearData={clearData} />
-                <Stack className={styles.grid}>
-                    {Array.from({ length: maxPeriodNumber }, (_, index) => (
-                        <Period key={index + 1} data={data} periodNumber={index + 1} />
-                    ))}
-                </Stack>
-                <OptativesBox data={data} />
+                <MandatoryCoursesBox data={data} maxPeriodNumber={maxPeriodNumber} />
+                <ElectiveCoursesBox data={data} />
             </main>
 
             <footer className={styles.footer}>

@@ -1,10 +1,10 @@
 import NewCard from "./NewCard"
 import Card from "./Card"
 
-import styles from "../styles/OptativesBox.module.css"
+import styles from "../styles/ElectiveCoursesBox.module.css"
 import { Box, CircularProgress, Grid } from "@mui/material"
 
-export default function OptativesBox({ data }) {
+export default function ElectiveCoursesBox({ data }) {
     return (
         <Box className={styles.box}>
             <Box className={styles.tilte_box}>
