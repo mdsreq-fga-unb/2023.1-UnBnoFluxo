@@ -21,7 +21,7 @@ export default function DialogExample({ open, onClose }) {
         // Outro detalhe é que vc precisa passar a funcao addData para dentro desse componete, do mesmo jeito que open e onClose estao sendo passados
 
         // Fecha o diálogo
-        setOpen(false)
+        onClose()
     }
 
     return (

@@ -1,54 +1,27 @@
 .card {
-  /* margin: 1rem;
-  padding: 1.5rem;
-  text-align: center;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  max-width: 300px; */
-
   transition: color 0.15s ease, border-color 0.15s ease;
-  border-radius: 8px;
-  width: 112px;
-  height: 66px;
+  border-radius: 0.5rem;
+  width: 7rem;
+  height: 4.125rem;
   background: #FFFFFF;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.125rem 0 rgba(0, 0, 0, 0.25);
 
   align-items: center;
   text-align: center;
-
-  margin-bottom: 16px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
 }
 
 .card strong {
-  /* ABCDEFGH */
   position: relative;
   left: 0%;
   right: 0%;
   top: 36.36%;
   bottom: 15.15%;
 
-  /* texto padrao */
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  /* or 150% */
+  font-size: 1rem;
+  line-height: 1.5rem;
 
-  /* MC - Preto */
   color: #232323;
-}
-
-@media (prefers-color-scheme: dark) {
-  .card {
-    border-color: #222;
-  }
 }
