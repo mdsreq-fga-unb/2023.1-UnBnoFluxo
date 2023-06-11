@@ -1,7 +1,6 @@
 import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React, { useState } from "react"
-import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
 import DetailFormDialog from "./DetailFormDialog"
 
@@ -26,18 +25,11 @@ export default function NavBar({ data, addData, clearData }) {
     const handleCloseDetail = () => setOpen(false)
 
     return (
-        <AppBar style={{ color: "232323" }} position="fixed" className={styles.navBar}>
+        <AppBar position="fixed" sx={{ color: "#232323", marginBottom: "16px" }}>
             <Toolbar>
-                <Box
-                    component="img"
-                    sx={{
-                        height: 64,
-                    }}
-                    alt="Unb no Fluxo logo."
-                    src="/logo.svg"
-                />
+                <Box component="img" sx={{ height: 64 }} alt="Unb no Fluxo logo." src="/logo.svg" />
 
-                <div className={styles.rightButtons}>
+                <Box sx={{ marginLeft: "auto" }}>
                     <Button color="inherit" variant="elevated" onClick={clearData}>
                         Limpar
                     </Button>
@@ -50,7 +42,7 @@ export default function NavBar({ data, addData, clearData }) {
                     <Button color="inherit" onClick={handleOpenDetail}>
                         Em branco
                     </Button>
-                </div>
+                </Box>
             </Toolbar>
 
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />

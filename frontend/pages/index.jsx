@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar"
 import Period from "../components/Period"
 import useLocalStorageState from "use-local-storage-state"
 import styles from "../styles/Home.module.css"
+import OptativesBox from "../components/OptativesBox"
+import { Box, Stack } from "@mui/material"
 
 export default function Home() {
     const maxPeriodNumber = 10 // Todo: Ajustar pra ser responsivo à fetchs e editavel pelo ususario
@@ -27,7 +29,7 @@ export default function Home() {
     const clearData = () => setData([])
 
     return (
-        <div className={styles.container}>
+        <>
             <Head>
                 <title>UnB no Fluxo</title>
                 <meta name="author" content="FluxoSquad" />
@@ -37,12 +39,12 @@ export default function Home() {
 
             <main className={styles.main}>
                 <NavBar data={data} addData={addData} clearData={clearData} />
-                {/* <h1 className={styles.title}>UnB no Fluxo</h1> */}
-                <div className={styles.grid}>
+                <Stack className={styles.grid}>
                     {Array.from({ length: maxPeriodNumber }, (_, index) => (
                         <Period key={index + 1} data={data} periodNumber={index + 1} />
                     ))}
-                </div>
+                </Stack>
+                <OptativesBox data={data} />
             </main>
 
             <footer className={styles.footer}>
@@ -50,6 +52,6 @@ export default function Home() {
                     Equipe • Documentação • Direitos
                 </a>
             </footer>
-        </div>
+        </>
     )
 }
