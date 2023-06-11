@@ -2,13 +2,12 @@ import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React, { useState } from "react"
 import NewFormDialog from "./NewFormDialog"
-import DetailFormDialog from "./DetailFormDialog"
-import { ClassNames } from "@emotion/react"
+import DetailFormDialog from "./DetailFormDialog" // TODO: Remover
 
 export default function NavBar({ data, addData, clearData }) {
     // Estados
     const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
-    const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado
+    const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado // TODO: Remover
 
     // Funcao que abre o NewFormDialog
     const handleOpenDialog = () => setOpenDialog(true)
@@ -22,8 +21,11 @@ export default function NavBar({ data, addData, clearData }) {
         saveAs(blob, "MeuFluxograma.json")
     }
 
-    const handleOpenDetail = () => setOpen(true)
-    const handleCloseDetail = () => setOpen(false)
+    // Funcao que abre o DetailFormDialog
+    const handleOpenDetail = () => setOpen(true) // TODO: Remover
+
+    // Funcao que fecha o DetailFormDialog
+    const handleCloseDetail = () => setOpen(false) // TODO: Remover
 
     return (
         <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
@@ -45,7 +47,6 @@ export default function NavBar({ data, addData, clearData }) {
                     </Button>
                 </Box>
             </Toolbar>
-
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
             <DetailFormDialog open={open} onClose={handleCloseDetail} />
         </AppBar>
