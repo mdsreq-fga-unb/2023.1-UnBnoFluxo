@@ -22,6 +22,7 @@ export default function NavBar({ data, addData, clearData }) {
         saveAs(blob, "MeuFluxograma.json")
     }
 
+    //funçoes para abrir e fechar caixa de dialogo do DetailFormDialog
     const handleOpenDetail = () => setOpen(true)
     const handleCloseDetail = () => setOpen(false)
 
@@ -54,7 +55,7 @@ export default function NavBar({ data, addData, clearData }) {
             </Toolbar>
 
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
-            <DetailFormDialog open={open} onClose={handleCloseDetail} />
+            <DetailFormDialog open={open} onClose={handleCloseDetail} addData={addData} />
         </AppBar>
     )
 }
