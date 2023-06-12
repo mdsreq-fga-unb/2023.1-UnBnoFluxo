@@ -1,9 +1,13 @@
 import styles from "../styles/Card.module.css"
 
 export default function Card({ course }) {
+
     return (
         <div className={styles.card} title={course.code + " / " + course.period + "º Per"}>
-            <strong>{course.name}</strong>
+
+            <strong>{course.alias}</strong>
+            <div className={`${styles.tipo}  ${course.nature=="OBRIGATORIO"?styles.mandatory:styles.optative}`}></div>
         </div>
     )
+
 }

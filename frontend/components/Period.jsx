@@ -1,14 +1,14 @@
 import Card from "./Card"
 
 import styles from "../styles/Period.module.css"
-import { CircularProgress } from "@mui/material"
+import { Box, CircularProgress, Stack } from "@mui/material"
 
 export default function Period({ data, periodNumber }) {
     return (
-        <div className={styles.period}>
-            <div className={styles.tilte_box}>
+        <Stack spacing={2} className={styles.period}>
+            <Box className={styles.tilte_box}>
                 <h2> {periodNumber}º PERÍODO</h2>
-            </div>
+            </Box>
             {data ? (
                 data
                     .filter((course) => course.period == periodNumber)
@@ -16,6 +16,6 @@ export default function Period({ data, periodNumber }) {
             ) : (
                 <CircularProgress color="inherit" />
             )}
-        </div>
+        </Stack>
     )
 }

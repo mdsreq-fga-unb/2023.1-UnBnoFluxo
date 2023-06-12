@@ -1,14 +1,13 @@
 import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React, { useState } from "react"
-import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
-import DetailFormDialog from "./DetailFormDialog"
+import DetailFormDialog from "./DetailFormDialog" // TODO: Remover
 
 export default function NavBar({ data, addData, clearData }) {
     // Estados
     const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
-    const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado
+    const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado // TODO: Remover
 
     // Funcao que abre o NewFormDialog
     const handleOpenDialog = () => setOpenDialog(true)
@@ -22,23 +21,19 @@ export default function NavBar({ data, addData, clearData }) {
         saveAs(blob, "MeuFluxograma.json")
     }
 
-    //funçoes para abrir e fechar caixa de dialogo do DetailFormDialog
-    const handleOpenDetail = () => setOpen(true)
-    const handleCloseDetail = () => setOpen(false)
+    // Funcao que abre o DetailFormDialog
+    const handleOpenDetail = () => setOpen(true) // TODO: Remover
+
+    // Funcao que fecha o DetailFormDialog
+    const handleCloseDetail = () => setOpen(false) // TODO: Remover
+    
 
     return (
-        <AppBar style={{ color: "232323" }} position="fixed" className={styles.navBar}>
+        <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
             <Toolbar>
-                <Box
-                    component="img"
-                    sx={{
-                        height: 64,
-                    }}
-                    alt="Unb no Fluxo logo."
-                    src="/logo.svg"
-                />
+                <Box component="img" sx={{ height: 64 }} alt="Unb no Fluxo logo." src="/logo.svg" />
 
-                <div className={styles.rightButtons}>
+                <Box sx={{ marginLeft: "auto" }}>
                     <Button color="inherit" variant="elevated" onClick={clearData}>
                         Limpar
                     </Button>
@@ -51,9 +46,8 @@ export default function NavBar({ data, addData, clearData }) {
                     <Button color="inherit" onClick={handleOpenDetail}>
                         Em branco
                     </Button>
-                </div>
+                </Box>
             </Toolbar>
-
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
             <DetailFormDialog open={open} onClose={handleCloseDetail} addData={addData} />
         </AppBar>
