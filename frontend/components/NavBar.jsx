@@ -26,6 +26,7 @@ export default function NavBar({ data, addData, clearData }) {
 
     // Funcao que fecha o DetailFormDialog
     const handleCloseDetail = () => setOpen(false) // TODO: Remover
+    
 
     return (
         <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
@@ -48,7 +49,7 @@ export default function NavBar({ data, addData, clearData }) {
                 </Box>
             </Toolbar>
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
-            <DetailFormDialog open={open} onClose={handleCloseDetail} />
+            <DetailFormDialog open={open} onClose={handleCloseDetail} addData={addData} />
         </AppBar>
     )
 }

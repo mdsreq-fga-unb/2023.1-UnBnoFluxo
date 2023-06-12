@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from "@mui/material"
+//import { useForm } from "react-hook-form";
 
-export default function DialogExample({ open, onClose }) {
+export default function DialogExample({ open, onClose, addData }) {
     // Estados
     const [name, setName] = useState("")
     const [preRequisite, setPre] = useState("")
@@ -13,28 +14,70 @@ export default function DialogExample({ open, onClose }) {
     const [description, setDescription] = useState("")
 
     const handleSave = () => {
-        // Aqui você deve criar um novo objeto com todos os dados do fomulario
-        console.log("Nome:", name)
+        //UM objeto com todos os dados do fomulario
+        const newCourse = [
+        {displayName: name,
+        preRequisite: preRequisite,
+        coRequisite: coRequisite,
+        equivalence: equivalence,
+        code: code,
+        workloud: workloud,
+        nature: type,
+        description: description}
+        
+      ];
 
-        // TODO: Depois de criado, adicione esse objeto ao banco de dados com a funcao, addData.
-        // Importante: a addData espera um array como parametro entao vc deve passar um objeto dentro de um array, algo como addData([newCoourse])
-        // Outro detalhe é que vc precisa passar a funcao addData para dentro desse componete, do mesmo jeito que open e onClose estao sendo passados
-
+        //imprime (tirar dps)
+        console.log(JSON.stringify(newCourse))
+        //adicionando o obj ao banco de dados com a função
+        addData(newCourse)
         // Fecha o diálogo
         onClose()
     }
+/*
+    const useForm = (newCourse, handleSave) => {
+
+      const [values, setValues] = useState(initialValues);
+  
+      const handleChange = (event) => {
+        const { name, value } = event.target;
+        setValues((prevValues) => ({
+          ...prevValues,
+          [name]: value,
+        }));
+      };
+  
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        onSubmit(values);
+      };
+
+    //useform
+    const onSubmites = () =>{
+
+    };
+
+    const handleChange = (event) => {
+      const { name, value } = event.target;
+      setName((prevState) => ({
+        ...prevState,
+        [name]: value
+      }));
+      //, preRequisite, coRequisite, equivalence, code, workloud, type, description
+    
+    };
+*/
 
     return (
         <div>
             <Dialog open={open} onClose={onClose}>
                 <DialogTitle>Cadastre um novo componente</DialogTitle>
                 <DialogContent>
-                    {/* // TODO: No material ui tem um componente chamado Grid que acho que da pra usar aqui pra envolver os campos e colocar eles espaçados*/}
                     <TextField
                         label="Apelido"
                         value={name}
                         placeholder="Calculo 1 = C1"
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => setName(e.target.value)} // ALTERAR PARA{handleChange}
                     />
                     <TextField
                         label="Pré-requisitos" //ver como relacionar com o banco de dados
@@ -81,4 +124,4 @@ export default function DialogExample({ open, onClose }) {
             </Dialog>
         </div>
     )
-}
+    }

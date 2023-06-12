@@ -20,7 +20,7 @@
 | Sprint 5 | Configuração de ambiente, Desenvolvimento e Implementação |  18/05/23   | 27/05/23 |
 | Sprint 6 | Desenvolvimento, Implementação e Entrega MVP1             |  28/05/23   | 11/06/23 |
 | Sprint 7 | Desenvolvimento e Implementação                           |  12/06/23   | 26/06/23 |
-| Sprint 8 | Desenvolvimento e Implementação e Entrega MVP1            |  27/06/23   | 11/06/23 |
+| Sprint 8 | Desenvolvimento e Implementação e Entrega MVP1            |  27/06/23   | 11/07/23 |
 
 
 ## Matriz de comunicação
@@ -60,3 +60,4 @@ O projeto poderá ser replanejado caso haja:
 | :------: | :----: | --------------------------------------------------------------------- | --------------- |
 | 19/04/23 |  1.0   | Criação do documento                                                  | Todos           |
 | 01/05/23 |  1.1   | Reformulando Critérios de Replanejamento e adicionando novos clientes | Ricardo e Pedro |
+| 12/06/23 |  1.2   | ajuste na data da entrega da sprint 8                                 | João            |
