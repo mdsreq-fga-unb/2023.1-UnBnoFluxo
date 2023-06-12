@@ -6,7 +6,7 @@ export default function Card({ course }) {
         <div className={styles.card} title={course.code + " / " + course.period + "º Per"}>
 
             <strong>{course.alias}</strong>
-            <div className={`${styles.tipo}  ${course.nature=="optative"?styles.optative:styles.mandatory}`}></div>
+            <div className={`${styles.tipo}  ${course.nature=="OBRIGATORIO"?styles.mandatory:styles.optative}`}></div>
         </div>
     )
 
