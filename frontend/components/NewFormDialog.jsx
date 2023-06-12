@@ -1,3 +1,4 @@
+import GavelRoundedIcon from "@mui/icons-material/GavelRounded"
 import {
     Autocomplete,
     Box,
@@ -14,7 +15,6 @@ import {
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import Tip from "./Tip"
-import GavelRoundedIcon from "@mui/icons-material/GavelRounded"
 
 export default function NewFormDialog({ open, onClose, addData }) {
     // Estados
@@ -25,8 +25,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
     // Funcao assincrona para o fetch na api de cursos disponiveis
     const fetchCourses = async () => {
         try {
-            // const response = await axios.get("135.148.35.38:25532/get/courses") // TODO: fazer o uso da api
-            const response = await axios.get("/api/courses")
+            const response = await axios.get("http://135.148.35.38:25532/api/courses")
             setCoursesList(response.data)
         } catch (error) {
             console.error("Erro ao obter dados da API:", error)
@@ -43,8 +42,9 @@ export default function NewFormDialog({ open, onClose, addData }) {
         if (selectedCourses) {
             selectedCourses.forEach(async (selectedCourse) => {
                 try {
-                    // const response = await axios.get(`135.148.35.38:25532/get/${selectedCourse.endpoint}`) // TODO: fazer o uso da api
-                    const response = await axios.get(`/api/${selectedCourse.endpoint}`)
+                    const response = await axios.get(
+                        `http://135.148.35.38:25532/api/course/${selectedCourse.endpoint}`
+                    )
                     addData(response.data)
                 } catch (error) {
                     console.error(`Erro ao obter dados do curso "${selectedCourse.name}":`, error)
