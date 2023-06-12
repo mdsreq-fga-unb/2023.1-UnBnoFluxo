@@ -1,15 +1,16 @@
-.period {
-  width: 9rem;
-  min-height: 40.5rem;
+.box {
+  margin-bottom: 1rem;
+  width: 100%;
+}
 
+.cards_box {
   background: #DFE1E5;
 
   border-width: 0 0.125rem;
   border-style: solid;
   border-color: #FFFFFF;
   border-radius: 0.5rem;
-
-  align-items: center;
+  min-width: 100%;
 }
 
 .tilte_box h2 {
