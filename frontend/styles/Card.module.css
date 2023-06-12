@@ -20,6 +20,25 @@
   margin-bottom: 16px;
 }
 
+.mandatory {
+  position: relative;
+  bottom: -33px;
+  padding: 5px;
+  background-color: #FFAF0F;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.optative {
+  position: relative;
+  bottom: -33px;
+  padding: 5px;
+  background-color: #3574F0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
 .card:hover,
 .card:focus,
 .card:active {
