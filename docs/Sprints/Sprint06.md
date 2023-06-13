@@ -24,7 +24,7 @@
 - US04 Mesclar fluxograma                        
 - US03 Iniciar fluxograma em branco              
 - US07 Visualizar obrigatoriedade de componentes  
-- + (débito da sprint 5) US01 - Disponibilizar fluxograma padrão
+- (débito da sprint 5) US01 - Disponibilizar fluxograma padrão
 
 **KANBAN NA PLANNING**
 
