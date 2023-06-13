@@ -25,7 +25,8 @@ export default function NewFormDialog({ open, onClose, addData }) {
     // Funcao assincrona para o fetch na api de cursos disponiveis
     const fetchCourses = async () => {
         try {
-            const response = await axios.get("https://135.148.35.38:25532/api/courses")
+            // const response = await axios.get("http://135.148.35.38:25532/api/courses") // TODO:
+            const response = await axios.get("api/courses")
             setCoursesList(response.data)
         } catch (error) {
             console.error("Erro ao obter dados da API:", error)
@@ -42,9 +43,10 @@ export default function NewFormDialog({ open, onClose, addData }) {
         if (selectedCourses) {
             selectedCourses.forEach(async (selectedCourse) => {
                 try {
-                    const response = await axios.get(
-                        `https://135.148.35.38:25532/api/course/${selectedCourse.endpoint}`
-                    )
+                    // const response = await axios.get(
+                    //     `http://135.148.35.38:25532/api/course/${selectedCourse.endpoint}`
+                    // ) // todo:
+                    const response = await axios.get(`/api/${selectedCourse.endpoint}`)
                     addData(response.data)
                 } catch (error) {
                     console.error(`Erro ao obter dados do curso "${selectedCourse.name}":`, error)
