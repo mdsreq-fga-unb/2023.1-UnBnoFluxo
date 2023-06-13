@@ -8,6 +8,9 @@ Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estuda
 ## 📒 Documentação
 A documentação do projeto está disponivel nesse [link](https://mdsreq-fga-unb.github.io/2023.1-UnBnoFluxo/).
 
+## 💻 Aplicação
+O projeto está disponivel online nesse [link](https://unbnofluxo.vercel.app/).
+
 ## 📃 Backlog:
 
 - [Backlog no kanban](https://github.com/orgs/mdsreq-fga-unb/projects/10)
