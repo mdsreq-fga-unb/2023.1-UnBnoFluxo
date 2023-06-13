@@ -7,7 +7,6 @@ import DetailFormDialog from "./DetailFormDialog" // TODO: Remover
 export default function NavBar({ data, addData, clearData }) {
     // Estados
     const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
-    const [open, setOpen] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado // TODO: Remover
 
     // Funcao que abre o NewFormDialog
     const handleOpenDialog = () => setOpenDialog(true)
@@ -20,12 +19,6 @@ export default function NavBar({ data, addData, clearData }) {
         const blob = new Blob([JSON.stringify(data)], { type: "application/json" })
         saveAs(blob, "MeuFluxograma.json")
     }
-
-    // Funcao que abre o DetailFormDialog
-    const handleOpenDetail = () => setOpen(true) // TODO: Remover
-
-    // Funcao que fecha o DetailFormDialog
-    const handleCloseDetail = () => setOpen(false) // TODO: Remover
 
     return (
         <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
@@ -42,13 +35,9 @@ export default function NavBar({ data, addData, clearData }) {
                     <Button color="inherit" variant="elevated" onClick={handleOpenDialog}>
                         Novo
                     </Button>
-                    <Button color="inherit" onClick={handleOpenDetail}>
-                        Em branco
-                    </Button>
                 </Box>
             </Toolbar>
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
-            <DetailFormDialog open={open} onClose={handleCloseDetail} />
         </AppBar>
     )
 }

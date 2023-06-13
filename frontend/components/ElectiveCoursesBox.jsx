@@ -4,7 +4,7 @@ import Card from "./Card"
 import styles from "../styles/ElectiveCoursesBox.module.css"
 import { Box, CircularProgress, Grid } from "@mui/material"
 
-export default function ElectiveCoursesBox({ data }) {
+export default function ElectiveCoursesBox({ data, addData }) {
     return (
         <Box className={styles.box}>
             <Box className={styles.tilte_box}>
@@ -19,7 +19,7 @@ export default function ElectiveCoursesBox({ data }) {
                 alignItems="flex-start"
             >
                 <Grid item p={2}>
-                    <NewCard />
+                    <NewCard addData={addData} />
                 </Grid>
                 {data ? (
                     data

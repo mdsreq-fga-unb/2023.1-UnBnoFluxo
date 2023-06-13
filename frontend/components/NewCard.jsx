@@ -4,7 +4,7 @@ import AddOutlinedIcon from "@mui/icons-material/AddOutlined"
 import { useState } from "react"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function NewCard() {
+export default function NewCard({ addData }) {
     // Estados
     const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado
 
@@ -24,7 +24,7 @@ export default function NewCard() {
             >
                 <AddOutlinedIcon sx={{ fontSize: 48, color: "#232323" }} />
             </Button>
-            <DetailFormDialog open={openDialog} onClose={handleCloseDialog} />
+            <DetailFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
         </>
     )
 }
