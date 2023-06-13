@@ -1,10 +1,13 @@
-# Padrões de codificação
+# Padrões de codificação  de clean code
 
 ## Do git
+
 Para o github foi definido um gitflow de 3 branchs (main, dev e features branchs)
 
 ## Do front
+
 Para o front mantidos convensôes mais usadas do React:
+
 - Nomes de compontetes, variaveis, e similares em ingles
 - Comentarios em portugues
 - PascalCase para nomes de componentes
@@ -27,3 +30,8 @@ Para o front mantidos convensôes mais usadas do React:
 }
 
 ```
+
+## Histórico de revisão
+|   Data   | Versão | Descrição            | Autor   |
+| :------: | :----: | -------------------- | ------- |
+| 06/05/23 |  1.0   | Criação do documento | Ricardo |
