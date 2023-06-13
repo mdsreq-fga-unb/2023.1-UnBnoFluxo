@@ -10,7 +10,7 @@ public class Client {
 
     public void testRequest(){
         try {
-            URL url = new URL("http://localhost:8080/get"); // Replace with the actual server URL
+            URL url = new URL("http://localhost:25532/api/courses"); // Replace with the actual server URL
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
