@@ -24,6 +24,8 @@
 - US04 Mesclar fluxograma                        
 - US03 Iniciar fluxograma em branco              
 - US07 Visualizar obrigatoriedade de componentes  
+- + (débito da sprint 5) US01 - Disponibilizar fluxograma padrão
+![1](docs/../../img/planning_6.jpeg)
 
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
@@ -38,24 +40,31 @@
 
 ## Sprint Review
 **ENTREGAS**
-
-
+- US01 - Disponibilizar fluxograma padrão
+- US04 Mesclar fluxograma
+- US07 Visualizar obrigatoriedade de componentes
+![1](docs/../../img/done_6.jpeg)
 
 **NÃO FOI ENTREGUE**
-
-
+- US03 Iniciar fluxograma em branco
 
 **O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
-
-
+- Poder diferenciar as materias dentro do fluxograma de cada curso (saber diferir quais matérias sao de software e quais sao de aeo por exemplo).
+- Melhoria da US03 (nao foi entregue completa): Poder estar com um fluxograma pronto e buscar apenas uma materia de outro curso e adiciona-la no meu fluxograma atual
 
 ## Sprint Retrospective
 **OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
-
-
-
-**O QUE NÃO PRATICAMOS QUE DEVEMOS MUDAR?**
-
+- Pair programming ( joao e ricardo | israel e pedro | joao e vinicius | ricardo e vinicius)
+- Design simples
+- Propriedade coletiva
+- Integração continua
+- Planejamento do jogo
+- Refatoração
+- Padrao de codificação documentado
+- Ritmo sustentável
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
-
+- manipulações no React, como UseState e Useform (joao e vinicius) 
+- material UI (ricardo, joao)
+- manipulações em Hooks (ricardo)
+- aprender a configurar a SSL (pedro)
