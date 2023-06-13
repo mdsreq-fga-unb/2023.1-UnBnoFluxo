@@ -1,10 +1,12 @@
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from "@mui/material"
 import React, { useState } from "react"
-import { Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from "@mui/material"
 //import { useForm } from "react-hook-form";
 
-export default function DialogExample({ open, onClose, addData }) {
+export default function DetailFormDialog({ open, onClose, addData }) {
     // Estados
     const [name, setName] = useState("")
+    const [alias, setAlias] = useState("")
+    const [period, setPeriod] = useState("")
     const [preRequisite, setPre] = useState("")
     const [coRequisite, setCo] = useState("")
     const [equivalence, setEquivalence] = useState("")
@@ -15,26 +17,27 @@ export default function DialogExample({ open, onClose, addData }) {
 
     const handleSave = () => {
         //UM objeto com todos os dados do fomulario
-        const newCourse = [
-        {displayName: name,
-        preRequisite: preRequisite,
-        coRequisite: coRequisite,
-        equivalence: equivalence,
-        code: code,
-        workloud: workloud,
-        nature: type,
-        description: description}
-        
-      ];
+        const newCourse = {
+            code: code,
+            displayName: name,
+            nature: type,
+            alias: alias,
+            period: period,
+            preRequisite: preRequisite,
+            coRequisite: coRequisite,
+            equivalence: equivalence,
+            workloud: workloud,
+            description: description,
+        }
 
         //imprime (tirar dps)
         console.log(JSON.stringify(newCourse))
         //adicionando o obj ao banco de dados com a função
-        addData(newCourse)
+        addData([newCourse])
         // Fecha o diálogo
         onClose()
     }
-/*
+    /*
     const useForm = (newCourse, handleSave) => {
 
       const [values, setValues] = useState(initialValues);
@@ -74,10 +77,20 @@ export default function DialogExample({ open, onClose, addData }) {
                 <DialogTitle>Cadastre um novo componente</DialogTitle>
                 <DialogContent>
                     <TextField
-                        label="Apelido"
+                        label="Nome"
                         value={name}
-                        placeholder="Calculo 1 = C1"
                         onChange={(e) => setName(e.target.value)} // ALTERAR PARA{handleChange}
+                    />
+                    <TextField
+                        label="Apelido"
+                        placeholder="Calculo 1 = C1"
+                        value={alias}
+                        onChange={(e) => setAlias(e.target.value)} // ALTERAR PARA{handleChange}
+                    />
+                    <TextField
+                        label="Periodo" //ver como relacionar com o banco de dados
+                        value={period}
+                        onChange={(e) => setPeriod(e.target.value)}
                     />
                     <TextField
                         label="Pré-requisitos" //ver como relacionar com o banco de dados
@@ -124,4 +137,4 @@ export default function DialogExample({ open, onClose, addData }) {
             </Dialog>
         </div>
     )
-    }
+}
