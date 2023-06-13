@@ -24,6 +24,7 @@
 - US04 Mesclar fluxograma                        
 - US03 Iniciar fluxograma em branco              
 - US07 Visualizar obrigatoriedade de componentes  
+![1](docs/../../img/planning_6.jpeg)
 
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
@@ -38,7 +39,6 @@
 
 ## Sprint Review
 **ENTREGAS**
-- US01 - Disponibilizar fluxograma padrão
 - US04 Mesclar fluxograma
 - US03 Iniciar fluxograma em branco
 - US07 Visualizar obrigatoriedade de componentes
