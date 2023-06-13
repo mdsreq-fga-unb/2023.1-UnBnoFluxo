@@ -1,41 +1,43 @@
-import MenuIcon from "@mui/icons-material/Menu"
-import { AppBar, Button, IconButton, Toolbar } from "@mui/material"
+import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React, { useState } from "react"
-import styles from "../styles/NavBar.module.css"
 import NewFormDialog from "./NewFormDialog"
+import DetailFormDialog from "./DetailFormDialog" // TODO: Remover
 
-export default function NavBar({ setData }) {
-    const [openDialog, setOpenDialog] = useState(false)
+export default function NavBar({ data, addData, clearData }) {
+    // Estados
+    const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
 
+    // Funcao que abre o NewFormDialog
     const handleOpenDialog = () => setOpenDialog(true)
+
+    // Funcao que fecha o NewFormDialog
     const handleCloseDialog = () => setOpenDialog(false)
 
+    // Funcao responsavel por fazer o download dos dados carregados atualmente no app
     const handleDownload = () => {
-        const data = localStorage.getItem("data")
-        if (data) {
-            const blob = new Blob([data], { type: "application/json" })
-            saveAs(blob, "MeuFluxograma.json")
-        }
+        const blob = new Blob([JSON.stringify(data)], { type: "application/json" })
+        saveAs(blob, "MeuFluxograma.json")
     }
 
     return (
-        <AppBar position="fixed" className={styles.navBar}>
+        <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
             <Toolbar>
-                <IconButton edge="start" color="inherit" aria-label="menu">
-                    <MenuIcon />
-                </IconButton>
-                <div className={styles.rightButtons}>
-                    <Button color="inherit" onClick={handleDownload}>
+                <Box component="img" sx={{ height: 64 }} alt="Unb no Fluxo logo." src="/logo.svg" />
+
+                <Box sx={{ marginLeft: "auto" }}>
+                    <Button color="inherit" variant="elevated" onClick={clearData}>
+                        Limpar
+                    </Button>
+                    <Button color="inherit" variant="elevated" onClick={handleDownload}>
                         Download
                     </Button>
-                    <Button color="inherit" onClick={handleOpenDialog}>
+                    <Button color="inherit" variant="elevated" onClick={handleOpenDialog}>
                         Novo
                     </Button>
-                </div>
+                </Box>
             </Toolbar>
-
-            <NewFormDialog open={openDialog} onClose={handleCloseDialog} setData={setData} />
+            <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
         </AppBar>
     )
 }

@@ -1,50 +1,37 @@
 .period {
-
-  width: 144px;
-  min-height: 648px;
+  width: 9rem;
+  min-height: 40.5rem;
 
   background: #DFE1E5;
-  /* MC - Branco */
 
-  border-width: 0px 2px;
+  border-width: 0 0.125rem;
   border-style: solid;
   border-color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-
-
 .tilte_box h2 {
-  /* MC - Preto */
   background: #232323;
 
-  /* MC - Branco */
-  border: 1px solid #FFFFFF;
-
-  border-width: 0px 2px;
+  border: 0.0625rem solid #FFFFFF;
+  border-width: 0 0.125rem;
   border-style: solid;
   border-color: #FFFFFF;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 0.5rem 0.5rem 0 0;
 
-  font-size: 1.5rem;
+  margin: 0;
 
-  margin: 0 0 16px 0;
+  width: 9rem;
+  height: 2rem;
 
-  width: 144px;
-  height: 32px;
-
-  /* texto padrao */
+  font-size: 1rem;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
 
-  /* MC - Branco */
   color: #FFFFFF;
 
   display: flex;
@@ -52,20 +39,3 @@
   align-items: center;
   justify-content: center;
 }
-
-
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-/* @media (prefers-color-scheme: dark) {
-
-  .card,
-  .footer {
-    border-color:  #232323;
-  }
-} */

@@ -4,7 +4,7 @@
 
 |  Início  |   Fim    |  Duração  |
 | :------: | :------: | :-------: |
-| 06/05/23 | 18/05/23 | 2 semanas |
+| 28/05/23 | 11/06/23 | 2 semanas |
 
 ## Sprint Planning
 **PAPEIS**

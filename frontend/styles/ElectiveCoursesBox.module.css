@@ -1,0 +1,42 @@
+.box {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.cards_box {
+  background: #DFE1E5;
+
+  border-width: 0 0.125rem;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 0.5rem;
+  min-width: 100%;
+}
+
+.tilte_box h2 {
+  background: #232323;
+
+  border: 0.0625rem solid #FFFFFF;
+  border-width: 0 0.125rem;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  margin: 0;
+
+  width: 9rem;
+  height: 2rem;
+
+  font-size: 1rem;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+  color: #FFFFFF;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
