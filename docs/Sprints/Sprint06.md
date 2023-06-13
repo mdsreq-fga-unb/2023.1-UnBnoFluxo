@@ -38,8 +38,10 @@
 
 ## Sprint Review
 **ENTREGAS**
-
-
+- US01 - Disponibilizar fluxograma padrão
+- US04 Mesclar fluxograma
+- US03 Iniciar fluxograma em branco
+- US07 Visualizar obrigatoriedade de componentes
 
 **NÃO FOI ENTREGUE**
 
@@ -51,11 +53,17 @@
 
 ## Sprint Retrospective
 **OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
-
-
-
-**O QUE NÃO PRATICAMOS QUE DEVEMOS MUDAR?**
-
+- Pair programming ( joao e ricardo | israel e pedro | joao e vinicius | ricardo e vinicius)
+- Design simples
+- Propriedade coletiva
+- Integração continua
+- Planejamento do jogo
+- Refatoração
+- Padrao de codificação documentado
+- Ritmo sustentável
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
-
+- manipulações no React, como UseState e Useform (joao e vinicius) 
+- material UI (ricardo, joao)
+- manipulações em Hooks (ricardo)
+- aprender a configurar a SSL (pedro)
