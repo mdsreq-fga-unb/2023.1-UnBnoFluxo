@@ -1,0 +1,179 @@
+[
+  {
+    "period": 0,
+    "disciplines": [
+      "DEG0200 - ATIVIDADE COMPLEMENTAR - 15h Optativa function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement(\"input\");p.type = \"hidden\";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};",
+      "DEG0201 - ATIVIDADE COMPLEMENTAR - 30h Optativa",
+      "DEG0202 - ATIVIDADE COMPLEMENTAR - 45h Optativa",
+      "DEG0203 - ATIVIDADE COMPLEMENTAR - 60h Optativa",
+      "DEG0205 - ATIVIDADE COMPLEMENTAR - 90h Optativa",
+      "DEG0206 - ATIVIDADE COMPLEMENTAR - 120h Optativa",
+      "FGA0003 - COMPILADORES 1 - 60h Optativa",
+      "FGA0013 - ANATOMIA E FISIOLOGIA HUMANA - 60h Optativa",
+      "FGA0014 - PROCESSAMENTO DE SINAIS BIOLÓGICOS - 60h Optativa",
+      "FGA0015 - PROCESSAMENTO DIGITAL DE IMAGENS - 60h Optativa",
+      "FGA0016 - TÓPICOS ESPECIAL EM INSTRUMENTAÇÃO BIOMÉDICA - 60h Optativa",
+      "FGA0025 - SISTEMAS DE ENERGIA SOLAR E EÓLICA - 60h Optativa",
+      "FGA0044 - PROJETO DE SISTEMAS DE CONTROLE - 60h Optativa",
+      "FGA0046 - MÉTODOS E TÉCNICAS DA ESCRITA CIENTÍFICA - 60h Optativa",
+      "FGA0057 - ELETRÔNICA DE POTÊNCIA - 60h Optativa",
+      "FGA0088 - TEORIA DE SISTEMAS DE CONVERSÃO DE ENERGIA - 60h Optativa",
+      "FGA0089 - LABORATÓRIO DE SISTEMAS DE CONVERSÃO DE ENERGIA - 30h Optativa",
+      "FGA0094 - ANTENAS IMPRESSAS - 60h Optativa",
+      "FGA0095 - CODIFICAÇÃO E COMPRESSÃO DE SINAIS, IMAGENS E VÍDEO - 60h Optativa",
+      "FGA0097 - ELETRÔNICA DE RÁDIO FREQUÊNCIA - 60h Optativa",
+      "FGA0116 - ELETRÔNICA DE ALTA FREQUÊNCIA - 60h Optativa",
+      "FGA0129 - PROCESSAMENTO DIGITAL DE SINAIS FINANCEIROS - 60h Optativa",
+      "FGA0138 - MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE - 60h Optativa",
+      "FGA0147 - ESTRUTURA DE DADOS E ALGORITMOS - 60h Optativa",
+      "FGA0158 - ORIENTAÇÃO A OBJETOS - 60h Optativa",
+      "FGA0165 - PROCESSO DE DESENVOLVIMENTO DE SOFTWARE - 60h Optativa",
+      "FGA0166 - ELEMENTOS E MÉTODOS EM ELETRÔNICA - 60h Optativa",
+      "FGA0167 - SISTEMAS AUTOMOTIVOS - 60h Optativa",
+      "FGA0169 - FONTES DE ENERGIA E TECNOLOGIAS DE CONVERSÃO - 60h Optativa",
+      "FGA0170 - FUNDAMENTOS DE SISTEMAS OPERACIONAIS - 60h Optativa",
+      "FGA0171 - TÉCNICAS DE PROGRAMAÇÃO - 60h Optativa",
+      "FGA0181 - INOVAÇÃO - 30h Optativa",
+      "FGA0195 - GESTÃO DA PRODUÇÃO AUTOMOTIVA - 60h Optativa",
+      "FGA0198 - PROJETO COM CIRCUITOS RECONFIGURAVEIS - 60h Optativa",
+      "FGA0200 - ENGENHARIA DE PRODUTO - 60h Optativa",
+      "FGA0201 - PROJETO DE CIRCUITOS INTEGRADOS DIGITAIS - 60h Optativa",
+      "FGA0202 - INFORMÁTICA EM SAÚDE - 60h Optativa",
+      "FGA0221 - INTELIGÊNCIA ARTIFICIAL - 60h Optativa",
+      "FGA0222 - INSTRUMENTAÇÃO BIOMÉDICA 1 - 60h Optativa",
+      "FGA0224 - COMUNICAÇÕES DIGITAIS PARA ENGENHARIA - 60h Optativa",
+      "FGA0226 - ELETRÔNICA VEICULAR - 60h Optativa",
+      "FGA0254 - CIÊNCIAS AEROESPACIAIS - 60h Optativa",
+      "FGA0256 - PROJETO DE SENSORES - 60h Optativa",
+      "FGA0257 - INTEGRIDADES DE SINAIS E DESIGN DE CIRCUITOS - 60h Optativa",
+      "FGA0258 - INSTRUMENTAÇÃO BIOMÉDICA 2 - 60h Optativa",
+      "FGA0259 - MODELAGEM DE SISTEMAS BIOLÓGICOS - 60h Optativa",
+      "FGA0260 - TÓPICOS AVANÇADOS EM ELETROMAGNETISMO APLICADO - 60h Optativa",
+      "FGA0261 - TÓPICOS ESPECIAIS EM ELETRONICA - 60h Optativa",
+      "FGA0280 - PROJETO DE CIRCUITOS ELETRÔNICOS INTEGRADOS 2 - 60h Optativa",
+      "FGA0292 - INTRODUÇÃO À FOTÔNICA E OPTRÔNICA - 60h Optativa",
+      "FGA0299 - SISTEMAS BIOINSPIRADOS APLICADOS A ENGENHARIA - 60h Optativa",
+      "FGA0380 - PROCESSOS ESTOCÁSTICOS - 60h Optativa",
+      "FTD0007 - INTRODUCAO A ATIVIDADE EMPRESARIAL - 60h Optativa",
+      "LIP0174 - LÍNGUA DE SINAIS BRASILEIRA - BÁSICO - 60h Optativa",
+      "Carga Horária Total: 3180h"
+    ]
+  },
+  {
+    "period": 1,
+    "disciplines": [
+      "Carga Horária Total: h"
+    ]
+  },
+  {
+    "period": 2,
+    "disciplines": [
+      "CIC0004 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES - 90h Obrigatória",
+      "FGA0161 - ENGENHARIA E AMBIENTE - 60h Obrigatória",
+      "FGA0163 - INTRODUÇÃO À ENGENHARIA - 30h Obrigatória",
+      "FGA0168 - DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR - 90h Obrigatória",
+      "MAT0025 - CÁLCULO 1 - 90h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 3,
+    "disciplines": [
+      "FGA0133 - ENGENHARIA ECONÔMICA - 60h Obrigatória",
+      "FGA0157 - PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA - 60h Obrigatória",
+      "IFD0171 - FISICA 1 - 60h Obrigatória",
+      "IFD0173 - FISICA 1 EXPERIMENTAL - 30h Obrigatória",
+      "MAT0026 - CÁLCULO 2 - 90h Obrigatória",
+      "MAT0031 - INTRODUCAO A ALGEBRA LINEAR - 60h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 4,
+    "disciplines": [
+      "FGA0071 - PRÁTICA DE ELETRÔNICA DIGITAL 1 - 30h Obrigatória",
+      "FGA0073 - TEORIA DE ELETRÔNICA DIGITAL 1 - 60h Obrigatória",
+      "FGA0154 - MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA - 60h Obrigatória",
+      "FGA0160 - MÉTODOS NUMÉRICOS PARA ENGENHARIA - 60h Obrigatória",
+      "IQD0125 - QUIMICA GERAL TEORICA - 60h Obrigatória",
+      "IQD0126 - QUIMICA GERAL EXPERIMENTAL - 30h Obrigatória",
+      "MAT0027 - CÁLCULO 3 - 90h Obrigatória",
+      "Carga Horária Total: 390h"
+    ]
+  },
+  {
+    "period": 5,
+    "disciplines": [
+      "ENM0080 - FENOMENOS DE TRANSPORTE - 75h Obrigatória",
+      "FGA0067 - TEORIA DE CIRCUITOS ELETRÔNICOS 1 - 60h Obrigatória",
+      "FGA0069 - PRÁTICA DE CIRCUITOS ELETRÔNICOS 1 - 30h Obrigatória",
+      "FGA0072 - PRÁTICA DE ELETRÔNICA DIGITAL 2 - 30h Obrigatória",
+      "FGA0074 - TEORIA DE ELETRÔNICA DIGITAL 2 - 60h Obrigatória",
+      "FGA0119 - TEORIA DE ELETROMAGNETISMO - 60h Obrigatória",
+      "FGA0120 - PRÁTICA DE ELETROMAGNETISMO - 30h Obrigatória",
+      "FGA0150 - PROJETO INTEGRADOR DE ENGENHARIA 1 - 60h Obrigatória",
+      "Carga Horária Total: 405h"
+    ]
+  },
+  {
+    "period": 6,
+    "disciplines": [
+      "FGA0075 - LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO - 15h Obrigatória",
+      "FGA0078 - TEORIA DE MATERIAIS DE CONSTRUÇÃO - 45h Obrigatória",
+      "FGA0086 - TEORIA DE ELETRICIDADE APLICADA - 60h Obrigatória",
+      "FGA0087 - LABORATÓRIO DE ELETRICIDADE APLICADA - 30h Obrigatória",
+      "FGA0096 - ELETRÔNICA EMBARCADA - 90h Obrigatória",
+      "FGA0100 - PRÁTICA DE FÍSICA DOS DISPOSITIVOS ELETRÔNICOS - 30h Obrigatória",
+      "FGA0101 - TEORIA DE FÍSICA DOS DISPOSITIVOS ELETRÔNICOS - 60h Obrigatória",
+      "FGA0102 - SINAIS E SISTEMAS PARA ENGENHARIA - 90h Obrigatória",
+      "Carga Horária Total: 420h"
+    ]
+  },
+  {
+    "period": 7,
+    "disciplines": [
+      "FGA0068 - TEORIA DE CIRCUITOS ELETRÔNICOS 2 - 60h Obrigatória",
+      "FGA0070 - PRÁTICA DE CIRCUITOS ELETRÔNICOS 2 - 30h Obrigatória",
+      "FGA0092 - PRINCÍPIOS DE COMUNICAÇÃO PARA ENGENHARIA - 75h Obrigatória",
+      "FGA0093 - PRINCÍPIOS DE CONTROLE - 75h Obrigatória",
+      "FGA0164 - HUMANIDADES E CIDADANIA - 60h Obrigatória",
+      "FGA0184 - GESTÃO DA PRODUÇÃO E QUALIDADE - 60h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 8,
+    "disciplines": [
+      "FGA0017 - PROJETOS DE CIRCUITOS INTEGRADOS 1 - 60h Obrigatória",
+      "FGA0103 - SISTEMAS OPERACIONAIS EMBARCADOS - 90h Obrigatória",
+      "FGA0132 - INSTRUMENTAÇÃO ELETRÔNICA PARA ENGENHARIA - 60h Obrigatória",
+      "FGA0148 - ENGENHARIA DE SEGURANÇA DO TRABALHO - 30h Obrigatória",
+      "FGA0219 - PROCESSAMENTO DE SINAIS - 60h Obrigatória",
+      "Carga Horária Total: 300h"
+    ]
+  },
+  {
+    "period": 9,
+    "disciplines": [
+      "FGA0098 - PRÁTICA DE CIRCUITOS ELETRÔNICOS 3 - 30h Obrigatória",
+      "FGA0099 - TEORIA DE CIRCUITOS ELETRÔNICOS 3 - 60h Obrigatória",
+      "FGA0250 - PROJETO INTEGRADOR DE ENGENHARIA 2 - 90h Obrigatória",
+      "Carga Horária Total: 180h"
+    ]
+  },
+  {
+    "period": 10,
+    "disciplines": [
+      "FGA0009 - TRABALHO DE CONCLUSÃO DE CURSO 1 - 60h Obrigatória",
+      "FGA0021 - ESTÁGIO SUPERVISIONADO - 210h Obrigatória",
+      "Carga Horária Total: 270h"
+    ]
+  },
+  {
+    "period": 11,
+    "disciplines": [
+      "FGA0011 - TRABALHO DE CONCLUSÃO DE CURSO 2 - 90h Obrigatória",
+      "Carga Horária Total: 90h"
+    ]
+  }
+]

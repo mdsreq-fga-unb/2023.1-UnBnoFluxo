@@ -1,0 +1,170 @@
+[
+  {
+    "period": 0,
+    "disciplines": [
+      "CIC0007 - INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO - 60h Optativa function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement(\"input\");p.type = \"hidden\";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};",
+      "CIC0088 - COMPUTACAO BASICA - 90h Optativa",
+      "DEG0200 - ATIVIDADE COMPLEMENTAR - 15h Optativa",
+      "DEG0201 - ATIVIDADE COMPLEMENTAR - 30h Optativa",
+      "DEG0202 - ATIVIDADE COMPLEMENTAR - 45h Optativa",
+      "DEG0203 - ATIVIDADE COMPLEMENTAR - 60h Optativa",
+      "DEG0205 - ATIVIDADE COMPLEMENTAR - 90h Optativa",
+      "DEG0206 - ATIVIDADE COMPLEMENTAR - 120h Optativa",
+      "DEG0207 - ATIVIDADE COMPLEMENTAR - 150h Optativa",
+      "DEG0208 - ATIVIDADE COMPLEMENTAR - 180h Optativa",
+      "DEG0209 - ATIVIDADE COMPLEMENTAR - 210h Optativa",
+      "DEG0210 - ATIVIDADE COMPLEMENTAR - 240h Optativa",
+      "DEG0211 - ATIVIDADE COMPLEMENTAR - 270h Optativa",
+      "DEG0212 - ATIVIDADE COMPLEMENTAR - 300h Optativa",
+      "DEG0213 - ATIVIDADE COMPLEMENTAR - 330h Optativa",
+      "DEG0214 - ATIVIDADE COMPLEMENTAR - 360h Optativa",
+      "DEG0215 - ATIVIDADE COMPLEMENTAR - 390h Optativa",
+      "DEG0216 - ATIVIDADE COMPLEMENTAR - 420h Optativa",
+      "DEG0217 - ATIVIDADE COMPLEMENTAR - 450h Optativa",
+      "DEG0218 - ATIVIDADE COMPLEMENTAR - 480h Optativa",
+      "DEG0219 - ATIVIDADE COMPLEMENTAR - 510h Optativa",
+      "FGA0007 - CONFIABILIDADE DE COMPONENTES E SISTEMAS - 60h Optativa",
+      "FGA0040 - SISTEMAS DE CONTROLE AUTOMOTIVO - 60h Optativa",
+      "FGA0046 - MÉTODOS E TÉCNICAS DA ESCRITA CIENTÍFICA - 60h Optativa",
+      "FGA0077 - INTRODUÇÃO AO DESGASTE - 60h Optativa",
+      "FGA0123 - CÁLCULO PARA ENGENHARIA 1 - 60h Optativa",
+      "FGA0125 - INTRODUÇÃO À GEOMETRIA ANALÍTICA - 30h Optativa",
+      "FGA0126 - CÁLCULO PARA ENGENHARIA 2 - 60h Optativa",
+      "FGA0127 - EQUAÇÕES DIFERENCIAIS ORDINÁRIAS - 60h Optativa",
+      "FGA0128 - CÁLCULO PARA ENGENHARIA 3 - 60h Optativa",
+      "FGA0131 - ENGENHARIA DE SOFTWARE AUTOMOTIVO - 60h Optativa",
+      "FGA0167 - SISTEMAS AUTOMOTIVOS - 60h Optativa",
+      "FGA0186 - ELETRICIDADE APLICADA - 90h Optativa",
+      "FGA0195 - GESTÃO DA PRODUÇÃO AUTOMOTIVA - 60h Optativa",
+      "FGA0214 - TÓPICOS ESPECIAIS EM ENGENHARIA AUTOMOTIVA - 60h Optativa",
+      "FGA0232 - INTEGRAÇÃO E TESTES - 60h Optativa",
+      "FGA0233 - SENSORES E TRANSDUTORES - 60h Optativa",
+      "FGA0268 - ANÁLISE DINÂMICA MÉTODOS DOS ELEMENTOS FINITOS - 60h Optativa",
+      "FGA0270 - SISTEMAS HIDRÁULICOS E PNEUMÁTICOS - 60h Optativa",
+      "FGA0271 - PROJETO DE VEÍCULOS - 60h Optativa",
+      "FGA0272 - DINÂMICA MULTICORPOS VEICULAR - 60h Optativa",
+      "FGA0284 - ENGENHARIA DE MANUTENÇÃO - 60h Optativa",
+      "FGA0285 - INTRODUÇÃO À MECÂNICA DA FRATURA - 60h Optativa",
+      "FGA0379 - FUNDAMENTOS DE PROPULSÃO ELÉTRICA VEICULAR - 60h Optativa",
+      "LIP0174 - LÍNGUA DE SINAIS BRASILEIRA - BÁSICO - 60h Optativa",
+      "Carga Horária Total: 6240h"
+    ]
+  },
+  {
+    "period": 1,
+    "disciplines": [
+      "Carga Horária Total: h"
+    ]
+  },
+  {
+    "period": 2,
+    "disciplines": [
+      "CIC0004 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES - 90h Obrigatória",
+      "FGA0161 - ENGENHARIA E AMBIENTE - 60h Obrigatória",
+      "FGA0163 - INTRODUÇÃO À ENGENHARIA - 30h Obrigatória",
+      "FGA0168 - DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR - 90h Obrigatória",
+      "MAT0025 - CÁLCULO 1 - 90h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 3,
+    "disciplines": [
+      "FGA0157 - PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA - 60h Obrigatória",
+      "IFD0171 - FISICA 1 - 60h Obrigatória",
+      "IFD0173 - FISICA 1 EXPERIMENTAL - 30h Obrigatória",
+      "MAT0026 - CÁLCULO 2 - 90h Obrigatória",
+      "MAT0031 - INTRODUCAO A ALGEBRA LINEAR - 60h Obrigatória",
+      "Carga Horária Total: 300h"
+    ]
+  },
+  {
+    "period": 4,
+    "disciplines": [
+      "FGA0090 - ONDULATÓRIA E FÍSICA TÉRMICA PARA ENGENHARIA - 60h Obrigatória",
+      "FGA0107 - LABORATÓRIO DE ONDULATÓRIA E FÍSICA TÉRMICA PARA A ENGENHARIA - 30h Obrigatória",
+      "FGA0154 - MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA - 60h Obrigatória",
+      "FGA0155 - INTRODUÇÃO AO DESIGN E CONCEPÇÃO DE VEÍCULOS - 60h Obrigatória",
+      "FGA0160 - MÉTODOS NUMÉRICOS PARA ENGENHARIA - 60h Obrigatória",
+      "IQD0125 - QUIMICA GERAL TEORICA - 60h Obrigatória",
+      "IQD0126 - QUIMICA GERAL EXPERIMENTAL - 30h Obrigatória",
+      "MAT0027 - CÁLCULO 3 - 90h Obrigatória",
+      "Carga Horária Total: 450h"
+    ]
+  },
+  {
+    "period": 5,
+    "disciplines": [
+      "ENM0080 - FENOMENOS DE TRANSPORTE - 75h Obrigatória",
+      "FGA0067 - TEORIA DE CIRCUITOS ELETRÔNICOS 1 - 60h Obrigatória",
+      "FGA0069 - PRÁTICA DE CIRCUITOS ELETRÔNICOS 1 - 30h Obrigatória",
+      "FGA0075 - LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO - 15h Obrigatória",
+      "FGA0078 - TEORIA DE MATERIAIS DE CONSTRUÇÃO - 45h Obrigatória",
+      "FGA0133 - ENGENHARIA ECONÔMICA - 60h Obrigatória",
+      "FGA0150 - PROJETO INTEGRADOR DE ENGENHARIA 1 - 60h Obrigatória",
+      "FGA0152 - ERGONOMIA DO PRODUTO - 60h Obrigatória",
+      "FGA0164 - HUMANIDADES E CIDADANIA - 60h Obrigatória",
+      "Carga Horária Total: 465h"
+    ]
+  },
+  {
+    "period": 6,
+    "disciplines": [
+      "FGA0055 - TECNOLOGIAS DE FABRICAÇÃO 1 - 60h Obrigatória",
+      "FGA0086 - TEORIA DE ELETRICIDADE APLICADA - 60h Obrigatória",
+      "FGA0087 - LABORATÓRIO DE ELETRICIDADE APLICADA - 30h Obrigatória",
+      "FGA0102 - SINAIS E SISTEMAS PARA ENGENHARIA - 90h Obrigatória",
+      "FGA0179 - MECANICA DOS SÓLIDOS 2 PARA ENGENHARIA - 60h Obrigatória",
+      "FGA0184 - GESTÃO DA PRODUÇÃO E QUALIDADE - 60h Obrigatória",
+      "FGA0188 - MÉTODOS EXPERIMENTAIS PARA ENGENHARIA - 60h Obrigatória",
+      "Carga Horária Total: 420h"
+    ]
+  },
+  {
+    "period": 7,
+    "disciplines": [
+      "FGA0023 - DINÂMICA DOS MECANISMOS - 60h Obrigatória",
+      "FGA0056 - TECNOLOGIAS DE FABRICAÇÃO 2 - 60h Obrigatória",
+      "FGA0076 - EQUIPAMENTOS TERMOFLUIDOS AUTOMOTIVOS - 60h Obrigatória",
+      "FGA0148 - ENGENHARIA DE SEGURANÇA DO TRABALHO - 30h Obrigatória",
+      "FGA0190 - PROJETO DE ELEMENTOS AUTOMOTIVOS - 90h Obrigatória",
+      "FGA0191 - MATERIAIS COMPOSTOS E PLÁSTICOS - 60h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 8,
+    "disciplines": [
+      "FGA0193 - ARQUITETURA DE MOTORES DE COMBUSTÃO INTERNA - 60h Obrigatória",
+      "FGA0226 - ELETRÔNICA VEICULAR - 60h Obrigatória",
+      "FGA0228 - PROJETO DE SISTEMAS AUTOMOTIVOS - 60h Obrigatória",
+      "FGA0230 - DINÂMICA DE VEÍCULOS - 60h Obrigatória",
+      "FGA0266 - ACÚSTICA E VIBRAÇÕES VEICULARES - 60h Obrigatória",
+      "Carga Horária Total: 300h"
+    ]
+  },
+  {
+    "period": 9,
+    "disciplines": [
+      "FGA0229 - ANÁLISE ESTRUTURAL MÉTODO DOS ELEMENTOS FINITOS - 60h Obrigatória",
+      "FGA0250 - PROJETO INTEGRADOR DE ENGENHARIA 2 - 90h Obrigatória",
+      "FGA0267 - PROJETO DE ESTRUTURAS DE VEICULOS - 60h Obrigatória",
+      "Carga Horária Total: 210h"
+    ]
+  },
+  {
+    "period": 10,
+    "disciplines": [
+      "FGA0009 - TRABALHO DE CONCLUSÃO DE CURSO 1 - 60h Obrigatória",
+      "FGA0021 - ESTÁGIO SUPERVISIONADO - 210h Obrigatória",
+      "Carga Horária Total: 270h"
+    ]
+  },
+  {
+    "period": 11,
+    "disciplines": [
+      "FGA0011 - TRABALHO DE CONCLUSÃO DE CURSO 2 - 90h Obrigatória",
+      "Carga Horária Total: 90h"
+    ]
+  }
+]

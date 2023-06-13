@@ -1,0 +1,218 @@
+[
+  {
+    "period": 0,
+    "disciplines": [
+      "CIC0007 - INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO - 60h Optativa function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement(\"input\");p.type = \"hidden\";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};",
+      "CIC0088 - COMPUTACAO BASICA - 90h Optativa",
+      "DEG0200 - ATIVIDADE COMPLEMENTAR - 15h Optativa",
+      "DEG0201 - ATIVIDADE COMPLEMENTAR - 30h Optativa",
+      "DEG0202 - ATIVIDADE COMPLEMENTAR - 45h Optativa",
+      "DEG0203 - ATIVIDADE COMPLEMENTAR - 60h Optativa",
+      "DEG0205 - ATIVIDADE COMPLEMENTAR - 90h Optativa",
+      "DEG0206 - ATIVIDADE COMPLEMENTAR - 120h Optativa",
+      "DEG0207 - ATIVIDADE COMPLEMENTAR - 150h Optativa",
+      "DEG0208 - ATIVIDADE COMPLEMENTAR - 180h Optativa",
+      "DEG0209 - ATIVIDADE COMPLEMENTAR - 210h Optativa",
+      "DEG0210 - ATIVIDADE COMPLEMENTAR - 240h Optativa",
+      "DEG0211 - ATIVIDADE COMPLEMENTAR - 270h Optativa",
+      "DEG0212 - ATIVIDADE COMPLEMENTAR - 300h Optativa",
+      "DEG0213 - ATIVIDADE COMPLEMENTAR - 330h Optativa",
+      "DEG0214 - ATIVIDADE COMPLEMENTAR - 360h Optativa",
+      "DEG0215 - ATIVIDADE COMPLEMENTAR - 390h Optativa",
+      "DEG0216 - ATIVIDADE COMPLEMENTAR - 420h Optativa",
+      "DEG0217 - ATIVIDADE COMPLEMENTAR - 450h Optativa",
+      "DEG0218 - ATIVIDADE COMPLEMENTAR - 480h Optativa",
+      "DEG0219 - ATIVIDADE COMPLEMENTAR - 510h Optativa",
+      "ENE0277 - SISTEMAS DIGITAIS 1 - 90h Optativa",
+      "FGA0003 - COMPILADORES 1 - 60h Optativa",
+      "FGA0004 - TÉCNICAS DE MEDIÇÃO FUNCIONAL E ESTIMATIVAS DE SOFTWARE - 60h Optativa",
+      "FGA0007 - CONFIABILIDADE DE COMPONENTES E SISTEMAS - 60h Optativa",
+      "FGA0023 - DINÂMICA DOS MECANISMOS - 60h Optativa",
+      "FGA0026 - FUNDAMENTOS DE ARQUITETURA DE SOFTWARE - 60h Optativa",
+      "FGA0027 - PRINCÍPIOS DE ROBÓTICA EDUCACIONAL - 60h Optativa",
+      "FGA0028 - PROGRAMAÇÃO PARA COMPETIÇÕES - 60h Optativa",
+      "FGA0030 - ESTRUTURAS DE DADOS 2 - 60h Optativa",
+      "FGA0031 - SEMINÁRIOS EM ENGENHARIA DE SOFTWARE - 30h Optativa",
+      "FGA0033 - TÓPICOS ESPECIAIS EM FÍSICA APLICADA - 30h Optativa",
+      "FGA0034 - TÓPICOS ESPECIAIS EM MATEMÁTICA APLICADA - 60h Optativa",
+      "FGA0036 - PRÉ-CÁLCULO PARA ENGENHARIA - 60h Optativa",
+      "FGA0037 - TÓPICOS ESPECIAIS EM ENGENHARIA AEROESPACIAL - 60h Optativa",
+      "FGA0041 - TÓPICOS ESPECIAIS EM JOGOS DIGITAIS - 60h Optativa",
+      "FGA0042 - TÓPICOS ESPECIAIS EM SISTEMAS CRÍTICOS - 60h Optativa",
+      "FGA0044 - PROJETO DE SISTEMAS DE CONTROLE - 60h Optativa",
+      "FGA0046 - MÉTODOS E TÉCNICAS DA ESCRITA CIENTÍFICA - 60h Optativa",
+      "FGA0047 - PROCESSOS PETROQUÍMICOS - 60h Optativa",
+      "FGA0049 - PROJETO DE SISTEMAS AEROESPACIAIS - 90h Optativa",
+      "FGA0052 - PROPULSÃO AEROESPACIAL - 90h Optativa",
+      "FGA0053 - TÓPICOS ESPECIAIS EM PROGRAMAÇÃO - 60h Optativa",
+      "FGA0054 - TÓPICOS ESPECIAIS EM GOVERNANÇA DE TECNOLOGIA DA INFORMAÇÃO - 60h Optativa",
+      "FGA0055 - TECNOLOGIAS DE FABRICAÇÃO 1 - 60h Optativa",
+      "FGA0056 - TECNOLOGIAS DE FABRICAÇÃO 2 - 60h Optativa",
+      "FGA0062 - PROJETO DE SISTEMAS DE OBSERVAÇÃO DA TERRA - 60h Optativa",
+      "FGA0063 - PROPULSÃO AERONÁUTICA - 60h Optativa",
+      "FGA0064 - PROPULSÃO QUÍMICA - 60h Optativa",
+      "FGA0065 - PROPULSÃO ELÉTRICA - 60h Optativa",
+      "FGA0066 - FUNDAMENTOS DE VARIÁVEL COMPLEXA PARA ENGENHARIA - 60h Optativa",
+      "FGA0080 - CONTROLE DE SISTEMAS AEROESPACIAIS - 60h Optativa",
+      "FGA0082 - ENGENHARIA DE SISTEMAS AEROESPACIAIS - 60h Optativa",
+      "FGA0090 - ONDULATÓRIA E FÍSICA TÉRMICA PARA ENGENHARIA - 60h Optativa",
+      "FGA0104 - QUÍMICA ORGÂNICA APLICADA À ENGENHARIA - 60h Optativa",
+      "FGA0105 - TÓPICOS ESPECIAIS 2 EM ENGENHARIA AEROESPACIAL - 60h Optativa",
+      "FGA0106 - TÓPICOS ESPECIAIS 3 EM ENGENHARIA AEROESPACIAL - 60h Optativa",
+      "FGA0121 - TÓPICOS ESPECIAIS 4 EM ENGENHARIA AEROESPACIAL - 60h Optativa",
+      "FGA0123 - CÁLCULO PARA ENGENHARIA 1 - 60h Optativa",
+      "FGA0125 - INTRODUÇÃO À GEOMETRIA ANALÍTICA - 30h Optativa",
+      "FGA0126 - CÁLCULO PARA ENGENHARIA 2 - 60h Optativa",
+      "FGA0127 - EQUAÇÕES DIFERENCIAIS ORDINÁRIAS - 60h Optativa",
+      "FGA0128 - CÁLCULO PARA ENGENHARIA 3 - 60h Optativa",
+      "FGA0134 - TÓPICOS ESPECIAIS DE ENGENHARIA DE SOFTWARE - 60h Optativa",
+      "FGA0137 - SISTEMAS DE BANCO DE DADOS 1 - 60h Optativa",
+      "FGA0138 - MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE - 60h Optativa",
+      "FGA0141 - GESTÃO AMBIENTAL NO SETOR ENERGÉTICO - 60h Optativa",
+      "FGA0142 - FUNDAMENTOS DE ARQUITETURA DE COMPUTADORES - 60h Optativa",
+      "FGA0143 - FUNDAMENTOS DA TEORIA ELETROMAGNÉTICA - 90h Optativa",
+      "FGA0144 - FÍSICA MODERNA - 90h Optativa",
+      "FGA0146 - ESTRUTURAS DE DADOS 1 - 60h Optativa",
+      "FGA0152 - ERGONOMIA DO PRODUTO - 60h Optativa",
+      "FGA0155 - INTRODUÇÃO AO DESIGN E CONCEPÇÃO DE VEÍCULOS - 60h Optativa",
+      "FGA0156 - COMBUSTÍVEIS E BIOCOMBUSTÍVEIS - 60h Optativa",
+      "FGA0158 - ORIENTAÇÃO A OBJETOS - 60h Optativa",
+      "FGA0159 - ESTRUTURAS MATEMÁTICAS PARA COMPUTAÇÃO - 60h Optativa",
+      "FGA0165 - PROCESSO DE DESENVOLVIMENTO DE SOFTWARE - 60h Optativa",
+      "FGA0166 - ELEMENTOS E MÉTODOS EM ELETRÔNICA - 60h Optativa",
+      "FGA0167 - SISTEMAS AUTOMOTIVOS - 60h Optativa",
+      "FGA0169 - FONTES DE ENERGIA E TECNOLOGIAS DE CONVERSÃO - 60h Optativa",
+      "FGA0172 - REQUISITOS DE SOFTWARE - 60h Optativa",
+      "FGA0175 - ENGENHARIA DE PETRÓLEO E GÁS - 60h Optativa",
+      "FGA0187 - MÉTODOS MATEMÁTICOS PARA ENGENHARIA - 60h Optativa",
+      "FGA0188 - MÉTODOS EXPERIMENTAIS PARA ENGENHARIA - 60h Optativa",
+      "FGA0191 - MATERIAIS COMPOSTOS E PLÁSTICOS - 60h Optativa",
+      "FGA0196 - CIRCUITOS ELETRÔNICOS 1 - 90h Optativa",
+      "FGA0199 - PRINCÍPIOS DE COMUNICAÇÃO - 60h Optativa",
+      "FGA0229 - ANÁLISE ESTRUTURAL MÉTODO DOS ELEMENTOS FINITOS - 60h Optativa",
+      "FGA0248 - SISTEMAS DE PROPULSÃO HÍBRIDOS - 60h Optativa",
+      "FGA0249 - DESENVOLVIMENTO AVANÇADO DE SOFTWARE - 60h Optativa",
+      "FGA0281 - SISTEMAS DE PROPULSÃO LIQUIDA - 60h Optativa",
+      "FGA0282 - FUNDAMENTOS DO PROJETO DE AERONAVES - 60h Optativa",
+      "FGA0283 - MECÂNICA DOS MATERIAIS COMPÓSITOS - 60h Optativa",
+      "FGA0286 - FUNDAMENTOS DO MÉTODO DOS ELEMENTOS FINITOS - 60h Optativa",
+      "FGA0289 - SISTEMAS DE PROPULSÃO SÓLIDA E HÍBRIDA - 60h Optativa",
+      "FGA0291 - MECÂNICA DE ESTRUTURAS AERONÁUTICAS - 60h Optativa",
+      "FGA0293 - FUNDAMENTOS DE MÉTODOS DE OTIMIZAÇÃO - 60h Optativa",
+      "FTD0007 - INTRODUCAO A ATIVIDADE EMPRESARIAL - 60h Optativa",
+      "LIP0174 - LÍNGUA DE SINAIS BRASILEIRA - BÁSICO - 60h Optativa",
+      "Carga Horária Total: 9570h"
+    ]
+  },
+  {
+    "period": 1,
+    "disciplines": [
+      "Carga Horária Total: h"
+    ]
+  },
+  {
+    "period": 2,
+    "disciplines": [
+      "CIC0004 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES - 90h Obrigatória",
+      "FGA0161 - ENGENHARIA E AMBIENTE - 60h Obrigatória",
+      "FGA0163 - INTRODUÇÃO À ENGENHARIA - 30h Obrigatória",
+      "FGA0168 - DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR - 90h Obrigatória",
+      "MAT0025 - CÁLCULO 1 - 90h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 3,
+    "disciplines": [
+      "FGA0157 - PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA - 60h Obrigatória",
+      "FGA0254 - CIÊNCIAS AEROESPACIAIS - 60h Obrigatória",
+      "IFD0171 - FISICA 1 - 60h Obrigatória",
+      "IFD0173 - FISICA 1 EXPERIMENTAL - 30h Obrigatória",
+      "MAT0026 - CÁLCULO 2 - 90h Obrigatória",
+      "MAT0031 - INTRODUCAO A ALGEBRA LINEAR - 60h Obrigatória",
+      "Carga Horária Total: 360h"
+    ]
+  },
+  {
+    "period": 4,
+    "disciplines": [
+      "FGA0008 - SISTEMAS AEROESPACIAIS - 60h Obrigatória",
+      "FGA0133 - ENGENHARIA ECONÔMICA - 60h Obrigatória",
+      "FGA0154 - MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA - 60h Obrigatória",
+      "FGA0160 - MÉTODOS NUMÉRICOS PARA ENGENHARIA - 60h Obrigatória",
+      "IQD0125 - QUIMICA GERAL TEORICA - 60h Obrigatória",
+      "IQD0126 - QUIMICA GERAL EXPERIMENTAL - 30h Obrigatória",
+      "MAT0027 - CÁLCULO 3 - 90h Obrigatória",
+      "Carga Horária Total: 420h"
+    ]
+  },
+  {
+    "period": 5,
+    "disciplines": [
+      "ENM0080 - FENOMENOS DE TRANSPORTE - 75h Obrigatória",
+      "FGA0102 - SINAIS E SISTEMAS PARA ENGENHARIA - 90h Obrigatória",
+      "FGA0150 - PROJETO INTEGRADOR DE ENGENHARIA 1 - 60h Obrigatória",
+      "FGA0179 - MECANICA DOS SÓLIDOS 2 PARA ENGENHARIA - 60h Obrigatória",
+      "Carga Horária Total: 285h"
+    ]
+  },
+  {
+    "period": 6,
+    "disciplines": [
+      "ENM0068 - TERMODINAMICA 1 - 60h Obrigatória",
+      "FGA0075 - LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO - 15h Obrigatória",
+      "FGA0078 - TEORIA DE MATERIAIS DE CONSTRUÇÃO - 45h Obrigatória",
+      "FGA0086 - TEORIA DE ELETRICIDADE APLICADA - 60h Obrigatória",
+      "FGA0087 - LABORATÓRIO DE ELETRICIDADE APLICADA - 30h Obrigatória",
+      "FGA0119 - TEORIA DE ELETROMAGNETISMO - 60h Obrigatória",
+      "FGA0120 - PRÁTICA DE ELETROMAGNETISMO - 30h Obrigatória",
+      "FGA0204 - DINÂMICA DOS FLUÍDOS - 75h Obrigatória",
+      "Carga Horária Total: 375h"
+    ]
+  },
+  {
+    "period": 7,
+    "disciplines": [
+      "ENM0071 - TRANSFERENCIA DE CALOR - 90h Obrigatória",
+      "FGA0038 - AERODINÂMICA DE SISTEMAS AEROESPACIAIS - 75h Obrigatória",
+      "FGA0164 - HUMANIDADES E CIDADANIA - 60h Obrigatória",
+      "FGA0184 - GESTÃO DA PRODUÇÃO E QUALIDADE - 60h Obrigatória",
+      "FGA0197 - SISTEMAS DE CONTROLE - 60h Obrigatória",
+      "Carga Horária Total: 345h"
+    ]
+  },
+  {
+    "period": 8,
+    "disciplines": [
+      "FGA0039 - MECÂNICA DE ESTRUTURAS AEROESPACIAIS - 75h Obrigatória",
+      "FGA0043 - DINÂMICA DOS GASES PARA SISTEMAS AEROESPACIAIS - 60h Obrigatória",
+      "FGA0045 - MECÂNICA DO VÔO - 60h Obrigatória",
+      "FGA0148 - ENGENHARIA DE SEGURANÇA DO TRABALHO - 30h Obrigatória",
+      "Carga Horária Total: 225h"
+    ]
+  },
+  {
+    "period": 9,
+    "disciplines": [
+      "FGA0048 - MECÂNICA DO VOO ESPACIAL - 60h Obrigatória",
+      "FGA0050 - DINÂMICA DE ESTRUTURAS AEROESPACIAIS - 60h Obrigatória",
+      "FGA0250 - PROJETO INTEGRADOR DE ENGENHARIA 2 - 90h Obrigatória",
+      "Carga Horária Total: 210h"
+    ]
+  },
+  {
+    "period": 10,
+    "disciplines": [
+      "FGA0009 - TRABALHO DE CONCLUSÃO DE CURSO 1 - 60h Obrigatória",
+      "FGA0021 - ESTÁGIO SUPERVISIONADO - 210h Obrigatória",
+      "Carga Horária Total: 270h"
+    ]
+  },
+  {
+    "period": 11,
+    "disciplines": [
+      "FGA0011 - TRABALHO DE CONCLUSÃO DE CURSO 2 - 90h Obrigatória",
+      "Carga Horária Total: 90h"
+    ]
+  }
+]
