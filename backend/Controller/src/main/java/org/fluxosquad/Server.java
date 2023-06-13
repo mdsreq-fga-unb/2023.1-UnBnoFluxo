@@ -2,23 +2,55 @@ package org.fluxosquad;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpServer;
+import com.sun.net.httpserver.HttpsConfigurator;
+import com.sun.net.httpserver.HttpsParameters;
+import com.sun.net.httpserver.HttpsServer;
 
 import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Paths;
+import java.security.*;
+import java.security.cert.CertificateException;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Server {
 
     public void start(List<Curso> cursos){
         Thread thread = new Thread(()-> {
             try {
-                disableSSLCertificateChecks();
-                HttpServer server = HttpServer.create(new InetSocketAddress(25532), 0);
 
+                String password = "password";
+                // Load the keystore
+                KeyStore keyStore = KeyStore.getInstance("JKS");
+                FileInputStream keyStoreFile = new FileInputStream("keystore.p12");
+                keyStore.load(keyStoreFile, password.toCharArray());
 
+                // Create the SSL context
+                KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+                kmf.init(keyStore, password.toCharArray());
+
+                SSLContext sslContext = SSLContext.getInstance("TLS");
+                sslContext.init(kmf.getKeyManagers(), null, null);
+
+                // Create the HttpsServer
+                HttpsServer server = HttpsServer.create(new InetSocketAddress(25534), 0);
+                server.setHttpsConfigurator(new HttpsConfigurator(sslContext) {
+                    public void configure(HttpsParameters params) {
+                        params.setProtocols(new String[] { "HTTP/1.1", "HTTP/2" });
+                        super.configure(params);
+                    }
+                });
+                int numThreads = Runtime.getRuntime().availableProcessors();
+                ExecutorService executor = Executors.newFixedThreadPool(numThreads);
+                server.setExecutor(executor);
                 for (Curso curso : cursos){
                     server.createContext("/api/course/"+curso.getEndpoint(), (exchange -> {
                         exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
@@ -74,7 +106,8 @@ public class Server {
                 }));
 
                 server.start();
-            } catch (IOException e) {
+            } catch (IOException | UnrecoverableKeyException | CertificateException | KeyStoreException |
+                     NoSuchAlgorithmException | KeyManagementException e) {
                 throw new RuntimeException(e);
             }
         });
