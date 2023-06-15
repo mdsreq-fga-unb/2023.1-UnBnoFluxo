@@ -30,8 +30,14 @@ Para o front mantidos convensôes mais usadas do React:
 }
 
 ```
+# Do back
+
+
+# De deploy
 
 ## Histórico de revisão
 |   Data   | Versão | Descrição            | Autor   |
 | :------: | :----: | -------------------- | ------- |
 | 06/05/23 |  1.0   | Criação do documento | Ricardo |
+| 10/06/23 |  1.1   | Padrões de codificação | Ricardo|
+| 14/06/23 |  1.2   | Padrões de codificação | João   |
