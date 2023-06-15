@@ -1,31 +1,14 @@
-import useLocalStorageState from "use-local-storage-state"
 import styles from "../styles/Home.module.css"
-
 import ElectiveCoursesBox from "../components/ElectiveCoursesBox"
 import MandatoryCoursesBox from "../components/MandatoryCoursesBox"
 import NavBar from "../components/NavBar"
+import { useData } from "../hooks/useData"
 
 export default function Home() {
     const maxPeriodNumber = 10 // Todo: Ajustar pra ser responsivo à fetchs e editavel pelo ususario
 
     // Estados
-    const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
-
-    // Funcao callback que adiciona os elementos de "newData" ao estado "data"
-    const addData = (newData) => {
-        setData((prevData) => {
-            // "nextData" recebe tudo que ainda nao existe em "data"
-            const nextData = newData.filter((course) => {
-                return !prevData.some((storedCourse) => {
-                    return JSON.stringify(storedCourse) === JSON.stringify(course)
-                })
-            })
-            return [...prevData, ...nextData]
-        })
-    }
-
-    // Funcao que limpa os dados do app
-    const clearData = () => setData([])
+    const { data, addData, clearData } = useData() // Estado que controla os dados armazendos no app
 
     return (
         <>
