@@ -1,18 +1,12 @@
 import { AppBar, Box, Button, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
-import React, { useState } from "react"
+import React from "react"
+import { useOpenDialog } from "../hooks/useOpenDialog"
 import NewFormDialog from "./NewFormDialog"
-import DetailFormDialog from "./DetailFormDialog" // TODO: Remover
 
 export default function NavBar({ data, addData, clearData }) {
     // Estados
-    const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o NewFormDialog esta aberto ou fechado
-
-    // Funcao que abre o NewFormDialog
-    const handleOpenDialog = () => setOpenDialog(true)
-
-    // Funcao que fecha o NewFormDialog
-    const handleCloseDialog = () => setOpenDialog(false)
+    const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o NewFormDialog esta aberto ou fechado
 
     // Funcao responsavel por fazer o download dos dados carregados atualmente no app
     const handleDownload = () => {
