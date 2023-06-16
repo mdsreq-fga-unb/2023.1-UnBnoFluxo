@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd ../front-end
+          cd ../frontend
           npm install
 
         #   cd back-end
@@ -35,7 +35,7 @@ jobs:
 
       - name: Run front-end
         run: |
-          cd front-end
+          cd ../frontend
           npm run dev &
           sleep 10
           pkill -f "npm run dev"
