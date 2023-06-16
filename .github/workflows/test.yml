@@ -20,13 +20,12 @@ jobs:
           node-version: 18.x
 
       - name: Install dependencies
-        run:
+        run: |
+          cd ../front-end
+          npm install
+
         #   cd back-end
         #   npm install
-          
-          cd ../front-end
-          npm install next
-
     #   - name: Run back-end
     #     run:
     #       cd back-end
@@ -35,7 +34,7 @@ jobs:
     #       pkill -f "npm run dev"
 
       - name: Run front-end
-        run:
+        run: |
           cd front-end
           npm run dev &
           sleep 10
