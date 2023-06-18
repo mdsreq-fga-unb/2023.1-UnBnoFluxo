@@ -39,3 +39,14 @@ jobs:
           npm run dev &
           sleep 10
           pkill -f "npm run dev"
+  # test:
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - name: clone repo                          #conferir se precisa mesmo fazer o setup novamente pra testar ou se da pra dar run test direto
+  #       uses: actions/setup-node@v3
+
+  #     - name: setup node
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 18.x
