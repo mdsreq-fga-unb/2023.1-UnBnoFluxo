@@ -23,9 +23,9 @@ jobs:
         run: |
           cd ./frontend
           npm install
-
         #   cd back-end
         #   npm install
+
     #   - name: Run back-end
     #     run:
     #       cd back-end
@@ -39,14 +39,22 @@ jobs:
           npm run dev &
           sleep 10
           pkill -f "npm run dev"
-  # test:
-  #   runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: clone repo                          #conferir se precisa mesmo fazer o setup novamente pra testar ou se da pra dar run test direto
-  #       uses: actions/setup-node@v3
+    steps:
+      # - name: clone repo
+      #   uses: actions/setup-node@v3
 
-  #     - name: setup node
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 18.x
+      # - name: setup node
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18.x
+
+      # - name: install dependencies
+      #   run: |
+      #     cd ./frontend
+      #     npm install
+
+      - name: run tests
+        run: npx jest
