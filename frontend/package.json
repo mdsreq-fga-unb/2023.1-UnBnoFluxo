@@ -21,11 +21,13 @@
         "use-local-storage-state": "^18.3.3"
     },
     "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^14.0.0",
         "eslint": "8.41.0",
         "eslint-config-next": "13.4.3",
         "eslint-config-prettier": "^8.5.0",
         "jest": "^29.5.0",
+        "jest-environment-jsdom": "^29.5.0",
         "prettier": "^2.7.1"
     }
 }
