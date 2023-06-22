@@ -1,4 +1,4 @@
-name: ci test
+name: CI Workflow
 on: 
     push:
         branches: 
