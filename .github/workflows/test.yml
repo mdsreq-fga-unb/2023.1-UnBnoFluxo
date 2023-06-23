@@ -4,10 +4,9 @@ on:
         branches: 
           - main
           - dev
-          - ci-start
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
