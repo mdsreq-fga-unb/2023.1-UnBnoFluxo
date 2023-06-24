@@ -4,14 +4,14 @@ import React from "react"
 import { useOpenDialog } from "../hooks/useOpenDialog"
 import NewFormDialog from "./NewFormDialog"
 
-export default function NavBar({ data, addData, clearData }) {
+export default function NavBar({ data, addData, clearData, flowName }) {
     // Estados
     const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o NewFormDialog esta aberto ou fechado
 
     // Funcao responsavel por fazer o download dos dados carregados atualmente no app
     const handleDownload = () => {
         const blob = new Blob([JSON.stringify(data)], { type: "application/json" })
-        saveAs(blob, "MeuFluxograma.json")
+        saveAs(blob, `${flowName}.json`)
     }
 
     return (

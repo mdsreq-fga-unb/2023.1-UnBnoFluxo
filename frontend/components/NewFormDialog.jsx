@@ -15,6 +15,7 @@ import {
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import Tip from "./Tip"
+import Title from "./Title"
 
 export default function NewFormDialog({ open, onClose, addData }) {
     // Estados
@@ -89,22 +90,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
     return (
         <Dialog open={open} onClose={onClose}>
             <DialogTitle>
-                <Typography
-                    sx={{
-                        height: "64px",
-                        fontFamily: "Source Sans Pro",
-                        fontStyle: "normal",
-                        fontWeight: 600,
-                        fontSize: "48px",
-                        lineHeight: "64px",
-                        display: "flex",
-                        alignItems: "center",
-                        color: "#232323",
-                        opacity: 0.8,
-                    }}
-                >
-                    Montando Fluxograma...
-                </Typography>
+                <Title editable={false} title={"Montando Fluxograma..."} />
             </DialogTitle>
 
             <DialogContent>
