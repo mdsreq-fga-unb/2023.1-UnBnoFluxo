@@ -1,9 +1,39 @@
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from "@mui/material"
-import React from "react"
-import { useForm } from "react-hook-form"
+import {
+    Autocomplete,
+    Button,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogTitle,
+    TextField,
+} from "@mui/material"
+import React, { useEffect } from "react"
+import { Controller, useForm } from "react-hook-form"
+import Tip from "./Tip"
 
 export default function DetailFormDialog({ open, onClose, addData, course }) {
-    const { register, handleSubmit, setValue } = useForm()
+    const {
+        register,
+        handleSubmit,
+        setValue,
+        control,
+        formState: { errors },
+    } = useForm()
+
+    useEffect(() => {
+        // Preencher os campos com os dados do curso ao abrir o diálogo
+        if (course) {
+            setValue("displayName", course.displayName)
+            setValue("alias", course.alias)
+            setValue("period", course.period)
+            setValue("code", course.code)
+            setValue("nature", course.nature)
+            setValue("workloud", course.workloud)
+            setValue("preRequisite", course.preRequisite)
+            setValue("coRequisite", course.coRequisite)
+            setValue("description", course.description)
+        }
+    }, [course, setValue])
 
     const handleSave = handleSubmit((data) => {
         const newCourse = {
@@ -35,69 +65,105 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
 
     return (
         <div>
-            <Dialog open={open} onClose={onClose}>
+            <Dialog open={open} onClose={onClose} maxWidth="md">
                 <DialogTitle>Cadastre um novo componente</DialogTitle>
                 <DialogContent>
                     <TextField
                         label="Nome"
                         required
-                        helperText={"Defina um nome curto para a matéria"}
+                        error={!!errors.displayName}
+                        helperText={
+                            errors.displayName ? (
+                                <Tip text="Campo obrigatório" />
+                            ) : (
+                                <Tip text="Defina um nome curto para a matéria" />
+                            )
+                        }
                         {...register("displayName", { required: true })}
-                        defaultValue={course.displayName}
                     />
                     <TextField
                         label="Aliás"
-                        helperText={"Defina um nome curto para a matéria"}
+                        helperText={<Tip text="Defina um nome curto para a matéria" />}
                         {...register("alias", { maxLength: 12 })}
-                        defaultValue={course.alias}
                     />
                     <TextField
                         label="Período"
                         required
+                        error={!!errors.period}
+                        helperText={errors.period ? <Tip text="Campo obrigatório" /> : ""}
                         type="number"
                         {...register("period", { required: true })}
-                        defaultValue={course.number}
                     />
                     <TextField
                         label="Código"
                         required
-                        helperText={"O código único do componete curricular. Formato ABC1234"}
+                        error={!!errors.code}
+                        helperText={
+                            errors.code ? (
+                                <Tip text="Campo obrigatório e o formato deve ser ABC1234" />
+                            ) : (
+                                <Tip text="O código único do componete curricular." />
+                            )
+                        }
                         {...register("code", { required: true, pattern: /^[A-Za-z]{3}\d{4}$/ })}
-                        defaultValue={course.code}
                     />
-                    <TextField
-                        label="Natureza"
-                        required
-                        {...register("nature", { required: true })}
-                        defaultValue={course.nature}
+
+                    <Controller
+                        control={control}
+                        name="nature"
+                        rules={{ required: true }}
+                        render={({ field }) => (
+                            <Autocomplete
+                                {...field}
+                                options={["OBRIGATORIO", "OPTATIVO"]}
+                                getOptionLabel={(option) => option}
+                                defaultValue={course?.nature || null} // Definir o valor pré-carregado do campo
+                                onChange={(event, newValue) => setValue("nature", newValue)}
+                                renderInput={(params) => (
+                                    <TextField
+                                        {...params}
+                                        label="Natureza"
+                                        required
+                                        error={!!errors.nature}
+                                        helperText={
+                                            errors.nature ? <Tip text="Campo obrigatório" /> : ""
+                                        }
+                                    />
+                                )}
+                            />
+                        )}
                     />
+
                     <TextField
                         label="Carga horária"
                         required
+                        error={!!errors.workloud}
+                        helperText={
+                            errors.workloud ? (
+                                <Tip text="Campo obrigatório e somente números" />
+                            ) : (
+                                ""
+                            )
+                        }
                         type="number"
                         {...register("workloud", { required: true })}
-                        defaultValue={course.workloud}
                     />
                     <TextField
                         label="Pré-requisitos"
-                        helperText={"Componentes curriculares que devem ser cumpridos antes"}
+                        helperText={
+                            <Tip text="Componentes curriculares que devem ser cumpridos antes" />
+                        }
                         {...register("preRequisite")}
-                        defaultValue={course.preRequisite}
                     />
                     <TextField
                         label="Co-requisitos"
                         helperText={
-                            "Componentes curriculares que devem ser cumpridos simuntaneamente"
+                            <Tip text="Componentes curriculares que devem ser cumpridos simuntaneamente" />
                         }
                         {...register("coRequisite")}
-                        defaultValue={course.coRequisite}
                     />
 
-                    <TextField
-                        label="Descrição"
-                        {...register("description")}
-                        defaultValue={course.description}
-                    />
+                    <TextField label="Descrição" {...register("description")} />
                 </DialogContent>
 
                 <DialogActions>

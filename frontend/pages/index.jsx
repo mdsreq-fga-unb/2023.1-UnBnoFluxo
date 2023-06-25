@@ -18,7 +18,11 @@ export default function Home() {
             <main className={styles.main}>
                 <NavBar data={data} addData={addData} clearData={clearData} flowName={flowName} />
                 <Title title={flowName} editable={true} setTitle={setFlowName} />
-                <MandatoryCoursesBox data={data} maxPeriodNumber={maxPeriodNumber} />
+                <MandatoryCoursesBox
+                    data={data}
+                    maxPeriodNumber={maxPeriodNumber}
+                    addData={addData}
+                />
                 <ElectiveCoursesBox data={data} addData={addData} />
             </main>
         </>

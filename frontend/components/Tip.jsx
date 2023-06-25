@@ -17,7 +17,7 @@ export default function Tip({ text }) {
                 p={2}
             >
                 <InfoIcon />
-                <Typography variant="body1" sx={{ mx: 1, color: "#FFFFFF" }}>
+                <Typography variant="body3" sx={{ mx: 1, color: "#FFFFFF" }}>
                     {text}
                 </Typography>
             </Box>

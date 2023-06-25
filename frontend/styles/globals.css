@@ -49,3 +49,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #888888;
   border-radius: 0.25rem;
 }
+
+.MuiTextField-root>.MuiFormHelperText-root {
+  margin: 0;
+}
