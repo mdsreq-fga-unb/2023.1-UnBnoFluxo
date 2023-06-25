@@ -20,14 +20,18 @@ export default function NavBar({ data, addData, clearData, flowName }) {
                 <Box component="img" sx={{ height: 64 }} alt="Unb no Fluxo logo." src="/logo.svg" />
 
                 <Box sx={{ marginLeft: "auto" }}>
-                    <Button color="inherit" variant="elevated" onClick={clearData}>
-                        Limpar
-                    </Button>
-                    <Button color="inherit" variant="elevated" onClick={handleDownload}>
-                        Download
-                    </Button>
-                    <Button color="inherit" variant="elevated" onClick={handleOpenDialog}>
-                        Novo
+                    {data.length > 0 && (
+                        <>
+                            <Button color="inherit" onClick={clearData}>
+                                Limpar
+                            </Button>
+                            <Button color="inherit" onClick={handleDownload}>
+                                Download
+                            </Button>
+                        </>
+                    )}
+                    <Button color="inherit" onClick={handleOpenDialog}>
+                        Adicionar Fluxograma
                     </Button>
                 </Box>
             </Toolbar>
