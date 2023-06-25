@@ -1,8 +1,12 @@
-import { AppBar, Box, Button, Toolbar } from "@mui/material"
+import { AppBar, Box, Button, Fab, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React from "react"
 import { useOpenDialog } from "../hooks/useOpenDialog"
 import NewFormDialog from "./NewFormDialog"
+import CustomButton from "./CustomButton"
+import AddIcon from "@mui/icons-material/Add"
+import DownloadIcon from "@mui/icons-material/Download"
+import DeleteIcon from "@mui/icons-material/Delete"
 
 export default function NavBar({ data, addData, clearData, flowName }) {
     // Estados
@@ -22,17 +26,17 @@ export default function NavBar({ data, addData, clearData, flowName }) {
                 <Box sx={{ marginLeft: "auto" }}>
                     {data.length > 0 && (
                         <>
-                            <Button color="inherit" onClick={clearData}>
-                                Limpar
-                            </Button>
-                            <Button color="inherit" onClick={handleDownload}>
-                                Download
-                            </Button>
+                            <CustomButton text={"Limpar"} onClick={clearData}>
+                                <DeleteIcon />
+                            </CustomButton>
+                            <CustomButton text={"Download"} onClick={handleDownload}>
+                                <DownloadIcon />
+                            </CustomButton>
                         </>
                     )}
-                    <Button color="inherit" onClick={handleOpenDialog}>
-                        Adicionar Fluxograma
-                    </Button>
+                    <CustomButton text={"Adicionar Fluxograma"} onClick={handleOpenDialog}>
+                        <AddIcon />
+                    </CustomButton>
                 </Box>
             </Toolbar>
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
