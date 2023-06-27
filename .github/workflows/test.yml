@@ -1,0 +1,66 @@
+name: CI Workflow
+on: 
+    push:
+        branches: 
+          - main
+          - dev
+    pull_request:
+        branches:
+          - main
+          - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: |
+          cd ./frontend
+          npm install
+      #     cd back-end
+      #     /comando para instalar dependencias do backend/
+
+      # - name: Run back-end
+      #   run:
+      #     cd back-end
+      #     /comando para startar o backend/ &
+      #     sleep 20
+      #     pkill -f "/comando de start backend/" <- isso da kill para não ficar executando para sempre
+
+      - name: Run front-end
+        run: |
+          cd ./frontend
+          npm run dev &
+          sleep 20
+          pkill -f "npm run dev"
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: |
+          cd ./frontend
+          npm install
+
+      - name: run tests
+        run: |
+          cd ./frontend
+          npx jest

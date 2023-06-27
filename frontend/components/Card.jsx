@@ -26,6 +26,7 @@ export default function Card({ course, addData }) {
                         className={`${
                             course.nature == "OBRIGATORIO" ? styles.mandatory : styles.optative
                         }`}
+                        data-testid="tipo-element"
                     ></div>
                 </div>
             </Button>
