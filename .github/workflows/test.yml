@@ -32,16 +32,13 @@ jobs:
     #   - name: Run back-end
     #     run:
     #       cd back-end
-    #       npm run dev &
-    #       sleep 10
-    #       pkill -f "npm run dev"
+    #       npm run dev
 
       - name: Run front-end
         run: |
           cd ./frontend
-          npm run dev &
-          sleep 10
-          pkill -f "npm run dev"
+          npm run dev
+
   test:
     runs-on: ubuntu-latest
 
