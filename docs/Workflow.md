@@ -8,8 +8,8 @@ Como o projeto será desenvolvido em React e Java, a seguinte estrutura de workf
 
 ![CI Workflow](./img/CI_Workflow.png)
 
-## Estratégia de Testes
-A abordagem adotada será:          
+## Estratégia de Testes (TNT)
+A abordagem TNT adotada será:          
 ![Estratégia de testes](./img/EstrategiaTestes.png)
 
 ## Histórico de revisão
