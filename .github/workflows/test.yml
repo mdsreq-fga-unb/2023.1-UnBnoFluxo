@@ -26,18 +26,22 @@ jobs:
         run: |
           cd ./frontend
           npm install
-        #   cd back-end
-        #   npm install
+      #     cd back-end
+      #     /comando para instalar dependencias do backend/
 
-    #   - name: Run back-end
-    #     run:
-    #       cd back-end
-    #       npm run dev
+      # - name: Run back-end
+      #   run:
+      #     cd back-end
+      #     /comando para startar o backend/ &
+      #     sleep 20
+      #     pkill -f "/comando de start backend/" <- isso da kill para não ficar executando para sempre
 
       - name: Run front-end
         run: |
           cd ./frontend
-          npm run dev
+          npm run dev &
+          sleep 20
+          pkill -f "npm run dev"
 
   test:
     runs-on: ubuntu-latest
