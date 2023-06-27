@@ -7,11 +7,10 @@ import { useData } from "../hooks/useData"
 import styles from "../styles/Home.module.css"
 
 export default function Home() {
-    const maxPeriodNumber = 10 // Todo: Ajustar pra ser responsivo à fetchs e editavel pelo ususario
     const [flowName, setFlowName] = useState("Meu Fluxograma") // Todo: melhorar
 
     // Estados
-    const { data, addData, clearData } = useData() // Estado que controla os dados armazendos no app
+    const { data, addData, clearData, maxPeriodNumber } = useData() // Estado que controla os dados armazendos no app
 
     return (
         <>
