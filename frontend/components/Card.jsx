@@ -9,9 +9,10 @@ export default function Card({ course, addData }) {
     return (
         <>
             <Button
-                onClick={handleOpenDialog}
+                sx={{ background: "#FFFFFF" }}
                 className={styles.card}
                 title={course.displayName + "\n" + course.code + " / " + course.period + "º Per"}
+                onClick={handleOpenDialog}
             >
                 <div className={styles.textBox}>
                     {course.alias ? (
