@@ -128,7 +128,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
 
                     <TextField
                         type="file"
-                        // label="Curso"
+                        // label="Curso" // todo: remover aquele botao chato "Escolher aquivo" e colocar label
                         hidden
                         onChange={handleFileChange}
                         inputProps={{ accept: ".json" }}

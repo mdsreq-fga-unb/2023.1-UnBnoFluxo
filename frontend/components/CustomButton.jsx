@@ -1,7 +1,5 @@
 import React, { useState } from "react"
 import Fab from "@mui/material/Fab"
-import Icon from "@mui/material/Icon"
-import { Children } from "react"
 
 export default function CustomButton({ text, onClick, children }) {
     const [isExtended, setIsExtended] = useState(true)
