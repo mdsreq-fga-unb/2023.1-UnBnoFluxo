@@ -7,11 +7,13 @@ import {
     DialogTitle,
     Stack,
     TextField,
+    Typography,
 } from "@mui/material"
 import React, { useEffect } from "react"
 import { Controller, useForm } from "react-hook-form"
 import Tip from "./Tip"
 import Title from "./Title"
+import SaveIcon from "@mui/icons-material/Save"
 
 export default function DetailFormDialog({ open, onClose, addData, course }) {
     const {
@@ -19,11 +21,12 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
         handleSubmit,
         setValue,
         control,
+        reset,
         formState: { errors },
     } = useForm() // Usa o hook de fomularios para a validacao dos campos
 
+    // Preenche os campos com os dados do curso ao abrir o diálogo
     useEffect(() => {
-        // Preencher os campos com os dados do curso ao abrir o diálogo
         if (course) {
             setValue("displayName", course.displayName)
             setValue("alias", course.alias)
@@ -37,6 +40,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
         }
     }, [course, setValue])
 
+    // Funcao que salva os campos e adiciona eles no array
     const handleSave = handleSubmit((data) => {
         const newCourse = {
             code: data.code.toUpperCase(),
@@ -50,18 +54,8 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
             description: data.description,
         }
 
-        console.log(JSON.stringify(newCourse))
         addData([newCourse])
-        // Limpar os campos do formulário
-        setValue("displayName", "")
-        setValue("alias", "")
-        setValue("period", "")
-        setValue("code", "")
-        setValue("nature", "")
-        setValue("workloud", "")
-        setValue("preRequisite", "")
-        setValue("coRequisite", "")
-        setValue("description", "")
+        reset() // Limpa os campos
         onClose()
     })
 
@@ -111,7 +105,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                 errors.period ? (
                                     <Tip text={errors.period.message} errorMode />
                                 ) : (
-                                    <Tip text="O periodo que se deseja cumprir o componente curricular (use 0 para Optativas)" />
+                                    <Tip text="O periodo que se deseja cumprir o componente curricular" />
                                 )
                             }
                             type="number"
@@ -152,8 +146,8 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                     getOptionLabel={(option) => option}
                                     defaultValue={course?.nature || null}
                                     onChange={(event, newValue) => {
-                                        setValue("nature", newValue) // Atualizar o valor do campo
-                                        field.onChange(newValue) // Chamar o onChange do campo renderizado
+                                        setValue("nature", newValue)
+                                        field.onChange(newValue)
                                     }}
                                     renderInput={(params) => (
                                         <TextField
@@ -181,7 +175,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                 errors.workloud ? (
                                     <Tip text={errors.workloud.message} errorMode />
                                 ) : (
-                                    <Tip text="O carga horária da componente curricular" />
+                                    <Tip text="O carga horária do componente curricular (em horas)" />
                                 )
                             }
                             type="number"
@@ -217,8 +211,17 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                 </DialogContent>
 
                 <DialogActions>
-                    <Button onClick={onClose}>Cancelar</Button>
-                    <Button onClick={handleSave}>Salvar</Button>
+                    <Button onClick={onClose} sx={{ color: "#DB3B4B" }}>
+                        <Typography mx={1}>Cancelar</Typography>
+                    </Button>
+                    <Button
+                        onClick={handleSave}
+                        variant="contained"
+                        sx={{ mx: 1, background: "#232323" }}
+                    >
+                        <SaveIcon m={2} />
+                        <Typography mx={1}>Salvar</Typography>
+                    </Button>
                 </DialogActions>
             </Dialog>
         </div>

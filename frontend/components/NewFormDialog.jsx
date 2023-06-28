@@ -140,16 +140,12 @@ export default function NewFormDialog({ open, onClose, addData }) {
             </DialogContent>
 
             <DialogActions>
-                <Button onClick={onClose} sx={{ color: "#232323" }}>
-                    Cancelar
+                <Button onClick={onClose} sx={{ color: "#DB3B4B" }}>
+                    <Typography mx={1}>Cancelar</Typography>
                 </Button>
-                <Button
-                    onClick={handleAssemble}
-                    variant="contained"
-                    sx={{ mx: 1, background: "#232323" }}
-                >
+                <Button onClick={handleAssemble} variant="contained" sx={{ background: "#232323" }}>
                     <GavelRoundedIcon />
-                    Montar fluxograma
+                    <Typography mx={1}>Montar fluxograma</Typography>
                 </Button>
             </DialogActions>
         </Dialog>
