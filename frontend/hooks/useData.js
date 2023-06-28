@@ -43,7 +43,7 @@ export function useData() {
 
     // UseEffect para atualizar o valor máximo de período com base nos dados
     useEffect(() => {
-        let max = maxPeriodNumber
+        let max = 0
 
         data.forEach((course) => {
             if (course.period > max) max = course.period
@@ -54,13 +54,10 @@ export function useData() {
         if (newMaxPeriodNumber !== maxPeriodNumber) {
             setMaxPeriodNumber(newMaxPeriodNumber)
         }
-    }, [data]) // Todo: Checar se funciona reducao com alteracoes via addData (de edicao)
+    }, [data])
 
     // Funcao que limpa os dados do app
-    const clearData = () => {
-        setData([])
-        setMaxPeriodNumber(10)
-    }
+    const clearData = () => setData([])
 
     return { data, addData, clearData, maxPeriodNumber }
 }
