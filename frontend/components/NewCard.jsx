@@ -17,7 +17,10 @@ export default function NewCard({ addData }) {
                 onClick={handleOpenDialog}
             >
                 <AddOutlinedIcon sx={{ fontSize: 48, color: "#232323" }} />
+
+                <div className={styles.detail} />
             </Button>
+
             <DetailFormDialog
                 open={openDialog}
                 onClose={handleCloseDialog}
