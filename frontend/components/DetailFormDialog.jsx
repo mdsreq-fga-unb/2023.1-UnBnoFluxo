@@ -1,138 +1,226 @@
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from "@mui/material"
-import React, { useState } from "react"
-//import { useForm } from "react-hook-form";
+import SaveIcon from "@mui/icons-material/Save"
+import {
+    Autocomplete,
+    Button,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogTitle,
+    Stack,
+    TextField,
+    Typography,
+} from "@mui/material"
+import React, { useEffect } from "react"
+import { Controller, useForm } from "react-hook-form"
+import Tip from "./Tip"
+import Title from "./Title"
 
-export default function DetailFormDialog({ open, onClose, addData }) {
-    // Estados
-    const [name, setName] = useState("")
-    const [alias, setAlias] = useState("")
-    const [period, setPeriod] = useState("")
-    const [preRequisite, setPre] = useState("")
-    const [coRequisite, setCo] = useState("")
-    const [equivalence, setEquivalence] = useState("")
-    const [workloud, setWorkloud] = useState("")
-    const [code, setCode] = useState("")
-    const [type, setType] = useState("")
-    const [description, setDescription] = useState("")
+export default function DetailFormDialog({ open, onClose, addData, course }) {
+    const {
+        register,
+        handleSubmit,
+        setValue,
+        control,
+        reset,
+        formState: { errors },
+    } = useForm() // Usa o hook de fomularios para a validacao dos campos
 
-    const handleSave = () => {
-        //UM objeto com todos os dados do fomulario
+    // Preenche os campos com os dados do curso ao abrir o diálogo
+    useEffect(() => {
+        if (course) {
+            setValue("displayName", course.displayName)
+            setValue("alias", course.alias)
+            setValue("period", course.period)
+            setValue("code", course.code)
+            setValue("nature", course.nature)
+            setValue("workloud", course.workloud)
+            setValue("preRequisite", course.preRequisite)
+            setValue("coRequisite", course.coRequisite)
+            setValue("description", course.description)
+        }
+    }, [course, setValue])
+
+    // Funcao que salva os campos e adiciona eles no array
+    const handleSave = handleSubmit((data) => {
         const newCourse = {
-            code: code,
-            displayName: name,
-            nature: type,
-            alias: alias,
-            period: period,
-            preRequisite: preRequisite,
-            coRequisite: coRequisite,
-            equivalence: equivalence,
-            workloud: workloud,
-            description: description,
+            code: data.code.toUpperCase(),
+            displayName: data.displayName.toUpperCase(),
+            nature: data.nature.toUpperCase(),
+            alias: data.alias.toUpperCase(),
+            period: parseInt(data.period),
+            preRequisite: data.preRequisite,
+            coRequisite: data.coRequisite,
+            workloud: parseInt(data.workloud),
+            description: data.description,
         }
 
-        //imprime (tirar dps)
-        console.log(JSON.stringify(newCourse))
-        //adicionando o obj ao banco de dados com a função
         addData([newCourse])
-        // Fecha o diálogo
+        reset() // Limpa os campos
         onClose()
-    }
-    /*
-    const useForm = (newCourse, handleSave) => {
-
-      const [values, setValues] = useState(initialValues);
-  
-      const handleChange = (event) => {
-        const { name, value } = event.target;
-        setValues((prevValues) => ({
-          ...prevValues,
-          [name]: value,
-        }));
-      };
-  
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        onSubmit(values);
-      };
-
-    //useform
-    const onSubmites = () =>{
-
-    };
-
-    const handleChange = (event) => {
-      const { name, value } = event.target;
-      setName((prevState) => ({
-        ...prevState,
-        [name]: value
-      }));
-      //, preRequisite, coRequisite, equivalence, code, workloud, type, description
-    
-    };
-*/
+    })
 
     return (
         <div>
-            <Dialog open={open} onClose={onClose}>
-                <DialogTitle>Cadastre um novo componente</DialogTitle>
+            <Dialog open={open} onClose={onClose} maxWidth="md">
+                <DialogTitle m={1}>
+                    <Title title={"Detalhes do componente"} />
+                </DialogTitle>
                 <DialogContent>
-                    <TextField
-                        label="Nome"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} // ALTERAR PARA{handleChange}
-                    />
-                    <TextField
-                        label="Apelido"
-                        placeholder="Calculo 1 = C1"
-                        value={alias}
-                        onChange={(e) => setAlias(e.target.value)} // ALTERAR PARA{handleChange}
-                    />
-                    <TextField
-                        label="Periodo" //ver como relacionar com o banco de dados
-                        value={period}
-                        onChange={(e) => setPeriod(e.target.value)}
-                    />
-                    <TextField
-                        label="Pré-requisitos" //ver como relacionar com o banco de dados
-                        value={preRequisite}
-                        onChange={(e) => setPre(e.target.value)}
-                    />
-                    <TextField
-                        label="Co-requisitos" //ver como relacionar com o banco de dados
-                        value={coRequisite}
-                        onChange={(e) => setCo(e.target.value)}
-                    />
-                    <TextField
-                        label="Equivalências" //ver como relacionar com o banco de dados
-                        value={equivalence}
-                        onChange={(e) => setEquivalence(e.target.value)}
-                    />
-                    <TextField
-                        label="Código"
-                        value={code}
-                        placeholder="FGA1526xx"
-                        onChange={(e) => setCode(e.target.value)}
-                    />
-                    <TextField
-                        label="Carga horária"
-                        value={workloud}
-                        placeholder="90h"
-                        onChange={(e) => setWorkloud(e.target.value)}
-                    />
-                    <TextField
-                        label="Tipo" //colocar opçao de seleçao (obrigatoria/optativa)
-                        value={type}
-                        onChange={(e) => setType(e.target.value)}
-                    />
-                    <TextField
-                        label="Descrição"
-                        value={description}
-                        onChange={(e) => setDescription(e.target.value)}
-                    />
+                    <Stack spacing={3} my={6} mx={[0, 8, 16]}>
+                        <TextField
+                            label="Nome"
+                            required
+                            error={!!errors.displayName}
+                            helperText={
+                                errors.displayName ? (
+                                    <Tip text={errors.displayName.message} errorMode />
+                                ) : (
+                                    <Tip text="O nome completo do componente curricular" />
+                                )
+                            }
+                            {...register("displayName", { required: "Campo obrigatório" })}
+                        />
+                        <TextField
+                            label="Aliás"
+                            error={!!errors.alias}
+                            helperText={
+                                errors.alias ? (
+                                    <Tip text={errors.alias.message} errorMode />
+                                ) : (
+                                    <Tip text="Uma abreviatura/sigla para o componente curricular" />
+                                )
+                            }
+                            {...register("alias", {
+                                maxLength: {
+                                    value: 12,
+                                    message: "O alias deve ter no máximo 12 caracteres",
+                                },
+                            })}
+                        />
+                        <TextField
+                            label="Período"
+                            required
+                            error={!!errors.period}
+                            helperText={
+                                errors.period ? (
+                                    <Tip text={errors.period.message} errorMode />
+                                ) : (
+                                    <Tip text="O periodo que se deseja cumprir o componente curricular" />
+                                )
+                            }
+                            type="number"
+                            {...register("period", {
+                                required: "Campo obrigatório",
+                                validate: (value) =>
+                                    parseInt(value, 10) >= 0 ||
+                                    "O periodo deve ser maior ou igual a zero",
+                            })}
+                        />
+                        <TextField
+                            label="Código"
+                            required
+                            error={!!errors.code}
+                            helperText={
+                                errors.code ? (
+                                    <Tip text={errors.code.message} errorMode />
+                                ) : (
+                                    <Tip text="Um codigo unico para o componente curricular" />
+                                )
+                            }
+                            {...register("code", {
+                                required: "Campo obrigatório",
+                                pattern: {
+                                    value: /^[A-Za-z]{3}\d{4}$/,
+                                    message: "O código deve seguir o formato ABC1234",
+                                },
+                            })}
+                        />
+                        <Controller
+                            control={control}
+                            name="nature"
+                            rules={{ required: "Campo obrigatório" }}
+                            render={({ field }) => (
+                                <Autocomplete
+                                    {...field}
+                                    options={["OBRIGATORIO", "OPTATIVO"]}
+                                    getOptionLabel={(option) => option}
+                                    onChange={(event, newValue) => {
+                                        setValue("nature", newValue)
+                                        field.onChange(newValue)
+                                    }}
+                                    renderInput={(params) => (
+                                        <TextField
+                                            {...params}
+                                            label="Natureza"
+                                            required
+                                            error={!!errors.nature}
+                                            helperText={
+                                                errors.nature ? (
+                                                    <Tip text={errors.nature.message} errorMode />
+                                                ) : (
+                                                    <Tip text="A obrigatoriedade do componente curricular" />
+                                                )
+                                            }
+                                        />
+                                    )}
+                                />
+                            )}
+                        />
+                        <TextField
+                            label="Carga horária"
+                            required
+                            error={!!errors.workloud}
+                            helperText={
+                                errors.workloud ? (
+                                    <Tip text={errors.workloud.message} errorMode />
+                                ) : (
+                                    <Tip text="O carga horária do componente curricular (em horas)" />
+                                )
+                            }
+                            type="number"
+                            {...register("workloud", {
+                                required: "Campo obrigatório",
+                                validate: (value) =>
+                                    parseInt(value, 10) >= 0 ||
+                                    "A carga horária deve ser maior ou igual a zero",
+                            })}
+                        />
+                        <TextField
+                            label="Pré-requisitos"
+                            helperText={
+                                <Tip text="Componentes curriculares que devem ser cumpridos antes" />
+                            }
+                            {...register("preRequisite")}
+                        />
+                        <TextField
+                            label="Co-requisitos"
+                            helperText={
+                                <Tip text="Componentes curriculares que devem ser cumpridos simuntaneamente" />
+                            }
+                            {...register("coRequisite")}
+                        />
+                        <TextField
+                            label="Descrição"
+                            helperText={
+                                <Tip text="Uma breve descrição do que sera abordado no componente curricular" />
+                            }
+                            {...register("description")}
+                        />
+                    </Stack>
                 </DialogContent>
+
                 <DialogActions>
-                    <Button onClick={onClose}>Cancelar</Button>
-                    <Button onClick={handleSave}>Salvar</Button>
+                    <Button onClick={onClose} sx={{ color: "#DB3B4B" }}>
+                        <Typography mx={1}>Cancelar</Typography>
+                    </Button>
+                    <Button
+                        onClick={handleSave}
+                        variant="contained"
+                        sx={{ mx: 1, background: "#232323" }}
+                    >
+                        <SaveIcon m={2} />
+                        <Typography mx={1}>Salvar</Typography>
+                    </Button>
                 </DialogActions>
             </Dialog>
         </div>

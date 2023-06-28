@@ -1,6 +1,5 @@
 import NewCard from "./NewCard"
 import Card from "./Card"
-
 import styles from "../styles/ElectiveCoursesBox.module.css"
 import { Box, CircularProgress, Grid } from "@mui/material"
 

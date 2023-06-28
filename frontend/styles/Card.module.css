@@ -8,38 +8,55 @@
 
   align-items: center;
   text-align: center;
+  position: relative;
+}
+
+.mandatory,
+.optative {
+  position: absolute;
+  bottom: 0;
+  padding: 0.3125rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232323;
 }
 
 .mandatory {
-  position: relative;
-  bottom: -33px;
-  padding: 5px;
   background-color: #FFAF0F;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .optative {
-  position: relative;
-  bottom: -33px;
-  padding: 5px;
   background-color: #3574F0;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
-.card strong {
-  position: relative;
-  left: 0%;
-  right: 0%;
-  top: 36.36%;
-  bottom: 15.15%;
+.textBox {
+  top: 1.5rem;
+  height: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  font-family: 'Source Sans Pro';
+.alias,
+.displayName {
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-
   color: #232323;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alias {
+  font-size: 1rem;
+}
+
+.displayName {
+  font-size: 0.5rem;
 }
