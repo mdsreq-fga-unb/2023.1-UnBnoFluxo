@@ -15,8 +15,7 @@ it("should render the card with correct information and mandatory style", async 
   render(<Card course={mockCourseObr} />)
 
   const buttonElement = screen.getByRole('button');
-  const cardElement = buttonElement.querySelector('div');
-  const titleElement = cardElement.getAttribute('title');
+  const titleElement = buttonElement.getAttribute('title');
 
   expect(titleElement).toEqual(`${mockCourseObr.displayName}\n${mockCourseObr.code} / ${mockCourseObr.period}º Per`) 
 
@@ -39,7 +38,7 @@ const mockCourseOpt = {
   it("should render the card with correct information and optative style", () => {
     render(<Card course={mockCourseOpt} />)
   
-    const titleElement = screen.getByRole('button').querySelector('div').getAttribute('title') //encurtei a sintaxe pra caber numa linha só
+    const titleElement = screen.getByRole('button').getAttribute('title') //encurtei a sintaxe pra caber numa linha só
 
     expect(titleElement).toEqual(`${mockCourseOpt.displayName}\n${mockCourseOpt.code} / ${mockCourseOpt.period}º Per`) 
 
