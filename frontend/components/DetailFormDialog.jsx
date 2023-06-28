@@ -1,3 +1,4 @@
+import SaveIcon from "@mui/icons-material/Save"
 import {
     Autocomplete,
     Button,
@@ -13,7 +14,6 @@ import React, { useEffect } from "react"
 import { Controller, useForm } from "react-hook-form"
 import Tip from "./Tip"
 import Title from "./Title"
-import SaveIcon from "@mui/icons-material/Save"
 
 export default function DetailFormDialog({ open, onClose, addData, course }) {
     const {
@@ -144,7 +144,6 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                     {...field}
                                     options={["OBRIGATORIO", "OPTATIVO"]}
                                     getOptionLabel={(option) => option}
-                                    defaultValue={course?.nature || null}
                                     onChange={(event, newValue) => {
                                         setValue("nature", newValue)
                                         field.onChange(newValue)

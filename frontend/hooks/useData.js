@@ -6,21 +6,40 @@ export function useData() {
     const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
     const [maxPeriodNumber, setMaxPeriodNumber] = useState(10)
 
+    // // Funcao callback que adiciona os elementos de "newData" ao estado "data"
+    // Essa versão substitui se o codigo o objeto curso inteiro for igual
+    // const addData = (newData) => {
+    //     setData((prevData) => {
+    //         // "nextData" recebe tudo que ainda nao existe em "data"
+    //         const nextData = newData.filter((course) => {
+    //             return !prevData.some((storedCourse) => {
+    //                 return JSON.stringify(storedCourse) === JSON.stringify(course)
+    //             })
+    //         })
+    //         return [...prevData, ...nextData]
+    //     })
+    // }
+
     // Funcao callback que adiciona os elementos de "newData" ao estado "data"
+    // Essa versão substitui se o codigo for igual
     const addData = (newData) => {
         setData((prevData) => {
-            // "nextData" recebe tudo que ainda nao existe em "data"
-            const nextData = newData.filter((course) => {
-                return !prevData.some((storedCourse) => {
-                    return JSON.stringify(storedCourse) === JSON.stringify(course)
-                })
-            }) // TODO: Melhorar a logica do algoritimo para comparar apenas props relevantes ao inves do objeto inteiro
-            return [...prevData, ...nextData]
+            const updatedData = [...prevData]
+
+            newData.forEach((newCourse) => {
+                const index = updatedData.findIndex(
+                    (storedCourse) => storedCourse.code === newCourse.code
+                )
+                if (index !== -1) {
+                    updatedData[index] = newCourse
+                } else {
+                    updatedData.push(newCourse)
+                }
+            })
+
+            return updatedData
         })
     }
-
-    //Todo:
-    const updateData = (updatedData, oldData) => {}
 
     // UseEffect para atualizar o valor máximo de período com base nos dados
     useEffect(() => {
@@ -35,7 +54,7 @@ export function useData() {
         if (newMaxPeriodNumber !== maxPeriodNumber) {
             setMaxPeriodNumber(newMaxPeriodNumber)
         }
-    }, [data]) // Todo: Checar se funciona ao editar um componete curricular para um periodo inferior
+    }, [data]) // Todo: Checar se funciona reducao com alteracoes via addData (de edicao)
 
     // Funcao que limpa os dados do app
     const clearData = () => {
