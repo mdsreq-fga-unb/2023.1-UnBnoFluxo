@@ -1,4 +1,4 @@
-import Card from "../Card"
+  import Card from "../Card"
 import { render, screen, waitFor } from "@testing-library/react"
 import '@testing-library/jest-dom/extend-expect'
 import { Button } from "@mui/material"
@@ -17,8 +17,6 @@ it("should render the card with correct information and mandatory style", async 
   const buttonElement = screen.getByRole('button');
   const cardElement = buttonElement.querySelector('div');
   const titleElement = cardElement.getAttribute('title');
-
-  console.log(titleElement) //para controle
 
   expect(titleElement).toEqual(`${mockCourseObr.displayName}\n${mockCourseObr.code} / ${mockCourseObr.period}º Per`) 
 
@@ -42,8 +40,6 @@ const mockCourseOpt = {
     render(<Card course={mockCourseOpt} />)
   
     const titleElement = screen.getByRole('button').querySelector('div').getAttribute('title') //encurtei a sintaxe pra caber numa linha só
-
-    console.log(titleElement) //para controle
 
     expect(titleElement).toEqual(`${mockCourseOpt.displayName}\n${mockCourseOpt.code} / ${mockCourseOpt.period}º Per`) 
 
