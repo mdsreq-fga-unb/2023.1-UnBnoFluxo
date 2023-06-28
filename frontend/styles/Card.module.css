@@ -15,9 +15,9 @@
 .optative {
   position: absolute;
   bottom: 0;
-  padding: 5px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  padding: 0.3125rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   width: 100%;
   display: flex;
   align-items: center;
