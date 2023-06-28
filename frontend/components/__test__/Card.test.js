@@ -1,43 +1,57 @@
 import Card from "../Card"
 import { render, screen } from "@testing-library/react"
-import '@testing-library/jest-dom/extend-expect'
+import "@testing-library/jest-dom/extend-expect"
 
 const mockCourseObr = {
-  code: "FGA0000",
-  period: 5,
-  alias: "teste",
-  nature: "OBRIGATORIO",
+    displayName: "TESTE OBRIGATORIA",
+    code: "FGA0000",
+    period: 5,
+    alias: "TESTE",
+    nature: "OBRIGATORIO",
 }
 
 it("should render the card with correct information and mandatory style", () => {
-  render(<Card course={mockCourseObr} />)
+    render(<Card course={mockCourseObr} />)
 
-  const cardElement = screen.getByTitle(`${mockCourseObr.code} / ${mockCourseObr.period}º Per`)
-  const aliasElement = screen.getByText(mockCourseObr.alias)
-  const tipoElement = screen.getByTestId("tipo-element");
+    const cardElement = screen.getByTitle(
+        mockCourseObr.displayName +
+            "\n" +
+            mockCourseObr.code +
+            " / " +
+            mockCourseObr.period +
+            "º Per"
+    )
+    const aliasElement = screen.getByText(mockCourseObr.alias)
+    const tipoElement = screen.getByTestId("tipo-element")
 
-  expect(cardElement).toHaveAttribute("title", "FGA0000 / 5º Per")
-  expect(aliasElement).toHaveTextContent("teste")
-  expect(tipoElement).toHaveClass("mandatory");
-  
+    expect(cardElement).toHaveAttribute("title", "TESTE OBRIGATORIA \nFGA0000 / 5º Per")
+    expect(aliasElement).toHaveTextContent("TESTE")
+    expect(tipoElement).toHaveClass("mandatory")
 })
 
 const mockCourseOpt = {
+    displayName: "TESTE OPTATIVA",
     code: "FGA9999",
     period: 10,
-    alias: "validacao",
+    alias: "VALIDACAO",
     nature: "OPTATIVA",
-  }
-  
-  it("should render the card with correct information and mandatory style", () => {
+}
+
+it("should render the card with correct information and mandatory style", () => {
     render(<Card course={mockCourseOpt} />)
-  
-    const cardElement = screen.getByTitle(`${mockCourseOpt.code} / ${mockCourseOpt.period}º Per`)
+
+    const cardElement = screen.getByTitle(
+        mockCourseOpt.displayName +
+            "\n" +
+            mockCourseOpt.code +
+            " / " +
+            mockCourseOpt.period +
+            "º Per"
+    )
     const aliasElement = screen.getByText(mockCourseOpt.alias)
-    const tipoElement = screen.getByTestId("tipo-element");
-  
-    expect(cardElement).toHaveAttribute("title", "FGA9999 / 10º Per")
-    expect(aliasElement).toHaveTextContent("validacao")
-    expect(tipoElement).toHaveClass("optative");
-    
-  })
+    const tipoElement = screen.getByTestId("tipo-element")
+
+    expect(cardElement).toHaveAttribute("title", "TESTE OPTATIVA \nFGA9999 / 10º Per")
+    expect(aliasElement).toHaveTextContent("VALIDACAO")
+    expect(tipoElement).toHaveClass("optative")
+})

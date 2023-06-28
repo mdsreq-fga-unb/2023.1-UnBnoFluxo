@@ -21,7 +21,7 @@ export function useData() {
     // }
 
     // Funcao callback que adiciona os elementos de "newData" ao estado "data"
-    // Essa versão substitui se o codigo for igual
+    // Essa versão substitui se o codigo do componente curricular for igual
     const addData = (newData) => {
         setData((prevData) => {
             const updatedData = [...prevData]
