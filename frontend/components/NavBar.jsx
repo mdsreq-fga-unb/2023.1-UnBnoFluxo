@@ -1,12 +1,12 @@
-import { AppBar, Box, Button, Fab, Toolbar } from "@mui/material"
+import AddIcon from "@mui/icons-material/Add"
+import DeleteIcon from "@mui/icons-material/Delete"
+import DownloadIcon from "@mui/icons-material/Download"
+import { AppBar, Box, Stack, Toolbar } from "@mui/material"
 import { saveAs } from "file-saver"
 import React from "react"
 import { useOpenDialog } from "../hooks/useOpenDialog"
-import NewFormDialog from "./NewFormDialog"
 import CustomButton from "./CustomButton"
-import AddIcon from "@mui/icons-material/Add"
-import DownloadIcon from "@mui/icons-material/Download"
-import DeleteIcon from "@mui/icons-material/Delete"
+import NewFormDialog from "./NewFormDialog"
 
 export default function NavBar({ data, addData, clearData, flowName }) {
     // Estados
@@ -20,24 +20,24 @@ export default function NavBar({ data, addData, clearData, flowName }) {
 
     return (
         <AppBar position="fixed" sx={{ background: "#232323", marginBottom: "16px" }}>
-            <Toolbar>
+            <Toolbar sx={{ justifyContent: "space-between" }}>
                 <Box component="img" sx={{ height: 64 }} alt="Unb no Fluxo logo." src="/logo.svg" />
 
-                <Box sx={{ marginLeft: "auto" }}>
-                    {data.length > 0 && (
-                        <>
-                            <CustomButton text={"Limpar"} onClick={clearData}>
-                                <DeleteIcon />
-                            </CustomButton>
-                            <CustomButton text={"Download"} onClick={handleDownload}>
-                                <DownloadIcon />
-                            </CustomButton>
-                        </>
-                    )}
+                <Stack direction="row" justifyContent="end" alignItems="center" spacing={1}>
                     <CustomButton text={"Adicionar Fluxograma"} onClick={handleOpenDialog}>
                         <AddIcon />
                     </CustomButton>
-                </Box>
+                    {data.length > 0 && (
+                        <>
+                            <CustomButton text={"Download"} onClick={handleDownload}>
+                                <DownloadIcon />
+                            </CustomButton>
+                            <CustomButton text={"Limpar"} onClick={clearData}>
+                                <DeleteIcon />
+                            </CustomButton>
+                        </>
+                    )}
+                </Stack>
             </Toolbar>
             <NewFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
         </AppBar>

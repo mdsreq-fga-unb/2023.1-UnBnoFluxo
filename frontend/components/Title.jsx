@@ -1,14 +1,13 @@
 import { Typography } from "@mui/material"
 import React, { useState } from "react"
 
-export default function Title({ editable = true, title, setTitle }) {
+export default function Title({ editable, title, setTitle }) {
+    const isEditable = editable === undefined ? false : true
     const [editing, setEditing] = useState(false)
     const [internalTitle, setInternalTitle] = useState(title)
 
     const handleTitleClick = () => {
-        if (editable) {
-            setEditing(true)
-        }
+        if (isEditable) setEditing(true)
     }
 
     const handleTitleChange = (event) => {
@@ -31,7 +30,7 @@ export default function Title({ editable = true, title, setTitle }) {
                 alignItems: "center",
                 color: "#232323",
                 opacity: 0.8,
-                cursor: editable ? "pointer" : "default",
+                cursor: isEditable ? "pointer" : "default",
             }}
             onClick={handleTitleClick}
         >

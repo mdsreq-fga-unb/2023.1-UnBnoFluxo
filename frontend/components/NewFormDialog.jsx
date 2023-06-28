@@ -89,11 +89,11 @@ export default function NewFormDialog({ open, onClose, addData }) {
     return (
         <Dialog open={open} onClose={onClose} maxWidth="md">
             <DialogTitle m={1}>
-                <Title editable={false} title={"Montando Fluxograma..."} />
+                <Title title={"Montando Fluxograma..."} />
             </DialogTitle>
 
             <DialogContent>
-                <Stack spacing={3} my={6} mx={16}>
+                <Stack spacing={3} my={6} mx={[0, 8, 16]}>
                     <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
                     {coursesList && (
                         <Autocomplete

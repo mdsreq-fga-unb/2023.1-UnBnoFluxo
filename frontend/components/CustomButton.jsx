@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import { Typography } from "@mui/material"
 import Fab from "@mui/material/Fab"
+import React, { useState } from "react"
 
 export default function CustomButton({ text, onClick, children }) {
     const [isExtended, setIsExtended] = useState(true)
@@ -17,7 +18,11 @@ export default function CustomButton({ text, onClick, children }) {
             onClick={onClick}
         >
             {children}
-            {isExtended && text}
+            {isExtended && (
+                <Typography variant="body1" sx={{ color: "#232323" }}>
+                    {text}
+                </Typography>
+            )}
         </Fab>
     )
 }
