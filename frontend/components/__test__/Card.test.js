@@ -13,8 +13,8 @@ const mockCourseObr = {
 it("should render the card with correct information and mandatory style", async () => {
   render(<Card course={mockCourseObr} />)
 
-  const buttonElement = screen.getByRole('button');
-  const titleElement = buttonElement.getAttribute('title');
+  const buttonElement = screen.getByRole('button')
+  const titleElement = buttonElement.getAttribute('title')
 
   expect(titleElement).toEqual(`${mockCourseObr.displayName}\n${mockCourseObr.code} / ${mockCourseObr.period}º Per`) 
 
