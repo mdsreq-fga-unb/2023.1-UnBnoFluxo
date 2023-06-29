@@ -32,21 +32,21 @@ const mockCourseOpt = {
     period: 10,
     alias: "",
     nature: "OPTATIVA",
-  }
+}
   
-  it("should render the card with correct information and optative style", () => {
-    render(<Card course={mockCourseOpt} />)
+it("should render the card with correct information and optative style", () => {
+  render(<Card course={mockCourseOpt} />)
+
+  const titleElement = screen.getByRole('button').getAttribute('title') //encurtei a sintaxe pra caber numa linha só
+
+  expect(titleElement).toEqual(`${mockCourseOpt.displayName}\n${mockCourseOpt.code} / ${mockCourseOpt.period}º Per`) 
+
+  const aliasElement = screen.getByText(mockCourseOpt.alias || mockCourseOpt.displayName)
+  const tipoElement = screen.getByTestId("tipo-element")
   
-    const titleElement = screen.getByRole('button').getAttribute('title') //encurtei a sintaxe pra caber numa linha só
+  //se receber alias ele procura por aliasTeste, se nao receber alias ele procura pelo displayName
+  mockCourseOpt.alias?expect(aliasElement).toHaveTextContent(mockCourseOpt.alias):expect(aliasElement).toHaveTextContent(mockCourseOpt.displayName)
 
-    expect(titleElement).toEqual(`${mockCourseOpt.displayName}\n${mockCourseOpt.code} / ${mockCourseOpt.period}º Per`) 
+  expect(tipoElement).toHaveClass("optative")
 
-    const aliasElement = screen.getByText(mockCourseOpt.alias || mockCourseOpt.displayName)
-    const tipoElement = screen.getByTestId("tipo-element")
-    
-    //se receber alias ele procura por aliasTeste, se nao receber alias ele procura pelo displayName
-    mockCourseOpt.alias?expect(aliasElement).toHaveTextContent(mockCourseOpt.alias):expect(aliasElement).toHaveTextContent(mockCourseOpt.displayName)
-
-    expect(tipoElement).toHaveClass("optative")
-
-  })
+})
