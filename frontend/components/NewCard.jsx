@@ -26,7 +26,6 @@ export default function NewCard({ addData, data }) {
                 onClose={handleCloseDialog}
                 addData={addData}
                 flowData={data}
-                course={{}}
             />
         </>
     )
