@@ -18,14 +18,14 @@ export default function ElectiveCoursesBox({ data, addData }) {
                 alignItems="flex-start"
             >
                 <Grid item p={2}>
-                    <NewCard addData={addData} />
+                    <NewCard addData={addData} data={data} />
                 </Grid>
                 {data ? (
                     data
                         .filter((course) => course.period === 0)
                         .map((course) => (
                             <Grid item p={2} key={course.code}>
-                                <Card course={course} />
+                                <Card course={course} data={data} />
                             </Grid>
                         ))
                 ) : (

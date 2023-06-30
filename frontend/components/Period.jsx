@@ -12,7 +12,9 @@ export default function Period({ data, periodNumber, addData }) {
             {data ? (
                 data
                     .filter((course) => course.period == periodNumber)
-                    .map((course) => <Card key={course.code} course={course} addData={addData} />)
+                    .map((course) => (
+                        <Card key={course.code} course={course} addData={addData} data={data} />
+                    ))
             ) : (
                 <CircularProgress color="inherit" />
             )}

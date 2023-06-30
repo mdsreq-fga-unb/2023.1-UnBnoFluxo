@@ -15,7 +15,7 @@ import { Controller, useForm } from "react-hook-form"
 import Tip from "./Tip"
 import Title from "./Title"
 
-export default function DetailFormDialog({ open, onClose, addData, course }) {
+export default function DetailFormDialog({ open, onClose, addData, course, flowData }) {
     const {
         register,
         handleSubmit,
@@ -80,6 +80,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                             }
                             {...register("displayName", { required: "Campo obrigatório" })}
                         />
+
                         <TextField
                             label="Aliás"
                             error={!!errors.alias}
@@ -97,6 +98,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                 },
                             })}
                         />
+
                         <TextField
                             label="Período"
                             required
@@ -116,6 +118,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                     "O periodo deve ser maior ou igual a zero",
                             })}
                         />
+
                         <TextField
                             label="Código"
                             required
@@ -135,6 +138,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                 },
                             })}
                         />
+
                         <Controller
                             control={control}
                             name="nature"
@@ -142,7 +146,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                             render={({ field }) => (
                                 <Autocomplete
                                     {...field}
-                                    options={["OBRIGATORIO", "OPTATIVO"]}
+                                    options={["OBRIGATORIO", "OPTATIVO", "COMPLEMENTAR"]}
                                     getOptionLabel={(option) => option}
                                     onChange={(event, newValue) => {
                                         setValue("nature", newValue)
@@ -166,6 +170,7 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                 />
                             )}
                         />
+
                         <TextField
                             label="Carga horária"
                             required
@@ -185,20 +190,73 @@ export default function DetailFormDialog({ open, onClose, addData, course }) {
                                     "A carga horária deve ser maior ou igual a zero",
                             })}
                         />
-                        <TextField
-                            label="Pré-requisitos"
-                            helperText={
-                                <Tip text="Componentes curriculares que devem ser cumpridos antes" />
-                            }
-                            {...register("preRequisite")}
+
+                        <Controller
+                            control={control}
+                            name="preRequisite"
+                            render={({ field }) => (
+                                <Autocomplete
+                                    {...field}
+                                    multiple
+                                    id="tags-outlined"
+                                    options={flowData.map((course) => course.code)}
+                                    getOptionLabel={(option) => {
+                                        const selectedCourse = flowData.find(
+                                            (course) => course.code === option
+                                        )
+                                        return `${selectedCourse.code} - ${selectedCourse.displayName}`
+                                    }}
+                                    filterSelectedOptions
+                                    onChange={(event, newValue) => {
+                                        setValue("preRequisite", newValue)
+                                        field.onChange(newValue)
+                                    }}
+                                    renderInput={(params) => (
+                                        <TextField
+                                            {...params}
+                                            label="Pré-requisitos"
+                                            helperText={
+                                                <Tip text="Componentes curriculares que devem ser cumpridos antes" />
+                                            }
+                                        />
+                                    )}
+                                />
+                            )}
                         />
-                        <TextField
-                            label="Co-requisitos"
-                            helperText={
-                                <Tip text="Componentes curriculares que devem ser cumpridos simuntaneamente" />
-                            }
-                            {...register("coRequisite")}
+
+                        <Controller
+                            control={control}
+                            name="coRequisite"
+                            render={({ field }) => (
+                                <Autocomplete
+                                    {...field}
+                                    multiple
+                                    id="tags-outlined"
+                                    options={flowData.map((course) => course.code)}
+                                    getOptionLabel={(option) => {
+                                        const selectedCourse = flowData.find(
+                                            (course) => course.code === option
+                                        )
+                                        return `${selectedCourse.code} - ${selectedCourse.displayName}`
+                                    }}
+                                    filterSelectedOptions
+                                    onChange={(event, newValue) => {
+                                        setValue("coRequisite", newValue)
+                                        field.onChange(newValue)
+                                    }}
+                                    renderInput={(params) => (
+                                        <TextField
+                                            {...params}
+                                            label="Co-requisitos"
+                                            helperText={
+                                                <Tip text="Componentes curriculares que devem ser cumpridos simuntaneamente" />
+                                            }
+                                        />
+                                    )}
+                                />
+                            )}
                         />
+
                         <TextField
                             label="Descrição"
                             helperText={
