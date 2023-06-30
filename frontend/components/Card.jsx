@@ -24,7 +24,13 @@ export default function Card({ course, addData, data }) {
 
                 <div
                     className={`${
-                        course.nature == "OBRIGATORIO" ? styles.mandatory : styles.optative
+                        course.nature === "OBRIGATORIO"
+                            ? styles.mandatory
+                            : course.nature === "OPTATIVO"
+                            ? styles.optative
+                            : course.nature === "COMPLEMENTAR"
+                            ? styles.complementary
+                            : styles.unatural
                     }`}
                     data-testid="tipo-element"
                 />
