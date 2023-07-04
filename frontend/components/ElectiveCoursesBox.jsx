@@ -25,7 +25,7 @@ export default function ElectiveCoursesBox({ data, addData }) {
                         .filter((course) => course.period === 0)
                         .map((course) => (
                             <Grid item p={2} key={course.code}>
-                                <Card course={course} data={data} />
+                                <Card course={course} data={data} addData={addData} />
                             </Grid>
                         ))
                 ) : (
