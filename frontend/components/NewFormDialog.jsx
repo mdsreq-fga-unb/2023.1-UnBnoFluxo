@@ -25,7 +25,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
     // Funcao assincrona para o fetch na api de cursos disponiveis
     const fetchCourses = async () => {
         try {
-            const response = await axios.get("https://135.148.35.38:25532/api/courses") // TODO:
+            const response = await axios.get("https://unbnofluxo.uk:25534/api/courses") // TODO:
             // const response = await axios.get("api/courses")
             setCoursesList(response.data)
         } catch (error) {
@@ -44,7 +44,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
             selectedCourses.forEach(async (selectedCourse) => {
                 try {
                     const response = await axios.get(
-                        `https://135.148.35.38:25532/api/course/${selectedCourse.endpoint}`
+                        `https://unbnofluxo.uk:25534/api/course/${selectedCourse.endpoint}`
                     ) // TODO:
                     // const response = await axios.get(`/api/${selectedCourse.endpoint}`)
                     addData(response.data)
