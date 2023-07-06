@@ -12,7 +12,7 @@ export default function CustomButton({ text, onClick, children }) {
         <Fab
             m={2}
             variant={isExtended ? "extended" : "round"}
-            style={{ backgroundColor: "#ffffff", color: "#232323" }}
+            style={{ backgroundColor: "#FFFFFF", color: "#232323" }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onClick={onClick}
