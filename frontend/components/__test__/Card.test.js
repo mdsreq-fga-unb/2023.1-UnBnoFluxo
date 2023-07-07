@@ -32,7 +32,7 @@ describe('Card', () => {
       code: "FGA9999",
       period: 10,
       alias: "",
-      nature: "OPTATIVA",
+      nature: "OPTATIVO",
   }
     
   it("should render the card with correct information and optative style", () => {
@@ -59,7 +59,7 @@ describe('Card', () => {
     nature: "COMPLEMENTAR",
 }
 
-  it("should render the card with correct information and UNNATURAL style", () => {
+  it("should render the card with correct information and complementary style", () => {
     render(<Card course={mockCourseComp} />)
 
     const titleElement = screen.getByRole('button').getAttribute('title')
@@ -72,6 +72,6 @@ describe('Card', () => {
     //se receber alias ele procura por aliasTeste, se nao receber alias ele procura pelo displayName
     mockCourseComp.alias?expect(aliasElement).toHaveTextContent(mockCourseComp.alias):expect(aliasElement).toHaveTextContent(mockCourseComp.displayName)
 
-    expect(tipoElement).toHaveClass("unatural")
+    expect(tipoElement).toHaveClass("complementary")
   })
 })
