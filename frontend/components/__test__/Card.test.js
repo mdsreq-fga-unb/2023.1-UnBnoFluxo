@@ -53,11 +53,11 @@ describe('Card', () => {
 
   const mockCourseComp = {
     displayName: "CompTeste",
-    code: "FGA9999",
-    period: 10,
+    code: "FGA1234",
+    period: 7,
     alias: "",
     nature: "COMPLEMENTAR",
-}
+  }
 
   it("should render the card with correct information and complementary style", () => {
     render(<Card course={mockCourseComp} />)
@@ -73,5 +73,29 @@ describe('Card', () => {
     mockCourseComp.alias?expect(aliasElement).toHaveTextContent(mockCourseComp.alias):expect(aliasElement).toHaveTextContent(mockCourseComp.displayName)
 
     expect(tipoElement).toHaveClass("complementary")
+  })
+
+  const mockCourseUNATURAL = {
+    displayName: "UNATURALTeste",
+    code: "FGA6666",
+    period: 10,
+    alias: "no",
+    nature: "anythin'else",
+  }
+
+  it("should render the card with correct information and UNATURALlementary style", () => {
+    render(<Card course={mockCourseUNATURAL} />)
+
+    const titleElement = screen.getByRole('button').getAttribute('title')
+
+    expect(titleElement).toEqual(`${mockCourseUNATURAL.displayName}\n${mockCourseUNATURAL.code} / ${mockCourseUNATURAL.period}º Per`) 
+
+    const aliasElement = screen.getByText(mockCourseUNATURAL.alias || mockCourseUNATURAL.displayName)
+    const tipoElement = screen.getByTestId("tipo-element")
+    
+    //se receber alias ele procura por aliasTeste, se nao receber alias ele procura pelo displayName
+    mockCourseUNATURAL.alias?expect(aliasElement).toHaveTextContent(mockCourseUNATURAL.alias):expect(aliasElement).toHaveTextContent(mockCourseUNATURAL.displayName)
+
+    expect(tipoElement).toHaveClass("unatural")
   })
 })
