@@ -1,6 +1,7 @@
 # Visão Geral do Projeto
 
 ## Organização do projeto
+
 | Papel       | Atribuições                                                                                                 | Responsável                                 | Participantes                               |
 | ----------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
 | Dev Master  | Zelar pelo funcionamento e valores do scrum dentro da equipe                                                | João Victor                                 | Todos                                       |
@@ -11,6 +12,7 @@
 
 
 ## Planejamento das fases e/ou iterações do projeto
+
 | Sprint   | Produto (Entrega)                                         | Data Início | Data Fim |
 | -------- | --------------------------------------------------------- | :---------: | :------: |
 | Sprint 1 | Definição do Problema e solução                           |  28/03/23   | 10/04/23 |
@@ -24,6 +26,7 @@
 
 
 ## Matriz de comunicação
+
 | Descrição                                                                                              | Área/Envolvidos         | Periodicidade       | Produtos Gerados                                                                             |
 | ------------------------------------------------------------------------------------------------------ | ----------------------- | ------------------- | -------------------------------------------------------------------------------------------- |
 | Definição de Sprint e próximos objetivos;<br> acompanhar o andamento geral do projeto                  | Equipe Scrum            | Quinzenal           | Ata de reunião;<br> relatório de situação do projeto                                         |
@@ -56,6 +59,7 @@ O projeto poderá ser replanejado caso haja:
 
 
 ## Histórico de revisão
+
 |   Data   | Versão | Descrição                                                             | Autor           |
 | :------: | :----: | --------------------------------------------------------------------- | --------------- |
 | 19/04/23 |  1.0   | Criação do documento                                                  | Todos           |

@@ -1,4 +1,4 @@
-# Sprint 6
+# Sprint 8
 
 ## Visão Geral
 
@@ -19,6 +19,7 @@
 
 
 **OBJETIVOS DA SPRINT**
+
 - US06 - Visualizar requisitos
 - US08 - Visualizar carga horária
 - US12 - Pesquisar componente curricular
@@ -55,14 +56,6 @@
 ## Sprint Retrospective
 **OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
 
-- Pair programming ( joao e ricardo | israel e pedro | joao e vinicius | ricardo e vinicius)
-- Design simples
-- Propriedade coletiva
-- Integração continua
-- Planejamento do jogo
-- Refatoração
-- Padrao de codificação documentado
-- Ritmo sustentável
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
 

@@ -11,6 +11,7 @@ Projeto criado por estudantes da disciplina Métodos de Desenvolvimento de Softw
 Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estudantes para seguir o fluxo do curso". Para isso foi proposto uma aplicação web que irá disponibilizar um fluxograma interativo, intuitivo, personalizável e moderno para os estudantes da Universidade de Brasília.
 
 ## 👥 Colaboradores
+
 | Matrícula | Nome                                      | Nick no GitHub |                                                      📸                                                       |
 | :-------: | ----------------------------------------- | -------------- | :----------------------------------------------------------------------------------------------------------: |
 | 170121267 | Israel Silva Nunes                        | IsraelNunes    | [<img src="https://avatars.githubusercontent.com/u/43423619?v=4" width=50>](https://github.com/IsraelNunes)  |

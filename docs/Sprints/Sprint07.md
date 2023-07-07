@@ -1,4 +1,4 @@
-# Sprint 6
+# Sprint 7
 
 ## Visão Geral
 
@@ -27,19 +27,21 @@
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
 
-| Atividade                                         | Quem               |
-| ------------------------------------------------- | --------------     |
-| Criar componente curricular                       | Ricardo            |
-| Iniciar fluxograma em branco                      | João               |
-| Editar componente curricular                      | Vinicius e Ricardo |
-| Apelidar componente curricular                    | Pedro e Israel     |
+| Atividade                      | Quem               |
+| ------------------------------ | ------------------ |
+| Criar componente curricular    | Ricardo            |
+| Iniciar fluxograma em branco   | João               |
+| Editar componente curricular   | Vinicius e Ricardo |
+| Apelidar componente curricular | Pedro e Israel     |
 
 
 ## Sprint Review
 **ENTREGAS**
+
 - debito da sprint 6 (US03)
 
 **NÃO FOI ENTREGUE**
+
 - não passaram pelo DOD pois pequenos detalhes dos criterios de aceitação as impediram:
 - US09 - Criar componente curricular         
 - US14 - Apelidar componente curricular      
@@ -62,4 +64,5 @@
 - testes
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
+
 - testes (vinicius)

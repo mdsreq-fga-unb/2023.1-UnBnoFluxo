@@ -77,10 +77,13 @@ nav:
     - Sprint 4: Sprints/Sprint04.md    
     - Sprint 5: Sprints/Sprint05.md    
     - Sprint 6: Sprints/Sprint06.md
+    - Sprint 7: Sprints/Sprint07.md
+    - Sprint 8: Sprints/Sprint08.md
   - Entregas:
     - Unidade 01: Entregas/Unidade01.md
     - Unidade 02: Entregas/Unidade02.md
     - Unidade 03: Entregas/Unidade03.md
+    - Unidade 04: Entregas/Unidade04.md
 
 # Extensions
 markdown_extensions:
