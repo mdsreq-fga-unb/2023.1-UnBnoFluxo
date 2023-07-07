@@ -12,7 +12,9 @@
 }
 
 .mandatory,
-.optative {
+.optative,
+.complementary,
+.unatural {
   position: absolute;
   bottom: 0;
   padding: 0.3125rem;
@@ -22,7 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #232323;
 }
 
 .mandatory {
@@ -31,6 +32,14 @@
 
 .optative {
   background-color: #3574F0;
+}
+
+.complementary {
+  background-color: #834DF0;
+}
+
+.unatural {
+  background-color: #232323;
 }
 
 .textBox {
