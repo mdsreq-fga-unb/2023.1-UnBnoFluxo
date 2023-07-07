@@ -4,7 +4,7 @@ import { useOpenDialog } from "../hooks/useOpenDialog"
 import styles from "../styles/NewCard.module.css"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function NewCard({ addData }) {
+export default function NewCard({ addData, data }) {
     // Estados
     const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o DetailFormDialog esta aberto ou fechado
 
@@ -25,7 +25,7 @@ export default function NewCard({ addData }) {
                 open={openDialog}
                 onClose={handleCloseDialog}
                 addData={addData}
-                course={{}}
+                flowData={data}
             />
         </>
     )

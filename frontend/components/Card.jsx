@@ -3,7 +3,7 @@ import { useOpenDialog } from "../hooks/useOpenDialog"
 import styles from "../styles/Card.module.css"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function Card({ course, addData }) {
+export default function Card({ course, addData, data }) {
     const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o DetailFormDialog esta aberto ou fechado
 
     return (
@@ -24,7 +24,13 @@ export default function Card({ course, addData }) {
 
                 <div
                     className={`${
-                        course.nature == "OBRIGATORIO" ? styles.mandatory : styles.optative
+                        course.nature === "OBRIGATORIO"
+                            ? styles.mandatory
+                            : course.nature === "OPTATIVO"
+                            ? styles.optative
+                            : course.nature === "COMPLEMENTAR"
+                            ? styles.complementary
+                            : styles.unatural
                     }`}
                     data-testid="tipo-element"
                 />
@@ -33,6 +39,7 @@ export default function Card({ course, addData }) {
                 open={openDialog}
                 onClose={handleCloseDialog}
                 addData={addData}
+                flowData={data}
                 course={course}
             />
         </>
