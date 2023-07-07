@@ -1,3 +1,4 @@
+import DeleteIcon from "@mui/icons-material/Delete"
 import SaveIcon from "@mui/icons-material/Save"
 import {
     Autocomplete,
@@ -42,6 +43,10 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
         }
     }, [course, setValue])
 
+    const handleHelperText = (defaultText, error) => {
+        return error ? <Tip text={error.message} errorMode /> : <Tip text={defaultText} />
+    }
+
     // Funcao que salva os campos e adiciona eles no array
     const handleSave = handleSubmit((data) => {
         const newCourse = {
@@ -61,7 +66,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
             return
         }
 
-        addData([newCourse]) // TODO: VERIFICAR O PROBLEMA DISSO AQUI
+        addData([newCourse])
         reset() // Limpa os campos
         onClose()
     })
@@ -78,26 +83,20 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             label="Nome"
                             required
                             error={!!errors.displayName}
-                            helperText={
-                                errors.displayName ? (
-                                    <Tip text={errors.displayName.message} errorMode />
-                                ) : (
-                                    <Tip text="O nome completo do componente curricular" />
-                                )
-                            }
+                            helperText={handleHelperText(
+                                "O nome completo do componente curricular",
+                                errors.displayName
+                            )}
                             {...register("displayName", { required: "Campo obrigatório" })}
                         />
 
                         <TextField
                             label="Aliás"
                             error={!!errors.alias}
-                            helperText={
-                                errors.alias ? (
-                                    <Tip text={errors.alias.message} errorMode />
-                                ) : (
-                                    <Tip text="Uma abreviatura/sigla para o componente curricular" />
-                                )
-                            }
+                            helperText={handleHelperText(
+                                "Uma abreviatura/sigla para o componente curricular",
+                                errors.alias
+                            )}
                             {...register("alias", {
                                 maxLength: {
                                     value: 12,
@@ -110,13 +109,10 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             label="Período"
                             required
                             error={!!errors.period}
-                            helperText={
-                                errors.period ? (
-                                    <Tip text={errors.period.message} errorMode />
-                                ) : (
-                                    <Tip text="O periodo que se deseja cumprir o componente curricular" />
-                                )
-                            }
+                            helperText={handleHelperText(
+                                "O periodo que se deseja cumprir o componente curricular",
+                                errors.period
+                            )}
                             type="number"
                             {...register("period", {
                                 required: "Campo obrigatório",
@@ -131,13 +127,10 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             required
                             error={!!errors.code}
                             disabled={isEditingMode}
-                            helperText={
-                                errors.code ? (
-                                    <Tip text={errors.code.message} errorMode />
-                                ) : (
-                                    <Tip text="Um codigo unico para o componente curricular" />
-                                )
-                            }
+                            helperText={handleHelperText(
+                                "Um codigo unico para o componente curricular",
+                                errors.code
+                            )}
                             {...register("code", {
                                 required: "Campo obrigatório",
                                 pattern: {
@@ -166,13 +159,10 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                             label="Natureza"
                                             required
                                             error={!!errors.nature}
-                                            helperText={
-                                                errors.nature ? (
-                                                    <Tip text={errors.nature.message} errorMode />
-                                                ) : (
-                                                    <Tip text="A obrigatoriedade do componente curricular" />
-                                                )
-                                            }
+                                            helperText={handleHelperText(
+                                                "A obrigatoriedade do componente curricular",
+                                                errors.nature
+                                            )}
                                         />
                                     )}
                                 />
@@ -183,13 +173,10 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             label="Carga horária"
                             required
                             error={!!errors.workloud}
-                            helperText={
-                                errors.workloud ? (
-                                    <Tip text={errors.workloud.message} errorMode />
-                                ) : (
-                                    <Tip text="O carga horária do componente curricular (em horas)" />
-                                )
-                            }
+                            helperText={handleHelperText(
+                                "O carga horária do componente curricular (em horas)",
+                                errors.workloud
+                            )}
                             type="number"
                             {...register("workloud", {
                                 required: "Campo obrigatório",
@@ -276,7 +263,13 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                 </DialogContent>
 
                 <DialogActions>
-                    <Button onClick={onClose} sx={{ color: "#DB3B4B" }}>
+                    <Button
+                        onClick={() => {
+                            onClose()
+                            reset()
+                        }}
+                        sx={{ color: "#DB3B4B" }}
+                    >
                         <Typography mx={1}>Cancelar</Typography>
                     </Button>
                     <Button
