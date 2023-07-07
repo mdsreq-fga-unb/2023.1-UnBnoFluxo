@@ -11,7 +11,7 @@ it ("should render editable Title", () => {
   expect(titleElement).toHaveText('teste')
 })
 
-/*
+//******** */
 
 it("calls onClick handler on Title click", () => {
   const handleTitleClickMock = jest.fn();
@@ -22,7 +22,7 @@ it("calls onClick handler on Title click", () => {
   expect(handleTitleClickMock).toHaveBeenCalled();
 });
 
-//
+//*********
 
 it("should handle title click and change", () => {
   // Arrange
@@ -42,4 +42,3 @@ it("should handle title click and change", () => {
   // Assert
   expect(setTitle).toHaveBeenCalledWith("New Title");
   });
-*/
