@@ -10,7 +10,7 @@ const mockCourseObr = {
   nature: "OBRIGATORIO",
 }
 
-it("should render the card with correct information and mandatory style", async () => {
+it("should render the card with correct information and mandatory style", () => {
   render(<Card course={mockCourseObr} />)
 
   const buttonElement = screen.getByRole('button')
