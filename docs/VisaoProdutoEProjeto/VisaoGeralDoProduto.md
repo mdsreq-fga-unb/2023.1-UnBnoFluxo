@@ -19,7 +19,7 @@ Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 Facilitar o planejamento e a organização do fluxo de disciplinas do usuário (aluno)
 
 ## Tecnologias a serem utilizadas
-**Para o frontend:** React; ![logo-react-256](https://user-images.githubusercontent.com/60819460/233812583-5abd8a5d-aba5-4718-9465-e1a35474e258.png) 
+**Para o frontend:** React; MUI ![logo-react-256](https://user-images.githubusercontent.com/60819460/233812583-5abd8a5d-aba5-4718-9465-e1a35474e258.png) 
 
 **Para o backend:** Java, Rest API; ![Java_logo (4)](https://user-images.githubusercontent.com/60819460/233813519-623d1fbf-b804-4699-a2ad-bc752b5a4369.png)
 
