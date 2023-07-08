@@ -20,10 +20,14 @@
 
 **OBJETIVOS DA SPRINT**
 
+- US03 - (DÉBITO) Iniciar fluxograma em branco
 - US09 - Criar componente curricular         
 - US14 - Apelidar componente curricular      
 - US10 - Editar componente curricular     
-- + débito sprint 6 (US03)
+
+**KANBAN NA PLANNING**
+
+![1](docs/../../img/planning_7.jpeg)
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
 
@@ -38,14 +42,13 @@
 ## Sprint Review
 **ENTREGAS**
 
-- debito da sprint 6 (US03)
+**KANBAN PÓS REVIEW**
+
+<!-- ![1](docs/../../img/done_7.jpeg) -->
+<!-- Remover comentario depois que o done_7.jpeg existir -->
 
 **NÃO FOI ENTREGUE**
 
-- não passaram pelo DOD pois pequenos detalhes dos criterios de aceitação as impediram:
-- US09 - Criar componente curricular         
-- US14 - Apelidar componente curricular      
-- US10 - Editar componente curricular
 
 **O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
 
@@ -61,7 +64,7 @@
 - Refatoração
 - Padrao de codificação documentado
 - Ritmo sustentável
-- testes
+- Testes
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
 

@@ -20,14 +20,10 @@
 
 **OBJETIVOS DA SPRINT**
 
-- US06 - Visualizar requisitos
-- US08 - Visualizar carga horária
-- US12 - Pesquisar componente curricular
-
 **KANBAN NA PLANNING**
 
-![1]()
-
+<!-- ![1](docs/../../img/planning_8.jpeg) -->
+<!-- Remover comentario depois que o planning_8.jpeg existir -->
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
 
@@ -44,8 +40,9 @@
 
 
 **KANBAN PÓS REVIEW**
+<!-- ![1](docs/../../img/done_8.jpeg) -->
+<!-- Remover comentario depois que o done_8.jpeg existir -->
 
-![1]()
 
 **NÃO FOI ENTREGUE**
 

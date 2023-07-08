@@ -1,4 +1,4 @@
-# CI Test
+# Integração Contínua e Testes
 
 ## Workflow
 Um workflow é um fluxo de trabalhos (jobs) que é ativado a partir de um evento (triggers), como por exemplo um pull request, e que executa uma sequência de etapas (steps) podem realizar e automatizar atividades como build, teste e deploy de um projeto.
