@@ -27,12 +27,12 @@
 
 ## Matriz de comunicação
 
-| Descrição                                                                                              | Área/Envolvidos         | Periodicidade       | Produtos Gerados                                                                             |
-| ------------------------------------------------------------------------------------------------------ | ----------------------- | ------------------- | -------------------------------------------------------------------------------------------- |
-| Definição de Sprint e próximos objetivos;<br> acompanhar o andamento geral do projeto                  | Equipe Scrum            | Quinzenal           | Ata de reunião;<br> relatório de situação do projeto                                         |
-| Discussão sobre possíveis desafios e soluções apresentados pelos membros via canal de texto no Discord | Equipe Scrum            | A cada 48h          | Daily                                                                                        |
-| Reunião com o cliente e entrega parcial via Discord                                                    | Equipe Scrum e Clientes | Quinzenal           | Ata de reunião;<br> relatório de situação do spojeto;<br> validação da entrega com o cliente |
-| Comunicação assíncrona entre os membros da equipe WhatsApp e o cliente via Discord                     | Equipe Scrum e Clientes | Conforme Necessário | Mensagens de texto e voz                                                                     |
+| Descrição                                                                                              | Área/Envolvidos         | Periodicidade       | Produtos Gerados                                                         |
+| ------------------------------------------------------------------------------------------------------ | ----------------------- | ------------------- | ------------------------------------------------------------------------ |
+| Definição de Sprint e próximos objetivos;<br> acompanhar o andamento geral do projeto                  | Equipe Scrum            | Quinzenal           | Relatório de situação do projeto                                         |
+| Discussão sobre possíveis desafios e soluções apresentados pelos membros via canal de texto no Discord | Equipe Scrum            | A cada 48h          | Daily                                                                    |
+| Reunião com o cliente e entrega parcial via Discord                                                    | Equipe Scrum e Clientes | Quinzenal           | Relatório de situação do projeto;<br> validação da entrega com o cliente |
+| Comunicação assíncrona entre os membros da equipe WhatsApp e o cliente via Discord                     | Equipe Scrum e Clientes | Conforme Necessário | Mensagens de texto e voz                                                 |
 
 
 ## Gerenciamento de riscos

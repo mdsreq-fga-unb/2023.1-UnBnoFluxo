@@ -10,6 +10,12 @@ hide:
 Projeto criado por estudantes da disciplina Métodos de Desenvolvimento de Software, Engenharia de Software, UnB.
 Esse projeto visa resolver o problema da "Dificuldade de planejamento dos estudantes para seguir o fluxo do curso". Para isso foi proposto uma aplicação web que irá disponibilizar um fluxograma interativo, intuitivo, personalizável e moderno para os estudantes da Universidade de Brasília.
 
+## 📒 Documentação
+A documentação do projeto está disponivel nesse [link](https://mdsreq-fga-unb.github.io/2023.1-UnBnoFluxo/).
+
+## 💻 Aplicação
+O projeto está disponivel online nesse [link](https://unbnofluxo.vercel.app/).
+
 ## 👥 Colaboradores
 
 | Matrícula | Nome                                      | Nick no GitHub |                                                      📸                                                       |

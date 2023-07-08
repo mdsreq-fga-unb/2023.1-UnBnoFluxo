@@ -71,7 +71,7 @@ nav:
   - Backlog: Backlog.md
   - Arquitetura e Interface: ArquiteturaInterface.md
   - Padrões: Padroes.md
-  - Workflow: Workflow.md
+  - CI/Test: CITest.md
   - Registro de sprints:
     - Sprint 3: Sprints/Sprint03.md
     - Sprint 4: Sprints/Sprint04.md    
