@@ -4,20 +4,18 @@ import "@testing-library/jest-dom/extend-expect"
 
 /* UNDER DEVELOPMENT */
 
-describe ('Tip', () => {
+describe("Tip", () => {
     it('should render Tip with "#DB3B4B" bg color when errorMode is true', () => {
-        render (<Tip text={'TesteTrue'} errorMode={false} />)
+        render(<Tip text={"TesteTrue"} />)
 
-    //     const boxElement = screen.getByTestId('tip-box')
-    //     expect(boxElement).toHaveStyle({background: "#DB3B4B"})        
-    // })
+        //     const boxElement = screen.getByTestId('tip-box')
+        //     expect(boxElement).toHaveStyle({background: "#DB3B4B"})
+        // })
 
-    // it('should render Tip with "#232323" bg color when errorMode is false', () => {
-    //     render (<Tip text={'TesteFalse'} errorMode={false} />)
+        // it('should render Tip with "#232323" bg color when errorMode is false', () => {
+        //     render (<Tip text={'TesteFalse'}  />)
 
-    //     const boxElement = screen.getByLabelText('TesteFalse')
-    //     expect(boxElement).toHaveStyle({background: "#232323"})        
+        //     const boxElement = screen.getByLabelText('TesteFalse')
+        //     expect(boxElement).toHaveStyle({background: "#232323"})
     })
-    
 })
-    
