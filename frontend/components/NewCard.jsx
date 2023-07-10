@@ -1,18 +1,12 @@
-import { Box, Button } from "@mui/material"
-import styles from "../styles/NewCard.module.css"
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined"
-import { useState } from "react"
+import { Button } from "@mui/material"
+import { useOpenDialog } from "../hooks/useOpenDialog"
+import styles from "../styles/NewCard.module.css"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function NewCard({ addData }) {
+export default function NewCard({ addData, data }) {
     // Estados
-    const [openDialog, setOpenDialog] = useState(false) // Estado que determina se o DetailFormDialog esta aberto ou fechado
-
-    // Funcao que abre o DetailFormDialog
-    const handleOpenDialog = () => setOpenDialog(true)
-
-    // Funcao que fecha o DetailFormDialog
-    const handleCloseDialog = () => setOpenDialog(false)
+    const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o DetailFormDialog esta aberto ou fechado
 
     return (
         <>
@@ -23,8 +17,16 @@ export default function NewCard({ addData }) {
                 onClick={handleOpenDialog}
             >
                 <AddOutlinedIcon sx={{ fontSize: 48, color: "#232323" }} />
+
+                <div className={styles.detail} />
             </Button>
-            <DetailFormDialog open={openDialog} onClose={handleCloseDialog} addData={addData} />
+
+            <DetailFormDialog
+                open={openDialog}
+                onClose={handleCloseDialog}
+                addData={addData}
+                flowData={data}
+            />
         </>
     )
 }

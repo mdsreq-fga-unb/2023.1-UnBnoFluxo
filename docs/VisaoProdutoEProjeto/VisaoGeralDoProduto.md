@@ -6,6 +6,7 @@ Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 ![UnBNoFluxo - Apresentação de projeto](docs/../../img/Ishikawa.png)
 
 ##	Declaração de posição do produto
+
 |               |                                                                                                                              |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Para          | os alunos do curso de Engenharia de Software da Universidade de Brasília                                                     |
@@ -19,7 +20,7 @@ Dificuldade de planejamento dos estudantes para seguir o fluxo do curso.
 Facilitar o planejamento e a organização do fluxo de disciplinas do usuário (aluno)
 
 ## Tecnologias a serem utilizadas
-**Para o frontend:** React; ![logo-react-256](https://user-images.githubusercontent.com/60819460/233812583-5abd8a5d-aba5-4718-9465-e1a35474e258.png) 
+**Para o frontend:** React; MUI ![logo-react-256](https://user-images.githubusercontent.com/60819460/233812583-5abd8a5d-aba5-4718-9465-e1a35474e258.png) 
 
 **Para o backend:** Java, Rest API; ![Java_logo (4)](https://user-images.githubusercontent.com/60819460/233813519-623d1fbf-b804-4699-a2ad-bc752b5a4369.png)
 
@@ -30,6 +31,7 @@ Facilitar o planejamento e a organização do fluxo de disciplinas do usuário (
 **Para comunicação:** Discord e WhatsApp. ![Discord_icon](https://user-images.githubusercontent.com/60819460/233812573-f7c358ae-980f-4f53-8530-57b36d0fcbd3.png) ![logo-whatsapp-preto-branco-256 (1)](https://user-images.githubusercontent.com/60819460/233812715-0fc318f3-9c6c-4de2-96c6-7df454ec7a79.png)
 
 ## Histórico de revisão
+
 |   Data   | Versão | Descrição                                                                         | Autor    |
 | :------: | :----: | --------------------------------------------------------------------------------- | -------- |
 | 19/04/23 |  1.0   | Criação do documento                                                              | Todos    |

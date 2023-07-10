@@ -1,6 +1,7 @@
 # Arquitetura e Interface
 
 ## Arquitetura do projeto
+
 - Para o **frontend**: Será utilizada uma arquitetura do tipo *Single Page Application (SPA)* com estilo *Component-Based Architecture* seguindo o padrão da estrutura de desenvolvimento web baseada em React, Next.js. Além de ser uma aquitetura amplamente utilizada no mercado quando se diz respeito à React, essa escolha foi feita por proporcionar uma experiência de usuário aprimorada pela sua fluidez e responsividade, facilitades em reutilização de código, modularidade e manutenção.
 
 - Para o **backend**: Será utilizada arquitetura em camadas padrão MVC (Model, View, Controller), essa arquitetura é um padrão muito utilizado no mercado e foi escolhida por familiarização da maioria da equipe com ela.
@@ -35,6 +36,7 @@ Além disso a aplicação também contará com duas **Caixas de dialogo**. Uma e
 
 
 ### Paleta de cores
+
 | Cor          | Código  |
 | ------------ | :-----: |
 | Branco       | #FFFFFF |
@@ -49,6 +51,7 @@ Além disso a aplicação também contará com duas **Caixas de dialogo**. Uma e
 
 
 ## Histórico de revisão
+
 |   Data   | Versão | Descrição            | Autor   |
 | :------: | :----: | -------------------- | ------- |
 | 08/05/23 |  1.0   | Criação do documento | Todos   |

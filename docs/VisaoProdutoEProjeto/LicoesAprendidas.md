@@ -11,6 +11,7 @@ Foi notável a melhoria no desenvolvimento da equipe, houveram alguns problemas 
 Houve avanço em toda equipe, por meio do pair programming entre os integrantes conseguimos ter um amplo compartilhamento de conhecimentos. Alguns problemas foram erradicados, como seguir as datas do planejamento das sprints. Outros foram amenizados, como o fator das dailys que foram feitas com mais constancia. Todos aprenderam muito pondo o a teoria em prática. Portanto, obtivemos uma boa entrega graças a contribuição de toda a equipe
 
 ## Histórico de revisão
+
 |   Data   | Versão | Descrição                                  | Autor |
 | :------: | :----: | ------------------------------------------ | ----- |
 | 19/04/23 |  1.0   | Criação do documento e relato da Unidade 1 | João  |

@@ -7,7 +7,6 @@ import {
     DialogActions,
     DialogContent,
     DialogTitle,
-    Input,
     Stack,
     TextField,
     Typography,
@@ -15,6 +14,7 @@ import {
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import Tip from "./Tip"
+import Title from "./Title"
 
 export default function NewFormDialog({ open, onClose, addData }) {
     // Estados
@@ -25,8 +25,8 @@ export default function NewFormDialog({ open, onClose, addData }) {
     // Funcao assincrona para o fetch na api de cursos disponiveis
     const fetchCourses = async () => {
         try {
-            // const response = await axios.get("http://135.148.35.38:25532/api/courses") // TODO:
-            const response = await axios.get("api/courses")
+            const response = await axios.get("https://unbnofluxo.uk/api/courses") // TODO:
+            // const response = await axios.get("api/courses")
             setCoursesList(response.data)
         } catch (error) {
             console.error("Erro ao obter dados da API:", error)
@@ -43,10 +43,10 @@ export default function NewFormDialog({ open, onClose, addData }) {
         if (selectedCourses) {
             selectedCourses.forEach(async (selectedCourse) => {
                 try {
-                    // const response = await axios.get(
-                    //     `http://135.148.35.38:25532/api/course/${selectedCourse.endpoint}`
-                    // ) // todo:
-                    const response = await axios.get(`/api/${selectedCourse.endpoint}`)
+                    const response = await axios.get(
+                        `https://unbnofluxo.uk/api/course/${selectedCourse.endpoint}`
+                    ) // TODO:
+                    // const response = await axios.get(`/api/${selectedCourse.endpoint}`)
                     addData(response.data)
                 } catch (error) {
                     console.error(`Erro ao obter dados do curso "${selectedCourse.name}":`, error)
@@ -87,78 +87,65 @@ export default function NewFormDialog({ open, onClose, addData }) {
     }, [])
 
     return (
-        <Dialog open={open} onClose={onClose}>
-            <DialogTitle>
-                <Typography
-                    sx={{
-                        height: "64px",
-                        fontFamily: "Source Sans Pro",
-                        fontStyle: "normal",
-                        fontWeight: 600,
-                        fontSize: "48px",
-                        lineHeight: "64px",
-                        display: "flex",
-                        alignItems: "center",
-                        color: "#232323",
-                        opacity: 0.8,
-                    }}
-                >
-                    Montando Fluxograma...
-                </Typography>
+        <Dialog open={open} onClose={onClose} maxWidth="md">
+            <DialogTitle m={1}>
+                <Title title={"Montando Fluxograma..."} />
             </DialogTitle>
 
             <DialogContent>
-                <Stack spacing={4}>
+                <Stack spacing={3} my={6} mx={[0, 8, 16]}>
                     <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
-                    <Box>
-                        {coursesList && (
-                            <Autocomplete
-                                multiple
-                                id="tags-outlined"
-                                options={coursesList}
-                                getOptionLabel={(course) => course.name}
-                                filterSelectedOptions
-                                onChange={(event, newValue) => {
-                                    setSelectedCourses(newValue)
-                                }} // Atualiza o estado dos cursos selecionados
-                                renderInput={(params) => (
-                                    <TextField
-                                        {...params}
-                                        label="Curso"
-                                        placeholder="Selecione um curso"
-                                    />
-                                )}
-                            />
-                        )}
-                        <Tip text=" Pesquise um fluxograma diretamente da nossa base de dados." />
+                    {coursesList && (
+                        <Autocomplete
+                            multiple
+                            id="tags-outlined"
+                            options={coursesList}
+                            getOptionLabel={(course) => course.name}
+                            filterSelectedOptions
+                            onChange={(event, newValue) => {
+                                setSelectedCourses(newValue)
+                            }} // Atualiza o estado dos cursos selecionados
+                            renderInput={(params) => (
+                                <TextField
+                                    {...params}
+                                    label="Curso"
+                                    placeholder="Selecione um curso"
+                                    helperText={
+                                        <Tip text=" Pesquise um fluxograma diretamente da nossa base de dados." />
+                                    }
+                                />
+                            )}
+                        />
+                    )}
+
+                    <Box display="flex" alignItems="center" justifyContent="center">
+                        <hr style={{ flex: "1", borderColor: "#232323" }} />
+                        <Typography variant="body1" sx={{ mx: 1, color: "#232323" }}>
+                            ou
+                        </Typography>
+                        <hr style={{ flex: "1", borderColor: "#232323" }} />
                     </Box>
-                    <Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <hr style={{ flex: "1", borderColor: "#232323" }} />
-                            <Typography variant="body1" sx={{ mx: 1, color: "#232323" }}>
-                                ou
-                            </Typography>
-                            <hr style={{ flex: "1", borderColor: "#232323" }} />
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Input type="file" onChange={handleFileChange} />
-                        <Tip text="Faça upload de um fluxograma diretamente do seu computador." />
-                    </Box>
+
+                    <TextField
+                        type="file"
+                        // label="Curso" // todo: remover aquele botao chato "Escolher aquivo" e colocar label
+                        hidden
+                        onChange={handleFileChange}
+                        inputProps={{ accept: ".json" }}
+                        helperText={
+                            <Tip text="Faça upload de um fluxograma diretamente do seu computador." />
+                        }
+                    />
                 </Stack>
             </DialogContent>
 
             <DialogActions>
-                <Button onClick={onClose} sx={{ color: "#232323" }}>
-                    Cancelar
+                <Button onClick={onClose} sx={{ color: "#DB3B4B" }}>
+                    <Typography mx={1}>Cancelar</Typography>
                 </Button>
-                <Button
-                    onClick={handleAssemble}
-                    variant="contained"
-                    sx={{ mx: 1, background: "#232323" }}
-                >
+                <Button onClick={handleAssemble} variant="contained" sx={{ background: "#232323" }}>
                     <GavelRoundedIcon />
-                    Montar fluxograma
+                    <Typography mx={1}>Montar fluxograma</Typography>
                 </Button>
             </DialogActions>
         </Dialog>

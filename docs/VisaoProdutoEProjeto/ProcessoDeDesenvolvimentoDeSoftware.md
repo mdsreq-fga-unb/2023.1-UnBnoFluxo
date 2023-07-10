@@ -40,6 +40,7 @@ Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas d
 
 
 ## Histórico de revisão
+
 |   Data   | Versão | Descrição                                        | Autor           |
 | :------: | :----: | ------------------------------------------------ | --------------- |
 | 19/04/23 |  1.0   | Criação da documentação                          | Todos           |

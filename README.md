@@ -40,5 +40,6 @@ O projeto está disponivel online nesse [link](https://unbnofluxo.vercel.app/).
 1. Instale o node (Versão 18)
 2. Navegue ate a pasta do frontend ```cd .\frontend\```
 3. Execute ```npm install```
-4. Execute a aplicação localmente com ```npm run dev```
-5. Pronto! A aplicação já deve estar rodando localmente em http://localhost:3000
+4. Execute ```npx jest``` para rodar os testes da aplicação
+5. Execute a aplicação localmente com ```npm run dev```
+6. Pronto! A aplicação já deve estar rodando localmente em http://localhost:3000

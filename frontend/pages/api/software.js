@@ -1,9 +1,9 @@
 export default function handler(req, res) {
     res.status(200).json([
         { code: "FGA0161", displayName: "ENGENHARIA E AMBIENTE", nature: "OBRIGATORIO", alias: "EA", period: 1 },
-        { code: "FGA0163", displayName: "INTRODUÃ‡ÃƒO Ã€ ENGENHARIA", nature: "OBRIGATORIO", alias: "IE", period: 1 },
+        { code: "FGA0163", displayName: "INTRODUÇÃO À ENGENHARIA", nature: "OBRIGATORIO", alias: "IE", period: 1 },
         { code: "FGA0168", displayName: "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR", nature: "OBRIGATORIO", alias: "DIAPC", period: 1 },
-        { code: "MAT0025", displayName: "CÃLCULO 1", nature: "OBRIGATORIO", alias: "C", period: 1 },
+        { code: "MAT0025", displayName: "CÁLCULO 1", nature: "OBRIGATORIO", alias: "C", period: 1 },
         { code: "CIC0004", displayName: "ALGORITMOS E PROGRAMAÃ‡ÃƒO DE COMPUTADORES", nature: "OPTATIVO", alias: "APDC", period: 1 },
         { code: "FGA0157", displayName: "PROBABILIDADE E ESTATÃSTICA APLICADO A ENGENHARIA", nature: "OBRIGATORIO", alias: "PEAE", period: 2 },
         { code: "IFD0171", displayName: "FISICA 1", nature: "OBRIGATORIO", alias: "F", period: 2 },
