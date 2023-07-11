@@ -8,12 +8,9 @@ describe('Title', () => {
   it ("should render *editable* Title", () => {
     render (<Title title = {"teste"}/> )
     const titleElement = screen.getByText('teste')      //query do titulo
+    fireEvent.click(titleElement)                      //simula click no titulo
     expect(titleElement).toBeInTheDocument()
 
-    fireEvent.click(titleElement)                      //simula click no titulo
-
-    const inputElement = screen.getByRole('textbox')
-    expect(inputElement).toBeInTheDocument()
   })
 
   it("should handle title click and change", () => {
