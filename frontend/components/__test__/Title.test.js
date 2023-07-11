@@ -5,8 +5,7 @@ import '@testing-library/jest-dom/extend-expect'
 /* UNDER DEVELOPMENT */
 
 describe('Title', () => {
-  it ("should render *editable* Title", () => {                     //por enquanto só faz um query no Title, falta implementar o teste de "é editável ou não"
-
+  it ("should render *editable* Title", () => {
     render (<Title title = {"teste"}/> )
     const titleElement = screen.getByText('teste')      //query do titulo
     expect(titleElement).toBeInTheDocument()
@@ -27,11 +26,11 @@ describe('Title', () => {
     
     fireEvent.click(titleElement)                                 //simula click
     const inputElement = getByRole('textbox')
-    fireEvent.change(inputElement, { target: { value: "New Title" } });  //altera o texto para New Title
+    fireEvent.change(inputElement, { target: { value: "New Title" } })  //altera o texto para 'New Title'
     fireEvent.blur(inputElement)
     
-    expect(setTitle).toHaveBeenCalledWith('New Title')
+    expect(setTitle).toHaveBeenCalledWith('New Title')            //testa o setTitle
 
-    expect(titleElement).toEqual('New Title')
-    });
+    expect(titleElement).toHaveTextContent('New Title')            //confere se titulo é 'New Title'
+    })
 })
