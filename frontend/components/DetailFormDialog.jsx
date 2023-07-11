@@ -1,4 +1,3 @@
-import DeleteIcon from "@mui/icons-material/Delete"
 import SaveIcon from "@mui/icons-material/Save"
 import {
     Autocomplete,
@@ -209,7 +208,9 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                         const selectedCourse = flowData.find(
                                             (course) => course.code === option
                                         )
-                                        return `${selectedCourse.code} - ${selectedCourse.displayName}`
+                                        return !selectedCourse
+                                            ? option
+                                            : `${selectedCourse.code} - ${selectedCourse.displayName}`
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
@@ -242,7 +243,9 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                         const selectedCourse = flowData.find(
                                             (course) => course.code === option
                                         )
-                                        return `${selectedCourse.code} - ${selectedCourse.displayName}`
+                                        return !selectedCourse
+                                            ? option
+                                            : `${selectedCourse.code} - ${selectedCourse.displayName}`
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
