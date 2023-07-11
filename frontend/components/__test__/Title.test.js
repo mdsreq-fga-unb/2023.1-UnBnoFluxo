@@ -8,20 +8,15 @@ describe('Title', () => {
   it ("should render *editable* Title", () => {                     //por enquanto só faz um query no Title, falta implementar o teste de "é editável ou não"
 
     render (<Title title = {"teste"}/> )
-    const titleElement = screen.getByText('teste')
-    //const editableElement = screen.
+    const titleElement = screen.getByText('teste')      //query do titulo
+    expect(titleElement).toBeInTheDocument()
 
-    expect(titleElement).toBeInTheDocument('teste')
-  })
+    fireEvent.click(titleElement)                      //simula click no titulo
 
-  // it("calls onClick handler on Title click", () => {
-  //   const handleTitleClickMock = jest.fn();
-  //   render(<Title editable={true} onClick={handleTitleClickMock} />);
-  //   const titleElement = screen.getByText("teste");
-
-  //   fireEvent.click(titleElement);
-  //   expect(handleTitleClickMock).toHaveBeenCalled();
-  // });
+    const inputElement = screen.getByRole('textbox')
+    expect(inputElement).toBeInTheDocument()
+  });
+  // })
 
   // it("should handle title click and change", () => {
   //   // Arrange
