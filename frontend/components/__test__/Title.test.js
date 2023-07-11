@@ -15,25 +15,23 @@ describe('Title', () => {
 
     const inputElement = screen.getByRole('textbox')
     expect(inputElement).toBeInTheDocument()
-  });
-  // })
+  })
 
-  // it("should handle title click and change", () => {
-  //   // Arrange
-  //   const setTitle = jest.fn();
-  //   const { getByText, getByRole } = render(
-  //   <Title editable={true} title="Initial Title" setTitle={setTitle} />
-  //   );
+  it("should handle title click and change", () => {
+    const setTitle = jest.fn()
+    const { getByText, getByRole } = render(
+    <Title editable={true} title="Initial Title" setTitle={setTitle} />        
+    )
     
-  //   const titleElement = getByText("Initial Title");
+    const titleElement = getByText('Initial Title')                //query do title
     
-  //   // Act
-  //   fireEvent.click(titleElement);
-  //   const inputElement = getByRole("textbox");
-  //   fireEvent.change(inputElement, { target: { value: "New Title" } });
-  //   fireEvent.blur(inputElement);
+    fireEvent.click(titleElement)                                 //simula click
+    const inputElement = getByRole('textbox')
+    fireEvent.change(inputElement, { target: { value: "New Title" } });  //altera o texto para New Title
+    fireEvent.blur(inputElement)
     
-  //   // Assert
-  //   expect(setTitle).toHaveBeenCalledWith("New Title");
-  //   });
+    expect(setTitle).toHaveBeenCalledWith('New Title')
+
+    expect(titleElement).toEqual('New Title')
+    });
 })
