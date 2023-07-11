@@ -42,16 +42,24 @@
 ## Sprint Review
 **ENTREGAS**
 
+- US03 - (DÉBITO) Iniciar fluxograma em branco
+- US09 - Criar componente curricular         
+- US14 - Apelidar componente curricular      
+- US10 - Editar componente curricular     
+- Alguns testes
+
+
 **KANBAN PÓS REVIEW**
 
-<!-- ![1](docs/../../img/done_7.jpeg) -->
-<!-- Remover comentario depois que o done_7.jpeg existir -->
+![1](docs/../../img/done_7.jpeg)
 
 **NÃO FOI ENTREGUE**
 
+Tudo foi entregue
 
 **O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
 
+Não
 
 ## Sprint Retrospective
 **OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
