@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material"
 import ReportSharpIcon from "@mui/icons-material/ReportSharp"
 import HelpSharpIcon from "@mui/icons-material/HelpSharp"
 
-export default function Tip({ text, errorMode }) {
-    const isErrorMode = errorMode === undefined ? false : true
+export default function Tip({ text, errorMessage }) {
+    const isErrorMode = errorMessage === undefined ? false : true
 
     return (
         <Box
@@ -17,10 +17,11 @@ export default function Tip({ text, errorMode }) {
                 display: "flex",
             }}
             p={2}
+            data-testid={"tipo-box"}
         >
             {isErrorMode ? <ReportSharpIcon /> : <HelpSharpIcon />}
             <Typography variant="body3" sx={{ mx: 1, color: "#FFFFFF" }}>
-                {text}
+                {isErrorMode ? errorMessage.message : text}
             </Typography>
         </Box>
     )
