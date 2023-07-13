@@ -17,6 +17,7 @@ export default function Tip({ text, errorMessage }) {
                 display: "flex",
             }}
             p={2}
+            data-testid={"tipo-box"}
         >
             {isErrorMode ? <ReportSharpIcon /> : <HelpSharpIcon />}
             <Typography variant="body3" sx={{ mx: 1, color: "#FFFFFF" }}>
