@@ -18,6 +18,9 @@ export default function Period({ data, periodNumber, addData }) {
             ) : (
                 <CircularProgress color="inherit" />
             )}
+            <Box className={styles.hour_box}>
+                <h2> 120h</h2>
+            </Box>
         </Stack>
     )
 }
