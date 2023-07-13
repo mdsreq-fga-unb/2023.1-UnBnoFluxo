@@ -1,4 +1,3 @@
-import DeleteIcon from "@mui/icons-material/Delete"
 import SaveIcon from "@mui/icons-material/Save"
 import {
     Autocomplete,
@@ -43,10 +42,6 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
         }
     }, [course, setValue])
 
-    const handleHelperText = (defaultText, error) => {
-        return error ? <Tip text={error.message} errorMode /> : <Tip text={defaultText} />
-    }
-
     // Funcao que salva os campos e adiciona eles no array
     const handleSave = handleSubmit((data) => {
         const newCourse = {
@@ -83,20 +78,24 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             label="Nome"
                             required
                             error={!!errors.displayName}
-                            helperText={handleHelperText(
-                                "O nome completo do componente curricular",
-                                errors.displayName
-                            )}
+                            helperText={
+                                <Tip
+                                    text={"O nome completo do componente curricular"}
+                                    errorMessage={errors.displayName}
+                                />
+                            }
                             {...register("displayName", { required: "Campo obrigatório" })}
                         />
 
                         <TextField
                             label="Aliás"
                             error={!!errors.alias}
-                            helperText={handleHelperText(
-                                "Uma abreviatura/sigla para o componente curricular",
-                                errors.alias
-                            )}
+                            helperText={
+                                <Tip
+                                    text={"Uma abreviatura/sigla para o componente curricular"}
+                                    errorMessage={errors.alias}
+                                />
+                            }
                             {...register("alias", {
                                 maxLength: {
                                     value: 12,
@@ -109,10 +108,12 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             label="Período"
                             required
                             error={!!errors.period}
-                            helperText={handleHelperText(
-                                "O periodo que se deseja cumprir o componente curricular",
-                                errors.period
-                            )}
+                            helperText={
+                                <Tip
+                                    text={"O periodo que se deseja cumprir o componente curricular"}
+                                    errorMessage={errors.period}
+                                />
+                            }
                             type="number"
                             {...register("period", {
                                 required: "Campo obrigatório",
@@ -127,10 +128,12 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             required
                             error={!!errors.code}
                             disabled={isEditingMode}
-                            helperText={handleHelperText(
-                                "Um codigo unico para o componente curricular",
-                                errors.code
-                            )}
+                            helperText={
+                                <Tip
+                                    text={"Um codigo unico para o componente curricular"}
+                                    errorMessage={errors.code}
+                                />
+                            }
                             {...register("code", {
                                 required: "Campo obrigatório",
                                 pattern: {
@@ -159,10 +162,14 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                             label="Natureza"
                                             required
                                             error={!!errors.nature}
-                                            helperText={handleHelperText(
-                                                "A obrigatoriedade do componente curricular",
-                                                errors.nature
-                                            )}
+                                            helperText={
+                                                <Tip
+                                                    text={
+                                                        "A obrigatoriedade do componente curricular"
+                                                    }
+                                                    errorMessage={errors.nature}
+                                                />
+                                            }
                                         />
                                     )}
                                 />
@@ -173,10 +180,12 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                             label="Carga horária"
                             required
                             error={!!errors.workloud}
-                            helperText={handleHelperText(
-                                "O carga horária do componente curricular (em horas)",
-                                errors.workloud
-                            )}
+                            helperText={
+                                <Tip
+                                    text={"O carga horária do componente curricular (em horas)"}
+                                    errorMessage={errors.workloud}
+                                />
+                            }
                             type="number"
                             {...register("workloud", {
                                 required: "Campo obrigatório",
@@ -199,7 +208,9 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                         const selectedCourse = flowData.find(
                                             (course) => course.code === option
                                         )
-                                        return `${selectedCourse.code} - ${selectedCourse.displayName}`
+                                        return !selectedCourse
+                                            ? option
+                                            : `${selectedCourse.code} - ${selectedCourse.displayName}`
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
@@ -232,7 +243,9 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                         const selectedCourse = flowData.find(
                                             (course) => course.code === option
                                         )
-                                        return `${selectedCourse.code} - ${selectedCourse.displayName}`
+                                        return !selectedCourse
+                                            ? option
+                                            : `${selectedCourse.code} - ${selectedCourse.displayName}`
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {

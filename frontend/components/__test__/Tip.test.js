@@ -2,8 +2,6 @@ import Tip from "../Tip"
 import { render, screen } from "@testing-library/react"
 import "@testing-library/jest-dom/extend-expect"
 
-/* UNDER DEVELOPMENT */
-
 describe ('Tip', () => {
     it('should render Tip with correct bgc and errorMsg when errorMessage is defined', () => {
         render(<Tip errorMessage={{ message: 'TestErrorMsg' }} />)
@@ -26,15 +24,14 @@ describe ('Tip', () => {
     it('should render ReportSharpIcon when errorMessage is true', () => {
         render(<Tip text={'TesteTrue'} errorMessage={{ message: 'TestErrorMsg' }} />)
 
-        const reportIcon = screen.getByTestId('ReportSharpIcon')                      //query do reportIcon - descobri esse testid inspecionando no browser,
-        expect(reportIcon).toBeInTheDocument()                                        //entao pelo visto alguns componentes do  muimaterial ja tem essa prop pra teste
+        const reportIcon = screen.getByTestId('ReportSharpIcon')                                 //query do reportIcon - descobri esse testid inspecionando no browser,
+        expect(reportIcon).toBeInTheDocument()                                                   //entao pelo visto alguns componentes do  muimaterial ja tem essa prop pra teste
     })
 
     it('should render HelpSharpIcon when errorMessage is undefined', () => {
         render(<Tip text={'TesteFalse'} errorMessage={ undefined } />)
 
-        const helpIcon = screen.getByTestId('HelpSharpIcon')                         //query do helpIcon
+        const helpIcon = screen.getByTestId('HelpSharpIcon')                                     //query do helpIcon
         expect(helpIcon).toBeInTheDocument()
     })
 })
-    

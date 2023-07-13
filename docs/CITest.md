@@ -3,7 +3,7 @@
 ## Workflow
 Um workflow é um fluxo de trabalhos (jobs) que é ativado a partir de um evento (triggers), como por exemplo um pull request, e que executa uma sequência de etapas (steps) podem realizar e automatizar atividades como build, teste e deploy de um projeto.
 
-Para este projeto, a equipe FluxoSquad irá utilizar um workflow para build e testes (unitários e de integração), que serão acionados por pushes e PR's nas branches dev e main. 
+Para este projeto, a equipe FluxoSquad irá utilizar um workflow para build e testes (unitários e de integração), que serão acionados por pushes e PR's nas branches dev e main.
 Como o projeto será desenvolvido em React e Java, a seguinte estrutura de workflow será seguida:
 
 ![CI Workflow](./img/CI_Workflow.png)
