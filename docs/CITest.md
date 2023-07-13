@@ -12,14 +12,14 @@ Como o projeto será desenvolvido em React e Java, a seguinte estrutura de workf
 A abordagem TNT adotada será:          
 ![Estratégia de testes](./img/EstrategiaTestes.png)
 
-| Nível      | Tipo        | Técnica    | Objetivo   | Perspectiva |
-| ---------- | ----------- | ---------- | ---------- | ----------- |
-| Unitário   | Funcional   | Automático | Q. Interna | Técnica     |
-| Integração | Funcional   | Automático | Q. Interna | Técnica     |
-| Sistema    | Funcional   | Manual     | Q. Externa | Técnica     |
-| Aceitação  | Funcional   | Manual     | Q. Externa | Negócio     |
-| Sistema    | Usabilidade | Manual     | Q. Externa | Técnica     |
-| Aceitação  | Usabilidade | Manual     | Q. Externa | Negócio     |
+| Nível      | Tipo        | Técnica    | Objetivo   | Perspectiva | Escopo      |
+| ---------- | ----------- | ---------- | ---------- | ----------- | ----------- |
+| Unitário   | Funcional   | Automático | Q. Interna | Técnica     | MVP2        |
+| Integração | Funcional   | Automático | Q. Interna | Técnica     | MVP2        |
+| Sistema    | Funcional   | Manual     | Q. Externa | Técnica     | MVP1 & MVP2 |
+| Aceitação  | Funcional   | Manual     | Q. Externa | Negócio     | MVP1 & MVP2 |
+| Sistema    | Usabilidade | Manual     | Q. Externa | Técnica     | MVP1 & MVP2 |
+| Aceitação  | Usabilidade | Manual     | Q. Externa | Negócio     | MVP1 & MVP2 |
 
 ## Histórico de revisão
 
