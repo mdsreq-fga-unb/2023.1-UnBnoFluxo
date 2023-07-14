@@ -3,16 +3,26 @@ import { useOpenDialog } from "../hooks/useOpenDialog"
 import styles from "../styles/Card.module.css"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function Card({ course, addData, data }) {
+export default function Card({ course, addData, data, getHighlightColor, setFocused }) {
     const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o DetailFormDialog esta aberto ou fechado
+
+    const highlightColor =
+        typeof getHighlightColor === "function" ? getHighlightColor(course.code) : "#FFFFFF"
+
+    const handleClick = () => {
+        handleOpenDialog()
+        if (typeof setFocused === "function") {
+            setFocused(course.code)
+        }
+    }
 
     return (
         <>
             <Button
-                sx={{ background: "#FFFFFF" }}
+                style={{ background: highlightColor }}
                 className={styles.card}
                 title={course.displayName + "\n" + course.code + " / " + course.period + "º Per"}
-                onClick={handleOpenDialog}
+                onClick={handleClick}
             >
                 <div className={styles.textBox}>
                     {course.alias ? (
