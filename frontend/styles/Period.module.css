@@ -40,7 +40,7 @@
   justify-content: center;
 }
 
-.hour_box {
+.hour_box h2{
   background: #232323;
 
   border: 0.0625rem solid #ffffff;
