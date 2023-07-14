@@ -15,22 +15,24 @@ export default function Period({ data, periodNumber, addData }) {
 
 
     return (
-        <Stack spacing={2} className={styles.period}>
-            <Box className={styles.tilte_box}>
-                <h2> {periodNumber}º PERÍODO</h2>
-            </Box>
-            {data ? (
-                data
-                    .filter((course) => course.period == periodNumber)
-                    .map((course) => (
-                        <Card key={course.code} course={course} addData={addData} data={data} />
-                    ))
-            ) : (
-                <CircularProgress color="inherit" />
-            )}
-            <Box className={styles.hour_box}>
-                <Box component="h2">{somaCarga}h</Box>
-            </Box>
-        </Stack>
+        <div>
+            <Stack spacing={2} className={styles.period}>
+                <Box className={styles.tilte_box}>
+                    <h2> {periodNumber}º PERÍODO</h2>
+                </Box>
+                {data ? (
+                    data
+                        .filter((course) => course.period == periodNumber)
+                        .map((course) => (
+                            <Card key={course.code} course={course} addData={addData} data={data} />
+                        ))
+                ) : (
+                    <CircularProgress color="inherit" />
+                )}
+                <Box className={styles.hour_box}>
+                    <Box component="h2">{somaCarga}h</Box>
+                </Box>
+            </Stack>
+        </div>
     )
 }
