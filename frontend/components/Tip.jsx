@@ -15,6 +15,9 @@ export default function Tip({ text, errorMessage }) {
                 alignItems: "center",
                 display: "flex",
                 padding: "4px",
+                "&.MuiFormHelperText-root": {
+                    margin: 0,
+                },
             }}
             data-testid={"tipo-box"}
         >
