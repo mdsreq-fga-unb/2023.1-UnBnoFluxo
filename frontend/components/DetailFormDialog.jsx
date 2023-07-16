@@ -214,7 +214,6 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
-                                        setValue("preRequisite", newValue)
                                         field.onChange(newValue)
                                     }}
                                     renderInput={(params) => (
@@ -249,7 +248,6 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
-                                        setValue("coRequisite", newValue)
                                         field.onChange(newValue)
                                     }}
                                     renderInput={(params) => (
@@ -257,7 +255,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                             {...params}
                                             label="Co-requisitos"
                                             helperText={
-                                                <Tip text="Componentes curriculares que devem ser cumpridos simuntaneamente" />
+                                                <Tip text="Componentes curriculares que devem ser cumpridos simultaneamente" />
                                             }
                                         />
                                     )}
