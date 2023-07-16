@@ -50,6 +50,6 @@ body {
   border-radius: 0.25rem;
 }
 
-.MuiFormHelperText-root {
+.MuiTextField-root>.MuiFormHelperText-root {
   margin: 0;
 }
