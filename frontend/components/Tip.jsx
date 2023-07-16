@@ -14,8 +14,8 @@ export default function Tip({ text, errorMessage }) {
                 minHeight: "36px",
                 alignItems: "center",
                 display: "flex",
-                padding: "4px",
                 "&.MuiFormHelperText-root": {
+                    padding: "4px",
                     margin: 0,
                 },
             }}

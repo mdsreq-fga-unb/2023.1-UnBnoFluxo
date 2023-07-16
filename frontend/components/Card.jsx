@@ -24,7 +24,7 @@ export default function Card({ course, addData, data, getHighlightColor, setFocu
     return (
         <>
             <Button
-                style={{ background: highlightColor }}
+                style={{ background: highlightColor, borderRadius: "0.5rem" }}
                 className={styles.card}
                 title={course.displayName + "\n" + course.code + " / " + course.period + "º Per"}
                 onClick={handleOpenDialog}
