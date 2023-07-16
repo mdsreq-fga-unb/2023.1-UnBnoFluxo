@@ -8,18 +8,19 @@ export function useFlowHighlight(data) {
         coReqs: [],
         posReqs: [],
     })
-    const dataDict = {}
+    const [dataDict, setDataDict] = useState({})
 
+    // Função que retorna a cor com a qual o card deve ser reindenizado
     const getHighlightColor = (code) => {
         return code == highlighted.focused
             ? "#834DF0"
-            : highlighted.coReqs.includes(code)
+            : highlighted?.coReqs.includes(code)
             ? "#FFAF0F"
-            : highlighted.preReqs.includes(code)
+            : highlighted?.preReqs.includes(code)
             ? "#208A3C"
-            : highlighted.posReqs.includes(code)
+            : highlighted?.posReqs.includes(code)
             ? "#DB3B4B"
-            : " #232323"
+            : " #FFFFFF"
     }
 
     // Função muda o código do card que está sendo exibido
@@ -28,34 +29,39 @@ export function useFlowHighlight(data) {
             setHighlighted((prevState) => ({
                 ...prevState,
                 focused: code,
-                preReqs: [...prevState.preReqs, ...dataDict[code].preRequisites],
-                coReqs: [...prevState.coReqs, ...dataDict[code].coRequisites],
+                // preReqs: [...getPreReqsOfPreReqs(dataDict[code].preRequisite)],
+                coReqs: [...dataDict[code].coRequisite],
             }))
+            console.log(JSON.stringify(highlighted))
         }
-        console.log(dataDict)
-        console.log(JSON.stringify(highlighted))
     }
-    // Função auxiliar para encontrar pré-requisitos dos pré-requisitos
-    const getPreReqsOfPreReqs = (preReqs) => {
-        const newPreReqs = []
-        for (const preReq of preReqs) {
-            if (!highlighted.preReqs.includes(preReq) && dataDict[preReq]) {
-                newPreReqs.push(...dataDict[preReq].preRequisites)
-            }
-        }
-        return newPreReqs
-    }
+
+    // // Função auxiliar para encontrar pré-requisitos dos pré-requisitos
+    // const getPreReqsOfPreReqs = (preReqs) => {
+    //     const newPreReqs = [...preReqs]
+    //     for (const preReq of preReqs) {
+    //         if (!highlighted.preReqs.includes(preReq) && dataDict[preReq]) {
+    //             newPreReqs.push(...dataDict[preReq].preRequisite)
+    //         }
+    //     }
+    //     if (preReqs.length === newPreReqs.length) {
+    //         return newPreReqs
+    //     }
+    //     getPreReqsOfPreReqs(preReqs)
+    // }
 
     useEffect(() => {
         // Converte data para dicionário
-        data.forEach((course) => (dataDict[course.code] = course))
-
-        // Chamada inicial para definir os pré-requisitos dos pré-requisitos
-        setHighlighted((prevState) => ({
-            ...prevState,
-            preReqs: [...prevState.preReqs, ...getPreReqsOfPreReqs(prevState.preReqs)],
-        }))
-    }, [data])
+        setHighlighted({
+            focused: "",
+            preReqs: [],
+            coReqs: [],
+            posReqs: [],
+        })
+        const auxDict = {}
+        data.forEach((course) => (auxDict[course.code] = course))
+        setDataDict(auxDict)
+    }, [])
 
     return { getHighlightColor, setFocused }
 }
