@@ -1,9 +1,18 @@
 import { useState, useEffect } from "react"
 
 export function useFlowHighlight(data) {
-    // Estados
-    const [highlighted, setHighlighted] = useState(null)
-    const [dataDict, setDataDict] = useState(null)
+    const [highlighted, setHighlighted] = useState(null) // Estado que diz os codigos dos cards destacados e qual categoria
+    const [dataDict, setDataDict] = useState(null) // Estado que guarda os dados em dicionario
+
+    // Funcao auxiliar para limpar o estado highlighted
+    const setHighlightedDefault = () => {
+        setHighlighted({
+            focused: "",
+            preReqs: [],
+            coReqs: [],
+            posReqs: [],
+        })
+    }
 
     // Funcao que retorna a cor com a qual o card deve ser renderizado
     const getHighlightColor = (code) => {
@@ -21,26 +30,22 @@ export function useFlowHighlight(data) {
         return "#FFFFFF"
     }
 
-    // Função muda o código do card que está sendo exibido
+    // Funcao muda o codigo do card que esta sendo exibido
     const setFocused = (code) => {
         if (code === null) {
-            setHighlighted({
-                focused: "",
-                preReqs: [],
-                coReqs: [],
-                posReqs: [],
-            })
+            setHighlightedDefault()
         } else if (dataDict && dataDict[code]) {
             setHighlighted((prevState) => ({
                 ...prevState,
                 focused: code,
                 preReqs: [...getPreReqsOfPreReqs(dataDict[code].preRequisite)],
+                posReqs: [...getPosReqsOfPosReqs([code])],
                 coReqs: [...dataDict[code].coRequisite],
             }))
         }
     }
 
-    // Função auxiliar para encontrar pré-requisitos dos pré-requisitos
+    // Funcao auxiliar para encontrar pre-requisitos dos pre-requisitos
     const getPreReqsOfPreReqs = (preReqs) => {
         let newPreReqs = [...preReqs]
 
@@ -54,14 +59,26 @@ export function useFlowHighlight(data) {
         return newPreReqs
     }
 
+    // Funcao auxiliar para encontrar pos-requisitos dos pos-requisitos
+    const getPosReqsOfPosReqs = (posReqs) => {
+        let newPosReqs = [...posReqs]
+
+        for (const posReq of posReqs) {
+            const nestedPosReqs = data.filter((course) => course.preRequisite.includes(posReq))
+            newPosReqs = [...newPosReqs, ...nestedPosReqs.map((course) => course.code)]
+            newPosReqs = [
+                ...newPosReqs,
+                ...getPosReqsOfPosReqs(nestedPosReqs.map((course) => course.code)),
+            ]
+        }
+
+        return newPosReqs
+    }
+
     useEffect(() => {
+        setHighlightedDefault()
+
         // Converte data para dicionário
-        setHighlighted({
-            focused: "",
-            preReqs: [],
-            coReqs: [],
-            posReqs: [],
-        })
         const auxDict = {}
         data.forEach((course) => (auxDict[course.code] = course))
         setDataDict(auxDict)
