@@ -23,30 +23,36 @@ export function useFlowHighlight(data) {
 
     // Função muda o código do card que está sendo exibido
     const setFocused = (code) => {
-        if (dataDict && dataDict[code]) {
+        if (code === null) {
+            setHighlighted({
+                focused: "",
+                preReqs: [],
+                coReqs: [],
+                posReqs: [],
+            })
+        } else if (dataDict && dataDict[code]) {
             setHighlighted((prevState) => ({
                 ...prevState,
                 focused: code,
-                // preReqs: [...getPreReqsOfPreReqs(dataDict[code].preRequisite)],
+                preReqs: [...getPreReqsOfPreReqs(dataDict[code].preRequisite)],
                 coReqs: [...dataDict[code].coRequisite],
             }))
-            console.log(JSON.stringify(highlighted))
         }
     }
 
-    // // Função auxiliar para encontrar pré-requisitos dos pré-requisitos
-    // const getPreReqsOfPreReqs = (preReqs) => {
-    //     const newPreReqs = [...preReqs]
-    //     for (const preReq of preReqs) {
-    //         if (!highlighted.preReqs.includes(preReq) && dataDict[preReq]) {
-    //             newPreReqs.push(...dataDict[preReq].preRequisite)
-    //         }
-    //     }
-    //     if (preReqs.length === newPreReqs.length) {
-    //         return newPreReqs
-    //     }
-    //     getPreReqsOfPreReqs(preReqs)
-    // }
+    // Função auxiliar para encontrar pré-requisitos dos pré-requisitos
+    const getPreReqsOfPreReqs = (preReqs) => {
+        let newPreReqs = [...preReqs]
+
+        for (const preReq of preReqs) {
+            if (!highlighted.preReqs.includes(preReq) && dataDict[preReq]) {
+                const nestedPreReqs = getPreReqsOfPreReqs(dataDict[preReq].preRequisite)
+                newPreReqs = [...newPreReqs, ...nestedPreReqs]
+            }
+        }
+
+        return newPreReqs
+    }
 
     useEffect(() => {
         // Converte data para dicionário
