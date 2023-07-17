@@ -2,30 +2,28 @@ import { useState, useEffect } from "react"
 
 export function useFlowHighlight(data) {
     // Estados
-    const [highlighted, setHighlighted] = useState({
-        focused: "",
-        preReqs: [],
-        coReqs: [],
-        posReqs: [],
-    })
-    const [dataDict, setDataDict] = useState({})
+    const [highlighted, setHighlighted] = useState(null)
+    const [dataDict, setDataDict] = useState(null)
 
-    // Função que retorna a cor com a qual o card deve ser reindenizado
+    // Funcao que retorna a cor com a qual o card deve ser renderizado
     const getHighlightColor = (code) => {
-        return code == highlighted.focused
-            ? "#834DF0"
-            : highlighted?.coReqs.includes(code)
-            ? "#FFAF0F"
-            : highlighted?.preReqs.includes(code)
-            ? "#208A3C"
-            : highlighted?.posReqs.includes(code)
-            ? "#DB3B4B"
-            : " #FFFFFF"
+        if (highlighted) {
+            return code === highlighted.focused
+                ? "#834DF0"
+                : highlighted?.coReqs.includes(code)
+                ? "#FFAF0F"
+                : highlighted?.preReqs.includes(code)
+                ? "#208A3C"
+                : highlighted?.posReqs.includes(code)
+                ? "#DB3B4B"
+                : "#FFFFFF"
+        }
+        return "#FFFFFF"
     }
 
     // Função muda o código do card que está sendo exibido
     const setFocused = (code) => {
-        if (dataDict[code]) {
+        if (dataDict && dataDict[code]) {
             setHighlighted((prevState) => ({
                 ...prevState,
                 focused: code,
@@ -61,7 +59,7 @@ export function useFlowHighlight(data) {
         const auxDict = {}
         data.forEach((course) => (auxDict[course.code] = course))
         setDataDict(auxDict)
-    }, [])
+    }, [data])
 
     return { getHighlightColor, setFocused }
 }

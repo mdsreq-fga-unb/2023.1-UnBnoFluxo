@@ -11,9 +11,6 @@ export default function Card({ course, addData, data, getHighlightColor, setFocu
     const handleMouseEnter = () => {
         if (typeof setFocused === "function") setFocused(course.code)
     }
-    const handleMouseLeave = () => {
-        if (typeof setFocused === "function") setFocused("")
-    }
 
     useEffect(() => {
         setHighlightColor(
@@ -29,7 +26,6 @@ export default function Card({ course, addData, data, getHighlightColor, setFocu
                 title={course.displayName + "\n" + course.code + " / " + course.period + "º Per"}
                 onClick={handleOpenDialog}
                 onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
             >
                 <div className={styles.textBox}>
                     {course.alias ? (
