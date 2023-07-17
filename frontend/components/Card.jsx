@@ -1,18 +1,35 @@
 import { Button } from "@mui/material"
+import { useEffect, useState } from "react"
 import { useOpenDialog } from "../hooks/useOpenDialog"
 import styles from "../styles/Card.module.css"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function Card({ course, addData, data }) {
+export default function Card({ course, addData, data, getHighlightColor, setFocused }) {
     const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o DetailFormDialog esta aberto ou fechado
+    const [highlightColor, setHighlightColor] = useState() // Estado que determina a cor de fundo do card
+
+    const handleMouseEnter = () => {
+        if (typeof setFocused === "function") setFocused(course.code)
+    }
+    const handleMouseLeave = () => {
+        if (typeof setFocused === "function") setFocused(null)
+    }
+
+    useEffect(() => {
+        setHighlightColor(
+            typeof getHighlightColor === "function" ? getHighlightColor(course.code) : "#FFFFFF"
+        )
+    }, [getHighlightColor])
 
     return (
         <>
             <Button
-                sx={{ background: "#FFFFFF" }}
+                style={{ background: highlightColor, borderRadius: "0.5rem" }}
                 className={styles.card}
                 title={course.displayName + "\n" + course.code + " / " + course.period + "º Per"}
                 onClick={handleOpenDialog}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
                 <div className={styles.textBox}>
                     {course.alias ? (
