@@ -3,7 +3,7 @@ import Card from "./Card"
 import styles from "../styles/Period.module.css"
 import { Box, CircularProgress, Stack } from "@mui/material"
 
-export default function Period({ data, periodNumber, addData }) {
+export default function Period({ data, periodNumber, addData, getHighlightColor, setFocused }) {
     return (
         <Stack spacing={2} className={styles.period}>
             <Box className={styles.tilte_box}>
@@ -13,7 +13,14 @@ export default function Period({ data, periodNumber, addData }) {
                 data
                     .filter((course) => course.period == periodNumber)
                     .map((course) => (
-                        <Card key={course.code} course={course} addData={addData} data={data} />
+                        <Card
+                            key={course.code}
+                            course={course}
+                            addData={addData}
+                            data={data}
+                            getHighlightColor={getHighlightColor}
+                            setFocused={setFocused}
+                        />
                     ))
             ) : (
                 <CircularProgress color="inherit" />

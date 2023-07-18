@@ -20,19 +20,25 @@
 
 **OBJETIVOS DA SPRINT**
 
+- US05 - Reordernar componentes curriculares
+- US06 - Visualizar requisitos
+- US08 - Visualizar carga horária
+- US12 - Pesquisar componente curricular
+- Testes que faltam
+- Polimento e expansão da base de dados
+
 **KANBAN NA PLANNING**
 
-<!-- ![1](docs/../../img/planning_8.jpeg) -->
-<!-- Remover comentario depois que o planning_8.jpeg existir -->
+![1](docs/../../img/planning_8.jpeg)
 
 **COMO VAMOS NOS ORGANIZAR PARA ALCANÇAR ESSES OBJETIVOS?**
 
-| Atividade                                         | Quem           |
-| ------------------------------------------------- | -------------- |
-| Mesclar fluxograma                                | Ricardo        |
-| Iniciar fluxograma em branco                      | João           |
-| Visualizar obrigatoriedade de componentes         | Vinicius       |
-| Disponibilizar fluxograma padrão (debito tecnico) | Pedro e Israel |
+| Atividade                                                   | Quem            |
+| ----------------------------------------------------------- | --------------- |
+| Reordernar componentes curriculares e Visualizar requisitos | Ricardo         |
+| Visualizar carga horária e Pesquisar componente curricular  | João            |
+| Testes que faltam                                           | Vinicius e João |
+| Polimento e expansão da base de dados                       | Pedro e Israel  |
 
 
 ## Sprint Review

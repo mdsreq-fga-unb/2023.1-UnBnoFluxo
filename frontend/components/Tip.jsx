@@ -1,27 +1,34 @@
-import { Box, Typography } from "@mui/material"
-import ReportSharpIcon from "@mui/icons-material/ReportSharp"
 import HelpSharpIcon from "@mui/icons-material/HelpSharp"
+import ReportSharpIcon from "@mui/icons-material/ReportSharp"
+import { FormHelperText, Typography } from "@mui/material"
 
-export default function Tip({ text, errorMode }) {
-    const isErrorMode = errorMode === undefined ? false : true
+export default function Tip({ text, errorMessage }) {
+    const isErrorMode = errorMessage === undefined ? false : true
 
     return (
-        <Box
+        <FormHelperText
+            component="span"
             sx={{
                 background: isErrorMode ? "#DB3B4B" : "#232323",
-                color: "#FFFFFF",
                 borderRadius: "8px",
-                height: "36px",
-                justifyContent: "start",
+                minHeight: "36px",
                 alignItems: "center",
                 display: "flex",
+                "&.MuiFormHelperText-root": {
+                    padding: "4px",
+                    margin: 0,
+                },
             }}
-            p={2}
+            data-testid={"tipo-box"}
         >
-            {isErrorMode ? <ReportSharpIcon /> : <HelpSharpIcon />}
+            {isErrorMode ? (
+                <ReportSharpIcon sx={{ color: "#FFFFFF" }} />
+            ) : (
+                <HelpSharpIcon sx={{ color: "#FFFFFF" }} />
+            )}
             <Typography variant="body3" sx={{ mx: 1, color: "#FFFFFF" }}>
-                {text}
+                {isErrorMode ? errorMessage.message : text}
             </Typography>
-        </Box>
+        </FormHelperText>
     )
 }
