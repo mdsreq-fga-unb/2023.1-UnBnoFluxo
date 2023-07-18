@@ -6,37 +6,25 @@ import React, { useState } from "react";
 
 export default function ElectiveCoursesBox({ data, addData }) {
 
-    const [searchTerm, setSearchTerm] = useState("");
-    const [searchResults, setSearchResults] = useState([]);
-
-    function handleSearch(event) {
-        const term = event.target.value;
-        setSearchTerm(term);
-      
-        const results = data.filter((course) => {
-          // Realize a busca pelo termo de pesquisa em campos relevantes do curso
-          const courseName = course.name.toLowerCase();
-          const courseCode = course.code.toLowerCase();
-          return courseName.includes(term.toLowerCase()) || courseCode.includes(term.toLowerCase());
-        });
-      
-        setSearchResults(results);
-      }
-      
+    const [searchText, setSearchText] = useState('');
+    const handleSearch = (value) => {
+        setSearchText(value);           
+    };
 
     return (
         <Box className={styles.box}>
             <Box className={styles.tilte_box}>
                 <h2>OPTATIVAS</h2>
+                <Box className={styles.search_box}>
+                    <h2>PESQUISAR</h2>                
+                </Box>
+                <input
+                    type="text"
+                    placeholder="Pesquisar componente"
+                    value={searchText}
+                    onChange={(event) => handleSearch(event.target.value)}
+                />
             </Box>
-
-            <input
-                type="text"
-                placeholder="Pesquisar..."
-                value={searchTerm}
-                onChange={handleSearch}
-            />
-
             <Grid
                 container
                 className={styles.cards_box}
@@ -49,7 +37,9 @@ export default function ElectiveCoursesBox({ data, addData }) {
                 </Grid>
                 {data ? (
                     data
-                        .filter((course) => course.period === 0)
+                        .filter((course) => (course.period === 0 && searchText !== "" && (course.displayName.toLowerCase().includes(searchText.toLowerCase()) ||
+                        course.alias.toLowerCase().includes(searchText.toLowerCase()) ||
+                        course.code.toLowerCase().includes(searchText.toLowerCase())) ))
                         .map((course) => (
                             <Grid item p={2} key={course.code}>
                                 <Card course={course} data={data} addData={addData} />
