@@ -53,7 +53,7 @@ export function useData() {
             [...getPosReqsOfPosReqs([moveCode])].filter((code) => code !== moveCode) || []
 
         for (const course of data) {
-            if (coursesToMove.includes(course.code)) {
+            if (coursesToMove.includes(course.code) && course.period !== 0) {
                 let newCourse = { ...course }
                 newCourse.period += moveAmount
                 addData([newCourse])
