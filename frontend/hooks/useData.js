@@ -52,7 +52,6 @@ export function useData() {
         let coursesToMove =
             [...getPosReqsOfPosReqs([moveCode])].filter((code) => code !== moveCode) || []
 
-        console.log("coursesToMove: " + coursesToMove)
         for (const course of data) {
             if (coursesToMove.includes(course.code)) {
                 let newCourse = { ...course }
