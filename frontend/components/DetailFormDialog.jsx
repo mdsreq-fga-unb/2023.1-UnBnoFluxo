@@ -15,7 +15,14 @@ import { Controller, useForm } from "react-hook-form"
 import Tip from "./Tip"
 import Title from "./Title"
 
-export default function DetailFormDialog({ open, onClose, addData, course = undefined, flowData }) {
+export default function DetailFormDialog({
+    open,
+    onClose,
+    addData,
+    course = undefined,
+    flowData,
+    moveCoursePosReqs,
+}) {
     const {
         register,
         handleSubmit,
@@ -71,6 +78,14 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
             onClose()
             resetTextFields() // Limpa os campos de texto
             return
+        }
+
+        if (
+            typeof moveCoursePosReqs === "function" &&
+            course.period !== 0 &&
+            course.period < newCourse.period
+        ) {
+            moveCoursePosReqs(course.code, newCourse.period - course.period)
         }
 
         addData([newCourse])
