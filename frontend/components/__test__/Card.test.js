@@ -33,9 +33,9 @@ describe('Card', () => {
     fireEvent.mouseEnter(buttonElement)                       //mouse sobre o card
 
     //apos fazer esse, repetir para optv e para comp
-    expect(buttonElement).toHaveStyle({ background: "*corDoCardAtual*" })     //background deve ser cor *corAtual*
-    expect(buttonElement).not.toHaveStyle({ background: "*PreReqStyle*" } ||   //bgc NAO deve ser *corPreReq*
-                                        { background: "*nextChain*" })   //nem *proximas na cadeia*
+    expect(buttonElement).toHaveStyle({ background: "*corDoCardAtual/roxo*" })     //background deve ser cor *corAtual*
+    expect(buttonElement).not.toHaveStyle({ background: "*PreReqStyle*/verde" } ||   //bgc NAO deve ser *corPreReq*
+                                        { background: "*nextChain*/vermelho" })   //nem *proximas na cadeia*
   })
 
   const mockCourseOpt = {
