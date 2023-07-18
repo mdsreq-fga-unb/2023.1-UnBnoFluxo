@@ -47,6 +47,10 @@ export function useFlowHighlight(data) {
 
     // Funcao auxiliar para encontrar pre-requisitos dos pre-requisitos
     const getPreReqsOfPreReqs = (preReqs) => {
+        if (!preReqs || !Array.isArray(preReqs)) {
+            return []
+        }
+
         let newPreReqs = [...preReqs]
 
         for (const preReq of preReqs) {
@@ -61,6 +65,10 @@ export function useFlowHighlight(data) {
 
     // Funcao auxiliar para encontrar pos-requisitos dos pos-requisitos
     const getPosReqsOfPosReqs = (posReqs) => {
+        if (!posReqs || !Array.isArray(posReqs)) {
+            return []
+        }
+
         let newPosReqs = [...posReqs]
 
         for (const posReq of posReqs) {

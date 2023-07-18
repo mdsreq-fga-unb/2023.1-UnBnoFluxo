@@ -50,8 +50,8 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
             nature: data.nature?.toUpperCase(),
             alias: data.alias?.toUpperCase(),
             period: parseInt(data.period),
-            preRequisite: data.preRequisite,
-            coRequisite: data.coRequisite,
+            preRequisite: data.preRequisite || [],
+            coRequisite: data.coRequisite || [],
             workloud: parseInt(data.workloud),
             description: data.description,
         }
