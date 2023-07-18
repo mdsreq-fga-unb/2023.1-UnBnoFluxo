@@ -6,20 +6,6 @@ export function useData() {
     const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
     const [maxPeriodNumber, setMaxPeriodNumber] = useState(10)
 
-    // // Funcao callback que adiciona os elementos de "newData" ao estado "data"
-    // Essa versão substitui se o codigo o objeto curso inteiro for igual
-    // const addData = (newData) => {
-    //     setData((prevData) => {
-    //         // "nextData" recebe tudo que ainda nao existe em "data"
-    //         const nextData = newData.filter((course) => {
-    //             return !prevData.some((storedCourse) => {
-    //                 return JSON.stringify(storedCourse) === JSON.stringify(course)
-    //             })
-    //         })
-    //         return [...prevData, ...nextData]
-    //     })
-    // }
-
     // Funcao callback que adiciona os elementos de "newData" ao estado "data"
     // Essa versão substitui se o codigo do componente curricular for igual
     const addData = (newData) => {
@@ -41,6 +27,40 @@ export function useData() {
         })
     }
 
+    // Funcao auxiliar para encontrar pos-requisitos dos pos-requisitos
+    const getPosReqsOfPosReqs = (posReqs) => {
+        if (!posReqs || !Array.isArray(posReqs)) {
+            return []
+        }
+
+        let newPosReqs = [...posReqs]
+
+        for (const posReq of posReqs) {
+            const nestedPosReqs = data.filter((course) => course.preRequisite.includes(posReq))
+            newPosReqs = [...newPosReqs, ...nestedPosReqs.map((course) => course.code)]
+            newPosReqs = [
+                ...newPosReqs,
+                ...getPosReqsOfPosReqs(nestedPosReqs.map((course) => course.code)),
+            ]
+        }
+
+        return newPosReqs
+    }
+
+    // Funcao que move os pos requisitos de uma funcao para frente
+    const moveCoursePosReqs = (moveCode, moveAmount) => {
+        let coursesToMove =
+            [...getPosReqsOfPosReqs([moveCode])].filter((code) => code !== moveCode) || []
+
+        for (const course of data) {
+            if (coursesToMove.includes(course.code) && course.period !== 0) {
+                let newCourse = { ...course }
+                newCourse.period += moveAmount
+                addData([newCourse])
+            }
+        }
+    }
+
     // UseEffect para atualizar o valor máximo de período com base nos dados
     useEffect(() => {
         let max = 0
@@ -59,5 +79,5 @@ export function useData() {
     // Funcao que limpa os dados do app
     const clearData = () => setData([])
 
-    return { data, addData, clearData, maxPeriodNumber }
+    return { data, addData, clearData, maxPeriodNumber, moveCoursePosReqs }
 }

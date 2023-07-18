@@ -3,7 +3,14 @@ import Card from "./Card"
 import styles from "../styles/Period.module.css"
 import { Box, CircularProgress, Stack } from "@mui/material"
 
-export default function Period({ data, periodNumber, addData, getHighlightColor, setFocused }) {
+export default function Period({
+    data,
+    periodNumber,
+    addData,
+    getHighlightColor,
+    setFocused,
+    moveCoursePosReqs,
+}) {
     return (
         <Stack spacing={2} className={styles.period}>
             <Box className={styles.tilte_box}>
@@ -20,6 +27,7 @@ export default function Period({ data, periodNumber, addData, getHighlightColor,
                             data={data}
                             getHighlightColor={getHighlightColor}
                             setFocused={setFocused}
+                            moveCoursePosReqs={moveCoursePosReqs}
                         />
                     ))
             ) : (

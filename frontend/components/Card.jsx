@@ -4,7 +4,14 @@ import { useOpenDialog } from "../hooks/useOpenDialog"
 import styles from "../styles/Card.module.css"
 import DetailFormDialog from "./DetailFormDialog"
 
-export default function Card({ course, addData, data, getHighlightColor, setFocused }) {
+export default function Card({
+    course,
+    addData,
+    data,
+    getHighlightColor,
+    setFocused,
+    moveCoursePosReqs,
+}) {
     const [openDialog, handleOpenDialog, handleCloseDialog] = useOpenDialog() // Estado que determina se o DetailFormDialog esta aberto ou fechado
     const [highlightColor, setHighlightColor] = useState() // Estado que determina a cor de fundo do card
 
@@ -58,6 +65,7 @@ export default function Card({ course, addData, data, getHighlightColor, setFocu
                 addData={addData}
                 flowData={data}
                 course={course}
+                moveCoursePosReqs={moveCoursePosReqs}
             />
         </>
     )

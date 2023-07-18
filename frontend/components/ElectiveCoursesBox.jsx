@@ -3,7 +3,7 @@ import Card from "./Card"
 import styles from "../styles/ElectiveCoursesBox.module.css"
 import { Box, CircularProgress, Grid } from "@mui/material"
 
-export default function ElectiveCoursesBox({ data, addData }) {
+export default function ElectiveCoursesBox({ data, addData, moveCoursePosReqs }) {
     return (
         <Box className={styles.box}>
             <Box className={styles.tilte_box}>
@@ -25,7 +25,12 @@ export default function ElectiveCoursesBox({ data, addData }) {
                         .filter((course) => course.period === 0)
                         .map((course) => (
                             <Grid item p={2} key={course.code}>
-                                <Card course={course} data={data} addData={addData} />
+                                <Card
+                                    course={course}
+                                    data={data}
+                                    addData={addData}
+                                    moveCoursePosReqs={moveCoursePosReqs}
+                                />
                             </Grid>
                         ))
                 ) : (

@@ -10,7 +10,7 @@ export default function Home() {
     const [flowName, setFlowName] = useState("Meu Fluxograma") // Todo: melhorar
 
     // Estados
-    const { data, addData, clearData, maxPeriodNumber } = useData() // Estado que controla os dados armazendos no app
+    const { data, addData, clearData, maxPeriodNumber, moveCoursePosReqs } = useData() // Estado que controla os dados armazendos no app
 
     return (
         <>
@@ -21,8 +21,13 @@ export default function Home() {
                     data={data}
                     maxPeriodNumber={maxPeriodNumber}
                     addData={addData}
+                    moveCoursePosReqs={moveCoursePosReqs}
                 />
-                <ElectiveCoursesBox data={data} addData={addData} />
+                <ElectiveCoursesBox
+                    data={data}
+                    addData={addData}
+                    moveCoursePosReqs={moveCoursePosReqs}
+                />
             </main>
         </>
     )
