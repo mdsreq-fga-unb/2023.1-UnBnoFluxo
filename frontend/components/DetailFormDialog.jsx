@@ -50,6 +50,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
         setValue("code", "")
         setValue("workloud", "")
         setValue("description", "")
+        reset()
     }
 
     // Funcao que salva os campos e adiciona eles no array
@@ -68,6 +69,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
         // Nenhum campo modificado logo nao faz nada
         if (JSON.stringify(course) === JSON.stringify(newCourse)) {
             onClose()
+            resetTextFields() // Limpa os campos de texto
             return
         }
 
@@ -157,7 +159,6 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                         <Controller
                             control={control}
                             name="nature"
-                            defaultValue=""
                             rules={{ required: "Campo obrigatório" }}
                             render={({ field }) => (
                                 <Autocomplete
@@ -165,6 +166,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                     options={["OBRIGATORIO", "OPTATIVO", "COMPLEMENTAR"]}
                                     getOptionLabel={(option) => option}
                                     onChange={(event, newValue) => {
+                                        setValue("nature", newValue)
                                         field.onChange(newValue)
                                     }}
                                     renderInput={(params) => (
@@ -209,7 +211,6 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                         <Controller
                             control={control}
                             name="preRequisite"
-                            defaultValue=""
                             render={({ field }) => (
                                 <Autocomplete
                                     {...field}
@@ -226,6 +227,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
+                                        setValue("preRequisite", newValue)
                                         field.onChange(newValue)
                                     }}
                                     renderInput={(params) => (
@@ -244,7 +246,6 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                         <Controller
                             control={control}
                             name="coRequisite"
-                            defaultValue=""
                             render={({ field }) => (
                                 <Autocomplete
                                     {...field}
@@ -261,6 +262,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                     }}
                                     filterSelectedOptions
                                     onChange={(event, newValue) => {
+                                        setValue("coRequisite", newValue)
                                         field.onChange(newValue)
                                     }}
                                     renderInput={(params) => (
@@ -289,8 +291,8 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                 <DialogActions>
                     <Button
                         onClick={() => {
+                            resetTextFields() // Limpa os campos de texto
                             onClose()
-                            reset()
                         }}
                         sx={{ color: "#DB3B4B" }}
                     >
