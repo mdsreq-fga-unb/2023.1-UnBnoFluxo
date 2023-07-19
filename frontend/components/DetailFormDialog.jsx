@@ -15,7 +15,14 @@ import { Controller, useForm } from "react-hook-form"
 import Tip from "./Tip"
 import Title from "./Title"
 
-export default function DetailFormDialog({ open, onClose, addData, course = undefined, flowData }) {
+export default function DetailFormDialog({
+    open,
+    onClose,
+    addData,
+    course = undefined,
+    flowData,
+    moveCoursePosReqs,
+}) {
     const {
         register,
         handleSubmit,
@@ -42,6 +49,17 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
         }
     }, [course, setValue])
 
+    // Funcao para limpar os campos de texto
+    const resetTextFields = () => {
+        setValue("displayName", "")
+        setValue("alias", "")
+        setValue("period", "")
+        setValue("code", "")
+        setValue("workloud", "")
+        setValue("description", "")
+        reset()
+    }
+
     // Funcao que salva os campos e adiciona eles no array
     const handleSave = handleSubmit((data) => {
         const newCourse = {
@@ -50,18 +68,28 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
             nature: data.nature?.toUpperCase(),
             alias: data.alias?.toUpperCase(),
             period: parseInt(data.period),
-            preRequisite: data.preRequisite,
-            coRequisite: data.coRequisite,
+            preRequisite: data.preRequisite || [],
+            coRequisite: data.coRequisite || [],
             workloud: parseInt(data.workloud),
             description: data.description,
         }
         // Nenhum campo modificado logo nao faz nada
         if (JSON.stringify(course) === JSON.stringify(newCourse)) {
             onClose()
+            resetTextFields() // Limpa os campos de texto
             return
         }
 
+        if (
+            typeof moveCoursePosReqs === "function" &&
+            course.period !== 0 &&
+            course.period < newCourse.period
+        ) {
+            moveCoursePosReqs(course.code, newCourse.period - course.period)
+        }
+
         addData([newCourse])
+        resetTextFields() // Limpa os campos de texto
         reset() // Limpa os campos
         onClose()
     })
@@ -257,7 +285,7 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                                             {...params}
                                             label="Co-requisitos"
                                             helperText={
-                                                <Tip text="Componentes curriculares que devem ser cumpridos simuntaneamente" />
+                                                <Tip text="Componentes curriculares que devem ser cumpridos simultaneamente" />
                                             }
                                         />
                                     )}
@@ -278,8 +306,8 @@ export default function DetailFormDialog({ open, onClose, addData, course = unde
                 <DialogActions>
                     <Button
                         onClick={() => {
+                            resetTextFields() // Limpa os campos de texto
                             onClose()
-                            reset()
                         }}
                         sx={{ color: "#DB3B4B" }}
                     >
