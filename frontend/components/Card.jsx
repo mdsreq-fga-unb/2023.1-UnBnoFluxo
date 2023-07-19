@@ -1,4 +1,4 @@
-import { Box } from "@mui/system"
+import { Box } from "@mui/material"
 import { useEffect, useState } from "react"
 import { Draggable } from "react-beautiful-dnd"
 import { useOpenDialog } from "../hooks/useOpenDialog"
@@ -25,7 +25,7 @@ export default function Card({
         if (typeof setFocused === "function") setFocused(null)
     }
 
-    // Funcao auxiliar para pegar o index de um determindado curso em data
+    // Funcao auxiliar para pegar o index de um determindado curso em data // TODO: talvez remover
     const getIndex = (code) => {
         const index = data.findIndex((course) => course.code === code)
         return index
@@ -41,35 +41,29 @@ export default function Card({
         <>
             <Draggable key={course.code} draggableId={course.code} index={index}>
                 {(provided) => (
-                    <div
+                    <Box
                         className={styles.card}
                         onClick={handleOpenDialog}
-                        onMouseOver={handleMouseLeave}
-                        onMouseOut={handleMouseEnter}
-                        title={
-                            course.displayName +
-                            "\n" +
-                            course.code +
-                            " / " +
-                            course.period +
-                            "º Per"
-                        }
-                        style={{
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        title={`${course.displayName}\n${course.code} / ${course.period}º Per`}
+                        sx={{
                             backgroundColor: highlightColor,
                             borderRadius: "0.5rem",
+                            transition: "background 1.9s ease",
                             ...provided.draggableProps.style,
                         }}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                         ref={provided.innerRef}
                     >
-                        <div className={styles.textBox}>
+                        <Box className={styles.textBox}>
                             {course.alias ? (
                                 <strong className={styles.alias}>{course.alias}</strong>
                             ) : (
                                 <strong className={styles.displayName}>{course.displayName}</strong>
                             )}
-                        </div>
+                        </Box>
 
                         <div
                             className={`${
@@ -83,7 +77,7 @@ export default function Card({
                             }`}
                             data-testid="tipo-element"
                         />
-                    </div>
+                    </Box>
                 )}
             </Draggable>
             <DetailFormDialog
