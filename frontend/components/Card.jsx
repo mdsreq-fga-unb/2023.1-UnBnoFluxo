@@ -25,12 +25,6 @@ export default function Card({
         if (typeof setFocused === "function") setFocused(null)
     }
 
-    // Funcao auxiliar para pegar o index de um determindado curso em data // TODO: talvez remover
-    const getIndex = (code) => {
-        const index = data.findIndex((course) => course.code === code)
-        return index
-    }
-
     useEffect(() => {
         setHighlightColor(
             typeof getHighlightColor === "function" ? getHighlightColor(course.code) : "#FFFFFF"

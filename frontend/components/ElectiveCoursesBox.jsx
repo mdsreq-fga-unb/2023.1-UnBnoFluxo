@@ -23,14 +23,14 @@ export default function ElectiveCoursesBox({ data, addData, moveCoursePosReqs })
                         {...provided.droppableProps}
                         ref={provided.innerRef}
                     >
-                        <Grid item p={2}>
+                        <Grid item>
                             <NewCard addData={addData} data={data} />
                         </Grid>
                         {data ? (
                             data
                                 .filter((course) => course.period === 0)
                                 .map((course, index) => (
-                                    <Grid item p={2} key={course.code}>
+                                    <Grid item key={course.code}>
                                         <Card
                                             index={index}
                                             course={course}

@@ -17,7 +17,6 @@ export default function Period({
         <Droppable droppableId={"period-" + periodNumber}>
             {(provided) => (
                 <Stack
-                    spacing={2}
                     className={styles.period}
                     {...provided.droppableProps}
                     ref={provided.innerRef}
