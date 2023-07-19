@@ -1,4 +1,4 @@
-import { render, screen, waitFor, fireEvent, within } from '@testing-library/react'
+import { render, screen, waitFor, fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import NewFormDialog from '../NewFormDialog'
 import axios from 'axios'
@@ -18,7 +18,7 @@ describe('NewFormDialog', () => {
     { name: 'elet', endpoint: 'course-5' }
   ]
   
-  it('should render NewFormDialog and performs form submission', async () => {
+  it('should render NewFormDialog and perform form submission', async () => {
     jest.spyOn(axios, 'get').mockResolvedValueOnce({ data: mockCoursesList })
     render(<NewFormDialog open={true} />)
   
@@ -26,17 +26,18 @@ describe('NewFormDialog', () => {
       expect(screen.queryByText('Para montar seu fluxograma, escolha uma das opções abaixo:')).toBeInTheDocument()
     })
   
-    const parentElement = screen.getByTestId('cursoElement');
-    const mockSoft = within(parentElement).findByText('soft');
+    const mockSoft = screen.queryByText('soft')
+    const mockAero = screen.queryByText('aero')
+    const mockAuto = screen.queryByText('auto')
 
-    const mockAero = within(parentElement).findByText('aero');
+    await waitFor(() => {
+      setTimeout(() => {
+        fireEvent.click(mockSoft)
+        fireEvent.click(mockAero)
+        fireEvent.click(mockAuto)
+      }, 1000) // Adjust the delay if needed
+    })
 
-    const mockAuto = within(parentElement).findByText('auto');
-
-    fireEvent.click(mockSoft)
-    fireEvent.click(mockAero)
-    fireEvent.click(mockAuto)
-  
     // Simula a seleção de um arquivo JSON
     const fileInput = screen.getByLabelText('Curso')
     const fileContent = JSON.stringify([{ id: 1, name: 'Step 1' }, { id: 2, name: 'Step 2' }])

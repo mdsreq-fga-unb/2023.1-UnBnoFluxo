@@ -93,7 +93,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
             </DialogTitle>
 
             <DialogContent>
-                <Stack spacing={3} my={6} mx={[0, 8, 16]}>
+                <Stack spacing={3} my={6} mx={[0, 8, 16]} >
                     <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
                     {coursesList && (
                         <Autocomplete
@@ -113,7 +113,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
                                     helperText={
                                         <Tip text=" Pesquise um fluxograma diretamente da nossa base de dados." />
                                     }
-                                    data-testid="cursoElement"
+                                    
                                 />
                             )}
                         />
