@@ -113,6 +113,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
                                     helperText={
                                         <Tip text=" Pesquise um fluxograma diretamente da nossa base de dados." />
                                     }
+                                    data-testid="cursoElement"
                                 />
                             )}
                         />
