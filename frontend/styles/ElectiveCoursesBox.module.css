@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.tilte_box {
+  display: flex;
+}
+
 .cards_box {
   background: #DFE1E5;
 
@@ -13,7 +17,9 @@
   min-width: 100%;
 }
 
-.tilte_box h2 {
+
+.tilte,
+.search {
   background: #232323;
 
   border: 0.0625rem solid #FFFFFF;
@@ -21,10 +27,7 @@
   border-style: solid;
   border-color: #FFFFFF;
   border-radius: 0.5rem 0.5rem 0 0;
-
   margin: 0;
-
-  width: 9rem;
   height: 2rem;
 
   font-size: 1rem;
@@ -34,9 +37,16 @@
   line-height: 1.5rem;
 
   color: #FFFFFF;
-
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.tilte {
+  width: 9rem;
+}
+
+.search {
+  width: auto;
 }
