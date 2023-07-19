@@ -5,6 +5,7 @@ export function useData() {
     // Estados
     const [data, setData] = useLocalStorageState("data", { defaultValue: [] })
     const [maxPeriodNumber, setMaxPeriodNumber] = useState(10)
+    const [dataDict, setDataDict] = useState(null) // Estado que guarda os dados em dicionario
 
     // Funcao callback que adiciona os elementos de "newData" ao estado "data"
     // Essa versão substitui se o codigo do componente curricular for igual
@@ -74,10 +75,15 @@ export function useData() {
         if (newMaxPeriodNumber !== maxPeriodNumber) {
             setMaxPeriodNumber(newMaxPeriodNumber)
         }
+
+        // Converte data para dicionário
+        const auxDict = {}
+        data.forEach((course) => (auxDict[course.code] = course))
+        setDataDict(auxDict)
     }, [data])
 
     // Funcao que limpa os dados do app
     const clearData = () => setData([])
 
-    return { data, addData, clearData, maxPeriodNumber, moveCoursePosReqs }
+    return { data, setData, dataDict, addData, clearData, maxPeriodNumber, moveCoursePosReqs }
 }
