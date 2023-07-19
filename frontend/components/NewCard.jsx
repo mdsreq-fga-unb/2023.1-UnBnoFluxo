@@ -11,7 +11,7 @@ export default function NewCard({ addData, data }) {
     return (
         <>
             <Button
-                sx={{ background: "#FFFFFF" }}
+                style={{ background: "#FFFFFF", borderRadius: "0.5rem" }}
                 className={styles.card}
                 title={"Adicionar novo componente curricular"}
                 onClick={handleOpenDialog}

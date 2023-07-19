@@ -25,7 +25,7 @@ public class Server {
     public void start(List<Curso> cursos) {
         Thread thread = new Thread(() -> {
             try {
-                String password = "test";
+                String password = "#####"; // password of the keystore here <<.
                 // Load the keystore
                 KeyStore keyStore = KeyStore.getInstance("JKS");
                 FileInputStream keyStoreFile = new FileInputStream("keystore.p12");
