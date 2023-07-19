@@ -13,26 +13,26 @@ describe("Period", () => {
     //         { code: "DEF4567", period: 1, displayName: "Card 2", nature: "OPTATIVO" },
     //         { code: "GHI7890", period: 7, displayName: "Card 3", nature: "COMPLEMENTAR" },
     //     ]
-    //     it("should render the Period 1 component with Cards 1 and 2 but not 3", () => {
-    //         render(
-    //             <DragDropContext>
-    //                 <Period data={mockCard} periodNumber={1} addData={jest.fn()} />
-    //             </DragDropContext>
-    //         )
-    //         // query dos cards
-    //         const cardElements = screen.queryAllByRole("button")
-    //         // Espera que a quantidade de cards seja 2 e nao 3
-    //         expect(cardElements.length).toBe(2)
-    //         expect(cardElements.length).not.toBe(3)
-    //         // Espera que hajam card1 e card2 no componente
-    //         const card1 = screen.queryByText("Card 1")
-    //         expect(card1).toHaveTextContent("Card 1")
-    //         const card2 = screen.queryByText("Card 2")
-    //         expect(card2).toHaveTextContent("Card 2")
-    //         // Espera que não haja card3
-    //         const card3 = screen.queryByText("Card 3")
-    //         expect(card3).not.toBeInTheDocument()
-    //     })
+    it("should render the Period 1 component with Cards 1 and 2 but not 3", () => {
+        //         render(
+        //             <DragDropContext>
+        //                 <Period data={mockCard} periodNumber={1} addData={jest.fn()} />
+        //             </DragDropContext>
+        //         )
+        //         // query dos cards
+        //         const cardElements = screen.queryAllByRole("button")
+        //         // Espera que a quantidade de cards seja 2 e nao 3
+        //         expect(cardElements.length).toBe(2)
+        //         expect(cardElements.length).not.toBe(3)
+        //         // Espera que hajam card1 e card2 no componente
+        //         const card1 = screen.queryByText("Card 1")
+        //         expect(card1).toHaveTextContent("Card 1")
+        //         const card2 = screen.queryByText("Card 2")
+        //         expect(card2).toHaveTextContent("Card 2")
+        //         // Espera que não haja card3
+        //         const card3 = screen.queryByText("Card 3")
+        //         expect(card3).not.toBeInTheDocument()
+    })
     //     it("should render the Period component correctly with the added Card", () => {
     //         render(
     //             <DragDropContext>

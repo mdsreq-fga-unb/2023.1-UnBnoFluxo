@@ -14,22 +14,22 @@ describe("Card", () => {
     //         alias: "teste",
     //         nature: "OBRIGATORIO",
     //     }
-    //     it("should render the card with correct information and mandatory style", () => {
-    //         render(
-    //             <DragDropContext>
-    //                 <Card course={mockCourseObr} />
-    //             </DragDropContext>
-    //         )
-    //         const buttonElement = screen.getByRole("button")
-    //         const titleElement = buttonElement.getAttribute("title")
-    //         expect(titleElement).toEqual(
-    //             `${mockCourseObr.displayName}\n${mockCourseObr.code} / ${mockCourseObr.period}º Per`
-    //         )
-    //         const aliasElement = screen.getByText(mockCourseObr.alias || mockCourseObr.displayName)
-    //         const tipoElement = screen.getByTestId("tipo-element")
-    //         expect(aliasElement).toHaveTextContent("teste")
-    //         expect(tipoElement).toHaveClass("mandatory")
-    //     })
+    it("should render the card with correct information and mandatory style", () => {
+        //         render(
+        //             <DragDropContext>
+        //                 <Card course={mockCourseObr} />
+        //             </DragDropContext>
+        // )
+        //         const buttonElement = screen.getByRole("button")
+        //         const titleElement = buttonElement.getAttribute("title")
+        //         expect(titleElement).toEqual(
+        //             `${mockCourseObr.displayName}\n${mockCourseObr.code} / ${mockCourseObr.period}º Per`
+        //         )
+        //         const aliasElement = screen.getByText(mockCourseObr.alias || mockCourseObr.displayName)
+        //         const tipoElement = screen.getByTestId("tipo-element")
+        //         expect(aliasElement).toHaveTextContent("teste")
+        //         expect(tipoElement).toHaveClass("mandatory")
+    })
     //     const mockCourseOpt = {
     //         displayName: "OptTeste",
     //         code: "FGA9999",
