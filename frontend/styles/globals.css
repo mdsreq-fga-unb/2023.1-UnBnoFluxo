@@ -18,6 +18,7 @@ footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
+  color: #FFFFFF;
   border-top: 0.0625rem solid #EAEAEA;
   justify-content: center;
   align-items: center;
@@ -29,6 +30,10 @@ footer a {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+footer a:hover {
+  animation: textShine 2s infinite;
 }
 
 body {
@@ -52,4 +57,18 @@ body {
 
 .MuiTextField-root>.MuiFormHelperText-root {
   margin: 0;
+}
+
+@keyframes textShine {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+
+  50% {
+    text-shadow: 0 0 30px rgba(255, 255, 255);
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
 }
