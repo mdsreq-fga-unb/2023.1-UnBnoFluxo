@@ -1,5 +1,5 @@
 import Card from "../Card"
-import { render, screen } from "@testing-library/react"
+import { render, screen, fireEvent } from "@testing-library/react"
 import '@testing-library/jest-dom/extend-expect'
 
 
@@ -25,6 +25,17 @@ describe('Card', () => {
     
     expect(aliasElement).toHaveTextContent("teste")
     expect(tipoElement).toHaveClass("mandatory")
+  })
+
+  it('should render card with all of its chain highlighted by nature', () => {
+    render(<Card course={mockCourseObr} getHighlightColor={""} setFocused={""} />)
+    const buttonElement = screen.getByRole('button')          //query do card
+    fireEvent.mouseEnter(buttonElement)                       //mouse sobre o card
+
+    //apos fazer esse, repetir para optv e para comp
+    expect(buttonElement).toHaveStyle({ background: "*corDoCardAtual/roxo*" })     //background deve ser cor *corAtual*
+    expect(buttonElement).not.toHaveStyle({ background: "*PreReqStyle*/verde" } ||   //bgc NAO deve ser *corPreReq*
+                                        { background: "*nextChain*/vermelho" })   //nem *proximas na cadeia*
   })
 
   const mockCourseOpt = {
