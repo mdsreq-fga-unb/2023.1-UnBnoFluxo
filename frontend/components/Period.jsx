@@ -22,7 +22,7 @@ export default function Period({ data, periodNumber, addData }) {
                 </Box>
                 {data ? (
                     data
-                        .filter((course) => course.period == periodNumber)
+                        .filter((course) => parseInt(course.period) === periodNumber)
                         .map((course) => (
                             <Card key={course.code} course={course} addData={addData} data={data} />
                         ))
