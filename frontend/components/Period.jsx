@@ -1,4 +1,5 @@
 import { Box, CircularProgress, Stack } from "@mui/material"
+
 import { Droppable } from "react-beautiful-dnd"
 import styles from "../styles/Period.module.css"
 import dynamic from "next/dynamic"
@@ -13,6 +14,14 @@ export default function Period({
     setFocused,
     moveCoursePosReqs,
 }) {
+  
+        // Calcula a soma das cargas horárias usando a função reduce
+    const periodWorkloud = data
+        .filter((course) => course.period === periodNumber && course.hasOwnProperty("workloud"))
+        .reduce((acumulador, course) => {
+            return acumulador + course.workloud
+        }, 0)
+    
     return (
         <Droppable droppableId={"period-" + periodNumber}>
             {(provided) => (
@@ -24,9 +33,12 @@ export default function Period({
                     <Box className={styles.tilte_box}>
                         <h2> {periodNumber}º PERÍODO</h2>
                     </Box>
+                    <Box className={styles.hour_box}>
+                        <h2>{periodWorkloud}h</h2>
+                    </Box>
                     {data ? (
                         data
-                            .filter((course) => course.period == periodNumber)
+                            .filter((course) => course.period === periodNumber)
                             .map((course, index) => (
                                 <Card
                                     key={course.code}
@@ -46,5 +58,6 @@ export default function Period({
                 </Stack>
             )}
         </Droppable>
+
     )
 }
