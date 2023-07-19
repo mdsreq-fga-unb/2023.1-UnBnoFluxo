@@ -1,7 +1,6 @@
 .period {
   width: 9rem;
   min-height: 40.5rem;
-  height: 100%;
 
   background: #DFE1E5;
 
@@ -52,4 +51,5 @@
 
   width: 7rem;
   font-size: 0.80rem;
+  margin: 0.5rem 1rem;
 }
