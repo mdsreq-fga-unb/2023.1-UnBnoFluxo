@@ -1,4 +1,3 @@
-import { Button } from "@mui/base"
 import { Box } from "@mui/system"
 import { useEffect, useState } from "react"
 import { Draggable } from "react-beautiful-dnd"
@@ -44,7 +43,9 @@ export default function Card({
                 {(provided) => (
                     <div
                         className={styles.card}
-                        sx={{ color: highlightColor, borderRadius: "0.5rem" }}
+                        onClick={handleOpenDialog}
+                        onMouseOver={handleMouseLeave}
+                        onMouseOut={handleMouseEnter}
                         title={
                             course.displayName +
                             "\n" +
@@ -53,22 +54,22 @@ export default function Card({
                             course.period +
                             "º Per"
                         }
+                        style={{
+                            backgroundColor: highlightColor,
+                            borderRadius: "0.5rem",
+                            ...provided.draggableProps.style,
+                        }}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                         ref={provided.innerRef}
                     >
-                        <Button
-                            className={styles.textBox}
-                            onClick={handleOpenDialog}
-                            onMouseLeave={handleMouseLeave}
-                            onMouseEnter={handleMouseEnter}
-                        >
+                        <div className={styles.textBox}>
                             {course.alias ? (
                                 <strong className={styles.alias}>{course.alias}</strong>
                             ) : (
                                 <strong className={styles.displayName}>{course.displayName}</strong>
                             )}
-                        </Button>
+                        </div>
 
                         <div
                             className={`${
