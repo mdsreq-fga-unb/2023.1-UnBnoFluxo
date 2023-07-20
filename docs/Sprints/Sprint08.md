@@ -43,7 +43,11 @@
 
 ## Sprint Review
 **ENTREGAS**
-
+- US05 - Reordernar componentes curriculares
+- US06 - Visualizar requisitos
+- US08 - Visualizar carga horária
+- US12 - Pesquisar componente curricular
+- Polimento e expansão da base de dados
 
 **KANBAN PÓS REVIEW**
 <!-- ![1](docs/../../img/done_8.jpeg) -->
@@ -51,14 +55,23 @@
 
 
 **NÃO FOI ENTREGUE**
-
+- tudo foi entregue
 
 **O CLIENTE DEU ALGUMA SUGESTÃO OU FEZ UM NOVO PEDIDO QUE POSSA MELHORAR O PROJETO?**
 
 
 ## Sprint Retrospective
 **OQUE USAMOS NESSA SPRINT QUE DEVEMOS CONTINUAR PRATICANDO?**
-
+- Pair programming ( joao e ricardo | israel e pedro | joao e vinicius | ricardo e vinicius)
+- Design simples
+- Propriedade coletiva
+- Integração continua
+- Planejamento do jogo
+- Refatoração
+- Padrao de codificação documentado
+- Ritmo sustentável
+- Testes
     
 **O QUE APRENDEMOS DURANTE ESSA SPRINT?**
-
+- usar drag and drop no react (ricardo)
+- manipulações com funções (joao)
