@@ -28,3 +28,4 @@ A abordagem TNT adotada será:
 | 17/05/23 |  1.0   | Criação do documento           | Vinicius |
 | 26/06/23 |  1.1   | Estretégia de testes e edição  | Vinicius |
 | 04/07/23 |  1.2   | Objetivo e perspectiva dos TNT | Vinicius |
+| 13/07/23 |  1.2   | Escopo da estratégia           | Vinicius |
