@@ -3,6 +3,7 @@ import {
     Autocomplete,
     Box,
     Button,
+    CircularProgress,
     Dialog,
     DialogActions,
     DialogContent,
@@ -95,7 +96,7 @@ export default function NewFormDialog({ open, onClose, addData }) {
             <DialogContent>
                 <Stack spacing={3} my={6} mx={[0, 8, 16]} >
                     <p>Para montar seu fluxograma, escolha uma das opções abaixo:</p>
-                    {coursesList && (
+                    {coursesList ? (
                         <Autocomplete
                             multiple
                             id="tags-outlined"
@@ -117,6 +118,10 @@ export default function NewFormDialog({ open, onClose, addData }) {
                                 />
                             )}
                         />
+                    ) : (
+                        <Box display="flex" alignItems="center" justifyContent="center">
+                            <CircularProgress color="inherit" />
+                        </Box>
                     )}
 
                     <Box display="flex" alignItems="center" justifyContent="center">

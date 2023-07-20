@@ -12,21 +12,18 @@
   align-items: center;
 }
 
-.tilte_box h2 {
+.tilte_box h2,
+.hour_box h2 {
   background: #232323;
-
-  border: 0.0625rem solid #FFFFFF;
-  border-width: 0 0.125rem;
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-radius: 0.5rem 0.5rem 0 0;
-
   margin: 0;
 
-  width: 9rem;
+  border: 0.0625rem solid #FFFFFF;
+
+  border-style: solid;
+  border-color: #FFFFFF;
+
   height: 2rem;
 
-  font-size: 1rem;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
@@ -38,4 +35,21 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.tilte_box h2 {
+  border-width: 0 0.125rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  width: 9rem;
+  font-size: 1rem;
+}
+
+.hour_box h2 {
+  border-width: 1;
+  border-radius: 0.5rem;
+
+  width: 7rem;
+  font-size: 0.80rem;
+  margin: 0.5rem 1rem;
 }

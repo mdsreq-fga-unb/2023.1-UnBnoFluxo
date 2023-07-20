@@ -1,9 +1,11 @@
 import { Stack } from "@mui/material"
-import Period from "./Period"
 import styles from "../styles/MandatoryCoursesBox.module.css"
 import { useFlowHighlight } from "../hooks/useFlowHighlight"
+import dynamic from "next/dynamic"
 
-export default function MandatoryCoursesBox({ data, maxPeriodNumber, addData }) {
+const Period = dynamic(() => import("./Period"), { ssr: false })
+
+export default function MandatoryCoursesBox({ data, maxPeriodNumber, addData, moveCoursePosReqs }) {
     const { getHighlightColor, setFocused } = useFlowHighlight(data)
 
     return (
@@ -16,6 +18,7 @@ export default function MandatoryCoursesBox({ data, maxPeriodNumber, addData }) 
                     addData={addData}
                     getHighlightColor={getHighlightColor}
                     setFocused={setFocused}
+                    moveCoursePosReqs={moveCoursePosReqs}
                 />
             ))}
         </Stack>
