@@ -12,14 +12,14 @@ Como o projeto será desenvolvido em React e Java, a seguinte estrutura de workf
 A abordagem TNT adotada será:          
 ![Estratégia de testes](./img/EstrategiaTestes.png)
 
-| Nível      | Tipo        | Técnica    | Objetivo   | Perspectiva | Escopo      |
-| ---------- | ----------- | ---------- | ---------- | ----------- | ----------- |
-| Unitário   | Funcional   | Automático | Q. Interna | Técnica     | MVP2        |
-| Integração | Funcional   | Automático | Q. Interna | Técnica     | MVP2        |
-| Sistema    | Funcional   | Manual     | Q. Externa | Técnica     | MVP1 & MVP2 |
-| Aceitação  | Funcional   | Manual     | Q. Externa | Negócio     | MVP1 & MVP2 |
-| Sistema    | Usabilidade | Manual     | Q. Externa | Técnica     | MVP1 & MVP2 |
-| Aceitação  | Usabilidade | Manual     | Q. Externa | Negócio     | MVP1 & MVP2 |
+| Nível      | Tipo        | Técnica    | Objetivo   | Perspectiva | Escopo      |     US                 |
+| ---------- | ----------- | ---------- | ---------- | ----------- | ----------- |  --------              |
+| Unitário   | Funcional   | Automático | Q. Interna | Técnica     | MVP2        | US09, US14, US10, US07 |
+| Integração | Funcional   | Automático | Q. Interna | Técnica     | MVP2        | US09 e US10            |
+| Sistema    | Funcional   | Manual     | Q. Externa | Técnica     | MVP1 & MVP2 |                        |
+| Aceitação  | Funcional   | Manual     | Q. Externa | Negócio     | MVP1 & MVP2 |                        |
+| Sistema    | Usabilidade | Manual     | Q. Externa | Técnica     | MVP1 & MVP2 |                        |
+| Aceitação  | Usabilidade | Manual     | Q. Externa | Negócio     | MVP1 & MVP2 |                        |
 
 ## Histórico de revisão
 
@@ -28,3 +28,4 @@ A abordagem TNT adotada será:
 | 17/05/23 |  1.0   | Criação do documento           | Vinicius |
 | 26/06/23 |  1.1   | Estretégia de testes e edição  | Vinicius |
 | 04/07/23 |  1.2   | Objetivo e perspectiva dos TNT | Vinicius |
+| 19/07/23 |  1.3   | Adicionando US ao escopo       | João     |
