@@ -8,21 +8,21 @@
 | Dev CI-Test | Buscar soluções de testes e integração continua                                                             | Vinicius                                    | Todos                                       |
 | Dev Back    | Auxiliar e liderar a equipe na implementação e soluçoes do back                                             | Israel e Pedro Paulo                        | Todos                                       |
 | Dev Front   | Auxiliar e liderar a equipe na implementação e soluçoes do front                                            | Ricardo                                     | Todos                                       |
-| Cliente     | Auxuliar e orientar a equipe sobre suas necessidades e validar as entregas parciais ao final de cada sprint | Pedro Victor, Luis Felipe, George Marsicano | Pedro Victor, Luis Felipe, George Marsicano |
+| Cliente     | Auxiliar e orientar a equipe sobre suas necessidades e validar as entregas parciais ao final de cada sprint | Pedro Victor, Luis Felipe, George Marsicano | Pedro Victor, Luis Felipe, George Marsicano |
 
 
 ## Planejamento das fases e/ou iterações do projeto
 
-| Sprint   | Produto (Entrega)                                         | Data Início | Data Fim |
-| -------- | --------------------------------------------------------- | :---------: | :------: |
-| Sprint 1 | Definição do Problema e solução                           |  28/03/23   | 10/04/23 |
-| Sprint 2 | Definição do Produto, projeto, técnologias e metodologia  |  10/04/23   | 20/04/23 |
-| Sprint 3 | Construir um Backlog priorizado com requisitos            |  23/04/23   | 06/05/23 |
-| Sprint 4 | Definição MVP, protótipos e validação de cliente          |  06/05/23   | 18/05/23 |
-| Sprint 5 | Desenvolvimento das US01, US02 e US11                     |  18/05/23   | 27/05/23 |
-| Sprint 6 | Desenvolvimento das US03, US04 e US07                     |  28/05/23   | 11/06/23 |
-| Sprint 7 | Desenvolvimento das US09, US10 e US14                     |  12/06/23   | 04/07/23 |
-| Sprint 8 | Desenvolvimento das US05, US06, US08 e US12               |  05/07/23   | 19/07/23 |
+| Sprint   | Produto (Entrega)                                        | Data Início | Data Fim |
+| -------- | -------------------------------------------------------- | :---------: | :------: |
+| Sprint 1 | Definição do Problema e solução                          |  28/03/23   | 10/04/23 |
+| Sprint 2 | Definição do Produto, projeto, técnologias e metodologia |  10/04/23   | 20/04/23 |
+| Sprint 3 | Construir um Backlog priorizado com requisitos           |  23/04/23   | 06/05/23 |
+| Sprint 4 | Definição MVP, protótipos e validação de cliente         |  06/05/23   | 18/05/23 |
+| Sprint 5 | Desenvolvimento das US01, US02 e US11                    |  18/05/23   | 27/05/23 |
+| Sprint 6 | Desenvolvimento das US03, US04 e US07                    |  28/05/23   | 11/06/23 |
+| Sprint 7 | Desenvolvimento das US09, US10 e US14                    |  12/06/23   | 04/07/23 |
+| Sprint 8 | Desenvolvimento das US05, US06, US08 e US12              |  05/07/23   | 19/07/23 |
 
 
 ## Matriz de comunicação
@@ -64,4 +64,4 @@ O projeto poderá ser replanejado caso haja:
 | :------: | :----: | --------------------------------------------------------------------- | --------------- |
 | 19/04/23 |  1.0   | Criação do documento                                                  | Todos           |
 | 01/05/23 |  1.1   | Reformulando Critérios de Replanejamento e adicionando novos clientes | Ricardo e Pedro |
-| 12/06/23 |  1.2   | ajuste na data da entrega da sprint 8                                 | João            |
+| 12/06/23 |  1.2   | Ajuste na data da entrega da sprint 8                                 | João            |
