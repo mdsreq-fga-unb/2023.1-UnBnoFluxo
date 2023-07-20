@@ -1,0 +1,1455 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação para do projeto UnBnoFluxo realizado na disciplina de Metodos de Desenvolvimento de Software na Universidade de Brasília">
+      
+      
+        <meta name="author" content="FluxoSquad">
+      
+      
+      
+        <link rel="prev" href="../VisaoProdutoEProjeto/ReferenciasBibliograficas/">
+      
+      
+        <link rel="next" href="../ArquiteturaInterface/">
+      
+      <link rel="icon" href="../img/Icon.svg">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Backlog - UnBnoFluxo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#backlog" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="UnBnoFluxo" class="md-header__button md-logo" aria-label="UnBnoFluxo" data-md-component="logo">
+      
+  <img src="../img/Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UnBnoFluxo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2023.1-UnBnoFluxo" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    UnBnoFluxo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Início
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../VisaoProdutoEProjeto/VisaoGeralDoProduto/" class="md-tabs__link">
+        Visão do produto e projeto
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Backlog
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../ArquiteturaInterface/" class="md-tabs__link">
+      Arquitetura e Interface
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Padroes/" class="md-tabs__link">
+      Padrões
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../CITest/" class="md-tabs__link">
+      CI/Test
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Sprints/Sprint03/" class="md-tabs__link">
+        Registro de sprints
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Entregas/Unidade01/" class="md-tabs__link">
+        Entregas
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="UnBnoFluxo" class="md-nav__button md-logo" aria-label="UnBnoFluxo" data-md-component="logo">
+      
+  <img src="../img/Logo.svg" alt="logo">
+
+    </a>
+    UnBnoFluxo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2023.1-UnBnoFluxo" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    UnBnoFluxo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Visão do produto e projeto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Visão do produto e projeto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoEProjeto/VisaoGeralDoProduto/" class="md-nav__link">
+        Visão geral do produto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoEProjeto/VisaoGeralDoProjeto/" class="md-nav__link">
+        Visão geral do projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoEProjeto/ProcessoDeDesenvolvimentoDeSoftware/" class="md-nav__link">
+        Processo de desenvolvimento de software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoEProjeto/LicoesAprendidas/" class="md-nav__link">
+        Lições aprendidas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoEProjeto/ReferenciasBibliograficas/" class="md-nav__link">
+        Bibliografia
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Backlog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Backlog
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#personas" class="md-nav__link">
+    Personas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    Requisitos funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaracao-de-historias-de-usuario-criterios-de-aceitacao" class="md-nav__link">
+    Declaração de histórias de usuário critérios de aceitação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-historias-de-usuario" class="md-nav__link">
+    Priorização de histórias de usuário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos não-funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-de-preparado-dor" class="md-nav__link">
+    Definição de preparado (DoR)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-de-pronto-dod" class="md-nav__link">
+    Definição de pronto (DoD)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvp1" class="md-nav__link">
+    MVP1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvp2" class="md-nav__link">
+    MVP2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" class="md-nav__link">
+    Histórico de revisão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ArquiteturaInterface/" class="md-nav__link">
+        Arquitetura e Interface
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Padroes/" class="md-nav__link">
+        Padrões
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CITest/" class="md-nav__link">
+        CI/Test
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Registro de sprints
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Registro de sprints
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sprints/Sprint03/" class="md-nav__link">
+        Sprint 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sprints/Sprint04/" class="md-nav__link">
+        Sprint 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sprints/Sprint05/" class="md-nav__link">
+        Sprint 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sprints/Sprint06/" class="md-nav__link">
+        Sprint 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sprints/Sprint07/" class="md-nav__link">
+        Sprint 7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sprints/Sprint08/" class="md-nav__link">
+        Sprint 8
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Entregas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Entregas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Entregas/Unidade01/" class="md-nav__link">
+        Unidade 01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Entregas/Unidade02/" class="md-nav__link">
+        Unidade 02
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Entregas/Unidade03/" class="md-nav__link">
+        Unidade 03
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Entregas/Unidade04/" class="md-nav__link">
+        Unidade 04
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="backlog">Backlog</h1>
+<h2 id="personas">Personas</h2>
+<p>Uma persona é o personagem fictício da user story que representa o usuário ideal do produto. Todas as histórias são escritas a partir da perspectiva de um tipo de usuário.</p>
+<ul>
+<li><strong>Estudante:</strong> é o usuário principal da aplicação, refere-se ao estudante da Universidade de Brasilia que deseja fazer o seu planejamento de fluxo.</li>
+</ul>
+<h2 id="requisitos-funcionais">Requisitos funcionais</h2>
+<p>Um requisito funcional é uma especificação de uma funcionalidade ou comportamento que um sistema ou software deve ser capaz de realizar. No caso do UnBnoFluxo esses requisitos serão modelados usando o modelo de Histórias de Usuário (US), Épicos (EP) e Temas (TM).</p>
+<table>
+    <thead>
+        <tr>
+            <th>Tema</th>
+            <th>Épico</th>
+            <th>User Story</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6">TM01 - Gerenciamento de Fluxogramas</td>
+            <td rowspan="3">EP01 - Criação e Edição de Fluxogramas</td>
+            <td>US02 - Upload de fluxograma</td>
+        </tr>
+        <tr>
+            <td>US03 - Iniciar fluxograma em branco</td>
+        </tr>
+        <tr>
+            <td>US04 - Mesclar fluxograma</td>
+        </tr>
+        <tr>
+            <td rowspan="3">EP02 - Visualização e Organização de Fluxogramas</td>
+            <td>US01 - Disponibilizar fluxograma padrão</td>
+        </tr>
+        <tr>
+            <td>US05 - Reordenar componentes curriculares</td>
+        </tr>
+        <tr>
+            <td>US11 - Download de fluxograma</td>
+        </tr>
+        <tr>
+            <td rowspan="4">TM02 - Informações e Acompanhamento</td>
+            <td rowspan="2">EP03 - Visualização e Acompanhamento de Disciplinas</td>
+            <td>US06 - Visualizar requisitos</td>
+        </tr>
+        <tr>
+            <td>US07 - Visualizar obrigatoriedade de componentes</td>
+        </tr>
+        <tr>
+            <td rowspan="2">EP04 - Acompanhamento e Progresso do Curso</td>
+            <td>US08 - Visualizar carga horária</td>
+        </tr>
+        <tr>
+            <td>US15 - Exibir percentual do curso</td>
+        </tr>
+        <tr>
+            <td rowspan="5">TM03 - Gestão de Componentes Curriculares</td>
+            <td rowspan="2">EP05 - Criação e Edição de Componentes Curriculares</td>
+            <td>US09 - Criar componente curricular</td>
+        </tr>
+        <tr>
+            <td>US10 - Editar componente curricular</td>
+        </tr>
+        <tr>
+            <td rowspan="3">EP06 - Organização e Classificação de Componentes Curriculares</td>
+            <td>US12 - Pesquisar componente curricular</td>
+        </tr>
+        <tr>
+            <td>US13 - Marcar componente curricular como concluido</td>
+        </tr>
+        <tr>
+            <td>US14 - Apelidar componente curricular</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="declaracao-de-historias-de-usuario-criterios-de-aceitacao">Declaração de histórias de usuário critérios de aceitação</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Número</th>
+<th>Nome</th>
+<th>Declaração</th>
+<th>Critério de aceitação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">US01</td>
+<td>Disponibilizar fluxograma padrão</td>
+<td>Como estudante quero ter a minha disposição o fluxograma padrão da universidade já montado, para não precisar fazer esse trabalho manualmente</td>
+<td>Deve existir uma base de dados que disponibilize o fluxograma padrão dos cursos. <br> O fluxograma deve ser montado automaticamente na aplicação.</td>
+</tr>
+<tr>
+<td align="center">US06</td>
+<td>Visualizar requisitos</td>
+<td>Como estudante quero poder visualizar a cadeia de requisitos de um determinado componente curricular para poder entender melhor qual preciso cursar primeiro</td>
+<td>Ao interagir com um card de componente, os componentes que o tem como pre-requisito devem ser destacados. <br> Ao interagir com um card de componente, os componentes que o tem como co-requisito devem ser destacados. <br>  Ao interagir com um card de componente, os componentes são pós-requisitos dele devem ser destacados. <br> Os co-requisitos, pre-requisitos e pós-requisitos devem ser destacados de maneira diferente.</td>
+</tr>
+<tr>
+<td align="center">US05</td>
+<td>Reordernar componentes curriculares</td>
+<td>Como estudante quero poder reorganizar os componentes curriculares movendo-os de um período para outro para ajudar meu planejamento futuro</td>
+<td>Deve ser possível mover os cards de componentes de um periodo para outro. <br> Essa movimentação tambem deve ser possivel através da caixa de diálogo de detalhe do componente. <br> Ao mover um componente para um periodo posterior, os cards de componente que o tem como pre-requisito também devm ser reorganizados para periodos posteriores.</td>
+</tr>
+<tr>
+<td align="center">US09</td>
+<td>Criar componente curricular</td>
+<td>Como estudante quero poder criar um componente curricular para poder contabilizar a carga horária de componentes como de módulo livre, monitorias e EJs, que não aparecem no fluxograma padrão da universidade.</td>
+<td>Devem ser exibidos campos de preenchimento para os dados Nome, Aliás, Código, Pré-requisitos, Co-requisitos, Carga Horária, Natureza e Período e Descrição. <br> Só deve ser possível salvar se os campos obrigatórios (Nome, Código, Carga Horária, Natureza e Período) foram corretamente preenchidos:<br> Carga horária: apenas um número inteiro. <br>Código: Sempre inicia com 3 letras seguido de 4 números. <br> Tipo: Obrigatório, optativa e modulo lívre<br/> Período: Número de Semestre</td>
+</tr>
+<tr>
+<td align="center">US04</td>
+<td>Mesclar fluxograma</td>
+<td>Como estudante quero poder mesclar o fluxograma de diferentes cursos para o caso de eu estiver fazendo mudança de curso ou dupla graduação</td>
+<td>Deve ser possível entrar com mais de um curso/fluxograma no fomulário de montagem de fluxograma. <br> Os componentes curriculares que se repetem em dois fluxos não devem aparecer duplicados. <br> Matérias equivalentes não devem se repetir ou aparecer simultaneamente.</td>
+</tr>
+<tr>
+<td align="center">US14</td>
+<td>Apelidar componente curricular</td>
+<td>Como estudante quero poder apelidar o componente curricular com abreviaturas ou nomes comuns entre os estudantes para melhorar minha visualização</td>
+<td>O aliás deve ter tamanho limitado de 12 caracteres. <br> O aliás deve ser opcional e substituir a exibição do nome completo do componente curricular no card. <br> Deve ser possível editar o aliás.</td>
+</tr>
+<tr>
+<td align="center">US11</td>
+<td>Download de fluxograma</td>
+<td>Como estudante quero poder fazer download do fluxograma que montei para não perder meu progresso</td>
+<td>Deve ser possível salvar o fluxograma em um formato de documento de texto (.txt ou .json).</td>
+</tr>
+<tr>
+<td align="center">US02</td>
+<td>Upload de fluxograma</td>
+<td>Como estudante quero poder fazer upload de um fluxograma que já modifiquei para não perder meu progresso anterior</td>
+<td>Deve ser possível carregar na aplicação um fluxograma posteriormente baixado em formato de texto.</td>
+</tr>
+<tr>
+<td align="center">US08</td>
+<td>Visualizar carga horária</td>
+<td>Como estudante quero poder visualizar a soma da carga horária de determinado período para saber se estou dentro dos limites de carga horária por período da faculdade</td>
+<td>Deve existir uma soma de carga horária para cada período. <br> A soma deve atualizar sempre que algum componente for adicionado ou removido do período.</td>
+</tr>
+<tr>
+<td align="center">US10</td>
+<td>Editar componente curricular</td>
+<td>Como estudante quero poder alterar dados de um componente curricular como em caso de módulo livre, para que possa contabilizar sua carga horária</td>
+<td>Deve ser possível editar todos os dados do componente exceto o campo de código. <br> Nos campos de  Pré-requisitos e Co-requisitos devem ser exibidos apenas os componentes atualmente carregados na aplicação. <br> Só deve ser possível salvar se os campos obrigatórios (Nome, Aliás, Código, Carga Horária, Tipo e Período) foram corretamente preenchidos.</td>
+</tr>
+<tr>
+<td align="center">US03</td>
+<td>Iniciar fluxograma em branco</td>
+<td>Como estudante quero poder iniciar um fluxograma em branco para o caso do meu fluxograma não estar disponível</td>
+<td>Devem ser possivel cadastrar um novo componente com Nome, Aliás, Código, Pré-requisitos, Co-requisitos, Carga Horária, Natureza, Período e Descrição. <br> Só deve ser possível salvar se os campos obrigatórios (Nome, Código, Carga Horária, Naturaza e Período) foram corretamente preenchidos.</td>
+</tr>
+<tr>
+<td align="center">US12</td>
+<td>Pesquisar componente curricular</td>
+<td>Como estudante quero poder pesquisar por um componente curricular em específico para adicioná-lo em meu fluxograma</td>
+<td>Deve ser possível filtrar por Nome, Alías ou Código. <br> Os compontentes filtrados devem ser exibidos em destaque ou de maneira diferente.</td>
+</tr>
+<tr>
+<td align="center">US13</td>
+<td>Marcar componente curricular como concluido</td>
+<td>Como estudante quero poder marcar uma componente curricular como concluído ou não concluído para que ele seja contabilizado na carga horária dos componentes curriculares que ja cursei</td>
+<td>Deve existir um menu para alternar o estado de conclusão do componente. <br> Devem existir dois estados: Concluído e Ainda Não Concluído. <br> O default dever ser Ainda Não Concluído. <br> Componentes Ainda Não Concluídos são exibidos de maneira diferente dos Concluídos.</td>
+</tr>
+<tr>
+<td align="center">US07</td>
+<td>Visualizar obrigatoriedade de componentes</td>
+<td>Como estudante quero poder visualizar o que é um componente curricular optativo ou obrigatório para me ajudar na priorização dos mesmos</td>
+<td>Componentes com obrigatoriedade diferente devem ser cards com cores ou formato diferente.</td>
+</tr>
+<tr>
+<td align="center">US15</td>
+<td>Exibir percentual do curso</td>
+<td>Como estudante quero poder ver o percentual já concluído do curso para saber quanto já concluí e quanto ainda falta do curso</td>
+<td>Deve exitir um painel com o percentual de conclusão do curso. <br> Além do percentual de conclusão do curso existem também percentuais para a carga horária de componentes optativos, obrigatorios e de modulo livre. <br> Esse percentual deve mudar automaticamente quando o usuário alternar o estado de conclusão de algum card de componente.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="priorizacao-de-historias-de-usuario">Priorização de histórias de usuário</h2>
+<p><strong>Obs:</strong> A <em>Pontuação</em> (pts) é calculado com base nos critérios de viabilidade (v), complexidade (c) e valor de negócio (vn) da US referida. É atribuido para cada critério valores de 1 a 3 e realizada a equação:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pts =  v + c + vn
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Número</th>
+<th>Nome</th>
+<th align="center">Valor de negócio</th>
+<th align="center">Viabilidade</th>
+<th align="center">Complexidade</th>
+<th align="center">Pontuação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">US01</td>
+<td>Disponibilizar fluxograma padrão</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">US06</td>
+<td>Visualizar requisitos</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">US05</td>
+<td>Reordernar componentes curriculares</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">US09</td>
+<td>Criar componente curricular</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">US04</td>
+<td>Mesclar fluxograma</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">US14</td>
+<td>Apelidar componente curricular</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">US11</td>
+<td>Download de fluxograma</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">US02</td>
+<td>Upload de fluxograma</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">US08</td>
+<td>Visualizar carga horária</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">US10</td>
+<td>Editar componente curricular</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">US03</td>
+<td>Iniciar fluxograma em branco</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">US12</td>
+<td>Pesquisar componente curricular</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">US07</td>
+<td>Visualizar obrigatoriedade de componentes</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">US13</td>
+<td>Marcar componente curricular como concluido</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">US15</td>
+<td>Exibir percentual do curso</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requisitos-nao-funcionais">Requisitos não-funcionais</h2>
+<p>Um requisito não funcional é uma especificação de uma característica ou propriedade do sistema ou software que não esta diretamente relacionada à sua funcionalidade, como desempenho, segurança, usabilidade, entre outras.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Número</th>
+<th>Categoria</th>
+<th>Declaração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">RNF1</td>
+<td>Implementação</td>
+<td>O produto deve ser uma aplicação web</td>
+</tr>
+<tr>
+<td align="center">RNF2</td>
+<td>Usabilidade</td>
+<td>O produto deve ser responsivo a diferentes tamanhos de tela e dispositivos</td>
+</tr>
+<tr>
+<td align="center">RNF3</td>
+<td>Implemetação</td>
+<td>O front-end do produto deve ser desenvolvido utilizando react</td>
+</tr>
+<tr>
+<td align="center">RNF4</td>
+<td>Implementação</td>
+<td>O back-end do produto deve ser desenvolvido utilizando java</td>
+</tr>
+<tr>
+<td align="center">RNF5</td>
+<td>Usabilidade</td>
+<td>A interface deve ser organizada de forma clara (Clara é: título do menu/seção indicar exatamente o que há em seu conteúdo, por exemplo: uma seção com nome "Montar meu fluxo" indica uma página onde o usuário poderá organizar as disciplinas do seu fluxo)</td>
+</tr>
+<tr>
+<td align="center">RNF6</td>
+<td>Suportabilidade</td>
+<td>A aplicação deverá rodar nos browsers mais comumente utilizados (Chrome, Safari, Edge, Opera) em suas versões recentes</td>
+</tr>
+<tr>
+<td align="center">RNF7</td>
+<td>Confiabilidade</td>
+<td>O sistema deve apresentar uma taxa de erro de no máximo 5% durante a execução de ações</td>
+</tr>
+<tr>
+<td align="center">RNF8</td>
+<td>Desempenho</td>
+<td>O sistema deve apresentar um tempo médio de resposta de no máximo 1000ms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="definicao-de-preparado-dor">Definição de preparado (DoR)</h2>
+<p>Acordo entre o time e o PO indicando quando um requisito estará preparado para ser puxado para uma Sprint.
+Para saber se o requisito está preparado, faz-se as perguntas a seguir:</p>
+<ul>
+<li>O Requisito está representado por uma história de usuário?</li>
+<li>O Requisito está coberto por critérios de aceite &amp; BDD?</li>
+<li>O Requisito está mapeado para uma interface (quando necessário)?</li>
+<li>O Requisito cabe em uma sprint?</li>
+<li>As dependências do Requisito estão identificadas (se houver)?</li>
+</ul>
+<h2 id="definicao-de-pronto-dod">Definição de pronto (DoD)</h2>
+<p>Acordo que demonstra a qualidade do Requisito produzido, na qual “Done” comprova a satisfação de todos com 
+o trabalho realizado. Se um Requisito não atende ao “Done”, ele não deve ser liberado ou mesmo apresentado na Sprint Review.
+Para saber se o requisito está pronto, faz-se as perguntas a seguir:</p>
+<ul>
+<li>Entrega um incremento do produto?</li>
+<li>Contempla os critérios de aceite estabelecidos?</li>
+<li>Está documentado para uso?</li>
+<li>Está aderente aos padrões de codificação?</li>
+<li>Mantém os índices de performance do produto?</li>
+</ul>
+<h2 id="mvp1">MVP1</h2>
+<table>
+<thead>
+<tr>
+<th>User Story</th>
+<th align="center">Sprint</th>
+<th align="center">Pontuação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US01 - Disponibilizar fluxograma padrão</td>
+<td align="center">5</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td>US02 - Upload de fluxograma</td>
+<td align="center">5</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>US11 - Download de fluxograma</td>
+<td align="center">5</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>US04 - Mesclar fluxograma</td>
+<td align="center">6</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td>US03 - Iniciar fluxograma em branco</td>
+<td align="center">6</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>US07 - Visualizar obrigatoriedade de componentes</td>
+<td align="center">6</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mvp2">MVP2</h2>
+<table>
+<thead>
+<tr>
+<th>User Story</th>
+<th align="center">Sprint</th>
+<th align="center">Pontuação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US03 - (DÉBITO) Iniciar fluxograma em branco</td>
+<td align="center">7</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>US09 - Criar componente curricular</td>
+<td align="center">7</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td>US14 - Apelidar componente curricular</td>
+<td align="center">7</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td>US10 - Editar componente curricular</td>
+<td align="center">7</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>US05 - Reordernar componentes curriculares</td>
+<td align="center">8</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td>US06 - Visualizar requisitos</td>
+<td align="center">8</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td>US08 - Visualizar carga horária</td>
+<td align="center">8</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>US12 - Pesquisar componente curricular</td>
+<td align="center">8</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-revisao">Histórico de revisão</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">01/05/23</td>
+<td align="center">1.0</td>
+<td>Criação do documento</td>
+<td>Ricardo e Vinicius</td>
+</tr>
+<tr>
+<td align="center">08/05/23</td>
+<td align="center">1.1</td>
+<td>Proposta de MVP1 e MVP2</td>
+<td>Todos</td>
+</tr>
+<tr>
+<td align="center">10/05/23</td>
+<td align="center">1.2</td>
+<td>Priorização no backlog</td>
+<td>Ricardo e João</td>
+</tr>
+<tr>
+<td align="center">15/05/23</td>
+<td align="center">1.3</td>
+<td>Critérios de aceite e divisão de Temas, Épicos e USs</td>
+<td>Ricardo e Vinícius</td>
+</tr>
+<tr>
+<td align="center">17/05/23</td>
+<td align="center">1.4</td>
+<td>Atualização MVPs e CAs</td>
+<td>Ricardo</td>
+</tr>
+<tr>
+<td align="center">23/05/23</td>
+<td align="center">1.5</td>
+<td>Atualização MVPs</td>
+<td>João</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Voltar para o topo
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest", "toc.integrate"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
