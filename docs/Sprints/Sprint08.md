@@ -4,7 +4,7 @@
 
 |  Início  |   Fim    |  Duração  |
 | :------: | :------: | :-------: |
-| 27/06/23 | 11/07/23 | 2 semanas |
+| 05/06/23 | 19/07/23 | 2 semanas |
 
 ## Sprint Planning
 **PAPEIS**
@@ -48,6 +48,8 @@
 - US08 - Visualizar carga horária
 - US12 - Pesquisar componente curricular
 - Polimento e expansão da base de dados
+- Testes que faltam
+
 
 **KANBAN PÓS REVIEW**
 
@@ -87,4 +89,4 @@ ficou melhor do que eles esperavam. foi um feedback breve e direto.
 
 **HOUVE ALTERAÇÕES NO BACKLOG OU NO VISÃO?**
 
--Sim, mudamos os criterios de aceitação da us06 ao inves de "clicar", colocamos "interagir" e adicionamos um feito: visualizar pós-requisitos
+- Sim, mudamos os criterios de aceitação da us06 ao inves de "clicar", colocamos "interagir" e adicionamos um feito: visualizar pós-requisitos
