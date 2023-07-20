@@ -1,7 +1,8 @@
 import { renderHook } from "@testing-library/react"
-import { useData } from "../../hooks/useData"
-import "@testing-library/jest-dom/extend-expect"
 import { act } from "react-dom/test-utils"
+import "@testing-library/jest-dom/extend-expect"
+
+import { useData } from "../../hooks/useData"
 
 describe("useData hook tests", () => {
     it("addData should add new courses or update existing ones correctly", () => {
