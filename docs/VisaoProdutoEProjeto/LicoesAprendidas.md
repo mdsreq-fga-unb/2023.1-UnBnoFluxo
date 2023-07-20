@@ -10,6 +10,9 @@ Foi notável a melhoria no desenvolvimento da equipe, houveram alguns problemas 
 ## Unidade 03
 Houve avanço em toda equipe, por meio do pair programming entre os integrantes conseguimos ter um amplo compartilhamento de conhecimentos. Alguns problemas foram erradicados, como seguir as datas do planejamento das sprints. Outros foram amenizados, como o fator das dailys que foram feitas com mais constancia. Todos aprenderam muito pondo o a teoria em prática. Portanto, obtivemos uma boa entrega graças a contribuição de toda a equipe
 
+## Unidade 04
+Com a finalização do projeto podemos ver como trabalhamos bem em equipe, porém foram essenciais as estrategias e métodos de desenvolvimentos. Foi muito gratificante ve-las sendo aplicadas ao longo do semestre e obtendo resultado com as implementações. Agradecemos muito a ajuda do professor, dos monitores e dos chapters, vocês foram indispensáveis!!
+
 ## Histórico de revisão
 
 |   Data   | Versão | Descrição                                  | Autor |
@@ -17,3 +20,4 @@ Houve avanço em toda equipe, por meio do pair programming entre os integrantes 
 | 19/04/23 |  1.0   | Criação do documento e relato da Unidade 1 | João  |
 | 16/05/23 |  1.1   | Relato da Unidade 2                        | João  |
 | 12/06/23 |  1.2   | Relato da Unidade 3                        | João  |
+| 19/06/23 |  1.3   | Relato da Unidade 4                        | João  |
